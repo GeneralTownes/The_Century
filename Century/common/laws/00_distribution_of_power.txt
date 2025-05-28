@@ -881,7 +881,7 @@ law_census_voting = {
 	
 	disallowing_laws = {
 		law_industry_banned
-		law_the_company
+		law_extraction_economy
 	}
 	
 	on_activate = {
@@ -1005,7 +1005,7 @@ law_universal_suffrage = {
 	
 	disallowing_laws = {
 		law_industry_banned
-		law_the_company
+		law_extraction_economy
 	}
 	
 	on_activate = {
@@ -1171,7 +1171,7 @@ law_anarchy = {
 		law_theocracy
 		law_outlawed_dissent
 		law_industry_banned
-		law_the_company
+		law_extraction_economy
 	}
 	
 	modifier = {
