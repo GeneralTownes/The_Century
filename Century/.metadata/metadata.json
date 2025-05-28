@@ -10,9 +10,6 @@
   ],
   "relationships" : [],
   "game_custom_data" : {
-    "multiplayer_synchronized" : true,
-		"replace_paths" : [
-			"common/laws"
-		]
+    "multiplayer_synchronized" : true
   }
 }
