@@ -349,11 +349,7 @@ ideology_atheist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_council_republic
-				}
+				has_law = law_type:law_republic
 				has_law = law_type:law_state_atheism
 			}
 		}
@@ -483,10 +479,7 @@ ideology_republican_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
+				has_law = law_type:law_republic
 				has_law = law_type:law_elected_bureaucrats
 			}
 		}
@@ -744,10 +737,7 @@ ideology_radical = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
+				has_law = law_type:law_republic
 				has_law = law_type:law_universal_suffrage
 				has_law = law_type:law_protected_speech
 				has_law = law_type:law_guaranteed_liberties
@@ -4590,7 +4580,7 @@ ideology_positivist = {
 				has_law = law_type:law_appointed_bureaucrats
 				has_law = law_type:law_technocracy
 				has_law = law_type:law_state_atheism
-				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_republic
 			}
 		}
 		# Monarchs cannot be republicans

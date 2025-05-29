@@ -6,10 +6,7 @@
 	}
 	trigger_else_if = {
 		limit = { 
-			OR = {
-				has_law = law_type:law_autocracy 
-				has_law = law_type:law_colonial_admin
-			}
+			has_law = law_type:law_autocracy
 		}
 		always = no
 	}
@@ -17,7 +14,7 @@
 		limit = {
 			OR = {
 				has_law = law_type:law_monarchy
-				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_independent_executive
 			}
 		}
 		var:bpm_law_enactment_yea_votes_cached > 0.6666

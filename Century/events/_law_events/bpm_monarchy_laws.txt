@@ -23,11 +23,7 @@ monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
 	cooldown = { months = normal_modifier_time }
 	
 	trigger = {
-		OR = {
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_council_republic
-		}
+		has_law = law_type:law_republic
 		NOT = {
 			has_modifier = monarchist_agitation
 		}

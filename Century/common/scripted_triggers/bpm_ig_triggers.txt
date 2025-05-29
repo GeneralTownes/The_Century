@@ -140,19 +140,9 @@ bpm_ig_is_democrat = {
 bpm_ig_is_republican = {
 	custom_tooltip = {
 		text = "tooltip_bpm_ig_is_republican"
-		OR = {
-			law_stance = {
-				law = law_type:law_presidential_republic
-				value > neutral
-			}
-			law_stance = {
-				law = law_type:law_parliamentary_republic
-				value > neutral
-			}
-			law_stance = {
-				law = law_type:law_council_republic
-				value > neutral
-			}
+		law_stance = {
+			law = law_type:law_republic
+			value > neutral
 		}
 	}
 }
