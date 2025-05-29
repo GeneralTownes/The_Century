@@ -112,7 +112,7 @@ law_secret_police = {
 	institution = institution_home_affairs
 	institution_modifier = {
 		country_suppression_ig_attraction_mult = -0.1
-		political_movement_radicalism_mult = -0.1
+		state_radicals_from_political_movements_mult = -0.1
 		state_radicals_from_sol_change_mult = -0.05
 		state_radicals_from_discrimination_mult = -0.05
 	}
@@ -163,7 +163,7 @@ law_guaranteed_liberties = {
 	institution_modifier = {
 		country_revolution_progress_mult = 0.1
 		country_secession_progress_mult = 0.1
-		state_loyalists_from_sol_change_mult = 0.05
+		state_loyalists_from_political_movements_mult = 0.05
 		state_radicals_from_sol_change_mult = -0.05
 		state_radicals_from_discrimination_mult = 0.1
 		state_migration_pull_mult = 0.02
