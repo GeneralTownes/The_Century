@@ -1,5 +1,5 @@
 ﻿bpm_setup_country = {
-	bpm_setup_country_modifiers = yes
+	#bpm_setup_country_modifiers = yes
 	bpm_institution_workaround_effect = yes
 	trigger_event = { id = bpm_misc.2 }
 }
