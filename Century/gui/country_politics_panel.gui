@@ -324,33 +324,43 @@ types country_panel_types
 			direction = horizontal
 			
 			textbox = {
-				size = { 180 25 }
+				size = { 135 25 }
 				align = center|nobaseline
 				using = fontsize_large
-				fontsize_min = 14
+				fontsize_min = 10
 				elide = right
 				
 				text = "POWER_STRUCTURE"
 			}		
 			
 			textbox = {
-				size = { 180 25 }
+				size = { 135 25 }
 				align = center|nobaseline
 				using = fontsize_large
-				fontsize_min = 14
+				fontsize_min = 10
 				elide = right
 				
 				text = "ECONOMY"
 			}
 			
 			textbox = {
-				size = { 180 25 }
+				size = { 135 25 }
 				align = center|nobaseline
 				using = fontsize_large
-				fontsize_min = 14
+				fontsize_min = 10
 				elide = right
 				
 				text = "HUMAN_RIGHTS"
+			}			
+			
+			textbox = {
+				size = { 135 25 }
+				align = center|nobaseline
+				using = fontsize_large
+				fontsize_min = 10
+				elide = right
+				
+				text = "OTHER"
 			}			
 		}
 
