@@ -10,5 +10,55 @@
 		ig:ig_armed_forces = { add_ideology = ideology_monarchist }
 	}
 	
+	c:CHI ?= {
+		every_scope_state = {
+			limit = {
+                OR = {
+                    state_region = s:STATE_OUTER_MANCHURIA
+                    state_region = s:STATE_SOUTHERN_MANCHURIA
+                    state_region = s:STATE_NORTHERN_MANCHURIA
+                    state_region = s:STATE_SHENGJING
+                }
+            }
+			add_modifier = {
+				name = eight_banners
+				days = -1
+			}
+		}
+	}
 	
+	c:CHI ?= {
+		remove_primary_culture = cu:han
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_SICHUAN
+			}
+			add_radicals_in_state = {
+                value = 0.1
+                culture = cu:han
+            }
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_YUNNAN
+			}
+			add_radicals_in_state = {
+                value = 0.025
+                culture = cu:han
+            }
+		}
+		random_scope_state = {
+			limit = {	
+				state_region = s:STATE_CHONGQING
+			}
+			add_radicals_in_state = {
+                value = 0.05
+                culture = cu:han
+            }
+		}
+		add_radicals = {
+			value = 0.025
+			culture = cu:han
+		}
+	}
 }
