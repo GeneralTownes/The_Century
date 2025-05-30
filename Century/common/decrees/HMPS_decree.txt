@@ -53,10 +53,35 @@ decree_additional_taxes = {
 		state_radicals_from_political_movements_mult = 0.25
 		state_turmoil_effects_mult = 0.10
 		state_tax_capacity_mult = 0.20
+		state_tax_capacity_add = 100
 	}
 	cost = 100
 	
 	ai_weight = {
-		value = 0
+		value = 100
+		if = {
+			limit = { 
+				weekly_net_fixed_income <= -1000
+			}
+			add = 100
+		}
+		if = {
+			limit = { 
+				weekly_net_fixed_income <= -5000
+			}
+			add = 100
+		}
+		if = {
+			limit = { 
+				weekly_net_fixed_income <= -10000
+			}
+			add = 200
+		}
+		if = {
+			limit = { 
+				weekly_net_fixed_income <= -20000
+			}
+			add = 300
+		}
 	}
 }
