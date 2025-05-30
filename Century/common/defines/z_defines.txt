@@ -1,2 +1,7 @@
 ﻿## SoL Thresholds
 @pop_growth_max_sol = 15			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
+
+NPolitics = {
+	APPROVAL_THRESHOLD_HAPPY = 8		# At this or above approval, IG is considered happy
+	APPROVAL_THRESHOLD_LOYAL = 15		# At this or above approval, IG is considered loyal
+}
