@@ -1,0 +1,2 @@
+﻿## SoL Thresholds
+@pop_growth_max_sol = 15			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
