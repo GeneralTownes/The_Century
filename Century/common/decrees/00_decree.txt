@@ -87,8 +87,10 @@ decree_violent_suppression = {
 		standing_army
 	}
 	
-	valid = {
-		owner = { NOT = { has_law = law_type:law_guaranteed_liberties } }
+	country_trigger = {
+		NOT = { has_law = law_type:law_guaranteed_liberties }
+	}
+	state_trigger = {
 		turmoil >= 0.25	
 	}
 	modifier = {
