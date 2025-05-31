@@ -22,17 +22,14 @@ opium_wars.1 = {
 	trigger = {
 		NOT = { has_global_variable = opium_wars_start_var }
 		this = c:CHI
-		any_primary_culture = {
+		cu:han = {
 			has_cultural_obsession = opium
 		}
 	}
 
 	immediate = {
 		set_global_variable = opium_wars_start_var
-		random_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
+		cu:han = {
 			save_scope_as = addicted_culture
 		}
 		random_market = {
@@ -148,10 +145,7 @@ opium_wars.2 = {
 				has_variable = opium_wars_target
 			}
 			save_scope_as = opium_wars_target_country
-			random_primary_culture = {
-				limit = {
-					has_cultural_obsession = opium
-				}
+			cu:han = {
 				save_scope_as = opium_addicted_culture
 			}
 		}
@@ -241,10 +235,7 @@ opium_wars.3 = {
 	}
 
 	immediate = {
-		random_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
+		cu:han = {
 			save_scope_as = addicted_culture
 		}
 		if = {
@@ -270,9 +261,6 @@ opium_wars.3 = {
 	option = {
 		name = opium_wars.3.a
 		default_option = yes
-		every_primary_culture = {
-			remove_cultural_obsession = opium
-		}
 		cu:han = {
 			remove_cultural_obsession = opium
 		}
@@ -285,9 +273,6 @@ opium_wars.3 = {
 
 	option = {
 		name = opium_wars.3.b
-		every_primary_culture = {
-			remove_cultural_obsession = opium
-		}
 		cu:han = {
 			remove_cultural_obsession = opium
 		}
