@@ -32,10 +32,6 @@
 			institution = institution_police
 			level = 2
 		}
-
-		add_modifier = {
-			name = german_confederation_leader
-		}
 		
 		set_variable = {
 			name = austria_monarchy
