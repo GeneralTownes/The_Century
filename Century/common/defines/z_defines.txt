@@ -31,3 +31,8 @@ NDiplomacy = {
 	
 	WAR_GOAL_INFAMY_DIPLO_PLAY_BACK_DOWN_REFUND = -0.75 # Refund of infamy for war goals that are dropped due to one side backing down in a diplo play (applied to initiator/target)
 }
+
+NEconomy = {
+	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
+	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000000	# The country_gdp modifier multiplier cannot be higher than this
+}
