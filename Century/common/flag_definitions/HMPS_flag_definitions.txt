@@ -323,99 +323,6 @@ CHI = { # China
 	}		
 }
 
-POL = { # Poland
-	flag_definition = {
-		coa = POL
-		subject_canton = POL
-		priority = 1
-		trigger = { 
-			scope:actor ?= { NOT = { has_variable = pol_plc_ambition } }
-		}
-	}
-	flag_definition = {
-		coa = POL_new
-		subject_canton = POL_new
-		priority = 1
-		trigger = { 
-			scope:actor ?= { has_variable = pol_plc_ambition }
-		}
-	}
-	flag_definition = {
-		coa = POL_republic_new
-		subject_canton = POL_republic_new
-		priority = 1
-		trigger = { 
-			scope:actor ?= { has_variable = pol_plc_ambition }
-			coa_def_republic_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = POL_subject_RUS
-		allow_overlord_canton = no		
-		subject_canton = POL
-		priority = 50
-		trigger = { 
-			coa_def_russian_ensign_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = POL_dictatorship_uprising
-		allow_overlord_canton = no		
-		subject_canton = POL
-		priority = 51
-		trigger = { 
-			scope:actor ?= { has_variable = pol_uprising }
-		}
-	}
-	flag_definition = {
-		coa = POL_absolute_monarchy
-		subject_canton = POL_absolute_monarchy
-		priority = 20
-		trigger = { 
-			coa_def_absolute_monarchy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = POL_republic
-		subject_canton = POL_republic
-		priority = 10
-		trigger = { 
-			coa_def_republic_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = POL_republic
-		subject_canton = POL_republic
-		priority = 25
-		trigger = { 
-			coa_def_oligarchy_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = POL_fascist
-		subject_canton = POL_fascist
-		priority = 1500
-		trigger = { 
-			coa_def_fascist_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = POL_republic
-		subject_canton = POL_republic
-		priority = 20
-		trigger = {
-			coa_def_dictatorship_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = POL_republic
-		priority = 1500
-		trigger = { 
-			coa_def_communist_flag_trigger = yes
-		}
-	}		
-}
-
 SPA = { # Spain
 	flag_definition = {
 		coa = SPA
@@ -616,7 +523,7 @@ BIC = { # British East India Company
 					c:GBR = {
 						has_diplomatic_pact = {
 							who = c:BIC
-							type = dominion
+							type = chartered_company
 							is_initiator = yes
 						}
 					}
