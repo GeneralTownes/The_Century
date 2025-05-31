@@ -5,3 +5,29 @@ NPolitics = {
 	APPROVAL_THRESHOLD_HAPPY = 8		# At this or above approval, IG is considered happy
 	APPROVAL_THRESHOLD_LOYAL = 15		# At this or above approval, IG is considered loyal
 }
+
+NDiplomacy = {
+	WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR = 14000 # The amount of population by which the factor below is multiplied
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER = 0.01 # For each WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR population in a country/state, multiply infamy by this
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 12.5 # Infamy population multiplier can't be higher than this for each state affected
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 12.5 # Infamy population multiplier can't be higher than this, regardless of number of states affected
+	WAR_GOAL_INFAMY_HOMELAND_FACTOR = -0.5 # Infamy is adjusted by this if the states taken/puppeted etc are Homelands of the aggressor
+	WAR_GOAL_INFAMY_UNINCORPORATED_FACTOR = -0.5 # Infamy is adjusted by this if the states taken/puppeted etc are unincorporated
+	WAR_GOAL_INFAMY_REBELLING_SUBJECT_MULT = 0.75 # Infamy is multiplied by this for wargoals targeting a rebellious subject
+	WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_SUBJECT_MULT = 0.5 # Infamy is multiplied by this for wargoals targeting a subject whose LD is below WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+	
+	WAR_GOAL_INFAMY_CONQUER_STATE = 8.0
+	WAR_GOAL_INFAMY_RETURN_STATE = 2.0
+	WAR_GOAL_INFAMY_TAKE_TREATY_PORT = 1.0
+	WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 8.0
+	WAR_GOAL_INFAMY_MAKE_TRIBUTARY = 8.0
+	WAR_GOAL_INFAMY_MAKE_DOMINION = 8.0
+	WAR_GOAL_INFAMY_REDUCE_AUTONOMY = 5.0
+	WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 6.0	
+	WAR_GOAL_INFAMY_ANNEX_COUNTRY = 8.0
+	WAR_GOAL_INFAMY_REGIME_CHANGE = 4
+	WAR_GOAL_INFAMY_FORCE_NATIONALIZATION = 0.5
+	WAR_GOAL_INFAMY_FOREIGN_INVESTMENT_RIGHTS = 0.25
+	
+	WAR_GOAL_INFAMY_DIPLO_PLAY_BACK_DOWN_REFUND = -0.75 # Refund of infamy for war goals that are dropped due to one side backing down in a diplo play (applied to initiator/target)
+}
