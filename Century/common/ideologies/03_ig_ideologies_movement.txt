@@ -42,7 +42,6 @@
 		law_agrarianism = neutral
 		law_traditionalism = approve
 		law_laissez_faire = disapprove
-		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 	}
 
@@ -109,7 +108,6 @@ ideology_communist_movement = {
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove	
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 	}
 	
@@ -159,7 +157,6 @@ ideology_anarchist_movement = {
 		law_agrarianism = neutral
 		law_traditionalism = strongly_disapprove	
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = disapprove
 		law_extraction_economy = strongly_disapprove
 	}
 
@@ -237,7 +234,6 @@ ideology_vanguardist_movement = {
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove	
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 	}
 	

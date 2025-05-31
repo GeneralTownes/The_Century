@@ -76,10 +76,6 @@ pm_steam_donkey_building_logging_camp = {
 	unlocking_technologies = {
 		steam_donkey
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -100,9 +96,7 @@ pm_chainsaws = {
 	unlocking_technologies = {
 		combustion_engine
 	}
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
+	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods

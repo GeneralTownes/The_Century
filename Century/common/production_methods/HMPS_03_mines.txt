@@ -233,10 +233,6 @@ pm_steam_donkey_building_coal_mine = {
 		steam_donkey
 	}
 
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -267,10 +263,6 @@ pm_steam_donkey_mine = {
 	unlocking_technologies = {
 		steam_donkey
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 		
 	building_modifiers = {
 		workforce_scaled = {

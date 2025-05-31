@@ -323,10 +323,6 @@ pm_assembly_lines_building_furniture_manufacturies = {
 		conveyors
 	}
 	
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -415,10 +411,6 @@ pm_assembly_lines_building_arms_industry = {
 	unlocking_technologies = {
 		conveyors
 	}
-	
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -955,10 +947,6 @@ pm_military_shipbuilding_wooden = {
 
 pm_automated_bakery = {
 	texture = "gfx/interface/icons/production_method_icons/automated_bakery.dds"
-	
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 
 	unlocking_technologies = {
 		dough_rollers
@@ -983,10 +971,6 @@ pm_mechanized_looms = {
 	unlocking_technologies = {
 		mechanized_workshops
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1007,10 +991,6 @@ pm_automatic_power_looms = {
 	unlocking_technologies = {
 		electrical_capacitors
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1034,10 +1014,6 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 	unlocking_technologies = {
 		watertube_boiler
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -1064,10 +1040,6 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	state_modifiers = {
 		workforce_scaled = {
@@ -1100,10 +1072,6 @@ pm_watertube_boiler_building_tooling_workshops = {
 	unlocking_technologies = {
 		watertube_boiler
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1128,10 +1096,6 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1156,10 +1120,6 @@ pm_watertube_boiler_building_paper_mills = {
 	unlocking_technologies = {
 		watertube_boiler
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -1186,10 +1146,6 @@ pm_rotary_valve_engine_building_paper_mills = {
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-
-	#disallowing_laws = {
-	#	law_industry_banned
-	#}
 	
 	building_modifiers = {
 		workforce_scaled = {

@@ -2194,12 +2194,11 @@ ideology_communist = {
 	lawgroup_economic_system = {	
 		law_command_economy = strongly_approve
 		law_cooperative_ownership = strongly_approve
-		#law_state_capitalism = approve	
 		law_interventionism = neutral
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove		
 		law_laissez_faire = strongly_disapprove
-		#law_industry_banned = disapprove
+		law_extraction_economy = strongly_disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -2456,13 +2455,12 @@ ideology_vanguardist = {
 	
 	lawgroup_economic_system = {	
 		law_command_economy = strongly_approve
-		#law_state_capitalism = approve	
 		law_cooperative_ownership = neutral
 		law_interventionism = disapprove
 		law_agrarianism = strongly_disapprove
 		law_traditionalism = strongly_disapprove		
 		law_laissez_faire = strongly_disapprove
-		#law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {		
@@ -3004,12 +3002,11 @@ ideology_anarchist = {
 	lawgroup_economic_system = {	
 		law_cooperative_ownership = strongly_approve
 		law_interventionism = neutral
-		law_agrarianism = neutral	
-		#law_state_capitalism = disapprove	
+		law_agrarianism = neutral
 		law_traditionalism = strongly_disapprove	
 		law_laissez_faire = strongly_disapprove
 		law_command_economy = strongly_disapprove
-		#law_industry_banned = disapprove
+		law_extraction_economy = strongly_disapprove
 	}
 
 	lawgroup_army_model = {
@@ -3444,10 +3441,9 @@ ideology_market_liberal = {
 		law_interventionism = neutral
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove		
-		law_command_economy = strongly_disapprove	
-		#law_state_capitalism = strongly_disapprove	
+		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = disapprove
-		#law_industry_banned = disapprove
+		law_extraction_economy = strongly_disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -3703,14 +3699,12 @@ ideology_luddite = {
 	character_ideology = yes
 
 	lawgroup_economic_system = {
-		#law_industry_banned = strongly_approve
 		law_agrarianism = strongly_approve
 		law_cooperative_ownership = neutral
 		law_traditionalism = neutral
 		law_laissez_faire = strongly_disapprove
 		law_interventionism = strongly_disapprove
 		law_command_economy = strongly_disapprove
-		#law_state_capitalism = strongly_disapprove
 	}
 
 	lawgroup_trade_policy = {
@@ -3745,7 +3739,6 @@ ideology_luddite = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_isolationism
-				has_law = law_type:law_industry_banned
 			}
 		}
 		interest_group = {
@@ -4010,7 +4003,6 @@ ideology_protectionist = {
 		law_cooperative_ownership = disapprove
 		law_laissez_faire = disapprove
 		law_traditionalism = disapprove
-		law_industry_banned = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
 	}
 	
@@ -4789,10 +4781,7 @@ ideology_land_reformer = {
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						has_law = law_type:law_agrarianism
-						has_law = law_type:law_industry_banned
-					}
+					has_law = law_type:law_agrarianism
 				}
 			}
 			add = 75
@@ -5233,10 +5222,6 @@ ideology_corporatist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_corporatist.dds"
 	
 	character_ideology = yes
-	
-	lawgroup_economic_system = {
-		#law_state_capitalism = approve
-	}
 
 	lawgroup_governance_principles = {
 		law_theocracy = neutral

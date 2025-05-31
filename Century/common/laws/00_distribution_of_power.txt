@@ -894,7 +894,6 @@ law_census_voting = {
 	}
 	
 	disallowing_laws = {
-		law_industry_banned
 		law_extraction_economy
 	}
 	
@@ -1026,7 +1025,6 @@ law_universal_suffrage = {
 	}
 	
 	disallowing_laws = {
-		law_industry_banned
 		law_extraction_economy
 	}
 	
@@ -1203,7 +1201,6 @@ law_anarchy = {
 		law_chiefdom
 		law_theocracy
 		law_outlawed_dissent
-		law_industry_banned
 		law_extraction_economy
 	}
 	

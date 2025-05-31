@@ -167,10 +167,7 @@ law_council_republic = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			OR = {
-				has_law = law_type:law_industry_banned
-				has_law = law_type:law_extraction_economy
-			}
+			has_law = law_type:law_extraction_economy
 		}
 	}
 
