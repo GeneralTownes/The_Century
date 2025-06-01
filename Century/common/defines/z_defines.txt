@@ -36,3 +36,7 @@ NEconomy = {
 	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000000	# The country_gdp modifier multiplier cannot be higher than this
 }
+
+NPops = {
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT_MAX = 0				# Migration pull from available subsistence jobs cannot exceed this
+}
