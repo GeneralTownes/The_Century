@@ -231,52 +231,52 @@
 		}
 	}
 
-	every_country = {
-		if = {
-			limit = { this = c:USA }
-			activate_law = law_type:law_protected_speech
-		}
-		else_if = {
-			limit = {
-				OR = {
-					is_country_type = recognized
-					AND = {
-						bpm_country_is_in_new_world = yes
-						NOT = { is_country_type = decentralized }
-					}
-					this = c:CHI
-					this = c:TUR
-					this = c:KOR
-					this = c:DAI
-					this = c:JAP
-					this = c:SIA
-					this = c:PER
-					this = c:EGY
-					this = c:MAD
-					this = c:SIK
-					this = c:PRG
-					this = c:ARG
-					this = c:BRZ
-					this = c:MEX
-				}
-			}
-			if = {
-				limit = { has_law = law_type:law_right_of_assembly }
-				set_institution_investment_level = {
-					institution = institution_culture
-					level = 1
-				}
-			}
-			else = {
-				set_institution_investment_level = {
-					institution = institution_culture
-					level = 2
-				}
-			}
-			activate_law = law_type:law_censorship
-		}
-		else = {
-			activate_law = law_type:law_traditional_ostracism
-		}
-	}
+	#every_country = {
+	#	if = {
+	#		limit = { this = c:USA }
+	#		activate_law = law_type:law_protected_speech
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			OR = {
+	#				is_country_type = recognized
+	#				AND = {
+	#					bpm_country_is_in_new_world = yes
+	#					NOT = { is_country_type = decentralized }
+	#				}
+	#				this = c:CHI
+	#				this = c:TUR
+	#				this = c:KOR
+	#				this = c:DAI
+	#				this = c:JAP
+	#				this = c:SIA
+	#				this = c:PER
+	#				this = c:EGY
+	#				this = c:MAD
+	#				this = c:SIK
+	#				this = c:PRG
+	#				this = c:ARG
+	#				this = c:BRZ
+	#				this = c:MEX
+	#			}
+	#		}
+	#		if = {
+	#			limit = { has_law = law_type:law_right_of_assembly }
+	#			set_institution_investment_level = {
+	#				institution = institution_culture
+	#				level = 1
+	#			}
+	#		}
+	#		else = {
+	#			set_institution_investment_level = {
+	#				institution = institution_culture
+	#				level = 2
+	#			}
+	#		}
+	#		activate_law = law_type:law_censorship
+	#	}
+	#	else = {
+	#		activate_law = law_type:law_traditional_ostracism
+	#	}
+	#}
 }
