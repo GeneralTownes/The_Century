@@ -80,7 +80,7 @@
  concept_bpm_ig_is_proletarian_desc:0 "The #bold Trade Unions#! [Concept('concept_interest_group', 'Interest Group')] if not under [GetLawType(law_state_controlled_labor_unions').GetName] or a [Concept('concept_bpm_ig_is_proletarian_socialist', 'Proletarian Socialist')] [Concept('concept_interest_group', 'Interest Group')]. They represent the desires of industrial workers in this era of change."
 
  tooltip_bpm_ig_is_labor:0 "Is a [Concept('concept_bpm_ig_is_labor', '$concept_bpm_ig_is_labor$')] [Concept('concept_interest_group', 'Interest Group')]"
- concept_bpm_ig_is_labor:0 "Labor"
+ concept_bpm_ig_is_labor:0 "Labour"
  concept_bpm_ig_is_labor_desc:0 "An [Concept('concept_interest_group', 'Interest Group')] that is either [Concept('concept_bpm_ig_is_socialist', 'Socialist')] or [Concept('concept_bpm_ig_is_proletarian', 'Proletarian')]. They believe in supporting the desires of the working peoples."
 
  tooltip_bpm_ig_is_actually_desiring_socialism:0 "Is a [Concept('concept_bpm_ig_is_actually_desiring_socialism', '$concept_bpm_ig_is_actually_desiring_socialism$')] [Concept('concept_interest_group', 'Interest Group')]"

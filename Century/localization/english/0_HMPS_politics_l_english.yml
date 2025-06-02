@@ -122,7 +122,7 @@
  law_dual_executive_desc:0 "The legitimacy of the executive branch is a combination of the excutive leader's legitimacy, and the approval of the legislature."
  law_parliamentary_system:0 "Parliamentary System"
  law_parliamentary_system_desc:0 "The legislature grants legitimacy to the executive, which can be revoked by a simple majoritarian vote of no confidence."
- law_council_republic:0 "Labor Councils"
+ law_council_republic:0 "Labour Councils"
  law_council_republic_desc:0 "The executive council is made up from delegates of the regions and industry."
  law_single_party_state:0 "Political Bureau"
  law_single_party_state_desc:0 "The executive decisions are carried out by the foremost committee of the party."
@@ -277,6 +277,10 @@
  law_colonial_resettlement_desc:1 "All [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] states gain #P +10%#! [concept_migration_pull] per [concept_institution] level."
  law_colonial_exploitation_desc:1 "All [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] states gain #N -5%#! [concept_migration_pull], #N -4%#! $bg_manufacturing$ [concept_throughput] and #P +4%#! Resource [concept_throughput] per [concept_institution] level."
  
+ # Renaming
+ law_child_labor_allowed:0 "Child Labour Allowed"
+ law_restricted_child_labor:0 "Restricted Child Labour"
+ 
  # Institutions
  institution_army_model:0 "Army Organisation"
  institution_army_model_desc:0 "Organisational and logistical management of the military."
@@ -372,7 +376,7 @@
  CONSCRIPTED:0 "Conscripted"
  NO_HEALTH_SYSTEM:0 "Law: No Health System"
  SERFDOM_BANNED:0 "Law: Serfdom Banned"
- CHILD_LABOR_ALLOWED:0 "Law: Child Labor Allowed"
+ CHILD_LABOR_ALLOWED:0 "Law: Child Labour Allowed"
  NO_SOCIAL_SECURITY:0 "Law: No Social Security"
  PLANTATION_EMPLOYMENT:0 "Plantation Employment"
  RESOURCE_POP:0 "Resource Industry Employment"
