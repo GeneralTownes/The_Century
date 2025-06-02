@@ -20,6 +20,9 @@ GNG_ADJ:0 "Guangxian"
 dyn_c_fujian_clique:0 "Fujian Clique"
 dyn_c_manchuria_clique:0 "Manchurian Clique"
 
+dyn_c_republic_of_china:0 "Republic of China"
+dyn_c_federal_republic_of_china:0 "Federal Republic of China"
+
 DLH:0 "Delhi"
 DLH_ADJ:0 "Delhiite"
 ADH:0 "Andhra
