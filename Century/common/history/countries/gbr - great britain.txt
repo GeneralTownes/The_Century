@@ -16,6 +16,7 @@
 		set_tariffs_export_priority = g:hardwood
 		
 		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = labor_movement # A relevant labour movement already existed prior to 1836
 		effect_starting_per_capita_tax = yes
 
 		set_tax_level = medium
@@ -68,7 +69,6 @@
 		}
 
 		add_journal_entry = { type = je_victoria }
-		add_journal_entry = { type = je_the_matter_of_ireland }
 		if = {
 			limit = {
 				has_dlc_feature = rp1_content
@@ -84,10 +84,7 @@
 		add_company = company_type:company_gwr
 		company:company_gwr = {
 			set_company_establishment_date = 1833.1.21
-		}
-		
-		set_variable = {
-			name = india_overlord
+			set_company_state_region = s:STATE_HOME_COUNTIES
 		}
 	}
 }
