@@ -61,27 +61,33 @@ decree_additional_taxes = {
 		value = 100
 		if = {
 			limit = { 
+				owner = { weekly_net_fixed_income <= -1 }
+			}
+			multiply = 2
+		}
+		if = {
+			limit = { 
 				owner = { weekly_net_fixed_income <= -1000 }
 			}
-			add = 100
+			multiply = 2
 		}
 		if = {
 			limit = { 
 				owner = { weekly_net_fixed_income <= -5000 }
 			}
-			add = 100
+			multiply = 2
 		}
 		if = {
 			limit = { 
 				owner = { weekly_net_fixed_income <= -10000 }
 			}
-			add = 200
+			multiply = 2
 		}
 		if = {
 			limit = { 
 				owner = { weekly_net_fixed_income <= -20000 }
 			}
-			add = 300
+			multiply = 2
 		}
 	}
 }

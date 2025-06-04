@@ -302,6 +302,12 @@ bpm_ai_cheats = {
 	political_movement_radicalism_mult = -0.1
 	political_movement_support_mult = -0.1
 	country_bureaucracy_investment_cost_factor_mult = -0.1
+	country_bureaucracy_add = 100
+	country_authority_add = 100
+	country_influence_add = 100
+	state_tax_capacity_add = 100
+	country_minting_add = 1000
+	country_law_enactment_success_add = 0.33
 }
 
 bpm_block_law_cancel = {
