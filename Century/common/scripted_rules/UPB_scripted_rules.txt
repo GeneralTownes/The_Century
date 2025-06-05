@@ -1,0 +1,45 @@
+﻿# Root = Country
+can_lead_power_bloc = {
+    # Let unrec majors lead
+	country_rank >= rank_value:unrecognized_major_power
+    
+    # If taking over leadership, current leader cant be recognized
+    # TODO: Test this
+    # trigger_if = {
+        # limit = {
+            # is_country_type = unrecognized
+            # is_in_power_bloc = yes
+            # is_power_bloc_leader = no
+        # }
+        # power_bloc.power_bloc_leader ?= {
+            # NOR = {
+                # is_country_type = recognized
+                # is_country_type = colonial
+            # }
+        # }
+    # }
+    
+    # Shatter Cefeng System bloc
+    trigger_if = {
+        limit = {
+            power_bloc ?= {
+                has_identity = identity:UPB_identity_china_tributary
+            }
+        }
+        UPB_st_is_china = yes
+        NOT = {
+            has_global_variable = UPB_shattering_cefeng
+        }
+    }
+    
+    # Force Ottomans to step down
+    trigger_else_if = {
+        limit = {
+            c:TUR ?= THIS
+            is_country_type = unrecognized
+        }
+        NOT = {
+            has_global_variable = UPB_shattering_devlet
+        }
+    }
+}

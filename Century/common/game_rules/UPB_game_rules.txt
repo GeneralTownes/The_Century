@@ -1,0 +1,6 @@
+﻿UPB_gr_cefeng_name = {
+    default = UPB_gr_use_cefeng_tizhi
+    
+    UPB_gr_use_cefeng_tizhi  = {}
+    UPB_gr_use_chaogong_tixi = {}
+}

@@ -1,0 +1,31 @@
+﻿POWER_BLOCS = {
+	c:CHI ?= {
+        create_power_bloc = {
+            name = CEFENG_SYSTEM
+            
+            map_color = { 252 185 61 }
+            
+            founding_date = 1683.8.13 # End of Ming-Qing transition
+            
+            identity = UPB_identity_china_tributary
+            principle = UPB_principle_sinosphere_1
+            
+            member = c:KOR
+            member = c:TIB
+            member = c:LAN
+            member = c:DAI
+            member = c:NEP
+            member = c:SIK
+            member = c:SIA
+            member = c:BHU
+            # member = c:CAM # Subject of Vietnam
+            # member = c:LUA # Subject of Siam
+            # member = c:CMI # Subject of Siam
+        }
+        power_bloc ?= {
+            add_modifier = {
+                name = UPB_md_china_hegemon
+            }
+        }
+    }
+}

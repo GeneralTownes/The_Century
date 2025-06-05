@@ -1,0 +1,8 @@
+﻿UPB_principle_group_sinosphere = {
+    primary_for_identity = UPB_identity_china_tributary
+    unlocking_identity = UPB_identity_china_tributary
+
+	levels = {
+		UPB_principle_sinosphere_1
+	}
+}

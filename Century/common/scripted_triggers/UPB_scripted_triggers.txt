@@ -1,0 +1,51 @@
+﻿UPB_st_is_china = {
+    OR = {
+        c:CHI ?= THIS
+        was_formed_from = CHI
+        any_primary_culture = {
+            OR = {
+                AND = {
+                    has_discrimination_trait = east_asian_heritage
+                    NOR = {
+                        THIS = cu:korean
+                        THIS = cu:japanese
+                    }
+                }
+                AND = {
+                    has_discrimination_trait = sinosphere
+                    NOR = {
+                        THIS = cu:vietnamese
+                    }
+                }
+                THIS = cu:uighur
+                THIS = cu:mongol
+            }
+        }
+    }
+}
+
+UPB_st_controls_china = {
+    country_rank >= rank_value:unrecognized_major_power
+    owns_entire_state_region = STATE_BEIJING
+    any_state_region = {
+        filter = {
+            custom_tooltip = {
+                text = UPB_tt_has_chinese_homeland
+                OR = {
+                    is_homeland = cu:han
+                    is_homeland = cu:manchu
+                    is_homeland = cu:mongol
+                }
+            }
+        }
+        percent >= 0.75
+        custom_tooltip = {
+            text = UPB_tt_is_fully_controlled
+            NOT = {
+                any_scope_state = {
+                    owner != ROOT
+                }
+            }
+        }
+    }
+}

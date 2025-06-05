@@ -1,0 +1,228 @@
+﻿hero_dragon = {
+	entity = "powerbloc_statue_hero_dragon_entity"
+    
+    default_choice_for_identities = {
+		UPB_identity_china_tributary
+	}
+
+	attach = {
+		locator = "loc_sphere"
+		accessory = globe
+		accessory = sun
+		accessory = {
+			name = armillary
+			locator = {
+				position = { 0.057 -0.03 -0.023 }
+				rotation = { 0.0 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = skull
+			locator = {
+				position = { 0.0 0.085 -0.0 }
+				rotation = { 0.0 -0.0 0.0 }
+				scale = 1.6431080983349042
+			}
+		}
+		accessory = {
+			name = wings
+			locator = {
+				position = { -0.141 0.62 0.434 }
+				rotation = { 188.562 60.312 12.299 }
+				scale = 1.9626820756142926
+			}
+		}
+		accessory = {
+			name = hands
+			locator = {
+				position = { -0.153 0.582 0.242 }
+				rotation = { 204.324 64.492 15.091 }
+				scale = 2.0868507101770497
+			}
+		}
+		accessory = {
+			name = shield
+			locator = {
+				position = { 0.011 0.418 0.173 }
+				rotation = { 0.0 40.199 -48.455 }
+				scale = 2.5497247640700045
+			}
+		}
+		accessory = {
+			name = basket
+			locator = {
+				position = { -0.114 0.781 0.108 }
+				rotation = { -147.413 60.987 20.899 }
+				scale = 2.4850671918323006
+			}
+		}
+	}
+
+	attach = {
+		locator = "loc_hand"
+		accessory = {
+			name = scale
+			locator = {
+				position = { -0.032 0.006 -0.006 }
+				rotation = { -30.994 73.984 72.008 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = sextant
+			locator = {
+				position = { -0.04 -0.037 -0.022 }
+				rotation = { -37.626 90.987 79.964 }
+				scale = 1.0
+			}
+		}
+		accessory = laurusbranch
+		accessory = {
+			name = sword
+			locator = {
+				position = { -0.006 0.0 0.025 }
+				rotation = { -7.86 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = shield
+			locator = {
+				position = { -0.05 0.008 0.037 }
+				rotation = { -143.773 -57.715 -78.064 }
+				scale = 1.0
+			}
+		}
+		accessory = gun
+		accessory = {
+			name = book
+			locator = {
+				position = { -0.024 -0.0 0.003 }
+				rotation = { -144.941 -80.191 -84.052 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = handheldfan
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 13.382 91.571 -0.364 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = parasol
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 0.0 85.847 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = shovel
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 84.467 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = crudehoe
+		accessory = {
+			name = pitchfork
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { -90.559 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = walkingcane
+		accessory = trumpet
+		accessory = {
+			name = wrench
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 80.142 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = umbrella
+		accessory = banner
+		accessory = {
+			name = eagle
+			locator = {
+				position = { -0.037 0.015 -0.024 }
+				rotation = { -23.051 24.336 52.866 }
+				scale = 0.642413499195153
+			}
+		}
+		accessory = sickle
+		accessory = flame
+	}
+
+	attach = {
+		locator = "loc_mouth"
+		accessory = {
+			name = laurusbranch
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 54.802 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = sword
+			locator = {
+				position = { 0.0 -0.297 0.0 }
+				rotation = { 0.0 -9.716 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = gun
+			locator = {
+				position = { 0.0 -0.081 0.0 }
+				rotation = { 94.464 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = laurelwreath
+			locator = {
+				position = { -0.184 0.006 0.258 }
+				rotation = { 190.438 -180.207 -87.263 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = banner
+			locator = {
+				position = { 0.0 0.0 -0.0 }
+				rotation = { 142.562 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = wrench
+		accessory = shovel
+		accessory = crudehoe
+		accessory = pitchfork
+		accessory = walkingcane
+		accessory = {
+			name = trumpet
+			locator = {
+				position = { 0.0 -0.02 -0.415 }
+				rotation = { 0.0 -94.323 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = {
+			name = sickle
+			locator = {
+				position = { -0.0 -0.036 0.0 }
+				rotation = { -157.758 -0.0 0.0 }
+				scale = 1.0
+			}
+		}
+		accessory = flame
+	}
+}

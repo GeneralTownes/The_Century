@@ -1,0 +1,4 @@
+﻿UPB_md_china_hegemon = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    power_bloc_cohesion_mult = 0.5
+}

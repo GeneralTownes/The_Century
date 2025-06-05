@@ -1,0 +1,176 @@
+﻿UPB_de_reform_cefeng = {
+    is_shown = {
+        always = no # Creating power bloc isnt working for some reason
+        
+        # has_global_variable = china_shatters
+        # UPB_st_is_china = yes
+        # NOT = {
+            # has_global_variable = UPB_cefeng_reformed
+        # }
+        # NOT = {
+            # any_power_bloc = {
+                # has_identity = identity:UPB_identity_china_tributary
+            # }
+        # }
+    }
+    
+    possible = {
+        # Is monarchy
+        trigger_if = {
+            limit = { # RRK compat
+                RRK_is_active_trigger = yes
+            }
+            coa_monarchy_trigger = yes
+        }
+        trigger_else = {
+            has_law = law_type:law_monarchy
+        }
+        
+        # Is certifiably The Legitimate China:tm:
+        UPB_st_controls_china = yes
+        
+        is_in_power_bloc = no
+    }
+    
+    when_taken = {
+        set_global_variable = UPB_cefeng_reformed
+        create_power_bloc = {
+            name = CEFENG_SYSTEM
+            
+            map_color = { 252 185 61 }
+            
+            identity = UPB_identity_china_tributary
+            principle = UPB_principle_sinosphere_1
+        }
+    }
+    
+    ai_chance = {
+        base = 100
+    }
+}
+
+# China bloc has a modifier counteracting the Weak Power Bloc malus; remove it when China loses the Opium War, shatters,
+# or becomes a Great Power (and thus does not need it)
+UPB_de_weaken_cefeng = {
+    is_shown = {
+        is_ai = yes
+        c:CHI ?= {
+            power_bloc ?= {
+                identity = identity:UPB_identity_china_tributary
+                has_modifier = UPB_md_china_hegemon
+            }
+        }
+    }
+    
+    possible = {
+        OR = {
+            has_global_variable = china_shatters
+            c:CHI ?= {
+                OR = {
+                    has_variable = lost_opium_wars
+                    power_bloc ?= {
+                        power_bloc_is_weak = no
+                    }
+                }
+            }
+        }
+    }
+    
+    when_taken = {
+        c:CHI ?= {
+            power_bloc ?= {
+                remove_modifier = UPB_md_china_hegemon
+            }
+        }
+    }
+    
+    ai_chance = {
+        base = 100000000
+    }
+}
+
+UPB_de_shatter_cefeng = {
+    is_shown = {
+        is_ai = yes
+        NOR = {
+            has_global_variable = UPB_cefeng_shattered
+            has_global_variable = UPB_shattering_cefeng
+        }
+    }
+    
+    possible = {
+        has_global_variable = china_shatters
+    }
+    
+    when_taken = {
+        set_global_variable = UPB_shattering_cefeng
+        
+        # Apparently one of the few times `can_lead_power_bloc` is evaluated is when the country's rank (or maybe just
+        # country type?) changes. Vanilla uses this to kick the Ottomans out of the leader spot for their bloc.
+        # We'll use it here with our custom `can_lead_power_bloc` logic to force the Cefeng bloc to dissolve
+        c:CHI = {
+            if = {
+                limit = {
+                    is_country_type = recognized
+                }
+                set_country_type = unrecognized
+                set_country_type = recognized
+            }
+            else = {
+                set_country_type = recognized
+                set_country_type = unrecognized
+            }
+        }
+        
+        remove_global_variable = UPB_shattering_cefeng
+        set_global_variable    = UPB_cefeng_shattered
+    }
+    
+    ai_chance = {
+        base = 100000000
+    }
+}
+
+# Since us changing the `can_lead_power_bloc` scripted rule stops the Ottomans from shattering their bloc as they do in
+# vanilla, we're gonna do it for em
+UPB_de_shatter_devlet_i_aliye = {
+    is_shown = {
+        is_ai = yes
+        NOR = {
+            has_global_variable = UPB_devlet_shattered
+            has_global_variable = UPB_shattering_devlet
+        }
+        exists = c:TUR
+    }
+    
+    possible = {
+        c:TUR ?= {
+            is_country_type = unrecognized
+        }
+    }
+    
+    when_taken = {
+        set_global_variable = UPB_shattering_devlet
+        
+        c:TUR ?= {
+            if = {
+                limit = {
+                    is_country_type = recognized
+                }
+                set_country_type = unrecognized
+                set_country_type = recognized
+            }
+            else = {
+                set_country_type = recognized
+                set_country_type = unrecognized
+            }
+        }
+        
+        remove_global_variable = UPB_shattering_devlet
+        set_global_variable    = UPB_devlet_shattered
+    }
+    
+    ai_chance = {
+        base = 100000000
+    }
+}
