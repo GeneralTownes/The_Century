@@ -28,7 +28,7 @@ gov_colonial_administration = {
 	possible = {
 		has_law = law_type:law_republic
 		OR = {
-			NOT = { has_law = law_type:law_extraction_economy }
+			has_law = law_type:law_extraction_economy
 			is_subject_type = subject_type_puppet
 			is_subject_type = subject_type_colony
 		}
@@ -113,6 +113,17 @@ gov_dictatorship = {
 		NOT = { has_law = law_type:law_command_economy }
 		NOT = {
 			is_subject_type = subject_type_puppet
+		}
+		NOT = {
+			top_overlord = {
+				any_primary_culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			any_primary_culture = {
+				has_discrimination_trait = european_heritage
+			}
+			country_is_in_europe = no
 		}
 	}
 	
