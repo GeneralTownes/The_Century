@@ -81,7 +81,7 @@ ban_opium_button = {
 	}
 
 	ai_chance = {
-        base = 0
+        base = 10
 		modifier = {
 			trigger = {
 				OR = {
@@ -117,12 +117,6 @@ unban_opium_button = {
 	}
 
 	ai_chance = {
-		base = 0
-		  modifier = {
-			  trigger = {
-				  has_strategy = ai_strategy_progressive_agenda
-			  }
-			  add = 10
-		  }		 
-	 }	
+		base = 0 
+	}
 }

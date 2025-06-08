@@ -123,3 +123,5 @@
  notification_warlord_china_explosion_point_add_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Destabilizes."
  notification_warlord_china_explosion_point_add_desc:0 "Our mishandling of [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] affairs has delegitimized our rule, causing the country to inch ever closer to total collapse."
  notification_warlord_china_explosion_point_add_tooltip:1 "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
+ 
+ je_opium_obsession_goal:0 "The following conditions must be true for a total of 10 years (can be interrupted):"
