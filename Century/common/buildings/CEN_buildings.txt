@@ -1,0 +1,83 @@
+﻿# Industry
+building_synthetic_oil_plants = {
+	building_group = bg_heavy_industry
+	icon = "gfx/interface/icons/building_icons/1.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		synfuel
+	}
+	
+	production_method_groups = {
+		pmg_base_building_synthetic_oil_plants
+	}
+	
+	required_construction = construction_cost_high
+	
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	
+	can_build_private = {
+		always = no
+	}
+	
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+}
+building_synthetic_rubber_plants = {
+	building_group = bg_heavy_industry
+	icon = "gfx/interface/icons/building_icons/2.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		plastics
+	}
+	
+	production_method_groups = {
+		pmg_base_building_synthetic_rubber_plants
+	}
+	
+	required_construction = construction_cost_high
+	
+	possible = {
+		owner = {
+			NOT = { 
+				OR = {
+					has_law = law_type:law_industry_banned 
+					has_law = law_type:law_extraction_economy 
+				}
+			}
+		}
+	}
+	
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+}
+
+# Grand Canal
+building_canal = {
+	building_group = bg_minor_canals
+	icon = "gfx/interface/icons/building_icons/canal.dds"
+	required_construction = 1200
+	
+	unlocking_technologies = {
+		urbanization
+	}
+
+	production_method_groups = {
+		pmg_canal_level
+	}
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_harbour.dds"
+}
