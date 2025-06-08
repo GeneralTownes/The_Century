@@ -747,23 +747,6 @@ ideology_republican = {
 
 ideology_proletarian = {
 	icon = "gfx/interface/icons/ideology_icons/proletarian.dds"
-
-	lawgroup_economic_system = {	
-		law_command_economy = strongly_approve
-		law_cooperative_ownership = strongly_approve
-		law_interventionism = neutral
-		law_agrarianism = disapprove	
-		law_laissez_faire = disapprove	
-		law_traditionalism = strongly_disapprove	
-		law_extraction_economy = strongly_disapprove
-	}
-	
-	lawgroup_trade_policy = {		
-		law_protectionism = approve
-		law_isolationism = neutral
-		law_mercantilism = neutral
-		law_free_trade = disapprove
-	}
 	
 	lawgroup_labor_rights = {
 		law_no_workers_rights = disapprove
@@ -866,20 +849,6 @@ ideology_egalitarian = {
 ideology_populist = {
 	icon = "gfx/interface/icons/ideology_icons/populist.dds"
 	
-	lawgroup_governance_principles = {
-		law_republic = neutral
-		law_theocracy = strongly_disapprove
-		law_monarchy = strongly_disapprove
-	}
-	
-	lawgroup_executive_structure = {
-		law_independent_executive = neutral
-		law_dual_executive = neutral
-		law_parliamentary_system = approve
-		law_council_republic = strongly_approve
-		law_single_party_state = strongly_disapprove
-	}
-	
 	lawgroup_distribution_of_power = {
 		law_universal_suffrage = strongly_approve
 		law_anarchy = approve
@@ -913,6 +882,42 @@ ideology_populist = {
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
 		law_professional_army = neutral
+	}
+}
+
+ideology_socialist = {
+	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
+
+	lawgroup_governance_principles = {
+		law_republic = strongly_approve
+		law_theocracy = strongly_disapprove
+		law_monarchy = strongly_disapprove
+	}
+	
+	lawgroup_executive_structure = {
+		law_independent_executive = neutral
+		law_dual_executive = neutral
+		law_parliamentary_system = approve
+		law_council_republic = strongly_approve
+		law_single_party_state = strongly_disapprove
+	}
+
+	lawgroup_economic_system = {	
+		law_command_economy = approve
+		law_cooperative_ownership = approve
+		law_interventionism = neutral
+		law_agrarianism = neutral
+		law_traditionalism = strongly_disapprove		
+		law_laissez_faire = strongly_disapprove	
+		law_industry_banned = strongly_disapprove	
+		law_extraction_economy = strongly_disapprove
+	}
+	
+	lawgroup_trade_policy = {		
+		law_protectionism = approve
+		law_isolationism = neutral
+		law_mercantilism = neutral
+		law_free_trade = disapprove
 	}
 }
 
