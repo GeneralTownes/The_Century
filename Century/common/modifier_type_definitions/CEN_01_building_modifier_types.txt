@@ -67,14 +67,6 @@ building_throughput_add = {
 	}
 }
 
-building_guano_mine_throughput_add = {
-	color=good
-	percent = yes
-	game_data={
-		ai_value=0
-	}
-}
-
 building_subsistence_rice_paddies_throughput_add={
 	color=good
 	percent=yes

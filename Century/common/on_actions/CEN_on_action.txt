@@ -1,29 +1,4 @@
-﻿HMPS_treaty_port_cb_fix = {
-	effect = {
-		every_state = {
-			limit = {
-				owner = {
-					NOT = { is_country_type = decentralized }
-				}
-				is_coastal = yes
-				OR = {
-					is_treaty_port = yes
-					region = sr:region_north_china
-					region = sr:region_south_china
-					region = sr:region_manchuria
-					region = sr:region_japan
-				}
-				NOT = { has_building = building_port }
-			}
-			create_building = {
-				building = building_port
-				level = 1
-			}
-		}
-	}
-}
-
-HMPS_remove_bad_unis = {
+﻿CEN_uni_removal = {
 	effect = {
 		if = {
 			limit = {
@@ -31,128 +6,6 @@ HMPS_remove_bad_unis = {
 				has_building = building_university
 			}
 			remove_building = building_university
-		}
-	}
-}
-
-#China dominion creation
-#One should be for if you don't have any other china states, the other should be to add china states to a dominion, the other should be for if you have a chinese puppet
-
-HMPS_China_Puppet = {
-	effect = {
-		ROOT = {
-			if = {
-				limit = {
-					is_subject = no
-					any_primary_culture = {
-						OR = {
-							has_discrimination_trait = sinosphere
-							has_discrimination_trait = han_chinese
-							has_discrimination_trait = tibetan_language
-						}
-					}
-					any_scope_state = {
-						has_variable = china_state_foreign_owned
-					}
-				}
-				every_scope_state = {
-					limit = {
-						has_variable = china_state_foreign_owned
-					}
-					remove_variable = china_state_foreign_owned
-				}
-			}
-			if = {
-				limit = {
-					#is_subject = no
-					NOT = {
-						any_primary_culture = {
-							OR = {
-								has_discrimination_trait = sinosphere
-								has_discrimination_trait = han_chinese
-								has_discrimination_trait = tibetan_language
-							}
-						}
-					}
-					any_scope_state = {
-						OR = {
-							region = sr:region_north_china
-							region = sr:region_south_china
-						}
-						NOT = { state_region = s:STATE_FORMOSA }
-						NOT = { has_variable = china_state_foreign_owned }
-						state_population > 3500000
-					}
-					#code to check if you already have a chinese dominion and puppet
-				}
-				every_scope_state = {
-					limit = {
-						OR = {
-							region = sr:region_north_china
-							region = sr:region_south_china
-						}
-						NOT = { state_region = s:STATE_FORMOSA }
-						state_population >= 3500000
-						NOT = { has_variable = china_state_foreign_owned }
-					}
-					set_variable = chinese_state_to_cede
-				}
-				random_scope_state = {
-					limit = {
-						has_variable = chinese_state_to_cede
-					}
-					save_scope_as = china_puppet_capital_scope
-				}
-				create_dynamic_country = {
-					origin = root
-					country_type = colonial
-					tier = principality
-					capital = scope:china_puppet_capital_scope
-					cede_state_trigger = {
-						has_variable = chinese_state_to_cede
-					}
-					on_created = {
-						every_scope_state = {
-							remove_variable = chinese_state_to_cede
-							set_variable = china_state_foreign_owned
-						}
-						add_primary_culture = cu:han
-						activate_law = law_type:law_extraction_economy
-						activate_law = law_type:law_republic
-						activate_law = law_type:law_autocracy
-						activate_law = law_type:law_peasant_levies
-						activate_law = law_type:law_no_home_affairs
-						activate_law = law_type:law_no_police
-						activate_law = law_type:law_no_schools
-						activate_law = law_type:law_no_health_system
-						activate_law = law_type:law_no_workers_rights
-						activate_law = law_type:law_no_social_security
-						activate_law = law_type:law_no_environmental_regulations
-					}
-				}
-				if = {
-					limit = {
-						root = {
-							is_country_type = unrecognized
-						}
-					}
-					create_diplomatic_pact = {
-						country = scope:china_puppet_capital_scope.owner
-						type = tributary
-					}
-				}
-				else = {
-					create_diplomatic_pact = {
-						country = scope:china_puppet_capital_scope.owner
-						type = dominion
-					}
-				}
-				
-				create_bidirectional_truce = {
-					country = scope:china_puppet_capital_scope.owner
-					months = 60
-				}
-			}
 		}
 	}
 }
@@ -179,53 +32,7 @@ on_building_expanded = {
 	}
 }
 
-HMPS_China_Ports_Fracture = {
-	effect = {
-		if = {
-			limit = {
-				has_journal_entry = je_warlord_china
-			}
-			every_state = {
-				limit = {
-					state_region = {
-						OR = {
-							is_homeland = cu:han
-							is_homeland = cu:manchu
-						}
-					}
-					ROOT ?= owner
-					is_split_state = yes
-					NOT = { has_modifier = chinese_treaty_port }
-				}
-				add_modifier = {
-					name = chinese_treaty_port
-				}
-				owner = {
-					change_global_variable = {
-						name = china_warlord_explosion
-						add = 4
-					}
-				}
-			}
-			every_state = {
-				limit = {
-					is_split_state = no
-					ROOT ?= owner
-					has_modifier = chinese_treaty_port
-				}
-				remove_modifier = chinese_treaty_port
-				owner = {
-					change_global_variable = {
-						name = china_warlord_explosion
-						add = -2
-					}
-				}
-			}
-		}
-	}
-}
-
-HMPS_Coastal_Capital = {
+CEN_coastal_capital = {
 	effect = {
 		if = {
 			limit = {
@@ -282,7 +89,7 @@ HMPS_Coastal_Capital = {
 	}
 }
 
-HMPS_Institution_Modifier = {
+CEN_colonial_institution_fix = {
 	effect = {
 		every_scope_state = {
 			remove_modifier = colonial_institution_resettlement
@@ -290,7 +97,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 1
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 1
+				}
 				has_law = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
@@ -304,7 +114,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 2
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 2
+				}
 				has_law = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
@@ -319,7 +132,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 3
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 3
+				}
 				has_law = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
@@ -334,7 +150,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 4
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 4
+				}
 				has_law = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
@@ -349,7 +168,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 5
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 5
+				}
 				has_law = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
@@ -364,7 +186,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 1
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 1
+				}
 				has_law = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
@@ -378,7 +203,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 2
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 2
+				}
 				has_law = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
@@ -393,7 +221,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 3
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 3
+				}
 				has_law = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
@@ -408,7 +239,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 4
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 4
+				}
 				has_law = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
@@ -423,7 +257,10 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 5
+				institution_investment_level = {
+					institution = institution_colonial_affairs
+					value = 5
+				}
 				has_law = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
@@ -439,7 +276,7 @@ HMPS_Institution_Modifier = {
 	}
 }
 
-HMPS_China = {
+CEN_China = {
 	effect = {
 		if = {
 			limit = {
@@ -557,6 +394,49 @@ HMPS_China = {
 				}
 				set_state_type = incorporated
 			}
-		}			
+		}
+		
+		# Ports fracture
+		if = {
+			limit = {
+				has_journal_entry = je_warlord_china
+			}
+			every_state = {
+				limit = {
+					state_region = {
+						OR = {
+							is_homeland = cu:han
+							is_homeland = cu:manchu
+						}
+					}
+					ROOT ?= owner
+					is_split_state = yes
+					NOT = { has_modifier = chinese_treaty_port }
+				}
+				add_modifier = {
+					name = chinese_treaty_port
+				}
+				owner = {
+					change_global_variable = {
+						name = china_warlord_explosion
+						add = 4
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_split_state = no
+					ROOT ?= owner
+					has_modifier = chinese_treaty_port
+				}
+				remove_modifier = chinese_treaty_port
+				owner = {
+					change_global_variable = {
+						name = china_warlord_explosion
+						add = -2
+					}
+				}
+			}
+		}
 	}
 }
