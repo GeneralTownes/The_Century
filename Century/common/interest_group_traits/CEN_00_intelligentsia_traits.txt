@@ -1,0 +1,19 @@
+﻿#China
+ite_ig_trait_imperial_examinations = {
+	icon = "gfx/interface/icons/ig_trait_icons/imperial_examinations.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_pop_qualifications_mult = 0.10
+		state_assimilation_mult = 0.10
+	}
+}
+
+ig_trait_restoration = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+	min_approval = loyal
+	
+	modifier = { # changed from vanilla
+		state_loyalists_from_political_movements_mult = 0.2
+	}
+}

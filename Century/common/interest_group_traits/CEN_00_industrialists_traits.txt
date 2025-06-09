@@ -1,0 +1,22 @@
+﻿### China Additions ###
+ig_trait_treaty_relations = {
+	icon = "gfx/interface/icons/ig_trait_icons/middle_managers.dds"
+	min_approval = happy
+
+	modifier = {
+		building_group_bg_mining_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_oil_extraction_throughput_add = 0.1
+		building_group_bg_rubber_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+}
+
+ig_trait_self_strengthening_industry = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+	min_approval = loyal
+
+	modifier = {
+		country_production_tech_research_speed_mult = 0.1
+	}
+}

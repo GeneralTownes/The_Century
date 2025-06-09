@@ -10,6 +10,12 @@
 		ideology_patriarchal
 		ideology_cultural_chauvinism
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		ideology_legitimist
+	}
 
 	enable = {
 		always = yes
@@ -86,19 +92,6 @@
 				set_ig_trait = ig_trait:ig_trait_family_ties
 				set_ig_trait = ig_trait:ig_trait_patrician_philanthropy
 			}
-			else_if = {
-				limit = {
-					owner = {
-						OR = {
-							country_has_primary_culture = cu:han
-							country_has_primary_culture = cu:manchu
-						}
-					}
-				}
-				set_ig_trait = ig_trait:ite_ig_trait_palace_intrigue
-				set_ig_trait = ig_trait:ite_ig_trait_scholar_bureaucrats
-				set_ig_trait = ig_trait:ite_ig_trait_junzi
-			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_noble_privileges
 				set_ig_trait = ig_trait:ig_trait_family_ties
@@ -106,18 +99,6 @@
 			}
 		}
 		
-		# Geheime Staatskonferenz (HMPS)
-		if = {
-			limit = {
-				c:AUS ?= this
-			}
-			ig:ig_landowners = {
-				add_ruling_interest_group = yes
-				add_ideology = ideology_austrian_hegemony
-				remove_ideology = ideology_cultural_chauvinism
-				set_interest_group_name = austrian_aristocracy
-			}
-		}
 		# Squattocracy
 		if = {
 			limit = {
@@ -198,34 +179,12 @@
 		# Scholar Officials
 		else_if = {
 			limit = {
-				owner = {
-					OR = {
-						country_has_primary_culture = cu:han
-						country_has_primary_culture = cu:manchu
-					}
-					NOT = { has_law = law_type:law_republic }
-				}
+				c:CHI ?= this
 			}
 			ig:ig_landowners = { 
 				set_interest_group_name = ig_scholar_officials
 				remove_ideology = ideology_paternalistic
 				add_ideology = ideology_scholar_paternalistic
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-					OR = {
-						country_has_primary_culture = cu:han
-						country_has_primary_culture = cu:manchu
-					}
-					has_law = law_type:law_republic
-				}
-			}
-			ig:ig_landowners = { 
-				set_interest_group_name = ig_scholar_officials
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_republican_paternalistic
 			}
 		}
 		# Pious Spanish Landowners
@@ -246,20 +205,21 @@
 				set_interest_group_name = ig_aristocracy_of_officials
 			}
 		}
-		# Southern Planters (HMPS USA)
+		# Southern Planters
 		else_if = {
 			limit = {
-				country_has_primary_culture = cu:yankee
-				country_has_primary_culture = cu:dixie
+				OR = {
+					AND = {
+						c:USA ?= this
+						NOT = { exists = c:CSA }
+					}
+					country_has_primary_culture = cu:dixie
+				}
 			}
 			ig:ig_landowners = {
 				set_interest_group_name = ig_southern_planters
 				remove_ideology = ideology_paternalistic
-				remove_ideology = ideology_patriarchal
-				remove_ideology = ideology_pro_slavery
-				add_ideology = ideology_civic_religion
-				add_ideology = ideology_southern_economy
-				add_ideology = ideology_southern_patriarchy
+				add_ideology = ideology_republican_paternalistic
 			}
 		}
 		# South American Caudillos/republicans
@@ -277,37 +237,88 @@
 				add_ideology = ideology_republican_paternalistic
 			}
 		}
-		else_if = {
-			limit = {
-				country_has_primary_culture = cu:alemannic
-			}
-			ig:ig_landowners = {
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_republican_paternalistic
-			}
-		}
-		# Tibetan Landowners
-		else_if = {
-			limit = {
-				c:TIB ?= this
-			}
-			ig:ig_landowners = {
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_papal_paternalistic
-			}
-		}
-		# Colonial Local Elites
+		# India
 		else_if = {
 			limit = {
 				OR = {
 					c:BIC ?= this
-					c:DEI ?= this
+					any_primary_culture = {
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 			ig:ig_landowners = {
-				set_interest_group_name = ig_local_elites
+				set_interest_group_name = ig_zamindars
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
+					}
+					set_ig_trait = ig_trait:ig_trait_summon_no_zamindars
+				}
+				set_ig_trait = ig_trait:ig_trait_famine_reserves
+				set_ig_trait = ig_trait:ig_trait_profitable_estates
+			}
+		}
+		
+		# Century Corrections
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+					}
+				}
+			}
+			ig:ig_landowners = { 
+				set_ig_trait = ig_trait:ite_ig_trait_palace_intrigue
+				set_ig_trait = ig_trait:ite_ig_trait_scholar_bureaucrats
+				set_ig_trait = ig_trait:ite_ig_trait_junzi
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+					}
+					has_law = law_type:law_republic
+				}
+			}
+			ig:ig_landowners = { 
+				set_interest_group_name = ig_scholar_officials
 				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_local_elites
+				add_ideology = ideology_republican_paternalistic
+			}
+		}
+		else_if = {
+			limit = {
+				c:TIB ?= this
+			}
+			ig:ig_landowners = { 
+				set_interest_group_name = ig_scholar_officials
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_papal_paternalistic
+			}
+		}
+		
+		# Southern Planters (HMPS USA)
+		else_if = {
+			limit = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_southern_planters
+				remove_ideology = ideology_paternalistic
+				remove_ideology = ideology_patriarchal
+				remove_ideology = ideology_pro_slavery
+				add_ideology = ideology_civic_religion
+				add_ideology = ideology_southern_economy
+				add_ideology = ideology_southern_patriarchy
 			}
 		}
 		else_if = {
@@ -321,8 +332,36 @@
 				add_ideology = ideology_republican_paternalistic
 			}
 		}
+		
+		# Geheime Staatskonferenz (HMPS)
+		if = {
+			limit = {
+				c:AUS ?= this
+			}
+			ig:ig_landowners = {
+				add_ruling_interest_group = yes
+				add_ideology = ideology_austrian_hegemony
+				remove_ideology = ideology_cultural_chauvinism
+				set_interest_group_name = austrian_aristocracy
+			}
+		}
 	}
 	on_disable = {}
+	
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
+				}
+			}
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
+		}
+	}
+	
 	on_character_ig_membership = {}
 
 	pop_potential = {
@@ -363,7 +402,7 @@
 				limit = {
 					is_pop_type = officers
 				}
-				value = 50
+				value = 25
 			}
 		}
 
@@ -389,6 +428,20 @@
 					}
 					multiply = 4
 				}
+			}
+		}
+
+		
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			multiply = {
+				desc = "POP_INDIA_COLONIAL_RULE"
+				value = 0.1
 			}
 		}
 
@@ -586,15 +639,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.5
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }
