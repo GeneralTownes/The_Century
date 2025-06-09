@@ -1,0 +1,339 @@
+﻿# Max unis cap
+academia = {
+	# Unlocks University building
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/academia.dds"
+	category = society
+	
+	modifier = {
+		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
+	}
+	
+	unlocking_technologies = {
+		rationalism
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+empiricism = {
+	# Unlocks Total Separation - Church and State Law
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/empiricism.dds"
+	category = society
+	
+	modifier = {
+		country_influence_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 10
+		country_institution_schools_max_investment_add = 1
+		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
+	}
+	
+	unlocking_technologies = {
+		academia
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+dialectics = {
+	# Unlocks Philosophy Department PM in Universities
+	
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/dialectics.dds"
+	category = society
+	
+	modifier = {
+		country_institution_schools_max_investment_add = 1
+		state_building_university_max_level_add = 4
+	}
+	
+	unlocking_technologies = {
+		empiricism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+# MAPI
+central_banking = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/central_banking.dds"
+	category = society
+	
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02
+		state_market_access_price_impact = 0.025
+	}	
+	
+	unlocking_technologies = {
+		banking
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+investment_banks = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/investment_banks.dds"
+	category = society
+	
+	modifier = {
+		country_max_companies_add = 1
+		state_urbanization_per_level_mult = -0.15
+		state_market_access_price_impact = 0.025
+	}	
+	
+	unlocking_technologies = {
+		joint_stock_companies
+		mutual_funds
+	}
+	
+	ai_weight = {
+		value = 2 # important tech
+	}
+}
+international_exchange_standards = {
+	# Should increase trade power maybe
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/international_exchange_standards.dds"
+	category = society
+	
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02
+		state_market_access_price_impact = 0.025
+	}
+	
+	unlocking_technologies = {
+		mutual_funds
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+modern_financial_instruments = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/modern_financial_instruments.dds"
+	category = society
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02	
+		country_government_dividends_efficiency_add = 0.05
+		state_market_access_price_impact = 0.025
+	}
+	unlocking_technologies = {
+		international_exchange_standards
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+macroeconomics = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/macroeconomics.dds"
+	category = society
+	
+	modifier = {
+		country_max_companies_add = 1
+		state_market_access_price_impact = 0.025
+	}
+	
+	unlocking_technologies = {
+		international_exchange_standards
+		corporate_management
+	}
+	
+	ai_weight = {
+		value = 3 # very important tech
+	}
+}
+
+# Suffrage institution
+democracy = {
+	# Unlocks Right of Assembly - Freedom of Speech Law
+	# Unlocks Landed Voting, Wealth Voting, Census Voting - Distribution of Power Laws
+	# Unlocks Presidential Republic, Parliamentary Republic - Governance Principles Law
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/democracy.dds"
+	category = society
+	
+	modifier = {
+		country_institution_suffrage_max_investment_add = 1
+		country_institution_social_security_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		rationalism
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+mass_communication = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/mass_communication.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.1
+		country_institution_suffrage_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		democracy
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+identification_documents = {
+	# Unlocks Identification Documents PM in Government Administrations
+	# Unlocks Closed Borders Law in Migration
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/identification_documents.dds"
+	category = society
+
+	modifier = {
+		state_tax_capacity_add = 25
+		country_institution_home_affairs_max_investment_add = 1
+		country_institution_suffrage_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		central_archives
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+# Health institution
+human_rights = {
+	# Unlocks Worker Protections - Labor Rights Law
+	# Unlocks Protected Speech - Freedom of Speech Law
+	# Unlocks Compulsory Schooling - Children's Rights Laws
+	# Unlocks Old Age Pensions - Social Security Laws
+	# Should presumably unlock a lot of Laws in the Human Rights category of Laws
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/human_rights.dds"
+	category = society
+	
+	modifier = {
+		country_institution_social_security_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		egalitarianism
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_progressive_agenda
+			}
+			add = 0.5
+		}		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 1
+		}
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+					has_strategy = ai_strategy_maintain_mandate_of_heaven
+				}			
+			}
+			add = -0.5
+		}			
+	}
+}
+malaria_prevention = {
+	# Should permit for colonization of state regions with severe malaria
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/malaria_prevention.dds"
+	category = society
+
+	modifier = {
+		country_institution_colonial_affairs_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		civilizing_mission
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		# Important for colonizers
+		if = {
+			limit = { 
+				navy_size >= 25
+				is_country_type = recognized
+			}
+			add = 1
+		}
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_colonial_expansion
+			}
+			add = 1
+		}			
+	}
+}
+
+# New culture law tech-locks
+civil_rights = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/civil_rights.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+multiculturalism = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/civil_rights_2.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+		anarchism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
