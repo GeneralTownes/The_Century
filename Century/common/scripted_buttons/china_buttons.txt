@@ -78,20 +78,11 @@ ban_opium_button = {
 		add_modifier = {
 			name = opium_ban_authority
 		}
+		remove_modifier = modifier_failure_to_ban
 	}
 
 	ai_chance = {
         base = 10
-		modifier = {
-			trigger = {
-				OR = {
-					has_strategy = ai_strategy_conservative_agenda
-					has_strategy = ai_strategy_reactionary_agenda
-					has_strategy = ai_strategy_maintain_mandate_of_heaven
-				}
-			}
-			add = 10
-		}		 
     }
 }
 
@@ -114,6 +105,9 @@ unban_opium_button = {
 	effect = {
 		remove_banned_goods = g:opium
 		remove_modifier = opium_ban_authority
+		add_modifier = {
+			name = modifier_failure_to_ban
+		}
 	}
 
 	ai_chance = {

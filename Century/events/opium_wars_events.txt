@@ -78,6 +78,9 @@ opium_wars.1 = {
 		add_journal_entry = {
 			type = je_opium_obsession
 		}
+		add_modifier = {
+			name = modifier_failure_to_ban
+		}
 		# send events to all applicable powers
 			# can't just use the scope because we want to catch multiple countries if we can
 		random_market = {
