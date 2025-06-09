@@ -1,4 +1,5 @@
-﻿pm_simple_farming_building_rice_farm = {
+﻿# Adjustements for rice change of 10k to 5k per arable land
+pm_simple_farming_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
 	building_modifiers = {
 		workforce_scaled = {
@@ -32,7 +33,6 @@ pm_soil_enriching_farming_building_rice_farm = {
 		}
 	}
 }
-
 pm_fertilization_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/fertilization.dds"
 	
@@ -56,7 +56,6 @@ pm_fertilization_building_rice_farm = {
 		}
 	}
 }
-
 pm_chemical_fertilizer_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/chemical_fertilizers.dds"
 	unlocking_technologies = {
@@ -78,7 +77,6 @@ pm_chemical_fertilizer_building_rice_farm = {
 		}
 	}
 }
-
 pm_fig_orchards_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
 	
@@ -90,7 +88,6 @@ pm_fig_orchards_building_rice_farm = {
 		}
 	}
 }
-
 pm_tools_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
 	
@@ -105,7 +102,6 @@ pm_tools_building_rice_farm = {
 		}
 	}
 }
-
 pm_steam_threshers_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
 
@@ -130,7 +126,6 @@ pm_steam_threshers_building_rice_farm = {
 		}
 	}
 }
-
 pm_rice_wine = {
 	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
 	
@@ -147,6 +142,7 @@ pm_rice_wine = {
 	}
 }
 
+# Less workers for homesteading subsistence
 pm_homesteading_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/homesteading.dds"
 	unlocking_laws = {
@@ -162,26 +158,4 @@ pm_homesteading_building_subsistence = {
 			building_employment_peasants_add = -2000
 		}		
 	}
-}
-
-pm_refrigerated_rail_cars_building_livestock_ranch = {
-	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
-	
-	unlocking_technologies = {
-		electric_railway
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_electricity_add = 3
-			goods_input_transportation_add = 2
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -1400
-		}
-	}
-
-	required_input_goods = electricity
-	required_input_goods = transportation
 }

@@ -1,4 +1,5 @@
-﻿pm_canal_level_1 = {
+﻿# New Grand Canals PM
+pm_canal_level_1 = {
 	texture = "gfx/interface/icons/production_method_icons/canals_1.dds"
 	
 	state_modifiers = {
@@ -20,7 +21,6 @@
 		}
 	}
 }
-
 pm_canal_level_2 = {
 	texture = "gfx/interface/icons/production_method_icons/canals_2.dds"
 	
@@ -50,7 +50,6 @@ pm_canal_level_2 = {
 		}
 	}
 }
-
 pm_canal_level_3 = {
 	texture = "gfx/interface/icons/production_method_icons/canals_3.dds"
 	

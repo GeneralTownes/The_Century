@@ -1,0 +1,52 @@
+﻿pm_principle_freedom_of_movement_3 = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	is_hidden_when_unavailable = yes
+	
+	unlocking_principles = {
+		principle_freedom_of_movement_1 
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.05
+		}
+	}
+}
+
+pm_dc_plant = {
+	texture = "gfx/interface/icons/production_method_icons/direct_current.dds"
+	
+	
+	unlocking_technologies = {
+		electrical_generation
+	}
+	
+	building_modifiers = { 
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+		}
+	}
+}
+
+pm_ac_plant = {
+	texture = "gfx/interface/icons/production_method_icons/alternating_current.dds"
+	
+	unlocking_technologies = {
+		alternators
+	}
+	
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_steel_add = 10
+			goods_output_electricity_add = 60
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 400
+		}
+	}
+}

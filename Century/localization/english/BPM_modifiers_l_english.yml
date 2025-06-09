@@ -2,7 +2,7 @@
  bpm_cheaper_institutions:0 "Institution Balancing (Default)"
  bpm_cheaper_bureaucracy:0 "Bureaucracy Balancing (Default)"
  bpm_balancing:0 "BPM Balance (Default)"
- bpm_ai_cheats:0 "BPM AI Balance (Default)"
+ bpm_ai_cheats:0 "AI Balance (Default)"
  bpm_displeased:0 "Displeased"
  bpm_pleased:0 "Pleased"
 
