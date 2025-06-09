@@ -53,33 +53,3 @@ colonial_institution_exploitation = {
 	building_unincorporated_subsistence_output_mult = -0.05
 	state_migration_pull_unincorporated_mult = -0.05
 }
-
-revolution_disbanded = {
-	political_movement_radicalism_add = -1000
-	political_movement_support_add = -1000
-}
-
-received_grant = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_influence_add = -200
-}
-
-gave_grant = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_influence_add = -200
-}
-
-mass_migration_debuff = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_migration_pull_mult = -0.1
-}
-
-dev_test_modifier = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	building_group_bg_subsistence_agriculture_employee_mult = 1000
-}
-
-dev_test_modifier2 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	regime_change_allowed = 1
-}
