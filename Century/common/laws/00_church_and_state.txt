@@ -40,6 +40,11 @@ law_state_religion = {
 		country_allow_conversion_open_prejudice_bool = yes
 		country_allow_conversion_second_rate_citizen_bool = yes
 		country_allow_conversion_full_acceptance_bool = yes
+		
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
 	}
 	
 	possible_political_movements = {
@@ -154,6 +159,11 @@ law_freedom_of_conscience = {
 		country_allow_conversion_open_prejudice_bool = yes
 		country_allow_conversion_second_rate_citizen_bool = no
 		country_allow_conversion_full_acceptance_bool = no
+		
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_second_rate_citizen_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.1
 	}
 	
 	possible_political_movements = {
@@ -382,6 +392,11 @@ law_state_atheism = {
 		country_allow_conversion_open_prejudice_bool = yes
 		country_allow_conversion_second_rate_citizen_bool = yes
 		country_allow_conversion_full_acceptance_bool = yes
+		
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
 	}
 
 	on_enact = {

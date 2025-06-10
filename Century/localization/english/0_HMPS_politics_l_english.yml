@@ -281,6 +281,8 @@
  law_child_labor_allowed:0 "Child Labour Allowed"
  law_restricted_child_labor:0 "Restricted Child Labour"
  
+ EFFECTS_ON_ACCEPTANCE_law_language_discrimination: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Moderate consequences for Pops with low Acceptance values#!#!"
+ 
  # Institutions
  institution_army_model:0 "Army Organisation"
  institution_army_model_desc:0 "Organisational and logistical management of the military."
