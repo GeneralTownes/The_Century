@@ -65,6 +65,12 @@
 
 	on_fail = {
 		remove_variable = opium_wars_target
+		if = {
+			limit = {
+				has_modifier = modifier_failure_to_ban
+			}
+			remove_modifier = modifier_failure_to_ban
+		}
 		trigger_event = {
 			id = opium_wars.4
 		}
