@@ -1,4 +1,5 @@
 ﻿BUILDINGS={
+	# Greater starting bureaucracy for greater starting pop
 	s:STATE_SICHUAN={
 		region_state:CHI={
 			create_building={
@@ -251,6 +252,113 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}
+		}
+	}
+	
+	# Adding in a Grand Canal in disrepair
+	s:STATE_BEIJING={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_ZHEJIANG={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_JIANGSU={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_NORTHERN_ANHUI={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_NANJING={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_ZHILI={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
+			}
+		}
+	}
+	s:STATE_SUZHOU={
+		region_state:CHI={
+			create_building={
+				building="building_canal"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_canal_level_1"  }
 			}
 		}
 	}

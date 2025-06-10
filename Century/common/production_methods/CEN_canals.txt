@@ -4,8 +4,7 @@ pm_canal_level_1 = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_mult = 0.05
-			state_infrastructure_from_population_max_add = 10
+			state_infrastructure_from_population_max_add = 25
 		}		
 	}
 
@@ -30,8 +29,7 @@ pm_canal_level_2 = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_mult = 0.1
-			state_infrastructure_from_population_max_add = 20
+			state_infrastructure_from_population_max_add = 50
 		}		
 	}
 
@@ -59,8 +57,7 @@ pm_canal_level_3 = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_mult = 0.15
-			state_infrastructure_from_population_max_add = 40
+			state_infrastructure_from_population_max_add = 100
 		}		
 	}
 
