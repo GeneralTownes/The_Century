@@ -54,3 +54,10 @@ state_trait_north_china_plain = {
 		building_group_bg_plantations_throughput_add = 0.1
 	}
 }
+state_trait_subtropical_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		goods_output_hardwood_mult = 0.15
+	}
+}

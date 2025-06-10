@@ -362,4 +362,126 @@
 			}
 		}
 	}
+	
+	# Adding starting hardwood forestries
+	s:STATE_GUANGDONG={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_SHAOZHOU={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_GUANGXI={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_YUNNAN={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_GUIZHOU={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_FUJIAN={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_JIANGXI={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
+	s:STATE_SICHUAN={
+		region_state:CHI={
+			create_building={
+				building="building_hardwood_forestry"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_hardwood_forestry"  }
+			}
+		}
+	}
 }
