@@ -2,7 +2,12 @@
 	on_actions = {
 		on_bpm_monthly_pulse_country
 		bpm_update_enactment_success_on_action
-		bpm_on_actions_colonial_check
+	}
+}
+
+on_revolution_start = {
+	on_actions = {
+		on_bpm_revolution_start
 	}
 }
 
@@ -24,11 +29,24 @@ on_investment_decreased ={
 	}
 }
 
+on_default = {
+	on_actions = {
+		on_bpm_default
+	}
+}
+
 on_bpm_monthly_pulse_country = {
 	effect = {
-		owner = { 
+		owner = {
+			bpm_update_political_stability = yes
 			bpm_institution_workaround_effect = yes
 		}
+	}
+}
+
+on_bpm_default = {
+	effect = {
+		bpm_remove_political_stability_big = yes
 	}
 }
 
@@ -50,6 +68,12 @@ on_bpm_diplo_play_war_start = {
 				bpm_add_political_stability_big = yes
 			}
 		}
+	}
+}
+
+on_bpm_revolution_start = {
+	effect = {
+		bpm_add_political_stability_big = yes # Crackdowns, most disloyal people left for revolution
 	}
 }
 
