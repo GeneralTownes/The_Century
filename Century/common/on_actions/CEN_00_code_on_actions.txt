@@ -705,3 +705,791 @@ on_monthly_pulse_state = {
 		CEN_uni_removal
 	}
 }
+
+# Vanilla + China Fracture
+on_revolution_start = {
+	effect = {
+		scope:target ?= {
+			enact_preferred_governance_principle = yes
+			if = {
+				limit = {
+					has_law = law_type:law_single_party_state
+				}
+				handle_revolutionary_sps = yes
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_monarchy
+				scope:target ?= {
+					NOT = {
+						has_law = law_type:law_monarchy
+					}
+				}
+			}
+			set_variable = anti_monarchist_revolution
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_warlord_china
+				NOT = { has_global_variable = china_warlord_explosion_revolution }
+			}
+			chi_add_1_fracture = yes
+			set_global_variable = china_warlord_explosion_revolution
+		}
+		if = {
+			limit = {
+				OR = {
+					has_journal_entry = je_meiji_restoration
+					has_inactive_journal_entry = je_meiji_restoration
+				}
+				scope:target ?= {
+					ig:ig_landowners = {
+						is_in_government = yes
+					}
+				}
+			}
+			set_variable = anti_shogunate_civil_war
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_the_paris_commune_france
+			}
+			c:FRA = {
+				trigger_event = { id = paris_commune.4 popup = yes }
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ILE_DE_FRANCE
+				}
+				set_state_owner = c:PRC
+			}
+			c:PRC = {
+				annex = scope:target
+				create_diplomatic_play = {
+					type = dp_revolution
+					target_state = c:FRA.capital
+					annex_as_civil_war = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = voice_of_the_people_content
+				c:KRA ?= root
+				c:AUS ?= {
+					any_subject_or_below = {
+						c:KRA ?= this
+					}
+				}
+			}
+			c:AUS = {
+				trigger_event = { id = krakow.1 days = 3 popup = yes }
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = voice_of_the_people_content
+				c:FRA ?= ROOT
+			}
+			if = {
+				limit = {
+					scope:target ?= {
+						is_secessionist = no
+						has_law = law_type:law_monarchy
+						any_interest_group = {
+							is_in_government = yes
+							is_strongest_ig_in_government = yes
+							leader = {
+								has_ideology = ideology:ideology_orleanist
+							}
+						}
+					}
+				}
+				scope:target ?= {
+					if = {
+						limit = {
+							has_variable = bonapartist_restoration_var
+						}
+						remove_variable = bonapartist_restoration_var
+					}
+					if = {
+						limit = {
+							has_variable = legitimist_restoration_var
+						}
+						remove_variable = legitimist_restoration_var
+					}
+					set_variable = { name = orleanist_restoration_var }
+					if = {
+						limit = {
+							ROOT.ruler = {
+								has_ideology = ideology:ideology_orleanist
+							}
+						}
+						create_character = {
+							template = dynamic_orleanist_ruler_template
+						}
+					}
+					else = {
+						generate_french_monarch = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					scope:target ?= {
+						is_secessionist = no
+						has_law = law_type:law_monarchy
+						any_interest_group = {
+							is_in_government = yes
+							is_strongest_ig_in_government = yes
+							leader = {
+								has_ideology = ideology:ideology_legitimist
+							}
+						}
+					}
+				}
+				scope:target ?= {
+					if = {
+						limit = {
+							has_variable = bonapartist_restoration_var
+						}
+						remove_variable = bonapartist_restoration_var
+					}
+					if = {
+						limit = {
+							has_variable = orleanist_restoration_var
+						}
+						remove_variable = orleanist_restoration_var
+					}
+					set_variable = { name = legitimist_restoration_var }
+					if = {
+						limit = {
+							ROOT.ruler = {
+								has_ideology = ideology:ideology_legitimist
+							}
+						}
+						create_character = {
+							template = dynamic_legitimist_ruler_template
+						}
+					}
+					else = {
+						generate_french_monarch = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					scope:target ?= {
+						is_secessionist = no
+						has_law = law_type:law_monarchy
+						any_interest_group = {
+							is_in_government = yes
+							is_strongest_ig_in_government = yes
+							leader = {
+								has_ideology = ideology:ideology_bonapartist
+							}
+						}
+					}
+				}
+				scope:target ?= {
+					if = {
+						limit = {
+							has_variable = orleanist_restoration_var
+						}
+						remove_variable = orleanist_restoration_var
+					}
+					if = {
+						limit = {
+							has_variable = legitimist_restoration_var
+						}
+						remove_variable = legitimist_restoration_var
+					}
+					set_variable = { name = bonapartist_restoration_var }
+					if = {
+						limit = {
+							ROOT.ruler = {
+								has_ideology = ideology:ideology_bonapartist
+							}
+						}
+						create_character = {
+							template = dynamic_bonapartist_ruler_template
+						}
+					}
+					else = {
+						generate_french_monarch = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = ep1_content
+				c:KOR ?= ROOT
+				c:JAP ?= {
+					NOT = {
+						has_law = law_type:law_isolationism
+					}
+					has_interest_marker_in_region = region_manchuria
+					has_technology_researched = electric_telegraph
+				}
+				any_country = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+					}
+					any_subject_or_below = {
+						c:KOR = this
+					}
+					has_technology_researched = electric_telegraph
+				}
+			}
+			c:JAP = {
+				trigger_event = { id = gg_korea.7 popup = yes }
+			}
+			random_country = {
+				limit = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+					}
+					any_subject_or_below = {
+						c:KOR = this
+					}
+				}
+				trigger_event = { id = gg_korea.7 popup = yes }
+			}
+		}
+		### Movement type variable setting
+		ROOT = {
+			random_civil_war = {
+				limit = {
+					is_civil_war_type = revolution
+				}
+				scope:target ?= {
+					set_variable = { name = civil_war_type_var value = prev.political_movement.type }
+				}
+			}
+		}
+		if = { # Script hack for Indian revolutions
+			limit = {
+				c:BIC ?= ROOT
+				ROOT = {
+					any_civil_war = {
+						is_civil_war_type = revolution
+						political_movement ?= {
+							NOR = {
+								is_political_movement_type = movement_religious_majority
+								is_political_movement_type = movement_cultural_majority
+								is_political_movement_type = movement_utilitarian
+								culture ?= {
+									has_discrimination_trait = european_heritage
+								}
+							}
+						}
+					}
+				}
+			}
+			scope:target ?= {
+				change_tag = BHT
+				remove_primary_culture = cu:british
+				grant_indian_cultures = yes
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_state_atheism
+						}
+					}
+					if = {
+						limit = {
+							religion_percent_country = {  
+								target = rel:hindu  
+								value >= 0.5
+							}
+						}
+						set_state_religion = rel:hindu
+					}
+					else_if = {
+						limit = {
+							religion_percent_country = {  
+								target = rel:sunni
+								value >= 0.5
+							}
+						}
+						set_state_religion = rel:sunni
+					}
+					else = {
+						set_state_religion = rel:hindu
+					}
+				}
+				india_independence_ig_effects = yes
+				if = {
+					limit = {
+						has_modifier = modifier_india_crown_rule
+					}
+					remove_modifier = modifier_india_crown_rule
+				}
+				if = {
+					limit = {
+						has_modifier = modifier_india_company_rule
+					}
+					remove_modifier = modifier_india_company_rule
+				}
+				recalculate_pop_ig_support = yes
+				every_scope_character = {
+					limit = {
+						OR = {
+							culture = cu:british
+							culture = cu:scottish
+							culture = cu:irish
+						}
+						is_immortal = no
+					}
+					kill_character = yes
+				}
+			}
+		}
+	}
+}
+
+# Vanilla + China Fracture
+on_secession_start = {
+	effect = {
+		if = {
+			limit = {
+				has_journal_entry = je_warlord_china
+				NOT = { has_global_variable = china_warlord_explosion_secession }
+			}
+			chi_add_1_fracture = yes
+			set_global_variable = china_warlord_explosion_secession
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = c:RSM
+				}
+				scope:target ?= {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+				ROOT = {
+					NOR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			root = {
+				trigger_event = { id = italian_unification.7 days = 3 }
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+			        c:POL ?= this
+			        c:KRA ?= this
+			        AND = {
+			            c:GAL ?= this
+			            ruler = {
+			                culture = cu:polish
+			            }
+			        }
+				}
+				scope:target ?= {
+					OR = {
+			            c:POL ?= this
+			            c:KRA ?= this
+			            AND = {
+			                c:GAL ?= this
+			                ruler = {
+			                    culture = cu:polish
+			                }
+			            }
+			        }
+				}
+				OR = {
+					c:POL ?= {
+						NOT = {
+							this = scope:target
+						}
+					}
+					c:KRA ?= {
+						NOT = {
+							this = scope:target
+						}
+					}
+					c:GAL ?= {
+						NOT = {
+							this = scope:target
+						}
+					}
+				}
+			}
+			scope:target ?= {
+				set_variable = {
+					name = polish_rebel_country_var
+					months = short_modifier_time
+				}
+			}
+			set_variable = {
+				name = polish_rebel_country_enemy_var
+				months = short_modifier_time
+			}
+			every_country = {
+				limit = {
+					OR = {
+						c:POL ?= this
+						c:KRA ?= this
+			            AND = {
+			                c:GAL ?= this
+			                ruler = {
+			                    culture = cu:polish
+			                }
+			            }
+					}
+					NOT = {
+						this = scope:target
+					}
+
+				}
+				trigger_event = { id = poland_events.5 days = 7 popup = yes }
+			}
+		}
+		if = { # Script hack for Indian secessions
+			limit = {
+				c:BIC ?= ROOT
+			}
+			scope:target ?= {
+				remove_primary_culture = cu:british
+				grant_indian_regional_cultures = yes
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_state_atheism
+						}
+					}
+					if = {
+						limit = {
+							religion_percent_country = {  
+								target = rel:hindu  
+								value >= 0.5
+							}
+						}
+						set_state_religion = rel:hindu
+					}
+					else_if = {
+						limit = {
+							religion_percent_country = {  
+								target = rel:sunni
+								value >= 0.5
+							}
+						}
+						set_state_religion = rel:sunni
+					}
+					else = {
+						set_state_religion = rel:hindu
+					}
+				}
+				india_independence_ig_effects = yes
+				if = {
+					limit = {
+						has_modifier = modifier_india_crown_rule
+					}
+					remove_modifier = modifier_india_crown_rule
+				}
+				if = {
+					limit = {
+						has_modifier = modifier_india_company_rule
+					}
+					remove_modifier = modifier_india_company_rule
+				}
+				recalculate_pop_ig_support = yes
+				every_scope_character = {
+					limit = {
+						OR = {
+							culture = cu:british
+							culture = cu:scottish
+							culture = cu:irish
+						}
+						is_immortal = no
+					}
+					kill_character = yes
+				}
+			}
+		}
+	}
+}
+
+# Punishing Qing releasing Chinese states
+on_country_released_as_independent = {
+	effect = {
+		if = {
+			limit = {
+				c:NEN ?= scope:target
+			}
+			scope:target ?= {
+				create_character = {
+					ig_leader = yes
+					interest_group = ig_rural_folk
+					ideology = ideology_luddite
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:target ?= {
+					country_has_primary_culture = cu:ashkenazi
+				}
+				NOT = {
+					s:STATE_PALESTINE = {
+						is_homeland = cu:ashkenazi
+					}
+				}
+			}
+			s:STATE_PALESTINE = {
+				add_homeland = cu:sephardic
+				add_homeland = cu:ashkenazi
+			}
+		}
+		if = {
+			limit = {
+				scope:target ?= {
+					OR = {
+						country_has_primary_culture = cu:afro_caribbean
+						country_has_primary_culture = cu:afro_antillean
+						country_has_primary_culture = cu:afro_american
+						country_has_primary_culture = cu:afro_caribeno
+						country_has_primary_culture = cu:afro_brazilian
+					}
+					OR = {
+						has_law = law_type:law_legacy_slavery
+						has_law = law_type:law_slave_trade
+					}
+				}
+			}
+			scope:target ?= {
+				trigger_event = { id = slave_revolt_events.1 days = 0 }
+			}
+		}
+		
+		### Penalising Fragile China releasing subjects
+		if = {
+			limit = {
+				ROOT = { has_journal_entry = je_warlord_china }
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			chi_add_1_fracture = yes
+		}
+		
+		### Releasing Warlords
+		if = {
+			limit = {
+				has_modifier = early_warlords_collapse
+				scope:target ?= {
+					NOT = {
+						has_modifier = early_warlords_collapse
+					}
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			scope:target ?= {
+				assign_early_warlords_penalty = yes
+			}
+		}
+	}
+}
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_own_subject = {
+	effect = {
+		if = {
+			limit = {
+				c:NEN ?= scope:target
+			}
+			scope:target ?= {
+				create_character = {
+					ig_leader = yes
+					interest_group = ig_rural_folk
+					ideology = ideology_luddite
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:target ?= {
+					country_has_primary_culture = cu:ashkenazi
+				}
+				NOT = {
+					s:STATE_PALESTINE = {
+						is_homeland = cu:ashkenazi
+					}
+				}
+			}
+			s:STATE_PALESTINE = {
+				add_homeland = cu:sephardic
+				add_homeland = cu:ashkenazi
+			}
+		}
+		scope:target ?= {
+			if = {
+				limit = {
+					country_has_state_religion = rel:theravada
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_theravada_monks
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_buddhist_moralist
+				}
+			}
+			if = {
+				limit = {
+					exists = c:RUS
+					c:RUS = scope:target
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_orthodox_church
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_russian_patriarch
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:orthodox
+					OR = {
+						NOT = { exists = c:RUS }
+						NOT = { c:RUS = scope:target }
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_orthodox_church
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_orthodox_patriarch
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:hindu
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_hindu_priesthood
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_hindu_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:gelugpa
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_vajrayana_monks
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_buddhist_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:mahayana
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_mahayana_monks
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_buddhist_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:sikh
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_sikh_priesthood
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_sikh_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:oriental_orthodox
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_oriental_orthodox_church
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_oriental_orthodox_patriarch
+				}
+			}
+		}
+		
+		### Penalising Fragile China releasing subjects
+		if = {
+			limit = {
+				ROOT = { has_journal_entry = je_warlord_china }
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			chi_add_1_fracture = yes
+			remove_diplomatic_pact = {
+				country = scope:target 
+				type = vassal
+			}
+		}
+		
+		### Releasing Warlords
+		if = {
+			limit = {
+				has_modifier = early_warlords_collapse
+				scope:target ?= {
+					NOT = {
+						has_modifier = early_warlords_collapse
+					}
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			scope:target ?= {
+				assign_early_warlords_penalty = yes
+			}
+		}
+	}
+}

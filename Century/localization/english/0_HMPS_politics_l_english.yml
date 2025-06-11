@@ -289,6 +289,8 @@
  country_institution_army_model_max_investment_add: "Max $institution_army_model$ [concept_institution] Investment"
  country_institution_army_model_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_army_model$ [concept_institution]"
  institution_colonial_affairs_desc:1 "All [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] states gain #BOLD -10%#! $RADICALS$ from [Concept('concept_discrimination','$concept_discrimination$')] and decreases in [concept_sol] per [concept_institution] level."
+ colonial_institution_resettlement:0 "Colonial Resettlement Office"
+ colonial_institution_exploitation:0 "Colonial Exploitation Office"
  
  institution_environmental_regulations:0 "Environmental Protections"
  institution_environmental_regulations_desc:0 "Enforcement of environmental legislation."
