@@ -137,13 +137,6 @@ on_bpm_monthly_pulse_country = {
 			}
 			bpm_colonial_admin_activate_effect = yes
 		}
-		if = {
-			limit = {
-				modifier:country_bpm_change_primary_culture_to_overlord = no
-				has_variable = bpm_colony_primary_culture_set_to_overlord
-			}
-			bpm_colony_reset_primary_culture = yes
-		}
 		owner = { 
 			bpm_update_ai_cheats = yes
 			bpm_update_political_stability = yes
@@ -232,29 +225,6 @@ on_bpm_diplo_play_war_start = {
 			}
 			every_scope_play_involved = {
 				bpm_add_political_stability_big = yes
-			}
-		}
-
-		# Removing permanent military defunding modifier for aggressors
-		war = {
-			if = {
-				limit = {
-					NOT = { has_war_goal = colonization_rights }
-					NOT = {
-						any_country = {
-							OR = {
-								is_revolutionary = yes
-								is_secessionist = yes
-							}
-						}
-					}
-				}
-				attacker_warleader = {
-					bpm_clear_upgradeable_country_modifier = { $MOD$ = bpm_repeatable_law_army_defunding_result_permanent }
-					every_cobelligerent_in_war = {
-						bpm_clear_upgradeable_country_modifier = { $MOD$ = bpm_repeatable_law_army_defunding_result_permanent }
-					}
-				}
 			}
 		}
 	}
