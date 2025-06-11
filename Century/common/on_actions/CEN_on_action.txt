@@ -10,28 +10,6 @@
 	}
 }
 
-on_building_expanded = {
-	effect = {
-		# when a railroad finishes expanding, increase railroad variable
-		if = {
-			limit = {
-				is_building_type = building_railway
-			}
-			this.owner = {
-				if = {
-					limit = {
-						has_journal_entry = je_chinese_industry
-					}
-					change_global_variable = {
-						name = chinese_rail_expansion
-						add = 1
-					}
-				}
-			}
-		}
-	}
-}
-
 CEN_coastal_capital = {
 	effect = {
 		if = {
@@ -435,6 +413,76 @@ CEN_China = {
 						name = china_warlord_explosion
 						add = -2
 					}
+				}
+			}
+		}
+	}
+}
+
+CEN_china_release_penalty = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = { has_journal_entry = je_warlord_china }
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_modifier = chinese_opium_addiction }
+				}
+				scope:target ?= {
+					assign_opium_addiction_penalty = yes
+				}
+			}
+			chi_add_1_fracture = yes
+			remove_diplomatic_pact = {
+				country = scope:target 
+				type = vassal
+			}
+		}
+	}
+}
+CEN_warlord_release_penalty = {
+	effect = {
+		if = {
+			limit = {
+				has_modifier = early_warlords_collapse
+				scope:target ?= {
+					NOT = {
+						has_modifier = early_warlords_collapse
+					}
+					OR = {
+						country_has_primary_culture = cu:han
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:min
+						country_has_primary_culture = cu:yue
+						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:zhuang
+						country_has_primary_culture = cu:yi
+					}
+				}
+			}
+			scope:target ?= {
+				assign_early_warlords_penalty = yes
+			}
+			if = {
+				limit = {
+					ROOT = { has_modifier = chinese_opium_addiction }
+				}
+				scope:target ?= {
+					assign_opium_addiction_penalty = yes
 				}
 			}
 		}
