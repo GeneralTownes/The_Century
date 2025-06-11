@@ -3,7 +3,7 @@
 	state_standard_of_living_add = -3
 	state_mortality_mult = 0.2
 	country_legitimacy_base_add = -25
-	state_radicals_from_sol_change_mult = 0.50
+	state_radicals_from_political_movements_mult = 0.50
 	country_prestige_mult = -0.25
 	unit_morale_loss_mult = 0.75
 }
@@ -123,7 +123,7 @@ anti_bandit_edict = {
 	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_positive.dds
 	state_turmoil_effects_mult = -0.2
 	state_mortality_turmoil_mult = 0.02
-	state_radicals_from_sol_change_mult = -0.25
+	state_radicals_from_political_movements_mult = -0.25
 	country_authority_mult = -0.2
 	state_tax_capacity_mult = 0.25
 	state_tax_capacity_add = 100
@@ -143,7 +143,7 @@ early_warlords_collapse = {
 	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_negative.dds
 	country_loan_interest_rate_mult = 0.01
 	state_turmoil_effects_mult = 0.01
-	state_radicals_from_sol_change_mult = 0.01
+	state_radicals_from_political_movements_mult = 0.01
 	state_loyalists_from_sol_change_mult = -0.01
 	country_legitimacy_ideological_incoherence_mult = 0.01
 	country_legitimacy_base_add = -1
@@ -154,7 +154,10 @@ china_ai_help = {
 	country_legitimacy_base_add = 10
 	state_construction_mult = 0.25
 	state_turmoil_effects_mult = -1
-	state_radicals_from_discrimination_mult = -0.75
+	state_radicals_from_political_movements_mult = -0.75
+	country_radicalism_increases_violent_hostility_mult = -0.5
+	country_radicalism_increases_cultural_erasure_mult = -0.25
+	country_radicalism_increases_open_prejudice_mult = -0.1
 	country_loan_interest_rate_add = -0.5
 	country_minting_mult = 0.33
 }
@@ -172,13 +175,15 @@ british_lost_opium_wars = {
 }
 chinese_treaty_port = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_radicals_from_sol_change_mult = 0.05
+	state_radicals_from_political_movements_mult = 0.05
 }
 modifier_failure_to_ban = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_negative.dds
 	country_minting_mult = -1
-	state_construction_mult = -0.33
+	state_construction_mult = -0.5
 	country_military_tech_research_speed_mult = -1
-	country_legitimacy_base_add = -25
-	country_law_enactment_success_add = -0.25
+	country_legitimacy_base_add = -50
+	country_law_enactment_success_add = -0.5
+	country_law_enactment_time_mult = 1
+	state_tax_waste_add = 0.25
 }
