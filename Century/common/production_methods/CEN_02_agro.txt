@@ -142,6 +142,88 @@ pm_rice_wine = {
 	}
 }
 
+# Halfed livestock employment & added electricity for mechanisation
+pm_open_air_stockyards = {
+	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"		
+	building_modifiers = {	
+		workforce_scaled = {
+			goods_output_meat_add = 8
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_farmers_add = 500
+		}
+	}
+}		
+pm_butchering_tools = {
+	texture = "gfx/interface/icons/production_method_icons/butchering_tools.dds"			
+	building_modifiers = {				
+		workforce_scaled = {
+			goods_input_tools_add = 5
+			goods_output_meat_add = 16
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1300
+			building_employment_farmers_add = 600
+			building_employment_machinists_add = 200
+		}
+	}							
+}
+pm_slaughterhouses = {
+	texture = "gfx/interface/icons/production_method_icons/slaughterhouses.dds"	
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		mechanical_tools
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 10
+			goods_output_meat_add = 24
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1200
+			building_employment_farmers_add = 700
+			building_employment_machinists_add = 400
+		}
+	}
+}
+pm_mechanized_slaughtering = {
+	texture = "gfx/interface/icons/production_method_icons/mechanized_slaughtering.dds"	
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		mechanized_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 10
+			goods_input_electricity_add = 5
+			goods_output_meat_add = 36
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 800
+		}
+	}
+}
+
+
 # Less workers for homesteading subsistence
 pm_homesteading_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/homesteading.dds"
