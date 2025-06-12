@@ -111,7 +111,7 @@ law_secret_police = {
 	
 	institution = institution_home_affairs
 	institution_modifier = {
-		country_suppression_ig_attraction_mult = -0.1
+		country_suppression_attraction_mult = -0.1
 		state_radicals_from_political_movements_mult = -0.1
 		state_radicals_from_sol_change_mult = -0.05
 		state_radicals_from_discrimination_mult = -0.05
