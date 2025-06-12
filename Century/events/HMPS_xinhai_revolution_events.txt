@@ -132,14 +132,14 @@ xinhai_revolution_events.2 = {
 	}
 	option = {	#Kuomintang Republic
 		name = xinhai_revolution_events.2.b
-		ig:ig_landowners = {
-			remove_ideology = ideology_paternalistic
-			remove_ideology = ideology_scholar_paternalistic
-			remove_ideology = ideology_junker_paternalistic
-			remove_ideology = ideology_papal_paternalistic
-			remove_ideology = ideology_pol_parlamentarism
-			add_ideology = ideology_republican_paternalistic
-		}
+		#ig:ig_landowners = {
+		#	remove_ideology = ideology_paternalistic
+		#	remove_ideology = ideology_scholar_paternalistic
+		#	remove_ideology = ideology_junker_paternalistic
+		#	remove_ideology = ideology_papal_paternalistic
+		#	remove_ideology = ideology_pol_parlamentarism
+		#	add_ideology = ideology_republican_paternalistic
+		#} # Allow Stamp out Monarchism JE
 		ig:ig_rural_folk = {
 			remove_ideology = ideology_monarchist
 		}
