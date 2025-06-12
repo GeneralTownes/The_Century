@@ -63,6 +63,7 @@
 				}
 			}
 		}
+		is_at_war = no
 	}
 
 	on_complete = {

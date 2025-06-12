@@ -17,7 +17,7 @@
  je_china_failure_tt: "The #bold Progress Bar#! has reached #variable 100%#!"
  je_warlord_china_special_tooltip_abolish_monarchy: "Taiping [GetLawType('law_theocracy').GetName] does not count as abolishing the [GetLawType('law_monarchy').GetName]"
  warlord_china_fracture_invalid_tt:0 "China has already fractured."
- no_diplomatic_play_active_tt:0 "[SCOPE.GetRootScope.GetCountry.GetName] is not the target of any diplomatic play or war."
+ no_diplomatic_play_active_tt:0 "[SCOPE.GetRootScope.GetCountry.GetName] is not the target of any diplomatic play."
  je_xinhai_revolution:0 "Xinhai Revolution"
  je_xinhai_revolution_reason:1 "Continued discrimination against the Han has led to a rise in anti-Manchu sentiment, along with disdain for the failure of the Qing government. Republican support is rising, determined to restore the Han people.\n\nIf the Han continue to be discriminated against, there could be dangerous consequences for [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]"
  je_chinese_industry:0 "Ineffectual Mining"
