@@ -224,3 +224,62 @@ pm_hardwood_electric_saw_mills = {
 
 	required_input_goods = electricity
 }
+
+# Better oil output
+pm_steam_derricks = {
+	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 5
+			goods_input_coal_add = 10
+			
+			# output goods
+			goods_output_oil_add = 75
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+	}
+}
+pm_combustion_derricks = {
+	texture = "gfx/interface/icons/production_method_icons/combustion_derricks.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	
+	unlocking_technologies = {
+		combustion_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 15
+			
+			# output goods
+			goods_output_oil_add = 150
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+		}
+	}
+}
