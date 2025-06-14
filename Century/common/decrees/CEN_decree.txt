@@ -1,4 +1,80 @@
-﻿decree_political_repression = {
+﻿## Adding base infra
+decree_road_maintenance = {
+	texture = "gfx/interface/icons/decree/decree_road_maintenance.dds"
+	modifier = {
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+		state_construction_mult = 0.10
+		state_infrastructure_add = 20
+	}
+	unlocking_technologies = { 
+		centralization
+	}
+	cost = 100
+
+	ai_weight = {
+		value = 25		
+		
+		if = {
+			limit = { 
+				OR = {
+					relative_infrastructure < 1 
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 1.25
+					}
+				}
+			
+			}
+			add = 100
+		}
+
+		if = {
+			limit = { 
+				OR = {
+					relative_infrastructure < 0.5
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.75
+					}
+				}
+			
+			}
+			add = 100
+		}
+
+		if = {
+			limit = { 
+				OR = {
+					relative_infrastructure < 0.25 
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure < 0.5
+					}
+				}
+			
+			}
+			add = 100
+		}		
+		
+		if = {
+			limit = { 
+				OR = {
+					relative_infrastructure >= 1.25
+					AND = {
+						has_decree = decree_road_maintenance
+						relative_infrastructure >= 1.5
+					}
+				}
+			
+			}
+			multiply = 0
+		}			
+	}
+}
+
+## New Decrees
+decree_political_repression = {
 	texture = "gfx/interface/icons/decree/decree_political_repression.dds"		
 	
 	unlocking_technologies = {
@@ -43,7 +119,6 @@
 		}	
 	}
 }
-
 decree_additional_taxes = {
 	texture = "gfx/interface/icons/decree/decree_additional_taxes.dds"		
 	
