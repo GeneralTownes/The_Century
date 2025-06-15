@@ -9,5 +9,6 @@
 - [China Power Bloc](https://steamcommunity.com/sharedfiles/filedetails/?id=3274883468)
 - [WCR](https://steamcommunity.com/sharedfiles/filedetails/?id=2981574864)
 - [GDP Ownership Display](https://steamcommunity.com/sharedfiles/filedetails/?id=3290552216)
+- [Global Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=3312478537)
 - [EOH: Map Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3288407594)
 - [Map Font: Paradox Victorian](https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383)
