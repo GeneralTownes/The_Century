@@ -424,7 +424,7 @@
  
  #Decrees
  decree_political_repression:0 "Nationalist Repression"
- decree_political_repression_desc:0 "A variety of subtle tactics to surpress and undermine radical nationalist cells"
+ decree_political_repression_desc:0 "A variety of subtle tactics to suppress and undermine radical nationalist cells"
  decree_additional_taxes:0 "Expanded Taxation"
  decree_additional_taxes_desc:0 "Higher tax rates have been directly or indirectly targeted at this state"
  decree_host_scope:0 "GM Scope"
