@@ -153,6 +153,7 @@ law_legacy_slavery = {
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology:ideology_pro_slavery }
+					NOT = { has_ideology = ideology:ideology_southern_economy }
 				}			
 				add_ideology = ideology_pro_slavery 
 			}
@@ -258,6 +259,7 @@ law_debt_slavery = {
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology:ideology_pro_slavery }
+					NOT = { has_ideology = ideology:ideology_southern_economy }
 				}			
 				add_ideology = ideology_pro_slavery 
 			}
@@ -383,6 +385,7 @@ law_slave_trade = {
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology:ideology_pro_slavery }
+					NOT = { has_ideology = ideology:ideology_southern_economy }
 				}			
 				add_ideology = ideology_pro_slavery 
 			}
