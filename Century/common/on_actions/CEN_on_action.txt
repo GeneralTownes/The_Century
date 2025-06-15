@@ -446,6 +446,7 @@ CEN_china_release_penalty = {
 				}
 			}
 			chi_add_1_fracture = yes
+			set_global_variable = qing_released_homelands
 			remove_diplomatic_pact = {
 				country = scope:target 
 				type = vassal

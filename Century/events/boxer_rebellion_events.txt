@@ -209,6 +209,7 @@ boxer_rebellion_events.3 = {
 		default_option = yes
 
 		chi_add_1_fracture = yes
+		set_global_variable = boxers_happened
 		
 		add_radicals = {
 			value = very_large_radicals

@@ -634,6 +634,7 @@ heavenly.4 = {
 		if = {
 			limit = { has_journal_entry = je_warlord_china }
 			chi_add_1_fracture = yes
+			set_global_variable = tpg_rebellion_happened
 		}
 		c:TPG = {
 			every_scope_state = {
@@ -668,6 +669,7 @@ heavenly.4 = {
 		if = {
 			limit = { has_journal_entry = je_warlord_china }
 			chi_add_1_fracture = yes
+			set_global_variable = tpg_rebellion_happened
 		}
 		c:TPG = {
 			every_scope_state = {

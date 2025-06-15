@@ -257,6 +257,7 @@ opium_wars.3 = {
 		if = {
 			limit = { has_journal_entry = je_warlord_china }
 			chi_remove_1_fracture = yes
+			set_global_variable = qing_won_opium_wars
 		}
 		hidden_effect = { add_banned_goods = g:opium }
 	}

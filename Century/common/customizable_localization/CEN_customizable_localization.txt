@@ -1,0 +1,339 @@
+﻿# Custom Fracture increase checks
+fracture_increase_opium_wars = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = lost_opium_wars }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = lost_opium_wars
+        }
+        localization_key = custom_fracture_opium_wars
+    }
+}
+fracture_increase_taiping_rebellion = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = tpg_rebellion_happened }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = tpg_rebellion_happened
+        }
+        localization_key = custom_fracture_taiping_rebellion
+    }
+}
+fracture_increase_taiping_victory = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = tpg_victory }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = tpg_victory
+        }
+        localization_key = custom_fracture_taiping_victory
+    }
+}
+fracture_increase_han_accepted = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = qing_accepted_han }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = qing_accepted_han
+        }
+        localization_key = custom_fracture_accepted_han
+    }
+}
+fracture_increase_boxers_happened = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = boxers_happened }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = boxers_happened
+        }
+        localization_key = custom_fracture_boxers_happened
+    }
+}
+fracture_increase_xinhai_happened = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = xinhai_happened }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = xinhai_happened
+        }
+        localization_key = custom_fracture_xinhai_happened
+    }
+}
+fracture_increase_coup_happened = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_suffered_coup }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_suffered_coup
+        }
+        localization_key = custom_fracture_coup_happened
+    }
+}
+fracture_increase_abolished_monarchy = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_abolished_monarchy }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_abolished_monarchy
+        }
+        localization_key = custom_fracture_abolished_monarchy
+    }
+}
+fracture_increase_defaulted = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_default }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_default
+        }
+        localization_key = custom_fracture_defaulted
+    }
+}
+fracture_increase_bankrupted = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_bankrupted }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_bankrupted
+        }
+        localization_key = custom_fracture_bankrupted
+    }
+}
+fracture_increase_secession = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_secession }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_secession
+        }
+        localization_key = custom_fracture_secession
+    }
+}
+fracture_increase_revolution_progress = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_revolution_progress }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_revolution_progress
+        }
+        localization_key = custom_fracture_revolution_progress
+    }
+}
+fracture_increase_revolution = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_revolution }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_revolution
+        }
+        localization_key = custom_fracture_revolution
+    }
+}
+fracture_increase_subject = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_subject }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_subject
+        }
+        localization_key = custom_fracture_subject
+    }
+}
+fracture_increase_released_homelands = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = qing_released_homelands }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = qing_released_homelands
+        }
+        localization_key = custom_fracture_released_homelands
+    }
+}
+
+# Custom Fracture decrease checks
+fracture_decrease_opium_wars = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = qing_won_opium_wars }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = qing_won_opium_wars
+        }
+        localization_key = custom_fracture_won_opium
+    }
+}
+fracture_decrease_economic_growth = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_economic_growth }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_economic_growth
+        }
+        localization_key = custom_fracture_economic_growth
+    }
+}
+fracture_decrease_education_advancement = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_education_advancement }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_education_advancement
+        }
+        localization_key = custom_fracture_education_advancement
+    }
+}
+fracture_decrease_sol = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_sol }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_sol
+        }
+        localization_key = custom_fracture_sol
+    }
+}
+fracture_decrease_recognized = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_warlord_explosion_recognized }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_warlord_explosion_recognized
+        }
+        localization_key = custom_fracture_recognized
+    }
+}
+fracture_decrease_stamped_out_monarchism = {
+    type = country
+    
+	text = {
+        trigger = {
+            NOT = { has_global_variable = china_stamped_out_monarchism }
+        }
+        localization_key = fracture_neutral
+    }
+    text = {
+        trigger = {
+            has_global_variable = china_stamped_out_monarchism
+        }
+        localization_key = custom_fracture_stamped_out_monarchism
+    }
+}

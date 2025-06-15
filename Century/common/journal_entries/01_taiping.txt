@@ -409,6 +409,7 @@ je_taiping_revolution = {
 			type = je_taiping_reconstruction
 		}
 		chi_add_1_fracture = yes
+		set_global_variable = tpg_victory
 	}
 
 	fail = {

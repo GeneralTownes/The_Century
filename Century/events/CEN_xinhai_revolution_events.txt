@@ -116,6 +116,7 @@ xinhai_revolution_events.2 = {
 			activate_law = law_type:law_censorship
 		}
 		chi_add_1_fracture = yes
+		set_global_variable = xinhai_happened
 		if = {
 			limit = {
 				NOT = { has_global_variable = china_abolished_monarchy }
@@ -190,6 +191,7 @@ xinhai_revolution_events.2 = {
 			activate_law = law_type:law_right_of_assembly
 		}
 		chi_add_1_fracture = yes
+		set_global_variable = xinhai_happened
 		if = {
 			limit = {
 				NOT = { has_global_variable = china_abolished_monarchy }

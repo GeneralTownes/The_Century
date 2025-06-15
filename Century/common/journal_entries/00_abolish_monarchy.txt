@@ -68,9 +68,12 @@ je_abolish_monarchy = {
 			id = 1848.2
 		}
 		if = {
-			limit = { has_journal_entry = je_warlord_china }
+			limit = {
+				has_journal_entry = je_warlord_china
+				NOT = { has_global_variable = china_stamped_out_monarchism }
+			}
 			chi_remove_1_fracture = yes
-			set_variable = china_warlord_abolished_monarchy
+			set_global_variable = china_stamped_out_monarchism
 		}
 	}
 
