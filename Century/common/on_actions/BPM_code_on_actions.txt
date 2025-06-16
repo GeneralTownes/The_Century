@@ -41,6 +41,21 @@ on_bpm_monthly_pulse_country = {
 			bpm_update_political_stability = yes
 			bpm_institution_workaround_effect = yes
 		}
+		if = {
+			limit = {
+				is_ai = yes
+				NOT = { has_modifier = bpm_ai_cheats }
+			}
+			add_modifier = {
+				name = bpm_ai_cheats
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			remove_modifier = bpm_ai_cheats
+		}
 	}
 }
 
