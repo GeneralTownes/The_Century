@@ -10,6 +10,8 @@
  taiping_reconstruct_society_desc:0 "After the collapse of organised resistance, small groups of soldiers have continued to harass local settlements as bandits. We must enforce our power."
  taiping_reconstruct_state:0 "Suppress Local Bandits"
  taiping_reconstruct_state_desc:0 "We will direct the provincial governor to raise a militia and crush the local bandits."
+ taiping_interest_moratorium:0 "Issue Interest Moratorium"
+ taiping_interest_moratorium_desc:0 "The Taiping rebellion has greatly destabalised the imperial finances. We must limit our interest payments to allow a stabalisation of our finances, however this will curtail private investment in the economy for the moratorium peroid."
  button_qing_increase_recruitment_effect_tt: "Our war support will remain at #bold 100#!, at the price of our [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] and [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] gaining #bold 10% political strength#! each month"
  button_qing_rescind_increase_recruitment_effect_tt: "War support will not remain at #bold 100#!, and then [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] and [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] will not gain #bold 10% political strength#! each month"
  je_the_matter_of_ireland_colonisation_button: "Abolish Colonial Projects"

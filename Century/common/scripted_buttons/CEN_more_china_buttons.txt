@@ -82,11 +82,13 @@ taiping_reconstruct_society = {
 	name = "taiping_reconstruct_society"
 	desc = "taiping_reconstruct_society_desc"
 
-	visible = { always = yes }
+	visible = {
+		NOT = { has_global_variable = issued_anti_bandit_edict }
+	}
 
 	possible = {
 		custom_tooltip = {
-			text = issued_anti_bandit_edict_tt
+			text = issued_edict_already_tt
 			NOT = { has_global_variable = issued_anti_bandit_edict }
 		}
 	}
@@ -124,5 +126,29 @@ taiping_reconstruct_state = {
 				years = 5
 			}
 		}
+	}
+}
+
+taiping_interest_moratorium = {
+	name = "taiping_interest_moratorium"
+	desc = "taiping_interest_moratorium_desc"
+
+	visible = {
+		NOT = { has_global_variable = taiping_interest_moratorium_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_edict_already_tt
+			NOT = { has_global_variable = taiping_interest_moratorium_issued }
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			name = interest_moratorium_edict
+			years = 5
+		}
+		set_global_variable = taiping_interest_moratorium_issued
 	}
 }

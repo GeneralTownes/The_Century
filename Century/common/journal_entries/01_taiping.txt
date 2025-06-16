@@ -431,6 +431,7 @@ je_taiping_reconstruction = {
 
 	scripted_button = taiping_reconstruct_society
 	scripted_button = taiping_reconstruct_state
+	scripted_button = taiping_interest_moratorium
 	
 	modifiers_while_active = {
 		modifier_taiping_reconstruction
