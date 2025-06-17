@@ -22,7 +22,7 @@
 		OR = {
 			custom_tooltip = {
 				text = china_abolished_monarchy_tt
-				has_variable = china_warlord_abolished_monarchy
+				has_variable = china_stamped_out_monarchism
 			}
 			AND = {
 				OR = {
