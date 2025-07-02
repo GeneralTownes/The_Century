@@ -51,12 +51,10 @@ base_values = {
 	
 	state_market_access_price_impact = 0.7
 	
-	country_company_throughput_bonus_add = 0.25
+	country_company_throughput_bonus_add = 0.2
 	country_company_construction_efficiency_bonus_add = 0.5
 	
 	country_max_weekly_construction_progress_add = 10
-	
-	country_free_trade_routes_add = 5
 	
 	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
 	
@@ -64,9 +62,11 @@ base_values = {
 	
 	unit_experience_gain_add = 0.5
 	
+	state_trade_advantage_from_capacity_add = 0.0005
+	state_max_trade_advantage_from_capacity_add = 0.2
+	
 	state_building_barracks_max_level_add = 1000
 	state_building_conscription_center_max_level_add = 1000
-	state_building_naval_base_max_level_add = 1000
 }
 
 government_wages_very_low = {
