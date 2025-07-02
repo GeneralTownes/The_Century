@@ -1,7 +1,4 @@
-﻿## SoL Thresholds
-@pop_growth_max_sol = 15			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
-
-NPolitics = {
+﻿NPolitics = {
 	APPROVAL_THRESHOLD_HAPPY = 8		# At this or above approval, IG is considered happy
 	APPROVAL_THRESHOLD_LOYAL = 15		# At this or above approval, IG is considered loyal
 }
@@ -33,7 +30,6 @@ NDiplomacy = {
 }
 
 NEconomy = {
-	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000000	# The country_gdp modifier multiplier cannot be higher than this
 }
 

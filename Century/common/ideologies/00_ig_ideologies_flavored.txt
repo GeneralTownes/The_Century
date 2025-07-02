@@ -103,6 +103,11 @@ ideology_scholar_paternalistic = {
 		law_cooperative_ownership = strongly_disapprove
 	}
 	
+	lawgroup_trade_policy = {		
+		law_isolationism = approve
+		law_mercantilism = approve
+	}
+	
 	lawgroup_voting_system = {
 		law_no_voting = approve
 		law_plurality = approve
@@ -326,6 +331,10 @@ ideology_confucian = {
 	
 	lawgroup_economic_system = {		
 		law_traditionalism = strongly_approve
+	}
+	
+	lawgroup_trade_policy = {		
+		law_isolationism = approve
 	}
 }
 
