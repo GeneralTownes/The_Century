@@ -400,10 +400,9 @@ law_state_atheism = {
 	}
 
 	on_enact = {
-		set_state_religion = rel:atheist
 		add_modifier = {
 			name = antireligious_policies
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		custom_tooltip = {
 			text = state_atheism_conversion_tt
@@ -418,21 +417,10 @@ law_state_atheism = {
 			}
 		}
 		recalculate_pop_ig_support = yes
-		if = {
-			limit = {
-				OR = {
-					has_journal_entry = je_napoleons_legacy
-					overlord = {
-						has_journal_entry = je_napoleons_legacy
-					}
-				}
-				has_global_variable = global_1848_progress
-			}
-			change_global_variable = {
-				name = global_1848_progress
-				add = 5
-			}
-		}
+	}
+
+	on_activate = {
+		set_state_religion = rel:atheist
 	}
 
 	possible_political_movements = {
