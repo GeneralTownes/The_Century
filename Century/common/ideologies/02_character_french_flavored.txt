@@ -6,7 +6,6 @@
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_republic = neutral
-		law_corporate_state = neutral
 		law_theocracy = disapprove
 	}
 	
@@ -193,7 +192,6 @@ ideology_legitimist = {
 		law_monarchy = strongly_approve
 		law_republic = disapprove
 		law_theocracy = disapprove
-		law_corporate_state = disapprove
 	}
 	
 	lawgroup_executive_structure = {
@@ -230,8 +228,7 @@ ideology_legitimist = {
 		law_censorship = approve
 		law_outlawed_dissent = strongly_approve
 	}
-	
-	
+
 	country_trigger = {
 		exists = c:FRA
 		OR = {
@@ -352,7 +349,6 @@ ideology_bonapartist = {
 		law_monarchy = strongly_approve
 		law_republic = neutral
 		law_theocracy = disapprove
-		law_corporate_state = disapprove
 	}
 	
 	lawgroup_executive_structure = {
