@@ -154,7 +154,7 @@ types country_panel_types
 					}
 
 					dynamicgridbox = {
-						datamodel = "[CountryPanel.AccessCountry.AccessInterestGroupsInGovernment]"
+						datamodel = "[CountryPanel.GetCountry.AccessInterestGroupsInGovernment]"
 						datamodel_wrap = 4
 						flipdirection = yes
 
@@ -300,6 +300,47 @@ types country_panel_types
 						fontsize_min = 15
 					}
 				}
+				
+				#COMPANY
+				country_stats_entry = {
+					visible = "[Country.HasOwningCompany]"
+					datacontext = "[Country.GetOwningCompany]"
+
+					blockoverride "stats_tooltip" {
+						tooltipwidget = {
+							FancyTooltip_Company = {}
+						}
+					}
+
+					### COMPANY ICON
+					blockoverride "entire_icon" {
+						button_icon_round = {
+							parentanchor = right|vcenter
+							position = { -5 0 }
+							onclick = "[InformationPanelBar.OpenCompanyPanel(Company.Self)]"
+
+							blockoverride "size" {
+								size = { 45 45 }
+							}
+
+							blockoverride "icon_size" {
+								size = { 65% 65% }
+							}
+
+							blockoverride "icon" {
+								texture = "[Company.GetCompanyType.GetIcon]"
+							}
+						}
+					}
+
+					blockoverride "stats_label" {
+						text = "[concept_company]"
+					}
+
+					blockoverride "stats_value" {
+						text = "[Company.GetNameNoIcon]"
+					}
+				}
 
 				#POWER BLOC
 				country_stats_entry = {
@@ -319,7 +360,6 @@ types country_panel_types
 							position = { -5 0 }
 							onclick = "[InformationPanelBar.OpenPowerBlocPanelTab( PowerBloc.Self, 'default' )]"
 							onrightclick = "[RightClickMenuManager.ShowForPowerBloc( PowerBloc.AccessSelf )]"
-							onclick = "[PowerBlocPanel.ShowLeverage]"
 
 							blockoverride "size" {
 								size = { 45 45 }
