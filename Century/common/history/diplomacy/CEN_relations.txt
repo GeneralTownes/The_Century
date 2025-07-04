@@ -1,6 +1,9 @@
 ﻿DIPLOMACY = {
 	c:CHI ?= {
-		set_relations = { country = c:DAI value = 0 }
-		set_relations = { country = c:SIA value = 0 }
+		set_relations = { country = c:DAI value = 30 }
+		set_relations = { country = c:SIA value = 30 }
+		set_relations = { country = c:NEP value = 30 }
+		set_relations = { country = c:BHU value = 30 }
+		set_relations = { country = c:SIK value = 30 }
 	}
 }
