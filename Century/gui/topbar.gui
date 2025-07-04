@@ -245,8 +245,9 @@ types topbar_components
 					spacing = 2
 					tooltip = "[Country.GetInfamyDesc]"
 					using = tooltip_below
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_infamy')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_infamy')]"
+					onmousehierarchyleave = "[RemoveTempMapMode]"
+					alpha = "[TransparentIfZero(Country.GetInfamy)]"
 					alwaystransparent = no
 
 					icon = {
