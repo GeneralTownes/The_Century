@@ -489,3 +489,394 @@ CEN_warlord_release_penalty = {
 		}
 	}
 }
+
+
+# Adding arable land to areas outside of 11_east_asia (due to rice 10k -> 5k change)
+on_game_started = {
+	effect = {
+		# 10_india
+		every_state = {
+			limit = {
+				state_region = s:STATE_BIHAR
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 375
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_WEST_BENGAL
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 553
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_EAST_BENGAL
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 601
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_ASSAM
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 105
+			}
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 375
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_AWADH
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 371
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_AGRA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 483
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_KASHMIR
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 85
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_CENTRAL_PROVINCES
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 205
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_RAJPUTANA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 199
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_CEYLON
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 30
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_ORISSA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 83
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_CIRCARS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 181
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_MYSORE
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 210
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_TRAVANCORE
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 120
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_MADRAS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 375
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_KURNOOL
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 63
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_HYDERABAD
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 250
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_BOMBAY
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 400
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_TENASSERIM
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 20
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_KACHIN
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 38
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_SHAN_STATES
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 33
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_MANDALAY
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 48
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_PEGU
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 40
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_ARAKAN
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 32
+			}
+		}
+		
+		# 12_indonesia
+		every_state = {
+			limit = {
+				state_region = s:STATE_MALAYA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 35
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_WEST_JAVA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 110
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_EAST_JAVA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 60
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_CENTRAL_JAVA
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 80
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_CELEBES
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 40
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_SUNDA_ISLANDS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 60
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_LUZON
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 80
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_VISAYAS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 60
+			}
+		}
+		
+		# 09_central_asia
+		every_state = {
+			limit = {
+				state_region = s:STATE_HIMALAYAS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 111
+			}
+		}
+		every_state = {
+			limit = {
+				state_region = s:STATE_EASTERN_HIMALAYAS
+			}
+			save_scope_as = additional_arable_land
+		}
+		scope:additional_arable_land = {
+			state_region = {
+				add_arable_land = 30
+			}
+		}
+	}
+}
