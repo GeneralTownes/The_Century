@@ -78,7 +78,18 @@ ban_opium_button = {
 		add_modifier = {
 			name = opium_ban_authority
 		}
+		c:GBR = {
+			change_relations = {
+				country = root
+				value = -30
+			}
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = root
+			}
+		}
 		remove_modifier = modifier_failure_to_ban
+		
 	}
 
 	ai_chance = {
