@@ -71,7 +71,8 @@
     background = "gfx/interface/power_blocs/backgrounds/pb_background_generic.dds"
 
     visible = {
-        UPB_st_is_china = yes
+        #UPB_st_is_china = yes
+		always = no
     }
 
     mandate_progress = power_bloc_mandate_progress_by_rank
