@@ -149,10 +149,10 @@
  bpm_law_sway_decrease_home_affairs_mod:0 "Reduced #yellow $institution_home_affairs$#! Institution"
  bpm_law_sway_decrease_home_affairs_cost:0 "#N -1#! #yellow $institution_home_affairs$#! Investment"
 
- bpm_law_sway_decrease_centralization:0 "#v Concede Autonomy#!"
- bpm_law_sway_decrease_centralization_used:0 "Reduced #yellow $institution_centralization$#! Institution"
- bpm_law_sway_decrease_centralization_mod:0 "Reduced #yellow $institution_centralization$#! Institution"
- bpm_law_sway_decrease_centralization_cost:0 "#N -1#! #yellow $institution_centralization$#! Investment"
+ bpm_law_sway_decrease_environmental:0 "#v Weaken Regulations#!"
+ bpm_law_sway_decrease_environmental_used:0 "Reduced #yellow $institution_environmental_regulations$#! Institution"
+ bpm_law_sway_decrease_environmental_mod:0 "Reduced #yellow $institution_environmental_regulations$#! Institution"
+ bpm_law_sway_decrease_environmental_cost:0 "#N -1#! #yellow $institution_environmental_regulations$#! Investment"
  
  bpm_law_sway_decrease_institution_effect:0 "[GetPlayer.MakeScope.ScriptValue('bpm_law_sway_decrease_institution_effect_value')|v0+=]"
 

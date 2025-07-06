@@ -1146,10 +1146,10 @@
 		}
 
 		bpm_law_sway_menu_item = {
-			blockoverride "sway_datacontext" { datacontext = "[GetScriptedGui('bpm_decrease_centralization_sway_gui')]" }
+			blockoverride "sway_datacontext" { datacontext = "[GetScriptedGui('bpm_decrease_environmental_sway_gui')]" }
 			blockoverride "sway_effect" { text = "bpm_law_sway_decrease_institution_effect" }
-			blockoverride "sway_name" { text = "bpm_law_sway_decrease_centralization" }
-			blockoverride "sway_cost" { text = "bpm_law_sway_decrease_centralization_cost" }
+			blockoverride "sway_name" { text = "bpm_law_sway_decrease_environmental" }
+			blockoverride "sway_cost" { text = "bpm_law_sway_decrease_environmental_cost" }
 		}
 
 		bpm_law_sway_menu_item = {

@@ -228,7 +228,8 @@ bpm_decrease_home_affairs_sway_gui = {
 				limit = { owner = { has_law = law_type:law_council_republic } }
 				bpm_ig_is_labor = no
 				leader = { bpm_leader_is_socialist = no }
-			} trigger_else = {
+			}
+			trigger_else = {
 				OR = {
 					bpm_ig_is_radical_left = yes
 					is_interest_group_type = ig_trade_unions
@@ -252,32 +253,32 @@ bpm_decrease_home_affairs_sway_gui = {
 	}
 }
 
-bpm_decrease_centralization_sway_gui = {
+bpm_decrease_environmental_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_decrease_centralization_sway_used }
+		NOT = { has_variable = bpm_decrease_environmental_sway_used }
 		owner = {
-			NOR = {
-				has_law = law_type:law_ad_hoc_centralization
-				has_law = law_type:law_confederated
+			OR = {
+				has_law = law_type:law_limited_environmental_regulations
+				has_law = law_type:law_firm_environmental_regulations
 			}
-			institution_investment_level = { institution = institution_centralization value > 1 }
+			institution_investment_level = { institution = institution_environmental_regulations value > 1 }
 		}
 		OR = {
-			is_interest_group_type = ig_rural_folk
-			is_interest_group_type = ig_landowners
+			is_interest_group_type = ig_industrialists
+			bpm_ig_is_market_liberal = yes
 		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
 	}
 	effect = {
-		set_variable = bpm_decrease_centralization_sway_used
+		set_variable = bpm_decrease_environmental_sway_used
 		bpm_subtract_from_law_sways = yes
 		owner = { bpm_update_law_enactment_variables_modifiers = yes }
 		owner = {
 			change_institution_investment_level = {
-				institution = institution_centralization investment = -1
+				institution = institution_environmental_regulations investment = -1
 			}
 		}
 	}

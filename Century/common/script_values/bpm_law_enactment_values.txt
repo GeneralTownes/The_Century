@@ -492,10 +492,10 @@ bpm_law_enactment_sway_modifiers_value = {
 		}
 	}
 	if = {
-		limit = { has_variable = bpm_decrease_centralization_sway_used }
+		limit = { has_variable = bpm_decrease_environmental_sway_used }
 		add = {
 			value = bpm_law_sway_decrease_institution_effect_value
-			desc = "bpm_law_sway_decrease_centralization_used"
+			desc = "bpm_law_sway_decrease_environmental_used"
 		}
 	}
 	if = {
