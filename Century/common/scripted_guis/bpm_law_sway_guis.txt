@@ -290,10 +290,12 @@ bpm_tax_break_rich_sway_gui = {
 			bpm_ig_is_upper_institutional = yes
 			bpm_ig_is_market_liberal = yes
 		}
-		OR = { owner = {
-				has_law = law_type:law_graduated_taxation
-				has_law = law_type:law_proportional_taxation
-		} }
+		owner = {
+			OR = {
+				has_law = law_type:law_moderate_corporation_tax
+				has_law = law_type:law_high_corporation_tax
+			}
+		}
 		NOT = { has_variable = bpm_tax_break_rich_sway_used }
 	}
 	is_valid = {
@@ -319,7 +321,12 @@ bpm_tax_break_middle_sway_gui = {
 			bpm_ig_is_upper_institutional = yes
 			bpm_ig_is_middle_institutional = yes
 		}
-		NOT = { owner = { has_law = law_type:law_consumption_based_taxation } }
+		owner = {
+			OR = {
+				has_law = law_type:law_moderate_income_tax
+				has_law = law_type:law_high_income_tax
+			}
+		}
 		NOT = { has_variable = bpm_tax_break_middle_sway_used }
 	}
 	is_valid = {
@@ -364,10 +371,7 @@ bpm_tax_break_poor_sway_gui = {
 bpm_tax_break_peasant_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		OR = {
-			is_interest_group_type = ig_rural_folk
-			has_ideology = ideology:ideology_eco_modern_agrarian
-		}
+		is_interest_group_type = ig_rural_folk
 		owner = {
 			OR = {
 				has_law = law_type:law_per_capita_based_taxation
