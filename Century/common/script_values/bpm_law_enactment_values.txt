@@ -522,19 +522,11 @@ bpm_law_enactment_sway_modifiers_value = {
 			desc = "bpm_law_sway_tax_break_peasant_used"
 		}
 	}
-
 	if = {
 		limit = { has_variable = bpm_construction_racket_sway_used }
 		add = {
 			value = bpm_law_sway_construction_racket_effect_value
 			desc = "bpm_law_sway_construction_racket_used"
-		}
-	}
-	if = {
-		limit = { has_variable = bpm_law_sway_promise_made }
-		add = {
-			value = bpm_law_sway_promise_effect_value
-			desc = "bpm_law_sway_promise_used"
 		}
 	}
 }
