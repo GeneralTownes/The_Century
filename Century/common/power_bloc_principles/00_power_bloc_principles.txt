@@ -567,8 +567,8 @@ principle_creative_legislature_1 = {
 	}
 
 	member_modifier = {		
-		# Can have one additional setback before failing a law enactment
-		country_law_enactment_ruler_veto_bypass = yes
+		#country_law_enactment_ruler_veto_bypass = yes
+		country_law_enactment_success_add = 0.05
 	}
 	
 	ai_weight = {
@@ -794,7 +794,7 @@ principle_ideological_truth_1 = {
 	}
 	
 	member_modifier = {
-		country_legitimacy_min_add = 25
+		country_legitimacy_min_add = 10
 		country_suppression_cost_mult = -0.25
 	}
 	
