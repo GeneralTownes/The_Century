@@ -1,0 +1,47 @@
+[h1] The Century [/h1]
+The Great Qing initially oversaw significant territorial expansion, economic development and population growth. Since these heady the dynasty has struggled to under the increasing outside influence of rising European empires, and social strife at home. Will the coming century be one of humiliation or one of triumph?
+
+[hr][/hr]
+[h2] Starting Position [/h2]
+Great Qing starts with a decaying tributary power block, territory-hungry northern neighbour, and dominant scholar-officials. The resources that China needs for industrialisation are all under heaven, with the exception of oil for which domestic production is unlikely to be sufficient. The burgeoning British Empire seeks to stem the flow of silver our of their treasury by creating an opium-addled mass of customers in China, and must be dealt with. The army whilst large, is outdated by European standards, and the navy lacking compared to the British and French navies.
+
+[h2] New Mechanics [/h2]
+[list]
+    [*]Reworked & expanded laws
+    [*]BPM Law Enactment System
+    [*]Anti-radicalism decree & greater taxation decree added
+    [*]Wood split into regular and hardwood forestries
+    [*]Lumber and rubber use arable land
+    [*]Canal building added to represent Grand Canal
+    [*]Synthetic rubber and oil plants
+    [*]China flavour (JEs, events, modifiers, unique IGs)
+[/list]
+
+[h2] Balance & Realism [/h2]
+[list]
+    [*]No base capacities (bureaucracy, influence, authority, tax capacity, infrastructure, minting)
+    [*]IGs happy at +8 and loyal at +15
+    [*]Education level alone provides innovation
+    [*]Universities are capped via tech and give tech spread, education access & qualifications
+    [*]Early era tech slightly cheaper, late era tech significantly more expensive
+    [*]Oil output increased ~50%
+    [*]Take state infamy costs scale up to a base of 100
+    [*]Greater historical resources in Chinese states & new state traits
+[/list]
+
+[h2] Advice & Tips [/h2]
+[list]
+    [*]In general, don't build bureaucracy unless you have a deficit
+    [*]Your army is largely a paper tiger until reformed
+    [*]State religion can provide extra needed authority
+    [*]Don't develop Taiping states pre-civil war (unless intending to flip to Taiping)
+    [*]Initially tax hard for construction, but not so that your people are below their expected SoL
+    [*]You don't need to expand (with the exception of for oil)
+[/list]
+
+[h3] To Note [/h3]
+This mod is [u] not intended[/u] for less experienced players. You may end up collapsing into The Warlord Era, however whilst this will be challenging, it is recoverable.
+Winning (cheesing) the Opium War will result in a trivially easy campaign. It is not intended to be won.
+
+[img] https://collectionapi.metmuseum.org/api/collection/v1/iiif/49156/198919/main-image [/img]
+[i] [url=https://www.metmuseum.org/essays/the-qing-dynasty-1644-1911-the-traditionalists] The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai[/url], datable to 1698 [/i]
