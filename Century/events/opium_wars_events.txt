@@ -34,35 +34,23 @@ opium_wars.1 = {
 		}
 		random_market = {
 			limit = {
-				owner = ROOT
-				any_trade_route = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
-						NOT = {
-							any_scope_state = {
-								market = {
-									owner = ROOT
-								}
+				root.market = {
+					market_imports_reliance = { target = prev goods = opium value > 0.05 }
+				}
+				owner = {
+					country_rank >= rank_value:major_power
+					NOT = {
+						any_scope_state = {
+							is_treaty_port = yes
+							any_neighbouring_state = {
+								owner = ROOT
 							}
 						}
 					}
 				}
 			}
-			random_trade_route = {
-				limit = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
-					}
-				}
-				actor_market.owner = {
-					save_scope_as = opium_importer
-				}
+			owner = {
+				save_scope_as = opium_exporter
 			}
 		}
 	}
@@ -85,30 +73,23 @@ opium_wars.1 = {
 			# can't just use the scope because we want to catch multiple countries if we can
 		random_market = {
 			limit = {
-				owner = ROOT
-				any_trade_route = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
+				root.market = {
+					market_imports_reliance = { target = prev goods = opium value > 0.05 }
+				}
+				owner = {
+					country_rank >= rank_value:major_power
+					NOT = {
+						any_scope_state = {
+							is_treaty_port = yes
+							any_neighbouring_state = {
+								owner = ROOT
+							}
+						}
 					}
 				}
 			}
-			every_trade_route = {
-				limit = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
-					}
-				}
-				actor_market.owner = {
-					trigger_event = {
-						id = opium_wars.2
-					}
-				}
+			owner = {
+				trigger_event = { id = opium_wars.2 }
 			}
 		}
 		ai_chance = {
