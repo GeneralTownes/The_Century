@@ -21,7 +21,7 @@ coup.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	cooldown = { months = very_long_modifier_time }
+	cooldown = { days = very_long_modifier_time }
 
 	trigger = {
 		has_dlc_feature = voice_of_the_people_content
@@ -335,7 +335,7 @@ coup.1 = {
 		scope:coup_ig = {
 			add_modifier = {
 				name = coup_supported
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -356,7 +356,7 @@ coup.1 = {
 		scope:coup_ig = {
 			add_modifier = {
 				name = coup_resisted
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -511,7 +511,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -632,7 +632,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -696,7 +696,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -849,7 +849,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -907,7 +907,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -956,7 +956,7 @@ coup.2 = {
 			}
 			add_modifier = {
 				name = modifier_unrivaled_in_government
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}

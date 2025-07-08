@@ -30,7 +30,7 @@
 	effect = {
 		add_modifier = {
 			name = modifier_chi_deporting_missionaries
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		every_country = {
 			limit = {

@@ -140,7 +140,7 @@ je_opium_wars = {
 		}
 		add_modifier = {
 			name = british_lost_opium_wars
-			months = long_modifier_time
+			days = long_modifier_time
 			is_decaying = yes
 		}
 	}

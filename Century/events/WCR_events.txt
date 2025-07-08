@@ -35,7 +35,7 @@ WCR_ev.1 = {
         
         add_modifier = {
             name   = WCR_westernized_modifier
-            months = normal_modifier_time
+            days = normal_modifier_time
         }
     }
 }
