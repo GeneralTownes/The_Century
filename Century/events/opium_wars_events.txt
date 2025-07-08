@@ -251,7 +251,7 @@ opium_wars.3 = {
 		}
 		add_modifier = {
 			name = china_authority
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		remove_modifier = chinese_opium_addiction
 	}
@@ -263,7 +263,7 @@ opium_wars.3 = {
 		}
 		add_modifier = {
 			name = china_welfare
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		remove_modifier = chinese_opium_addiction
 	}
@@ -459,7 +459,7 @@ opium_wars.5 = {
 		default_option = yes
 		add_modifier = {
 			name = opium_wars_navy_modifier
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 
@@ -467,7 +467,7 @@ opium_wars.5 = {
 		name = opium_wars.5.b
 		add_modifier = {
 			name = opium_wars_export_modifier
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -521,7 +521,7 @@ opium_wars.6 = {
 		}
 		add_modifier = {
 			name = executed_opium_smugglers
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
@@ -529,7 +529,7 @@ opium_wars.6 = {
 		name = opium_wars.6.b
 		add_modifier = {
 			name = returned_opium_smugglers
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		change_relations = {
 			country = scope:smuggler_country
@@ -605,7 +605,7 @@ opium_wars.7 = {
 		scope:recovry_state = {
 			add_modifier = {
 				name = opium_health_focus
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -618,7 +618,7 @@ opium_wars.7 = {
 			}
 			add_modifier = {
 				name = opium_loyalty_focus
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -694,7 +694,7 @@ opium_wars.8 = {
 		scope:opium_addiction_state = {
 			add_modifier = {
 				name = opium_addiction_state_mod
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
@@ -709,7 +709,7 @@ opium_wars.8 = {
 		scope:opium_addiction_state = {
 			add_modifier = {
 				name = lesser_opium_addiction_state_mod
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}
