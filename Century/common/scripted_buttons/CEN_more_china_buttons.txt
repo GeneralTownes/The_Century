@@ -170,7 +170,7 @@ taiping_interest_moratorium = {
 	effect = {
 		add_modifier = {
 			name = interest_moratorium_edict
-			years = 5
+			years = 10
 		}
 		set_global_variable = taiping_interest_moratorium_issued
 	}
