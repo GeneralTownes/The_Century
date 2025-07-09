@@ -21,7 +21,7 @@ chinese_economic_stagnation = {
 eight_banners = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	building_training_rate_mult = -0.9
-	state_loyalists_from_sol_change_mult = 0.25
+	state_radicals_and_loyalists_from_sol_change_mult = 0.25
 }
 modifier_agricultural_econ_agri_debuff = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
@@ -131,7 +131,7 @@ anti_bandit_edict = {
 state_anti_bandit_edict = {
 	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_positive.dds
 	state_mortality_turmoil_mult = 0.02
-	state_loyalists_from_sol_change_mult = 0.5
+	state_radicals_and_loyalists_from_sol_change_mult = 0.5
 	state_tax_waste_add = 0.01
 }
 interest_moratorium_edict = {
@@ -157,7 +157,7 @@ early_warlords_collapse = {
 	country_loan_interest_rate_mult = 0.01
 	state_turmoil_effects_mult = 0.01
 	state_radicals_from_political_movements_mult = 0.01
-	state_loyalists_from_sol_change_mult = -0.01
+	state_radicals_and_loyalists_from_sol_change_mult = -0.01
 	country_legitimacy_ideological_incoherence_mult = 0.01
 	country_legitimacy_base_add = -1
 	country_legitimacy_headofstate_add = 1
