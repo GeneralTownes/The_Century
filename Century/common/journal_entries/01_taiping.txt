@@ -244,6 +244,7 @@ je_taiping = {
 	scripted_button = qing_accept_han
 	scripted_button = qing_increase_recruitment
 	scripted_button = qing_rescind_increase_recruitment
+	scripted_button = taiping_interest_moratorium_war
 	
 	modifiers_while_active = {
 		modifier_taiping_occupation
@@ -317,6 +318,12 @@ je_taiping = {
 				has_modifier = qing_delegate_levies
 			}
 			remove_modifier = qing_delegate_levies
+		}
+		if = {
+			limit = {
+				has_modifier = interest_moratorium_edict
+			}
+			remove_modifier = interest_moratorium_edict
 		}
 		hidden_effect = {
 			remove_modifier = taiping_taiping_rebellion

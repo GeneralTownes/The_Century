@@ -78,6 +78,29 @@ qing_rescind_increase_recruitment = {
 	}
 }
 
+taiping_interest_moratorium_war = {
+	name = "taiping_interest_moratorium"
+	desc = "taiping_interest_moratorium_desc"
+
+	visible = {
+		NOT = { has_modifier = interest_moratorium_edict }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_edict_already_tt
+			NOT = { has_modifier = interest_moratorium_war_edict }
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			name = interest_moratorium_edict
+			years = -1
+		}
+	}
+}
+
 taiping_reconstruct_society = {
 	name = "taiping_reconstruct_society"
 	desc = "taiping_reconstruct_society_desc"
