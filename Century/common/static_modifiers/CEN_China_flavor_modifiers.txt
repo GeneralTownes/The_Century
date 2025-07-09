@@ -145,6 +145,7 @@ interest_moratorium_edict = {
 	state_clergymen_investment_pool_contribution_add = -1
 	state_aristocrats_investment_pool_contribution_add = -1
 	state_capitalists_investment_pool_contribution_add = -1
+	country_authority_mult = -0.1
 }
 warlords_westernisation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
