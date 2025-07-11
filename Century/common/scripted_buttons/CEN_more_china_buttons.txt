@@ -5,15 +5,13 @@ qing_accept_han = {
 	visible = { is_ai = no }
 
 	possible = {
-		cu:han = {
-			culture_is_discriminated_in = ROOT
-		}
 		any_scope_war = {
 		    has_war_support = {
 		        target = ROOT
 		        value < 0
 		    }
 		}
+		NOT = { has_global_variable = qing_accepted_han }
 	}
 
 	effect = {
