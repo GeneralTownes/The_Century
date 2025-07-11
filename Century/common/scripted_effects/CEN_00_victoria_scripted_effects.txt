@@ -27,7 +27,7 @@
 			hq_region = scope:heavenly_kingdom_spawn.region
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = scope:heavenly_kingdom_spawn.state_region
 				count = 20
 			}
@@ -72,7 +72,7 @@
 				hq_region = scope:tpg_defector_state.region
 		
 				combat_unit = {
-					type = unit_type:combat_unit_type_irregular_infantry
+					type = unit_type:combat_unit_type_line_infantry
 					state_region = scope:tpg_defector_state.state_region
 					count = 10
 				}
