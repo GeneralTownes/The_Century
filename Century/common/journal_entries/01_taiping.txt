@@ -319,11 +319,18 @@ je_taiping = {
 			}
 			remove_modifier = qing_delegate_levies
 		}
-		if = {
-			limit = {
-				has_modifier = interest_moratorium_edict
+		custom_tooltip = {
+			text = interest_moratorium_edict_continue_tt
+			if = {
+				limit = {
+					has_modifier = interest_moratorium_edict
+				}
+				remove_modifier = interest_moratorium_edict
+				add_modifier = {
+					name = interest_moratorium_edict
+					years = 10
+				}
 			}
-			remove_modifier = interest_moratorium_edict
 		}
 		hidden_effect = {
 			remove_modifier = taiping_taiping_rebellion

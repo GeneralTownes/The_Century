@@ -64,6 +64,7 @@
  china_army_reform_tt:0 "Has succesfully completed the #BOLD Army Reforms"
  china_army_reform_rename_tt:0 "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetName] will be renamed to the #Yellow New Army#!."
  je_army_reform_china_special_tooltip_advance: "The following conditions will #bold advance#! the #bold Progress Bar#!:\n• Experiencing the #BOLD Taiping Rebellion#! #Green 15%#!\n• Experiencing the #BOLD Boxer Rebellion#! #Green 15%#!\n• Researching #BOLD Law Enforcement#! #Green 10%#!\n• Researching each of the following #Green 20%#!:\n  • #bold Army Reserves#!\n  • #bold Logistics#!\n  • #bold Enlistment Offices#!\n  • #bold Military Statistics#!\n  • #bold Wargaming#! \n\nBeing on any Army Model other than [GetLawType('law_peasant_levies').GetName] will reform the army at a rate of #green 0.5%#! a year."
+ interest_moratorium_edict_continue_tt: "If enacted, the $interest_moratorium_edict$ will be continued for 10 years post war."
  
  xinhai_revolution_events.1.t:0 "Anti-Manchu Sentiment"
  xinhai_revolution_events.1.d:2 "Angered by the continuing official discrimination in [ROOT.GetCountry.GetName], Han[SCOPE.sCulture('han_culture').GetName] subjects are organizing into dissident republican movements, determined to end the Manchu[SCOPE.sCulture('manchu_culture').GetName] [GetLawType('law_monarchy').GetName] and establish a [GetLawType('law_republic').GetName]. Many courtiers now urge [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to address this discrimination and curtail the republican threat." 

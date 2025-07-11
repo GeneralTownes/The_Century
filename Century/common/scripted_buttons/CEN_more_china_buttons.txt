@@ -96,6 +96,7 @@ taiping_interest_moratorium_war = {
 			name = interest_moratorium_edict
 			years = -1
 		}
+		set_global_variable = taiping_interest_moratorium_issued
 	}
 }
 
