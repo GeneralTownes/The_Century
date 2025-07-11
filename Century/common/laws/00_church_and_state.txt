@@ -47,10 +47,6 @@ law_state_religion = {
 		country_radicalism_increases_full_acceptance_mult = -0.1
 	}
 	
-	possible_political_movements = {
-		law_freedom_of_conscience
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -61,20 +57,6 @@ law_state_religion = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		# Clergy like theocracy
-		add = {
-			desc = "POP_CLERGYMEN"
-			if = {
-				limit = {
-					is_pop_type = clergymen
-				}
-			}
-			value = 0.25
 		}
 	}
 	
@@ -166,10 +148,6 @@ law_freedom_of_conscience = {
 		country_loyalism_increases_full_acceptance_mult = 0.1
 	}
 	
-	possible_political_movements = {
-		law_total_separation
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -180,41 +158,6 @@ law_freedom_of_conscience = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_ACADEMICS"
-			# Academics generally against religious perseecution
-			if = {
-				limit = {
-					owner = {
-						NOT = { has_law = law_type:law_total_separation }
-					}
-					is_pop_type = academics
-				}
-				value = 0.25
-			}
-		}
-
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					religion_accepted = no
-					owner = { NOT = { has_law = law_type:law_total_separation } }
-				}
-				add = 0.5
-				
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}
-			}			
 		}
 	}
 	
@@ -303,10 +246,6 @@ law_total_separation = {
 		country_allow_conversion_full_acceptance_bool = no
 	}
 	
-	possible_political_movements = {
-		law_freedom_of_conscience
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -317,27 +256,6 @@ law_total_separation = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					religion_accepted = no
-				}
-				add = 0.5
-
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}
-			}			
 		}
 	}
 	
@@ -422,10 +340,6 @@ law_state_atheism = {
 	on_activate = {
 		set_state_religion = rel:atheist
 	}
-
-	possible_political_movements = {
-		law_freedom_of_conscience
-	}
 	
 	can_impose = {
 		OR = {
@@ -440,30 +354,6 @@ law_state_atheism = {
 		}
 	}
 
-	pop_support = {
-		value = 0
-		# Some euphoric academics will support this
-		add = {
-			desc = "POP_ACADEMICS"
-			if = {
-				limit = {
-					is_pop_type = academics
-				}
-				value = 0.1
-			}
-		}
-		# Atheists will support this
-		add = {
-			desc = "POP_ATHEISTS"
-			if = {
-				limit = {
-					has_pop_religion = atheist
-				}
-				value = 0.5
-			}
-		}
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		

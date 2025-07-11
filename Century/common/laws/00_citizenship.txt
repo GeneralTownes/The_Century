@@ -76,15 +76,6 @@ law_ethnostate = {
 		country_disallow_government_work_full_acceptance_bool = no
 	}
 	
-	possible_political_movements = {
-		law_racial_segregation
-		law_cultural_exclusion
-	}
-	
-	pop_support = {
-		value = 0
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -170,15 +161,6 @@ law_national_supremacy = {
 		country_disallow_government_work_open_prejudice_bool = no
 		country_disallow_government_work_second_rate_citizen_bool = no
 		country_disallow_government_work_full_acceptance_bool = no
-	}
-	
-	possible_political_movements = {
-		law_racial_segregation
-		law_cultural_exclusion
-	}
-	
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -267,33 +249,6 @@ law_racial_segregation = {
 		country_disallow_government_work_full_acceptance_bool = no
 	}
 	
-	possible_political_movements = {
-		law_national_supremacy
-		law_cultural_exclusion
-	}
-	
-	pop_support = {
-		value = 0
-		
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					culture_accepted = no
-					owner = { has_law = law_type:law_national_supremacy }
-				}
-				add = 0.5
-				
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}	
-			}			
-		}
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -378,33 +333,6 @@ law_language_discrimination = {
 		country_disallow_government_work_open_prejudice_bool = no
 		country_disallow_government_work_second_rate_citizen_bool = no
 		country_disallow_government_work_full_acceptance_bool = no
-	}
-	
-	possible_political_movements = {
-		law_racial_segregation
-		law_multicultural
-	}
-	
-	pop_support = {
-		value = 0
-		
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					culture_accepted = no
-					owner = { NOT = { has_law = law_type:law_multicultural } }
-				}
-				add = 0.5				
-				
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}	
-			}			
-		}
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -502,44 +430,6 @@ law_cultural_exclusion = {
 		country_disallow_government_work_full_acceptance_bool = no
 	}
 	
-	possible_political_movements = {
-		law_racial_segregation
-		law_multicultural
-	}
-	
-	pop_support = {
-		value = 0
-		
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					culture_accepted = no
-					owner = { 
-						OR = { 
-							has_law = law_type:law_ethnostate
-							is_enacting_law = law_type:law_ethnostate
-							has_law = law_type:law_national_supremacy
-							is_enacting_law = law_type:law_national_supremacy
-							has_law = law_type:law_racial_segregation
-							is_enacting_law = law_type:law_racial_segregation
-							has_law = law_type:law_language_discrimination
-							is_enacting_law = law_type:law_language_discrimination
-						} 
-					}
-				}
-				add = 0.5				
-				
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}	
-			}			
-		}
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -616,31 +506,6 @@ law_multicultural = {
  		country_disallow_government_work_open_prejudice_bool = no
 		country_disallow_government_work_second_rate_citizen_bool = no
 		country_disallow_government_work_full_acceptance_bool = no
-	}
-	
-	possible_political_movements = {
-		law_cultural_exclusion
-	}
-	
-	pop_support = {
-		value = 0
-		
-		add = {
-			desc = "POP_DISCRIMINATED"
-			if = {
-				limit = { 
-					culture_accepted = no
-				}
-				add = 0.5
-				
-				if = {
-					limit = { 
-						standard_of_living <= 10
-					}
-					add = 0.5
-				}	
-			}			
-		}
 	}
 	
 	ai_enact_weight_modifier = { #Petitions

@@ -4,16 +4,6 @@
 	
 	progressiveness = 0
 	
-	possible_political_movements = {
-		law_national_guard
-		law_secret_police
-		law_guaranteed_liberties
-	}
-
-	pop_support = {
-		value = 0
-	}
-	
 	# AI shouldn't try to abolish institutions
 	ai_will_do = {
 		always = no
@@ -51,24 +41,6 @@ law_national_guard = {
 	institution_modifier = {
 		state_conscription_rate_add = 0.005
 		state_radicals_from_political_movements_mult = -0.1
-	}
-	
-	possible_political_movements = {
-		law_secret_police
-		law_guaranteed_liberties
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_OFFICERS"
-			if = {
-				limit = { 
-					is_pop_type = officers
-				}
-				value = 0.33
-			}
-		}
 	}
 	
 	# Don't return to national guard we have something more advanced
@@ -119,17 +91,9 @@ law_secret_police = {
 		state_radicalism_increases_cultural_erasure_mult = -0.02
 		state_radicalism_increases_open_prejudice_mult = -0.01
 	}
-	
-	possible_political_movements = {
-		law_guaranteed_liberties
-	}
 
 	on_enact = {
 		custom_tooltip = unlock_arrange_accident_tt
-	}
-
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -171,18 +135,6 @@ law_guaranteed_liberties = {
 		state_radicalism_increases_violent_hostility_mult = 0.05
 		state_radicalism_increases_cultural_erasure_mult = 0.02
 		state_radicalism_increases_open_prejudice_mult = 0.01
-	}
-	
-	possible_political_movements = {
-		law_secret_police
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "ALL_POPS"
-			value = 0.01
-		}
 	}
 	
 	ai_enact_weight_modifier = { #Petitions

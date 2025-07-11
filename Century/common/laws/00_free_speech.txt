@@ -23,17 +23,9 @@ law_outlawed_dissent = {
 		country_tech_spread_mult = -0.25
 		country_leverage_resistance_mult = 0.5
 	}
-	
-	possible_political_movements = {
-		law_censorship
-	}
 
 	unlocking_technologies = {
 		#central_archives
-	}
-
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -61,15 +53,6 @@ law_censorship = {
 		country_leverage_resistance_mult = 0.25
 	}
 	
-	possible_political_movements = {
-		law_right_of_assembly
-		law_outlawed_dissent
-	}
-
-	pop_support = {
-		value = 0
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -91,43 +74,6 @@ law_right_of_assembly = {
 		country_bolster_attraction_mult = 0.25
 		country_suppression_attraction_mult = -0.25
 		state_migration_pull_mult = 0.05
-	}
-	
-	possible_political_movements = {
-		law_censorship
-		law_protected_speech
-	}
-
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_ACADEMICS"			
-			if = {
-				limit = {
-					owner = { 
-						NOT = { 
-							has_law = law_type:law_protected_speech
-						} 
-					}
-					is_pop_type = academics
-				}
-				value = 0.5
-			}
-		}
-		# People don't like censorship
-		add = {
-			desc = "ALL_POPS"
-			if = {
-				limit = {
-					owner = { 
-						NOT = { 
-							has_law = law_type:law_protected_speech
-						} 
-					}
-				}
-				value = 0.01
-			}
-		}
 	}
 	
 	on_activate = {
@@ -172,27 +118,6 @@ law_protected_speech = {
 		country_tech_spread_mult = 0.25
 		state_migration_pull_mult = 0.1
 		country_leverage_resistance_mult = -0.25
-	}
-	
-	possible_political_movements = {
-		law_right_of_assembly
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_ACADEMICS"			
-			if = {
-				limit = {
-					is_pop_type = academics
-				}
-				value = 0.33
-			}
-		}
-		add = {
-			desc = "ALL_POPS"			
-			value = 0.01
-		}
 	}
 
 	on_activate = {

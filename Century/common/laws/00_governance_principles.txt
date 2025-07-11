@@ -56,11 +56,6 @@ law_monarchy = {
 		country_rigidity_baseline_add = 10
 	}
 	
-	possible_political_movements = {
-		law_republic
-		law_theocracy
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -71,22 +66,6 @@ law_monarchy = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0	
-		add = {
-			desc = "POP_ARISTOCRATS"
-			if = {
-				limit = {
-					OR = {
-						is_pop_type = aristocrats
-						is_pop_type = peasants
-					}
-				}
-				value = 0.33
-			}
 		}
 	}
 	
@@ -125,11 +104,6 @@ law_theocracy = {
 		country_authority_mult = 0.10
 	}
 	
-	possible_political_movements = {
-		law_monarchy
-		law_republic
-	}
-	
 	on_activate = {
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_independent_executive
@@ -149,20 +123,6 @@ law_theocracy = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		
-		add = {
-			desc = "POP_CLERGYMEN"
-			if = {
-				limit = { 
-					is_pop_type = clergymen
-				}
-				value = 0.33
-			}
 		}
 	}
 	
@@ -198,11 +158,6 @@ law_republic = {
 		country_legitimacy_govt_total_votes_add = 10
 		#country_legitimacy_ideological_incoherence_mult = -0.1
 		state_migration_pull_mult = 0.1
-	}
-	
-	possible_political_movements = {
-		law_monarchy
-		law_theocracy
 	}
 	
 	can_impose = {
@@ -368,19 +323,6 @@ law_republic = {
 					}
 				}
 				add_journal_entry = { type = je_abolish_monarchy }
-			}
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_MIDDLE_STRATA"
-			if = {
-				limit = { 
-					strata = middle
-				}
-				value = 0.05
 			}
 		}
 	}

@@ -110,14 +110,6 @@ law_vanguardism = {
 		}
 	}
 	
-	possible_political_movements = {
-		law_oligarchy
-		law_landed_voting
-		law_autocracy
-		law_technocracy
-		law_elder_council
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -132,10 +124,6 @@ law_vanguardism = {
 				can_impose_law_default = yes
 			}
 		}
-	}
-	
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -197,14 +185,6 @@ law_autocracy = {
 		country_authority_mult = 0.20
 	}
 	
-	possible_political_movements = {
-		law_oligarchy
-		law_landed_voting
-		law_elder_council
-		law_technocracy
-		law_vanguardism
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -215,31 +195,6 @@ law_autocracy = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_ARISTOCRATS"			
-			if = {
-				limit = {
-					owner = {
-						NOT = { has_law = law_type:law_oligarchy }
-					}
-					is_pop_type = aristocrats
-				}
-				value = 0.25
-			}
-		}
-		add = {
-			desc = "POP_OFFICIERS"			
-			if = {
-				limit = {
-					is_pop_type = officers
-				}
-				value = 0.25
-			}
 		}
 	}
 	
@@ -303,13 +258,6 @@ law_oligarchy = {
 		country_authority_mult = 0.15
 	}
 	
-	possible_political_movements = {
-		law_autocracy 
-		law_landed_voting
-		law_technocracy
-		law_elder_council
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -320,34 +268,6 @@ law_oligarchy = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_ARISTOCRATS"			
-			if = {
-				limit = {
-					owner = {
-						NOT = { has_law = law_type:law_autocracy }
-					}
-					is_pop_type = aristocrats
-				}
-				value = 0.25
-			}
-		}
-		add = {
-			desc = "POP_CAPITALISTS"			
-			if = {
-				limit = {
-					owner = {
-						NOT = { has_law = law_type:law_wealth_voting }
-					}
-					is_pop_type = capitalists
-				}
-				value = 0.25
-			}
 		}
 	}
 	
@@ -411,13 +331,6 @@ law_technocracy = {
 	unlocking_technologies = {
 		central_archives 
 	}
-
-	possible_political_movements = {
-		law_autocracy 
-		law_oligarchy
-		law_vanguardism
-		law_landed_voting
-	}
 	
 	can_impose = {
 		OR = {
@@ -433,10 +346,6 @@ law_technocracy = {
 				can_impose_law_default = yes
 			}
 		}
-	}
-
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -509,16 +418,6 @@ law_elder_council = {
 		country_clergymen_pol_str_mult = 0.5
 		country_authority_add = 200
 	}
-	
-	possible_political_movements = {
-		law_autocracy 
-		law_oligarchy
-		law_landed_voting
-	}
-	
-	pop_support = {
-		value = 0
-	}
 }
 
 law_clerical_voting = {
@@ -575,40 +474,6 @@ law_clerical_voting = {
 		country_aristocrats_voting_power_add = 25
 		country_clergymen_voting_power_add = 50
 		country_authority_add = 200
-	}
-	
-	possible_political_movements = {
-		law_oligarchy
-		law_autocracy 
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY" 
-			
-			if = {
-				limit = { 
-					OR = {
-						NOT = { strata = rich }
-						wealth < 30
-					}					
-					owner = { 
-						NOR = {
-							has_law = law_type:law_wealth_voting
-							has_law = law_type:law_census_voting
-							has_law = law_type:law_universal_suffrage
-							has_law = law_type:law_anarchy
-						}	
-					}
-				}
-				add = {
-					value = literacy_rate
-					divide = 4
-				}
-			}
-		}			
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -696,14 +561,6 @@ law_landed_voting = {
 		country_rigidity_baseline_add = -5
 	}
 	
-	possible_political_movements = {
-		law_oligarchy
-		law_technocracy
-		law_autocracy 
-		law_wealth_voting
-		law_census_voting
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -715,35 +572,6 @@ law_landed_voting = {
 			}
 			can_impose_law_default = yes
 		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY" 
-			
-			if = {
-				limit = { 
-					OR = {
-						NOT = { strata = rich }
-						wealth < 30
-					}					
-					owner = { 
-						NOR = {
-							has_law = law_type:law_wealth_voting
-							has_law = law_type:law_census_voting
-							has_law = law_type:law_universal_suffrage
-							has_law = law_type:law_anarchy
-						}	
-					}
-				}
-				add = {
-					value = literacy_rate
-					divide = 2
-				}
-			}
-		}			
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -828,12 +656,6 @@ law_wealth_voting = {
 		country_rigidity_baseline_add = -5
 	}
 	
-	possible_political_movements = {
-		law_landed_voting
-		law_census_voting
-		law_universal_suffrage
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -845,31 +667,6 @@ law_wealth_voting = {
 			}
 			can_impose_law_default = yes
 		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY"
-			
-			if = {
-				limit = { 
-					NOT = { strata = rich }
-					owner = { 
-						NOR = {
-							has_law = law_type:law_census_voting
-							has_law = law_type:law_universal_suffrage
-							has_law = law_type:law_anarchy
-						}	
-					}
-				}
-				add = {
-					value = literacy_rate
-					divide = 2
-				}
-			}
-		}			
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -960,12 +757,6 @@ law_census_voting = {
 		country_rigidity_baseline_add = -5
 	}
 	
-	possible_political_movements = {
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -977,30 +768,6 @@ law_census_voting = {
 			}
 			can_impose_law_default = yes
 		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY"
-			
-			if = {
-				limit = { 
-					wealth < 25
-					owner = { 
-						NOR = {
-							has_law = law_type:law_universal_suffrage
-							has_law = law_type:law_anarchy
-						}	
-					}
-				}
-				add = {
-					value = literacy_rate
-					divide = 2
-				}
-			}
-		}			
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -1091,12 +858,6 @@ law_universal_suffrage = {
 		country_rigidity_baseline_add = -5
 	}
 	
-	possible_political_movements = {
-		law_census_voting
-		law_wealth_voting
-		law_anarchy
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -1107,42 +868,6 @@ law_universal_suffrage = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY"
-			
-			if = {
-				limit = { 
-					owner = { 
-						NOT = {
-							has_law = law_type:law_anarchy
-						}	
-					}
-				}
-				if = {
-					limit = {
-						wealth < 15
-					}
-					add = {
-						value = literacy_rate
-						divide = 2
-					}
-				}
-				if = {
-					limit = {
-						wealth < 10
-					}
-					add = {
-						value = literacy_rate
-						divide = 2
-					}
-				}
-			}			
 		}
 	}
 	
@@ -1213,10 +938,6 @@ law_anarchy = {
 		country_rigidity_baseline_add = -10
 	}
 	
-	possible_political_movements = {
-		law_universal_suffrage
-	}
-	
 	can_impose = {
 		OR = {
 			AND = {
@@ -1237,21 +958,6 @@ law_anarchy = {
 		exists = ruler
 		ruler = {
 			has_ideology = ideology:ideology_anarchist
-		}
-	}
-	
-	pop_support = {
-		value = 0
-
-		add = {
-			desc = "POP_LITERACY"
-			
-			if = {
-				limit = { 
-					wealth < 10
-				}
-				add = literacy_rate
-			}
 		}
 	}
 	
