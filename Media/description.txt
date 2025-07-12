@@ -56,6 +56,7 @@ Winning (cheesing) the Opium War will result in a trivially easy campaign. It is
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3312478537] Global Stats[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3288407594] EOH: Map Mod[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383] Map Font: Paradox Victorian[/url]
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3517537783] Faster Mouse Scroll Speed[/url]
 [/list]
 
 [img] https://collectionapi.metmuseum.org/api/collection/v1/iiif/49156/198919/main-image [/img]

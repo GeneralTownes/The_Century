@@ -12,3 +12,4 @@
 - [Global Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=3312478537)
 - [EOH: Map Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3288407594)
 - [Map Font: Paradox Victorian](https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383)
+- [Faster Mouse Scroll Speed](https://steamcommunity.com/sharedfiles/filedetails/?id=3517537783)
