@@ -130,7 +130,7 @@ heavenly.2 = {
 			}
 			add_modifier = {
 				name = god_worshippers
-				days = normal_modifier_time
+				days = long_modifier_time
 			}
 			convert_population = {
 				target = rel:protestant value = 0.1
@@ -291,7 +291,7 @@ heavenly.3 = {
 		scope:cult_growth_state = {
 			add_modifier = {
 				name = god_worshippers
-				days = normal_modifier_time
+				days = long_modifier_time
 			}
 			convert_population = {
 				target = rel:protestant value = 0.1
