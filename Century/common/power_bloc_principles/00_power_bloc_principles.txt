@@ -114,7 +114,6 @@ principle_vassalization_1 = {
 	}
 	
 	leader_modifier = {
-		country_legitimacy_base_add = 10
 	}
 	
 	ai_weight = {
@@ -694,8 +693,6 @@ principle_exploit_members_1 = {
 	}
 
 	leader_modifier = {
-		# Modifiers from previous level(s)		
-		country_authority_mult = 0.1
 		# Increase leader influence
 		country_influence_mult = 0.1
 	}
