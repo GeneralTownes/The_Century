@@ -1,0 +1,231 @@
+the_matter_of_ireland_progress_bar = {
+ 	name = "the_matter_of_ireland_progress_bar_name"
+ 	desc = "the_matter_of_ireland_progress_bar_desc_1"
+	second_desc = "the_matter_of_ireland_progress_bar_desc_2" #This will be printed on the right side of the progress bar
+
+ 	double_sided_bad = yes
+
+ 	yearly_progress = {
+		#Advance
+		if = {
+			limit = {
+ 				has_law = law_type:law_republic
+				has_law = law_type:law_elected_bureaucrats
+				has_law = law_type:law_universal_suffrage
+				#has_law = law_type:law_multicultural
+				has_law = law_type:law_total_separation
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_guaranteed_liberties
+				has_law = law_type:law_no_colonial_affairs
+				NOT = { has_law = law_type:law_plurality }
+				
+				NOT = {
+					any_scope_state = {
+						NOT = {
+							OR = {
+								state_region = s:STATE_HOME_COUNTIES
+								state_region = s:STATE_LANCASHIRE
+								state_region = s:STATE_WALES
+								state_region = s:STATE_YORKSHIRE
+								state_region = s:STATE_HIGHLANDS
+								state_region = s:STATE_MIDLANDS
+								state_region = s:STATE_EAST_ANGLIA
+								state_region = s:STATE_WEST_COUNTRY
+								state_region = s:STATE_LOWLANDS
+								state_region = s:STATE_ULSTER
+								state_region = s:STATE_MUNSTER
+								state_region = s:STATE_LEINSTER
+								state_region = s:STATE_CONNAUGHT
+							}
+						}
+					}
+				}
+				
+				NOT = {
+					any_country = {
+						is_subject_of = root
+					}
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_NO_COLONISING"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law = law_type:law_no_colonial_affairs
+ 			}
+			add = {
+				desc = "IRELAND_JE_NO_COLONISATION_LAW"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_LEINSTER
+					is_incorporated = yes
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_INCORP_LEINSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_ULSTER
+					is_incorporated = yes
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_INCORP_ULSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_CONNAUGHT
+					is_incorporated = yes
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_INCORP_CONNAUGHT"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_MUNSTER
+					is_incorporated = yes
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_INCORP_MUNSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_LEINSTER
+					has_decree = decree_emergency_relief
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_LEINSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_ULSTER
+					has_decree = decree_emergency_relief
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_ULSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_CONNAUGHT
+					has_decree = decree_emergency_relief
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_CONNAUGHT"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_MUNSTER
+					has_decree = decree_emergency_relief
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_MUNSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_LEINSTER
+					has_building = building_university
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_UNI_LEINSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_ULSTER
+					has_building = building_university
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_UNI_ULSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_CONNAUGHT
+					has_building = building_university
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_UNI_CONNAUGHT"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_MUNSTER
+					has_building = building_university
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_UNI_MUNSTER"
+				value = 0.25
+			}
+		}
+		
+		#Retreat
+		subtract = {
+			desc = "IRELAND_JE_BASE_RETREAT"
+			value = 1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_state_religion
+					has_law = law_type:law_state_atheism
+				}
+ 			}
+			subtract = {
+				desc = "IRELAND_JE_CATHOLIC_DISCRIMINATION"
+				value = 1
+			}
+		}
+ 	}
+
+ 	start_value = 100
+ 	min_value = 0
+ 	max_value = 200
+}
