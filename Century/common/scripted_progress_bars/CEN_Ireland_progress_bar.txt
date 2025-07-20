@@ -9,16 +9,6 @@ the_matter_of_ireland_progress_bar = {
 		#Advance
 		if = {
 			limit = {
- 				has_law = law_type:law_republic
-				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_universal_suffrage
-				#has_law = law_type:law_multicultural
-				has_law = law_type:law_total_separation
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_no_colonial_affairs
-				NOT = { has_law = law_type:law_plurality }
-				
 				NOT = {
 					any_scope_state = {
 						NOT = {
@@ -40,10 +30,9 @@ the_matter_of_ireland_progress_bar = {
 						}
 					}
 				}
-				
 				NOT = {
 					any_country = {
-						is_subject_of = root
+						is_subject_of = c:GBR
 					}
 				}
  			}
@@ -154,6 +143,54 @@ the_matter_of_ireland_progress_bar = {
  			}
 			add = {
 				desc = "IRELAND_JE_DECREE_MUNSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_LEINSTER
+					has_decree = decree_promote_social_mobility
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_2_LEINSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_ULSTER
+					has_decree = decree_promote_social_mobility
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_2_ULSTER"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_CONNAUGHT
+					has_decree = decree_promote_social_mobility
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_2_CONNAUGHT"
+				value = 0.25
+			}
+		}
+		if = {
+			limit = {
+ 				any_scope_state = {
+					state_region = s:STATE_MUNSTER
+					has_decree = decree_promote_social_mobility
+				}
+ 			}
+			add = {
+				desc = "IRELAND_JE_DECREE_2_MUNSTER"
 				value = 0.25
 			}
 		}
