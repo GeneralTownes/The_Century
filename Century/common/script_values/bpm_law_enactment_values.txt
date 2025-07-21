@@ -53,10 +53,10 @@ bpm_ig_law_support_total_value = {
 			limit = {
 				owner = { has_political_movement = currently_enacting_law.type }
 				has_variable = bpm_ig_enacting_law_change_steps
-				var:bpm_ig_enacting_law_change_steps > 0
+				var:bpm_ig_enacting_law_change_steps >= 0
 			}
 			add = {
-				value = 20
+				value = 10
 				desc = "bpm_ig_law_support_from_movement"
 			}
 		}
@@ -343,7 +343,7 @@ bpm_law_enactment_ruler_approval = {
 			}
 		}
 	}
-	# Insurrection: 20
+	# Insurrection: 25
 	# Movement: 10
 	if = {
 		limit = { has_political_movement = currently_enacting_law.type }
