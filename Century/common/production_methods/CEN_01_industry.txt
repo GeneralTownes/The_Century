@@ -444,3 +444,32 @@ pm_automatic_bottle_blowers = {
 	}
 	required_input_goods = electricity
 }
+
+pm_assembly_lines_building_automotive_industry = {
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		conveyors
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_rubber_add = 5
+			goods_input_electricity_add = 20
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -500
+		}
+	}
+
+	required_input_goods = electricity
+}
