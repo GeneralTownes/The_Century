@@ -304,7 +304,7 @@ ideology_traditionalist_minoritarian = {
 	}
 }
 
-ideology_atheist = {
+ideology_nihilist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_atheist.dds"
 	
 	character_ideology = yes
@@ -341,7 +341,7 @@ ideology_atheist = {
 	}
 
 	interest_group_leader_trigger = {
-		ideology_atheist_valid_trigger = yes
+		ideology_nihilist_valid_trigger = yes
 	}
 	
 	non_interest_group_leader_trigger = {
@@ -365,7 +365,7 @@ ideology_atheist = {
 			}
 		}
 		interest_group = {
-			ideology_atheist_valid_trigger = yes
+			ideology_nihilist_valid_trigger = yes
 		}
 	}
 	
