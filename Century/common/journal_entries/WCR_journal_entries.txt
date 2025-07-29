@@ -155,6 +155,4 @@
     }
     
     progressbar = yes
-    
-    timeout = 0 # Never time out
 }
