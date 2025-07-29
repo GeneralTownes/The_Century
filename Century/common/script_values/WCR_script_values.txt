@@ -123,7 +123,7 @@ WCR_sv_calculate_total_powerful_trad_clout = {
 # Scope: Interest Group
 WCR_sv_calculate_IG_progressive_score = {
     # Base amount
-    add = -200
+    add = -400
     
     # Special case: led by Traditionalist
     if = {
