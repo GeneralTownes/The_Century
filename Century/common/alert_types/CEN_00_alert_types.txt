@@ -1,0 +1,26 @@
+﻿legitimacy_level_illegitimate_alert = {
+	script_context = player_country
+	texture = "gfx/interface/icons/alert_icons/low_legitimacy.dds"
+
+	valid = {
+		government_legitimacy < 10
+	}
+
+	open_panel = politics|interest_groups
+	type = alert
+	color = red
+}
+
+legitimacy_level_unacceptable_alert = {
+	texture = "gfx/interface/icons/alert_icons/low_legitimacy.dds"
+	script_context = player_country
+
+	valid = {
+		government_legitimacy < 30
+		government_legitimacy >= 10
+	}
+
+	open_panel = politics|interest_groups
+	type = angry_important_action
+	color = yellow
+}

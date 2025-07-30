@@ -1,6 +1,8 @@
 ﻿NPolitics = {
 	APPROVAL_THRESHOLD_HAPPY = 8		# At this or above approval, IG is considered happy
 	APPROVAL_THRESHOLD_LOYAL = 15		# At this or above approval, IG is considered loyal
+	
+	SHOW_CONFIRMATION_BELOW_LEGITIMACY = 10
 }
 
 NDiplomacy = {

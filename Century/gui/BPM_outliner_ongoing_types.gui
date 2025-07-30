@@ -45,7 +45,7 @@ types ongoing_outliner_items {
 					texture = "gfx/interface/backgrounds/round_button_bg.dds"
 					
 					round_progress_default = {
-						visible = "[Not(LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25'))]"
+						visible = "[Not(LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)10'))]"
 						size = { 80% 80% }
 						parentanchor = center
 						datacontext = "[GetPlayer.GetLawBeingEnacted]"
@@ -53,7 +53,7 @@ types ongoing_outliner_items {
 					}
 
 					round_progress_bad = {
-						visible = "[LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25')]"
+						visible = "[LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)10')]"
 						size = { 80% 80% }
 						parentanchor = center
 						datacontext = "[GetPlayer.GetLawBeingEnacted]"
@@ -61,13 +61,13 @@ types ongoing_outliner_items {
 					}
 					
 					law_icon = {
-						alpha = "[TransparentIfTrue(LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25'))]"
+						alpha = "[TransparentIfTrue(LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)10'))]"
 						size = { 38 38 }
 						parentanchor = center
 					}
 
 					paused_icon_bad = {
-						visible = "[LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25')]"
+						visible = "[LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)10')]"
 						#size = { 28 28 }
 						parentanchor = center
 					}
