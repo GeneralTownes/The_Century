@@ -36,8 +36,8 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
     [*]State religion can provide extra needed authority
     [*]Don't develop Taiping states pre-civil war (unless intending to flip to Taiping)
     [*]The Taiping Civil War can be very challenging, prepare accordingly
-    [*]Initially tax hard for construction, but not so that your people are below their expected SoL
-    [*]You don't need to expand (with the exception of for oil)
+    [*]Initially tax hard for construction, mindful of radicals from below expected SoL
+    [*]No need to expand for resources (bar oil), the Middle Kingdom has all under Heaven
 [/list]
 
 [h3] To Note [/h3]
@@ -58,6 +58,7 @@ Winning (cheesing) the Opium War will result in a trivially easy campaign. It is
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383] Map Font: Paradox Victorian[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3517537783] Faster Mouse Scroll Speed[/url]
 [/list]
+Anyone welcome to use part/all of this mod in their own, and if so credit with a reference appreciated.
 
 [img] https://collectionapi.metmuseum.org/api/collection/v1/iiif/49156/198919/main-image [/img]
 [i] [url=https://www.metmuseum.org/essays/the-qing-dynasty-1644-1911-the-traditionalists] The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai[/url], datable to 1698 [/i]
