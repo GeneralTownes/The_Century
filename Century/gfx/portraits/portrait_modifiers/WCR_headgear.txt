@@ -1238,38 +1238,30 @@
         }
     }
     
-    # WCR_chinese_modern_ruler_headgear_han = {
-        # dna_modifiers = {
-            # accessory = {
-                # mode = add
-                # gene = headgear
-                # template = no_headgear
-                # range = { 0 1 }
-            # }
-            # accessory = {
-                # mode = add
-                # gene = WCR_china_headgear
-                # template  = qing_new_army_headgear
-                # accessory = xinjunmao_jiangjun
-            # }
-        # }
+    WCR_chinese_modern_ruler_headgear_han = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = no_headgear
+                range = { 0 1 }
+            }
+        }
         
-        # weight = {
-            # base = 0
-            # modifier = {
-                # add = 100
-                # WCR_has_completed_westernization_trigger = yes
-                # WCR_ruler_has_domestic_influence_trigger = yes
-                # monarchy_clothes_trigger = yes
-                # scope:character ?= {
-                    # exists = owner
-                    # c:CHI ?= owner
-                    # is_female = no
-                    # WCR_is_scope_owner_qing_dynasty_trigger = no
-                # }
-            # }
-        # }
-    # }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                WCR_has_completed_westernization_trigger = yes
+                WCR_ruler_has_domestic_influence_trigger = yes
+                scope:character ?= {
+                    exists = owner
+                    c:CHI ?= owner
+                    WCR_is_scope_owner_qing_dynasty_trigger = no
+                }
+            }
+        }
+    }
     
     WCR_chinese_modern_general_headgear_qing = {
         dna_modifiers = {
