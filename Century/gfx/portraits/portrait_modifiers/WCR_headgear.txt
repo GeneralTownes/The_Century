@@ -1288,7 +1288,7 @@
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 1000
                 WCR_has_completed_westernization_trigger = yes
                 WCR_ruler_has_domestic_influence_trigger = yes
                 scope:character ?= {
