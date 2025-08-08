@@ -1,0 +1,9 @@
+﻿ig_trait_CEN_chi_rural = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+
+	modifier = {
+		building_group_bg_agriculture_mortality_mult = -0.25
+		building_group_bg_plantations_mortality_mult = -0.25
+	}
+}

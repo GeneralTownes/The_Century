@@ -18,3 +18,7 @@ ite_ig_trait_meritocracy: "Meritocracy"
 ite_ig_trait_meritocracy_desc: "Those who study, work, and embody the Confucian virtues will be rewarded in this life. Self-cultivation is cultivation of the Middle Kingdom."
 ite_ig_trait_right_of_rebellion: "Right of Rebellion"
 ite_ig_trait_right_of_rebellion_desc: "When the government seems to be losing the Mandate of Heaven, it is natural and just to seek a worthy replacement."
+
+# CEN traits
+ig_trait_CEN_chi_rural: "All Under Heaven"
+ig_trait_CEN_chi_rural_desc: "Peace and prosperity rules over the Middle Kingdom, allowing for our rural communities to rapidly grow and propser."

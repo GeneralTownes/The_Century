@@ -84,6 +84,16 @@
 				set_ig_trait = ig_trait:ig_trait_honest_work
 				set_ig_trait = ig_trait:ig_trait_khalsa_panth
 			}
+			else_if = {
+				limit = {
+					owner = {
+						country_has_state_religion = rel:confucian
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_honest_work
+				set_ig_trait = ig_trait:ig_trait_CEN_chi_rural
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_old_ways
 				set_ig_trait = ig_trait:ig_trait_honest_work
