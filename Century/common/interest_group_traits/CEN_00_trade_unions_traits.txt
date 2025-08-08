@@ -1,0 +1,18 @@
+﻿ig_trait_CEN_solidarity = {
+	icon = "gfx/interface/icons/ig_trait_icons/solidarity.dds"
+	min_approval = loyal
+
+	modifier = {
+		state_loyalists_from_political_movements_mult = 0.1
+		country_loyalists_from_legitimacy_mult = 0.1
+	}
+}
+
+ig_trait_CEN_work_to_rule = {
+	icon = "gfx/interface/icons/ig_trait_icons/work_to_rule.dds"
+	max_approval = unhappy
+
+	modifier = {
+		building_railway_throughput_add = -0.25
+	}
+}

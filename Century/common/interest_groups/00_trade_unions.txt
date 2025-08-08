@@ -40,6 +40,19 @@
 				set_ig_trait = ig_trait:ig_trait_industrial_organizers
 				set_ig_trait = ig_trait:ig_trait_bourse_du_travail
 			}
+			else_if = {
+				limit = {
+					any_primary_culture = {
+						OR = {
+							has_discrimination_trait = sinosphere
+							has_discrimination_trait = han_chinese
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_CEN_work_to_rule
+				set_ig_trait = ig_trait:ig_trait_industrial_organizers
+				set_ig_trait = ig_trait:ig_trait_CEN_solidarity
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_work_to_rule
 				set_ig_trait = ig_trait:ig_trait_industrial_organizers
