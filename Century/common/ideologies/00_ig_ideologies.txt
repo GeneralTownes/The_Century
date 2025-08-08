@@ -186,6 +186,13 @@ ideology_stratocratic = {
 		law_commercialized_agriculture = neutral
 		law_collectivized_agriculture = strongly_disapprove
 	}
+
+	lawgroup_caste_hegemony = {
+		law_hindu_caste_enforced = strongly_approve
+		law_hindu_caste_codified = approve
+		law_hindu_caste_not_enforced = disapprove
+		law_affirmative_action = strongly_disapprove
+	}
 	
 	lawgroup_debt = {
 		law_peonage = strongly_approve
