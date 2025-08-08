@@ -3,7 +3,7 @@
 	min_approval = loyal
 
 	modifier = {
-		building_group_bg_agriculture_mortality_mult = -0.25
-		building_group_bg_plantations_mortality_mult = -0.25
+		building_group_bg_agriculture_mortality_mult = -0.2
+		building_group_bg_plantations_mortality_mult = -0.2
 	}
 }
