@@ -164,7 +164,7 @@
 				}
 				change_global_variable = {
 					name = china_army_reform_tick
-					add = 0.5
+					add = 1
 				}
 			}
 		}
