@@ -328,6 +328,17 @@
 				set_interest_group_name = austrian_aristocracy
 			}
 		}
+		
+		# HMPS Swiss Republicanism
+		if = {
+			limit = {
+				c:SWI ?= this
+			}
+			ig:ig_landowners = { 
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_republican_paternalistic
+			}
+		}
 	}
 	on_disable = {}
 	
