@@ -40,7 +40,7 @@ bpm_ig_law_support_total_value = {
 				owner = {
 					has_journal_entry = je_government_petition
 					has_variable = desired_law_var
-					var:desired_law_var.type = currently_enacting_law.type
+					var:desired_law_var.type = owner.currently_enacting_law.type
 				}
 			}
 			add = {
@@ -51,7 +51,14 @@ bpm_ig_law_support_total_value = {
 
 		if = {
 			limit = {
-				owner = { has_political_movement = currently_enacting_law.type }
+				owner = {
+					any_political_movement = {
+						law_enactment_stance = {
+							law = owner.currently_enacting_law.type
+							value > neutral
+						}
+					}
+				}
 				has_variable = bpm_ig_enacting_law_change_steps
 				var:bpm_ig_enacting_law_change_steps >= 0
 			}
@@ -60,7 +67,25 @@ bpm_ig_law_support_total_value = {
 				desc = "bpm_ig_law_support_from_movement"
 			}
 		}
-		else_if = {
+		if = {
+			limit = {
+				owner = {
+					any_political_movement = {
+						law_enactment_stance = {
+							law = owner.currently_enacting_law.type
+							value < neutral
+						}
+					}
+				}
+				has_variable = bpm_ig_enacting_law_change_steps
+				var:bpm_ig_enacting_law_change_steps <= 0
+			}
+			add = {
+				value = -10
+				desc = "bpm_ig_law_opposition_from_movement"
+			}
+		}
+		if = {
 			limit = {
 				owner = { has_variable = bpm_law_enactment_desired_by_revolution }
 			}
@@ -346,7 +371,7 @@ bpm_law_enactment_ruler_approval = {
 	# Insurrection: 25
 	# Movement: 10
 	if = {
-		limit = { has_political_movement = currently_enacting_law.type }
+		limit = { has_political_movement = owner.currently_enacting_law.type }
 		add = {
 			value = 10
 			desc = "bpm_ruler_law_support_from_movement"
