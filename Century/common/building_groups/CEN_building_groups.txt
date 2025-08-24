@@ -13,6 +13,10 @@ bg_logging = {
 	urbanization = 5
 	infrastructure_usage_per_level = 1
 	
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
+	
 	economy_of_scale_ai_factor = 1.5
 	foreign_investment_ai_factor = 1.0
 	
@@ -51,6 +55,10 @@ bg_minor_canals = {
 	always_possible = no
 	
 	lens = infrastructure
+	
+	should_auto_expand = {
+		default_auto_expand_rule = yes
+	}
 
 	capped_by_resources = yes
 	
