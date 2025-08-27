@@ -619,6 +619,18 @@ warlord_china_events.101 = { #Chinese Reunification
 			}
 			add_claim = ROOT
 		}
+		every_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_AMUR
+					state_region = s:STATE_KIRGHIZIA
+				}
+				NOT = { owner = root }
+			}
+			state_region = {
+				add_claim = ROOT
+			}
+		}
 	}
 
 	option = {
