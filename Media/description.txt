@@ -47,6 +47,7 @@ Winning (cheesing) the Opium War will result in a trivially easy campaign. It is
 [h3] With great thanks to: [/h3]
 [list]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3325961657] HMPS[/url]
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2932134122] BPM[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3316251100] BPM Lite[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3300629321] IGTE[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2888391145] Extra Topbar Info[/url]
