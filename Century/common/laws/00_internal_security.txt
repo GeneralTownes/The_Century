@@ -123,13 +123,12 @@ law_guaranteed_liberties = {
 	
 	modifier = {
 		country_institution_home_affairs_max_investment_add = 2
-		country_authority_add = 100
 	}
 	
 	institution = institution_home_affairs
 	institution_modifier = {
-		state_loyalists_from_political_movements_mult = 0.05
-		state_radicals_and_loyalists_from_sol_change_mult = -0.05
+		state_loyalists_from_political_movements_mult = 0.1
+		state_radicals_and_loyalists_from_sol_change_mult = -0.1
 		state_migration_pull_mult = 0.02
 		
 		state_radicalism_increases_violent_hostility_mult = 0.05
