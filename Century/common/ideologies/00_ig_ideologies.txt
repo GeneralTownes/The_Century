@@ -884,6 +884,12 @@ ideology_populist = {
 		law_symmetric_bicameralism = neutral
 	}
 	
+	lawgroup_bureaucracy = {
+		law_appointed_bureaucrats = neutral
+		law_elected_bureaucrats = approve	
+		law_hereditary_bureaucrats = strongly_disapprove
+	}
+	
 	lawgroup_army_model = {
 		law_national_militia = strongly_approve
 		law_mass_conscription = strongly_disapprove
