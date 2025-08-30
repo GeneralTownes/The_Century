@@ -8,7 +8,7 @@ qing_accept_han = {
 		any_scope_war = {
 		    has_war_support = {
 		        target = ROOT
-		        value < 0
+		        value < 10
 		    }
 		}
 		NOT = { has_global_variable = qing_accepted_han }
