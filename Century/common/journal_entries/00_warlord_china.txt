@@ -1,5 +1,5 @@
 ﻿je_warlord_china = {
-	icon = "gfx/interface/icons/event_icons/five_races_flag_fire.dds"
+	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
 	
 	group = je_group_historical_content
 	
@@ -29,7 +29,7 @@
 					has_law = law_type:law_monarchy
 					has_law = law_type:law_theocracy
 				}
-				has_technology_researched = pan-nationalism
+				#has_technology_researched = pan-nationalism
 				has_technology_researched = political_agitation
 				NOT = {
 					any_civil_war = {
