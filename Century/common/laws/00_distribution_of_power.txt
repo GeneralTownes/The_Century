@@ -545,7 +545,7 @@ law_landed_voting = {
 	}
 
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 130
+		country_legitimacy_govt_total_clout_add = 135
 		country_aristocrats_voting_power_add = 50
 		country_authority_add = 200
 		country_institution_suffrage_max_investment_add = 1
@@ -640,7 +640,7 @@ law_wealth_voting = {
 	}
 	
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 130
+		country_legitimacy_govt_total_clout_add = 135
 		country_voting_power_wealth_threshold_add = 40
 		country_voting_power_base_add = 10
 		country_authority_add = 100
@@ -738,7 +738,7 @@ law_census_voting = {
 		law_outlawed_dissent
 	}
 
-	modifier = {country_legitimacy_govt_total_clout_add = 130
+	modifier = {country_legitimacy_govt_total_clout_add = 135
 		country_legitimacy_ideological_incoherence_mult = -0.2
 		country_voting_power_wealth_threshold_add = 30
 		country_voting_power_from_literacy_add = 6
@@ -840,7 +840,7 @@ law_universal_suffrage = {
 	}
 	
 	modifier = {
-		country_legitimacy_govt_total_clout_add = 130
+		country_legitimacy_govt_total_clout_add = 135
 		country_voting_power_base_add = 20
 		country_voting_power_wealth_threshold_add = 30
 		state_migration_pull_mult = 0.15
