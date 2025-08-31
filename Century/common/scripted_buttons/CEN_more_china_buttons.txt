@@ -8,7 +8,7 @@ qing_accept_han = {
 		any_scope_war = {
 		    has_war_support = {
 		        target = ROOT
-		        value < 10
+		        value < 1
 		    }
 		}
 		NOT = { has_global_variable = qing_accepted_han }
@@ -172,5 +172,272 @@ taiping_interest_moratorium = {
 			years = 10
 		}
 		set_global_variable = taiping_interest_moratorium_issued
+	}
+}
+
+## 100 days reform JE buttons
+100_days_con_mon = {
+	name = "100_days_con_mon"
+	desc = "100_days_con_mon_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_con_mon_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_con_mon_issued }
+		}
+		NOR = {
+			has_law = law_type:law_wealth_voting
+			has_law = law_type:law_census_voting
+			has_law = law_type:law_universal_suffrage
+		}
+	}
+
+	effect = {
+		activate_law = law_type:law_wealth_voting
+		if = {
+			limit = {
+				has_law = law_type:law_outlawed_dissent
+			}
+			activate_law = law_type:law_censorship
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = law_type:law_monarchy
+						value > neutral
+					}
+					law_stance = {
+						law = law_type:law_autocracy
+						value > neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 20
+			}
+		}
+		set_global_variable = 100_days_con_mon_issued
+	}
+}
+100_days_peking_uni = {
+	name = "100_days_peking_uni"
+	desc = "100_days_peking_uni_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_peking_uni_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_peking_uni_issued }
+		}
+	}
+
+	effect = {
+		capital = {
+			create_building={
+ 				building="building_university"
+ 				level=5
+ 				reserves=1
+ 			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = law_type:law_religious_schools
+						value > neutral
+					}
+					law_stance = {
+						law = law_type:law_state_religion
+						value > neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 5
+			}
+		}
+		set_global_variable = 100_days_peking_uni_issued
+	}
+}
+100_days_modern_edu = {
+	name = "100_days_modern_edu"
+	desc = "100_days_modern_edu_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_modern_edu_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_modern_edu_issued }
+		}
+		NOT = { has_law = law_type:law_public_schools }
+	}
+
+	effect = {
+		activate_law = law_type:law_public_schools
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = law_type:law_religious_schools
+						value > neutral
+					}
+					law_stance = {
+						law = law_type:law_public_schools
+						value < neutral
+					}
+					law_stance = {
+						law = law_type:law_state_religion
+						value > neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 10
+			}
+		}
+		set_global_variable = 100_days_modern_edu_issued
+	}
+}
+100_days_capitalism = {
+	name = "100_days_capitalism"
+	desc = "100_days_capitalism_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_capitalism_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_capitalism_issued }
+		}
+		NOR = {
+			has_law = law_type:law_interventionism
+			has_law = law_type:law_laissez_faire
+		}
+	}
+
+	effect = {
+		activate_law = law_type:law_interventionism
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = law_type:law_traditionalism
+						value > neutral
+					}
+					law_stance = {
+						law = law_type:law_interventionism
+						value < neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 10
+			}
+		}
+		set_global_variable = 100_days_capitalism_issued
+	}
+}
+100_days_mil_reforms = {
+	name = "100_days_mil_reforms"
+	desc = "100_days_mil_reforms_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_mil_reforms_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_mil_reforms_issued }
+		}
+		has_law = law_type:law_peasant_levies
+	}
+
+	effect = {
+		activate_law = law_type:law_mass_conscription
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = law_type:law_peasant_levies
+						value > neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 5
+			}
+		}
+		set_global_variable = 100_days_mil_reforms_issued
+	}
+}
+100_days_rail_mines = {
+	name = "100_days_rail_mines"
+	desc = "100_days_rail_mines_desc"
+
+	visible = {
+		NOT = { has_global_variable = 100_days_rail_mines_issued }
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = issued_100_days_reform_already_tt
+			NOT = { has_global_variable = 100_days_rail_mines_issued }
+		}
+		has_journal_entry = je_chinese_industry
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = half_remaining_rail_je_req_tt
+			change_global_variable = {
+				name = chinese_rail_expansion
+				add = 100
+			}
+			change_global_variable = {
+				name = chinese_rail_expansion
+				divide = 2
+			}
+		}
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_landowners
+			}
+			add_modifier = {
+				name = outraged_over_hundred_days_reform_modifier
+				days = long_modifier_time
+				is_decaying = yes
+				multiplier = 5
+			}
+		}
+		set_global_variable = 100_days_rail_mines_issued
 	}
 }

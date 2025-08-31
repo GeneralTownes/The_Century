@@ -172,3 +172,228 @@ chinese_agriculture_progress_bar = {
 	min_value = 0
 	max_value = 100
 }
+
+100_days_reform_success_bar = {
+	name = "100_days_reform_success_bar"
+	desc = "100_days_reform_success_bar_desc"
+
+	default = yes
+
+	monthly_progress = {
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_wealth_voting
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_universal_suffrage
+				}
+			}
+			add = {
+				desc = "voting_allowed"
+				value = 4
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_public_schools
+			}
+			add = {
+				desc = "reformed_edu_law"
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				literacy_rate >= 0.3
+			}
+			add = {
+				desc = "good_lit"
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_interventionism
+					has_law = law_type:law_laissez_faire
+				}
+			}
+			add = {
+				desc = "reformed_eco_law"
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_peasant_levies }
+			}
+			add = {
+				desc = "reformed_military"
+				value = 1
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = { has_journal_entry = je_chinese_industry }
+			}
+			add = {
+				desc = "reformed_mines_and_rail"
+				value = 1
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+}
+
+100_days_reform_failure_bar = {
+	name = "100_days_reform_failure_bar"
+	desc = "100_days_reform_failure_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress = {
+	
+		# From buttons
+		if = {
+			limit = {
+				has_global_variable = 100_days_con_mon_issued
+			}
+			add = {
+				desc = "100_days_con_mon_issued"
+				value = 20
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = 100_days_peking_uni_issued
+			}
+			add = {
+				desc = "100_days_peking_uni_issued"
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = 100_days_modern_edu_issued
+			}
+			add = {
+				desc = "100_days_modern_edu_issued"
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = 100_days_capitalism_issued
+			}
+			add = {
+				desc = "100_days_capitalism_issued"
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = 100_days_mil_reforms_issued
+			}
+			add = {
+				desc = "100_days_mil_reforms_issued"
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = 100_days_rail_mines_issued
+			}
+			add = {
+				desc = "100_days_rail_mines_issued"
+				value = 5
+			}
+		}
+		
+		# Reductions from situation
+		if = {
+			limit = {
+				global_var:china_warlord_explosion >= 80
+			}
+			add = {
+				desc = "near_collapse"
+				value = -15
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = boxers_happened
+			}
+			add = {
+				desc = "boxers_happened"
+				value = -10
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					state_region = {
+						is_homeland = cu:manchu
+					}
+					is_treaty_port = no
+					NOT = { owner = ROOT }
+				}
+			}
+			add = {
+				desc = "manchu_homelands_lost"
+				value = -10
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					state_region = {
+						is_homeland = cu:han
+					}
+					is_treaty_port = no
+					NOT = { owner = ROOT }
+				}
+			}
+			add = {
+				desc = "han_homelands_lost"
+				value = -20
+			}
+		}
+		if = {
+			limit = {
+				GDP <= 100000000
+			}
+			add = {
+				desc = "low_gdp"
+				value = -5
+			}
+		}
+		if = {
+			limit = {
+				literacy_rate <= 0.3
+			}
+			add = {
+				desc = "low_lit"
+				value = -5
+			}
+		}
+		
+		# Increases from situation
+		if = {
+			limit = {
+				has_global_variable = qing_accepted_han
+			}
+			add = {
+				desc = "outrage_over_accepted_han"
+				value = 10
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+}

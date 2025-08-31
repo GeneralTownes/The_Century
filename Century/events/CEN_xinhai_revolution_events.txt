@@ -44,10 +44,14 @@ xinhai_revolution_events.1 = {
     			set_ideology = ideology:ideology_republican_leader
     		}
 		}
-		ig:ig_armed_forces = {
-			remove_ideology = ideology_monarchist
-		}
-		ig:ig_rural_folk = {
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_rural_folk
+				}
+				has_ideology = ideology:ideology_monarchist
+			}
 			remove_ideology = ideology_monarchist
 		}
 		add_radicals = {

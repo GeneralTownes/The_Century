@@ -20,7 +20,19 @@
 		NOT = { country_has_primary_culture = cu:han }
     }
     possible = {
-        has_technology_researched = pan-nationalism
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = je_the_hundred_started_tt
+					has_global_variable = 100_days_attempted
+				}
+				custom_tooltip = {
+					text = fracture_val_70_tt
+					global_var:china_warlord_explosion >= 70
+				}
+			}
+			has_technology_researched = pan-nationalism
+		}
         NOT = { country_has_primary_culture = cu:han }
 		hidden_trigger = {
 			NOT = { has_global_variable = xinhai_je_happened }

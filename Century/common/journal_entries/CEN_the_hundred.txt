@@ -1,0 +1,125 @@
+﻿je_the_hundred = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	group = je_group_historical_content
+	
+	scripted_button = 100_days_con_mon
+	scripted_button = 100_days_peking_uni
+	scripted_button = 100_days_modern_edu
+	scripted_button = 100_days_capitalism
+	scripted_button = 100_days_mil_reforms
+	scripted_button = 100_days_rail_mines
+	
+	scripted_progress_bar = 100_days_reform_success_bar
+	scripted_progress_bar = 100_days_reform_failure_bar
+	
+    is_shown_when_inactive = {
+        OR = {
+			AND = {
+				exists = c:CHI
+				THIS = c:CHI
+			}
+			AND = {
+				exists = c:TPG
+				THIS = c:TPG
+			}
+		}
+		hidden_trigger = {
+			has_journal_entry = je_warlord_china
+			has_law = law_type:law_monarchy
+			NOT = { has_global_variable = 100_days_attempted }
+		}
+    }
+    possible = {
+		has_law = law_type:law_monarchy
+		has_journal_entry = je_warlord_china
+		custom_tooltip = {
+			text = fracture_val_60_tt
+			global_var:china_warlord_explosion >= 60
+		}
+    }
+    immediate = {
+		set_global_variable = 100_days_attempted
+    }
+    complete = {
+		custom_tooltip = {
+			text = je_the_hundred_complete_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(100_days_reform_success_bar)" >= 100
+			}
+		}
+    }
+    on_complete = {
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = 100_days_success_modifier
+				days = long_modifier_time
+				is_decaying = yes
+			}
+		}
+		every_interest_group = {
+			limit = {
+				has_ideology = ideology:ideology_republican
+			}
+			remove_ideology = ideology_republican
+			add_ideology = ideology_constitutionalist
+		}
+    }
+	fail = {
+		custom_tooltip = {
+			text = je_the_hundred_fail_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(100_days_reform_failure_bar)" >= 100
+			}
+		}
+	}
+	on_fail = {
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_autocracy }
+			}
+			activate_law = law_type:law_autocracy
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_law = law_type:law_traditionalism
+					has_law = law_type:law_agrarianism
+				}
+			}
+			activate_law = law_type:law_agrarianism
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_no_schools }
+			}
+			activate_law = law_type:law_no_schools
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_peasant_levies }
+			}
+			activate_law = law_type:law_peasant_levies
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_national_supremacy }
+			}
+			activate_law = law_type:law_national_supremacy
+		}
+		
+		every_interest_group = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+				has_ideology = ideology:ideology_monarchist
+			}
+			remove_ideology = ideology_monarchist
+			add_ideology = ideology_republican
+		}
+	}
+	invalid = {
+		NOT = { has_journal_entry = je_warlord_china }
+	}
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
