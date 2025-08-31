@@ -710,7 +710,7 @@ ideology_republican = {
 	}
 	
 	lawgroup_executive_structure = {
-		law_independent_executive = neutral
+		law_independent_executive = strongly_approve
 		law_dual_executive = approve
 		law_parliamentary_system = approve
 		law_council_republic = neutral
