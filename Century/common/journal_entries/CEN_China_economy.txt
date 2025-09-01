@@ -70,10 +70,6 @@ je_chinese_agriculture = {
 	}
 	
 	immediate = {
-		add_modifier = {
-			name = modifier_agricultural_econ_agri_debuff
-			months = -1
-		}
 		set_variable = { name = legitimist_progress_from_farms value = 0 }
     }
 	
@@ -89,7 +85,7 @@ je_chinese_agriculture = {
 	}
 	
 	on_complete = {
-		if = {
+		every_scope_state = {
 			limit = {
 				has_modifier = modifier_agricultural_econ_agri_debuff
 			}
@@ -114,6 +110,133 @@ je_chinese_agriculture = {
 				}
 			}
 			change_variable = { name = legitimist_progress_from_farms divide = 400 }
+			
+			# Modifier Removal & Assignment
+			every_scope_state = {
+				limit = {
+					has_modifier = modifier_agricultural_econ_agri_debuff
+				}
+				remove_modifier = modifier_agricultural_econ_agri_debuff
+			}
+			# variable manipulation
+			je:je_chinese_agriculture = {
+				set_global_variable = {
+					name = agri_je_progress_var
+					value = "scripted_bar_progress(chinese_agriculture_progress_bar)"
+				}
+			}
+			change_global_variable = {
+				name = agri_je_progress_var
+				divide = -100
+			}
+			change_global_variable = {
+				name = agri_je_progress_var
+				add = 1
+			}
+			
+			# assigning adjustments of the modifier
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_subsistence_building = yes
+						occupancy >= 0.95
+					}
+					NOT = { has_modifier = modifier_agricultural_econ_agri_debuff }
+				}
+				add_modifier = {
+					name = modifier_agricultural_econ_agri_debuff
+					months = -1
+					multiplier = global_var:agri_je_progress_var
+				}
+			}
+			set_variable = {
+				name = adjusted_agri_je_progress_var
+				value = global_var:agri_je_progress_var
+			}
+			change_variable = {
+				name = adjusted_agri_je_progress_var
+				multiply = 0.8
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_subsistence_building = yes
+						occupancy >= 0.9
+					}
+					NOT = { has_modifier = modifier_agricultural_econ_agri_debuff }
+				}
+				add_modifier = {
+					name = modifier_agricultural_econ_agri_debuff
+					months = -1
+					multiplier = var:adjusted_agri_je_progress_var
+				}
+			}
+			set_variable = {
+				name = adjusted_agri_je_progress_var
+				value = global_var:agri_je_progress_var
+			}
+			change_variable = {
+				name = adjusted_agri_je_progress_var
+				multiply = 0.6
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_subsistence_building = yes
+						occupancy >= 0.85
+					}
+					NOT = { has_modifier = modifier_agricultural_econ_agri_debuff }
+				}
+				add_modifier = {
+					name = modifier_agricultural_econ_agri_debuff
+					months = -1
+					multiplier = var:adjusted_agri_je_progress_var
+				}
+			}
+			set_variable = {
+				name = adjusted_agri_je_progress_var
+				value = global_var:agri_je_progress_var
+			}
+			change_variable = {
+				name = adjusted_agri_je_progress_var
+				multiply = 0.4
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_subsistence_building = yes
+						occupancy >= 0.8
+					}
+					NOT = { has_modifier = modifier_agricultural_econ_agri_debuff }
+				}
+				add_modifier = {
+					name = modifier_agricultural_econ_agri_debuff
+					months = -1
+					multiplier = var:adjusted_agri_je_progress_var
+				}
+			}
+			set_variable = {
+				name = adjusted_agri_je_progress_var
+				value = global_var:agri_je_progress_var
+			}
+			change_variable = {
+				name = adjusted_agri_je_progress_var
+				multiply = 0.2
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_subsistence_building = yes
+						occupancy >= 0.75
+					}
+					NOT = { has_modifier = modifier_agricultural_econ_agri_debuff }
+				}
+				add_modifier = {
+					name = modifier_agricultural_econ_agri_debuff
+					months = -1
+					multiplier = var:adjusted_agri_je_progress_var
+				}
+			}
 		}
 	}
 

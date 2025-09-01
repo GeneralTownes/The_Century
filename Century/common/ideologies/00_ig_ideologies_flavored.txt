@@ -95,9 +95,9 @@ ideology_scholar_paternalistic = {
 	}
 	
 	lawgroup_economic_system = {		
-		law_traditionalism = strongly_approve
-		law_agrarianism = neutral
-		law_interventionism = disapprove
+		law_traditionalism = approve
+		law_agrarianism = strongly_approve
+		law_interventionism = neutral
 		law_laissez_faire = disapprove
 		law_command_economy = disapprove
 		law_cooperative_ownership = strongly_disapprove
@@ -331,6 +331,7 @@ ideology_confucian = {
 	
 	lawgroup_economic_system = {		
 		law_traditionalism = strongly_approve
+		law_agrarianism = approve
 	}
 	
 	lawgroup_trade_policy = {		
