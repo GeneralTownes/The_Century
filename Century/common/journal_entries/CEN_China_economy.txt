@@ -78,7 +78,7 @@ je_chinese_agriculture = {
 				c:CHI ?= owner
 				OR = {
 					state_region = { is_homeland = cu:han }
-					state_region = { is_homeland = cu:machu }
+					state_region = { is_homeland = cu:manchu }
 				}
 			}
 			add_modifier = {
