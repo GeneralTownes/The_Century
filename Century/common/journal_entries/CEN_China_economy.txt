@@ -71,6 +71,21 @@ je_chinese_agriculture = {
 	
 	immediate = {
 		set_variable = { name = legitimist_progress_from_farms value = 0 }
+		
+		# initial assigning adjustments of the modifier for viewing
+		every_state = {
+			limit = {
+				c:CHI ?= owner
+				OR = {
+					state_region = { is_homeland = cu:han }
+					state_region = { is_homeland = cu:machu }
+				}
+			}
+			add_modifier = {
+				name = modifier_agricultural_econ_agri_debuff
+				months = -1
+			}
+		}
     }
 	
 	scripted_progress_bar = chinese_agriculture_progress_bar
