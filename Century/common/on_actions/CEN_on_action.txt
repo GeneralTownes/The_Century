@@ -397,7 +397,7 @@ CEN_China = {
 				owner = {
 					change_global_variable = {
 						name = china_warlord_explosion
-						add = 4
+						subtract = 4
 					}
 				}
 			}
@@ -411,7 +411,7 @@ CEN_China = {
 				owner = {
 					change_global_variable = {
 						name = china_warlord_explosion
-						add = -2
+						add = 2
 					}
 				}
 			}
@@ -490,10 +490,15 @@ CEN_warlord_release_penalty = {
 	}
 }
 
-
-# Adding arable land to areas outside of 11_east_asia (due to rice 10k -> 5k change)
 on_game_started = {
 	effect = {
+		# Setting after the fact
+		set_global_variable = {
+			name = china_warlord_explosion
+			value = 100
+		}
+	
+		# Adding arable land to areas outside of 11_east_asia (due to rice 10k -> 5k change)
 		# 10_india
 		every_state = {
 			limit = {

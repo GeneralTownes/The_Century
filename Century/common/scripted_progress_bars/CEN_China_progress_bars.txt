@@ -502,7 +502,7 @@ chinese_agriculture_progress_bar = {
 		# Reductions from situation
 		if = {
 			limit = {
-				global_var:china_warlord_explosion >= 80
+				global_var:china_warlord_explosion <= 20
 			}
 			add = {
 				desc = "near_collapse"

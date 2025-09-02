@@ -34,8 +34,8 @@
 		has_law = law_type:law_monarchy
 		has_journal_entry = je_warlord_china
 		custom_tooltip = {
-			text = fracture_val_60_tt
-			global_var:china_warlord_explosion >= 60
+			text = fracture_val_40_tt
+			global_var:china_warlord_explosion <= 40
 		}
     }
     immediate = {

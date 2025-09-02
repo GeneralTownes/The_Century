@@ -27,8 +27,8 @@
 					has_global_variable = 100_days_attempted
 				}
 				custom_tooltip = {
-					text = fracture_val_70_tt
-					global_var:china_warlord_explosion >= 70
+					text = fracture_val_30_tt
+					global_var:china_warlord_explosion <= 30
 				}
 			}
 			has_technology_researched = pan-nationalism

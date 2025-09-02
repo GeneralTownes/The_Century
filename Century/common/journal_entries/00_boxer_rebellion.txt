@@ -24,7 +24,7 @@
 		OR = {
 			custom_tooltip = {
 				text = fracture_val_50_tt
-				global_var:china_warlord_explosion >= 50
+				global_var:china_warlord_explosion <= 50
 			}
 			has_technology_researched = nationalism
 		}

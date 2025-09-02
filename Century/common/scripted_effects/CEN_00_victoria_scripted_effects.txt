@@ -332,7 +332,7 @@ chi_remove_1_fracture = { # Subtracts from the bar
 	post_notification = warlord_china_explosion_point_remove
 	change_global_variable = {
 		name = china_warlord_explosion
-		subtract = 20
+		add = 20 # as now the bar represetns stability
 	}
 }
 
@@ -341,6 +341,6 @@ chi_add_1_fracture = { # Adds to the bar
 	post_notification = warlord_china_explosion_point_add
 	change_global_variable = {
 		name = china_warlord_explosion
-		add = 20
+		subtract = 20 # as now the bar represetns stability
 	}
 }
