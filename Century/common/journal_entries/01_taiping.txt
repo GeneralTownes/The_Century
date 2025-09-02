@@ -135,6 +135,8 @@ je_heavenly_kingdom_main = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	group = je_group_historical_content
+	
+	scripted_progress_bar = taiping_organisation_progress_bar
 
 	is_shown_when_inactive = {
 		exists = c:CHI
@@ -213,13 +215,11 @@ je_heavenly_kingdom_main = {
 	}
 
 	fail = {
-		any_state = {
-			has_modifier = god_worshippers
-			any_scope_pop = {
-				has_pop_religion = protestant
-				religion_accepted = no
+		custom_tooltip = {
+			text = taiping_rebellion_organised_tt
+			scope:journal_entry = {
+				"scripted_bar_progress(taiping_organisation_progress_bar)" >= 9
 			}
-			count >= 9
 		}
 	}
 
@@ -418,6 +418,22 @@ je_taiping_revolution = {
                 has_modifier = eight_banners
             }
 			remove_modifier = eight_banners
+		}
+		# JE Fixing
+		set_variable = {
+			name = temp_fracture_value
+			value = global_var:china_warlord_explosion
+		}
+		set_global_variable = {
+			name = china_warlord_explosion
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_warlord_china
+		}
+		set_global_variable = {
+			name = china_warlord_explosion
+			value = var:temp_fracture_value
 		}
 		add_journal_entry = {
 			type = je_taiping_reconstruction

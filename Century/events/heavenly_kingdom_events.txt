@@ -458,23 +458,6 @@ heavenly.4 = {
 					is_decaying = yes
 				}
 				
-				# JE Fixing
-				set_variable = {
-					name = temp_fracture_value
-					value = global_var:china_warlord_explosion
-				}
-				set_global_variable = {
-					name = china_warlord_explosion
-					value = 0
-				}
-				add_journal_entry = {
-					type = je_warlord_china
-				}
-				set_global_variable = {
-					name = china_warlord_explosion
-					value = var:temp_fracture_value
-				}
-				
 				set_variable = {
 					name = temp_advancement_value
 					value = global_var:chinese_rail_expansion
@@ -674,6 +657,22 @@ heavenly.4 = {
 		c:TPG = {
 			every_scope_state = {
 				set_variable = taiping_rebellion_state
+			}
+			# JE Fixing
+			set_variable = {
+				name = temp_fracture_value
+				value = global_var:china_warlord_explosion
+			}
+			set_global_variable = {
+				name = china_warlord_explosion
+				value = 0
+			}
+			add_journal_entry = {
+				type = je_warlord_china
+			}
+			set_global_variable = {
+				name = china_warlord_explosion
+				value = var:temp_fracture_value
 			}
 		}
 		hidden_effect = {

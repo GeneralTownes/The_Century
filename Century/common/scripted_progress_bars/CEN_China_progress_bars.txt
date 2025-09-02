@@ -1,3 +1,189 @@
+taiping_organisation_progress_bar = {
+	name = "taiping_organisation_progress_bar"
+	desc = "taiping_organisation_progress_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress = {
+		### Mimicking event tick progress
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 1
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 1
+				}
+			}
+			add = {
+				desc = "1_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 2
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 2
+				}
+			}
+			add = {
+				desc = "2_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 3
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 3
+				}
+			}
+			add = {
+				desc = "3_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 4
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 4
+				}
+			}
+			add = {
+				desc = "4_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 5
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 5
+				}
+			}
+			add = {
+				desc = "5_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 6
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 6
+				}
+			}
+			add = {
+				desc = "6_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 7
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 7
+				}
+			}
+			add = {
+				desc = "7_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 8
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 8
+				}
+			}
+			add = {
+				desc = "8_state_tt"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					has_modifier = god_worshippers
+					any_scope_pop = {
+						has_pop_religion = protestant
+						religion_accepted = no
+					}
+					count >= 9
+				}
+				scope:journal_entry = {
+					"scripted_bar_progress(taiping_organisation_progress_bar)" < 9
+				}
+			}
+			add = {
+				desc = "9_state_tt"
+				value = 1
+			}
+		}
+	}
+
+	start_value = 0
+	min_value = 0
+	max_value = 9
+}
+
 taiping_reconstruction_progress_bar = {
 	name = "taiping_reconstruction_progress_bar"
 	desc = "taiping_reconstruction_progress_bar_desc"

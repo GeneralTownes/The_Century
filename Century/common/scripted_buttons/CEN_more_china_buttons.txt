@@ -6,12 +6,12 @@ qing_accept_han = {
 
 	possible = {
 		any_scope_war = {
-		    has_war_support = {
-		        target = ROOT
-		        value < 1
-		    }
+			has_war_support = {
+				target = ROOT
+				value < 1
+			}
 		}
-		NOT = { has_global_variable = qing_accepted_han }
+		NOT = { has_law = law_type:law_language_discrimination }
 	}
 
 	effect = {
