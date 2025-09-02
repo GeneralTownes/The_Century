@@ -22,7 +22,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
     [*]No base capacities (bureaucracy, influence, authority, tax capacity, infrastructure, minting)
     [*]IGs happy at +8 and loyal at +15
     [*]Education level alone provides innovation
-    [*]Universities are capped via tech and give tech spread, education access & qualifications
+    [*]Universities are capped via tech and give tech spread & qualifications
     [*]Early era tech slightly cheaper, late era tech significantly more expensive
     [*]Oil output increased ~50%
     [*]Take state infamy costs scale up to a base of 100
