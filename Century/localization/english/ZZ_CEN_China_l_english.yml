@@ -163,8 +163,8 @@
  
  fracture_val_100_tt: "Stability is #variable 100%#%"
  fracture_val_50_tt: "Stability is 50% or lower"
- fracture_val_40_tt: "Stability is 40% or lower"
- fracture_val_30_tt: "Stability is 30% or lower"
+ fracture_val_35_tt: "Stability is 35% or lower"
+ fracture_val_25_tt: "Stability is 25% or lower"
  
  je_the_hundred: "The Hundred Days' Reform"
  je_the_hundred_started_tt: "The Hundred Day's Reform is ongoing or failed"
