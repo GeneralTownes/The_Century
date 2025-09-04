@@ -100,7 +100,7 @@ je_chinese_agriculture = {
 	}
 	
 	on_complete = {
-		every_scope_state = {
+		every_state = {
 			limit = {
 				has_modifier = modifier_agricultural_econ_agri_debuff
 			}

@@ -114,6 +114,12 @@
 		}
 		
 		hidden_effect = {
+			every_state = {
+				limit = {
+					has_modifier = modifier_agricultural_econ_agri_debuff
+				}
+				remove_modifier = modifier_agricultural_econ_agri_debuff
+			}
 			if = {
 				limit = {
 					has_modifier = han_power_increase
