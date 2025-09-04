@@ -74,6 +74,21 @@
 	}
 	
 	on_complete = {
+		hidden_effect = {
+			# sets specific Chinese styles
+			set_variable = { 
+				name  = WCR_ruler_influence
+				value = -1
+			}
+			set_variable = {
+				name  = WCR_army_influence
+				value = -1
+			}
+			set_variable = {
+				name  = WCR_navy_influence
+				value = -1
+			}
+		}
 		trigger_event = { id = warlord_china_events.101 popup = yes }
 	}
 		

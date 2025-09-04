@@ -26,6 +26,7 @@ warlord_china_events.100 = { #Split china up into warlord states
 		set_global_variable = taiping_je_happened
 		set_global_variable = boxer_je_happened
 		set_global_variable = xinhai_je_happened
+		set_global_variable = 100_days_attempted
 		
 		change_tag = CHI
 		warlord_setup_effect = yes

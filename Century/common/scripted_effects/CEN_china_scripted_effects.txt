@@ -1,6 +1,26 @@
 ﻿warlord_setup_effect = {
 	set_country_type = recognized
 	
+	set_variable = {
+        name  = WCR_westernized_nation
+        value = yes
+    }
+	WCR_se_set_IG_westernized_modifier = yes
+	
+	# sets specific Chinese styles
+	set_variable = { 
+        name  = WCR_ruler_influence
+        value = 0
+    }
+	set_variable = {
+        name  = WCR_army_influence
+        value = 0
+    }
+	set_variable = {
+	    name  = WCR_navy_influence
+	    value = 0
+	}
+	
 	add_modifier = {
         name = warlords_westernisation
         months = 180
