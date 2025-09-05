@@ -13,15 +13,11 @@
 # Police
  law_no_police:0 "No Formal Police"
  law_local_police:0 "Local Police Only"
- law_dedicated_police:0 "National Police"
+ law_dedicated_police:0 "Standardised Police"
  law_militarized_police:0 "Militarized Police"
- law_elected_police:0 "Elected Police"
- law_elected_police_desc:0 "The police force is elected by local councils and subject to withdrawal elections."
 
 # Freedom of Speech
 
- law_traditional_ostracism:0 "Traditional Ostracism"
- law_traditional_ostracism_desc:0 "While no formal structures enforcing censorship exist, traditional institutions exert pressure to maintain the current order."
  law_right_of_assembly:0 "State Media"
  law_right_of_assembly_desc:0 "The public enjoys the right of assembly and freedom of speech; the state, however, reserves the right to interfere in popular culture via production of their own publications and sponsorship of arts."
  law_protected_speech:0 "No Speech Interference"
