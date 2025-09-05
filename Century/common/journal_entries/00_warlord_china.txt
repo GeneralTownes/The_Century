@@ -265,9 +265,9 @@
 						civil_war_progress > 0.5
 						is_civil_war_type = revolution
 					}
-					NOT = { has_global_variable = china_warlord_civil_war_progress }
+					NOT = { has_global_variable = china_warlord_explosion_revolution_progress }
 				}
-				set_global_variable = china_warlord_civil_war_progress
+				set_global_variable = china_warlord_explosion_revolution_progress
 				chi_add_1_fracture = yes
 			}
 			
