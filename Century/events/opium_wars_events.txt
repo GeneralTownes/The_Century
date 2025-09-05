@@ -235,11 +235,6 @@ opium_wars.3 = {
 				save_scope_as = opium_wars_aggressor_country
 			}
 		}
-		if = {
-			limit = { has_journal_entry = je_warlord_china }
-			chi_remove_1_fracture = yes
-			set_global_variable = qing_won_opium_wars
-		}
 		hidden_effect = { add_banned_goods = g:opium }
 	}
 
@@ -352,11 +347,6 @@ opium_wars.4 = {
 					save_scope_as = treaty_port_state
 				}
 			}
-		}
-		if = {
-			limit = { has_journal_entry = je_warlord_china }
-			set_global_variable = lost_opium_wars
-			chi_add_1_fracture = yes
 		}
 	}
 

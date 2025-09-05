@@ -150,8 +150,8 @@
  researched_improved_fertilizer: "Researched Improved Fertilizer"
  researched_nitrogen_fixation: "Researched Nitrogen Fixation"
  
- chi_add_1_fragile_unity_tt: "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is increased by #Bold 20%!"
- chi_remove_1_fragile_unity_tt: "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is decreased by #Bold 20%#!"
+ chi_add_1_fragile_unity_tt: "The stability of [ROOT.GetCountry.GetName] will #Bold decrease#! #variable 20%!"
+ chi_remove_1_fragile_unity_tt: "The stability of [ROOT.GetCountry.GetName] will #Bold increase#! #variable 20%!"
  notification_warlord_china_explosion_point_remove_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Stabilizes."
  notification_warlord_china_explosion_point_remove_desc:0 "Our skillful steering of the country has legitimized our rule in the eyes of the people, steadily pulling the country back from the brink of collapse."
  notification_warlord_china_explosion_point_remove_tooltip:1 "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
