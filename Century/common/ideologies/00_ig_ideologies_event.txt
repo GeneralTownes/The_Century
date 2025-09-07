@@ -149,6 +149,13 @@ ideology_egalitarian_modern = {
 		law_outlawed_dissent = disapprove
 	}
 	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_approve
+		law_no_home_affairs = neutral
+		law_national_guard = disapprove
+		law_secret_police = strongly_disapprove
+	}
+	
 	lawgroup_education_system = {
 		law_public_schools = approve
 		law_private_schools = neutral
