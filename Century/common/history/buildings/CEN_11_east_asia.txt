@@ -484,4 +484,92 @@
 			}
 		}
 	}
+	
+	# Fixing Livestock Deficit
+	s:STATE_AMUR={
+		region_state:CHI={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+		}
+	}
+	s:STATE_OUTER_MANCHURIA={
+		region_state:CHI={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SOUTHERN_MANCHURIA={
+		region_state:CHI={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=2
+					}
+				}
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SHENGJING={
+		region_state:CHI={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+			}
+		}
+	}
+	
+	# Fixing Expensive Paper
+	s:STATE_BEIJING={
+		region_state:CHI={
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+			}
+		}
+	}
+	s:STATE_NANJING={
+		region_state:CHI={
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:CHI"
+						levels=10
+					}
+				}
+				reserves=1
+			}
+		}
+	}
 }
