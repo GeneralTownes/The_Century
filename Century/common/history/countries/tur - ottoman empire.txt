@@ -11,7 +11,7 @@
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_independent_executive
 		activate_law = law_type:law_autocracy 
-		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_millet_system
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_censorship
@@ -33,9 +33,9 @@
 			name = outmoded_bureaucracy
 			months = -1
 		}
-		add_modifier = {
-			name = cizye_tax
-			months = -1
+		create_diplomatic_pact = {
+			country = c:MON
+			type = embargo
 		}
 	}
 }
