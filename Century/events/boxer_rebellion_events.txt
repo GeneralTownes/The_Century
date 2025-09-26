@@ -224,7 +224,7 @@ boxer_rebellion_events.3 = {
 	#	custom_tooltip = boxer_rebellion_events.3.tt1
 	#	set_variable = china_han_empire
 	#	trigger = {
-	#		has_law = law_type:law_monarchy
+	#		has_law_or_variant = law_type:law_monarchy
 	#		NOT = { country_has_primary_culture = cu:han }
 	#	}
 	#	hidden_effect = {
@@ -344,25 +344,25 @@ boxer_rebellion_events.3 = {
 	#	chi_add_1_fracture = yes
 	#	if = {
 	#		limit = {
-	#			has_law = law_type:law_national_supremacy
+	#			has_law_or_variant = law_type:law_national_supremacy
 	#		}
 	#		activate_law = law_type:law_ethnostate
 	#	}
 	#	if = {
 	#		limit = {
-	#			has_law = law_type:law_racial_segregation
+	#			has_law_or_variant = law_type:law_racial_segregation
 	#		}
 	#		activate_law = law_type:law_national_supremacy
 	#	}
 	#	if = {
 	#		limit = {
-	#			has_law = law_type:law_cultural_exclusion
+	#			has_law_or_variant = law_type:law_cultural_exclusion
 	#		}
 	#		activate_law = law_type:law_racial_segregation
 	#	}
 	#	if = {
 	#		limit = {
-	#			has_law = law_type:law_multicultural
+	#			has_law_or_variant = law_type:law_multicultural
 	#		}
 	#		activate_law = law_type:law_cultural_exclusion
 	#	}

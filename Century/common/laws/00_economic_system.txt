@@ -12,7 +12,7 @@ law_traditionalism = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -23,7 +23,7 @@ law_traditionalism = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_no_poll_taxes
+				has_law_or_variant = law_type:law_no_poll_taxes
 			}
 			activate_law = law_type:law_land_based_taxation
 		}
@@ -76,7 +76,7 @@ law_agrarianism = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -107,7 +107,7 @@ law_agrarianism = {
 		
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_traditionalism
+			has_law_or_variant = law_type:law_traditionalism
 			literacy_rate < 0.4
 		}
 	}
@@ -123,7 +123,7 @@ law_agrarianism = {
 		if = {
 			limit = { 
 				has_journal_entry = je_sick_man_bureaucracy
-				has_law = law_type:law_traditionalism
+				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat AI is to get out of Traditionalism
 		}			
@@ -140,7 +140,7 @@ law_interventionism = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -181,7 +181,7 @@ law_interventionism = {
 					has_modifier = shogun_ig_forced_to_open_market
 					has_journal_entry = je_meiji_main
 				}
-				has_law = law_type:law_traditionalism
+				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
 		}			
@@ -198,7 +198,7 @@ law_laissez_faire = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -215,7 +215,7 @@ law_laissez_faire = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_collectivized_agriculture
+				has_law_or_variant = law_type:law_collectivized_agriculture
 			}
 			activate_law = law_type:law_commercialized_agriculture
 		}
@@ -245,7 +245,7 @@ law_laissez_faire = {
 			limit = { 
 				has_modifier = shogun_ig_forced_to_open_market
 				has_journal_entry = je_meiji_main
-				has_law = law_type:law_traditionalism
+				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
 		}		
@@ -262,7 +262,7 @@ law_cooperative_ownership = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -313,7 +313,7 @@ law_command_economy = {
 	can_enact = {
 		NAND = {
 			is_subject = yes
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 		}
 	}
 	
@@ -343,8 +343,8 @@ law_command_economy = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_mercantilism
-					has_law = law_type:law_free_trade
+					has_law_or_variant = law_type:law_mercantilism
+					has_law_or_variant = law_type:law_free_trade
 				}
 			}
 			activate_law = law_type:law_protectionism
@@ -367,7 +367,7 @@ law_command_economy = {
 	
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_council_republic
+			has_law_or_variant = law_type:law_council_republic
 			AND = {
 				exists = ruler
 				ruler = {

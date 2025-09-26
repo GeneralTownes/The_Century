@@ -27,7 +27,7 @@ kalmar_union = {
 	possible = {
 		exists = c:SCA
 		THIS = c:SCA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		ruler = {
 			has_culture = cu:danish
 		}
@@ -40,7 +40,7 @@ fennoscandia = {
 	possible = {
 		exists = c:SCA
 		THIS = c:SCA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		ruler = {
 			has_culture = cu:finnish
 		}
@@ -53,7 +53,7 @@ yellow_prussia = {
 	possible = {
 		exists = c:PRU
 		THIS = c:PRU
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_anarchy
 	}
 }
 
@@ -62,7 +62,7 @@ korea_monarchy_blue = {
 	possible = {
 		exists = c:KOR
 		THIS = c:KOR
-		has_law = law_type:law_monarchy 
+		has_law_or_variant = law_type:law_monarchy 
 	}
 }
 
@@ -72,7 +72,7 @@ usa_technate = {
 	possible = {
 		exists = c:USA
 		THIS = c:USA
-		has_law = law_type:law_technocracy
+		has_law_or_variant = law_type:law_technocracy
 	}
 }
 
@@ -82,7 +82,7 @@ usa_monarchy = {
 	possible = {
 		exists = c:USA
 		THIS = c:USA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -92,10 +92,10 @@ usa_commies = {
 	possible = {
 		exists = c:USA
 		THIS = c:USA
-		has_law = law_type:law_republic
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_single_party_state
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_command_economy
 	}
 }
 
@@ -105,9 +105,9 @@ ukraine_free_territory = {
 	possible = {
 		exists = c:UKR
 		THIS = c:UKR
-		has_law = law_type:law_republic
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
 	}
 }
 
@@ -118,7 +118,7 @@ turkish_republic = {
 		exists = c:TUR
 		THIS = c:TUR
 		OR = {
-			has_law = law_type:law_republic
+			has_law_or_variant = law_type:law_republic
 			country_has_primary_culture = cu:mashriqi
 		}
 	}
@@ -149,7 +149,7 @@ mexican_empire = {
 	possible = {
 		exists = c:MEX
 		THIS = c:MEX
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -178,9 +178,9 @@ communist_austria = {
 	possible = {
 		exists = c:AUS
 		THIS = c:AUS
-		has_law = law_type:law_republic
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_single_party_state
 	}
 }
 
@@ -199,9 +199,9 @@ soviet_red = {
 	possible = {
 		exists = c:RUS
 		THIS = c:RUS
-		has_law = law_type:law_republic
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_single_party_state
 	}
 }
 
@@ -218,9 +218,9 @@ communist_china = {
 				THIS = c:BEI
 			}
 		}
-		has_law = law_type:law_republic
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_single_party_state
 	}
 }
 
@@ -230,7 +230,7 @@ republican_china = { # Beiyang Government stays yellow
 	possible = {
 		exists = c:CHI
 		THIS = c:CHI
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -249,7 +249,7 @@ han_imperial_china = {
 			}
 		}
 		NOT = { country_has_primary_culture = cu:manchu }
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 	}
 }
 
@@ -269,7 +269,7 @@ republican_portugal = {
 	possible = {
 		exists = c:POR
 		THIS = c:POR
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -279,8 +279,8 @@ communist_britain = {
 	possible = {
 		exists = c:GBR
 		THIS = c:GBR
-		has_law = law_type:law_republic
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_council_republic
 	}
 }
 
@@ -290,13 +290,13 @@ UFB_britain = {
 	possible = {
 		exists = c:GBR
 		THIS = c:GBR
-		has_law = law_type:law_republic
-		has_law = law_type:law_elected_bureaucrats
-		has_law = law_type:law_universal_suffrage
-		has_law = law_type:law_total_separation
-		has_law = law_type:law_protected_speech
-		has_law = law_type:law_guaranteed_liberties
-		has_law = law_type:law_no_colonial_affairs
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_elected_bureaucrats
+		has_law_or_variant = law_type:law_universal_suffrage
+		has_law_or_variant = law_type:law_total_separation
+		has_law_or_variant = law_type:law_protected_speech
+		has_law_or_variant = law_type:law_guaranteed_liberties
+		has_law_or_variant = law_type:law_no_colonial_affairs
 	}
 }
 
@@ -316,10 +316,10 @@ ddr_germany = {
 	possible = {
 		exists = c:GER
 		THIS = c:GER
-		has_law = law_type:law_republic
-		has_law = law_type:law_single_party_state
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_command_economy
 	}
 }
 
@@ -329,7 +329,7 @@ roman_rome = {
 	possible = {
 		exists = c:PAP
 		THIS = c:PAP
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -339,9 +339,9 @@ republican_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		NOT = { has_law = law_type:law_autocracy }
-		NOT = { has_law = law_type:law_single_party_state }
-		has_law = law_type:law_republic
+		NOT = { has_law_or_variant = law_type:law_autocracy }
+		NOT = { has_law_or_variant = law_type:law_single_party_state }
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -351,10 +351,10 @@ commune_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		has_law = law_type:law_republic
-		has_law = law_type:law_single_party_state
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_command_economy
 	}
 }
 
@@ -364,7 +364,7 @@ empire_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		has_variable = bonapartist_restoration_var
 		has_variable = one_true_french_dynasty
 	}
@@ -376,7 +376,7 @@ republican_india = {
 	possible = {
 		exists = c:BHT
 		THIS = c:BHT
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -386,7 +386,7 @@ republican_hindustan = {
 	possible = {
 		exists = c:HND
 		THIS = c:HND
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 	}
 }
 
@@ -442,9 +442,9 @@ hre_republic = {
 	possible = {
 		exists = c:HRE
 		THIS = c:HRE
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		NOT = {
-			has_law = law_type:law_technocracy
+			has_law_or_variant = law_type:law_technocracy
 		}
 		NOT = {
 			coa_fascist_trigger = yes
@@ -458,8 +458,8 @@ hre_technate = {
 	possible = {
 		exists = c:HRE
 		THIS = c:HRE
-		has_law = law_type:law_republic
-		has_law = law_type:law_technocracy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_technocracy
 	}
 }
 
@@ -469,10 +469,10 @@ hre_communist = {
 	possible = {
 		exists = c:HRE
 		THIS = c:HRE
-		has_law = law_type:law_republic
-		has_law = law_type:law_single_party_state
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_command_economy
 	}
 }
 
@@ -501,7 +501,7 @@ plc_pink = {
 #	possible = {
 #		exists = c:SPA
 #		THIS = c:SPA
-#		has_law = law_type:law_republic
+#		has_law_or_variant = law_type:law_republic
 #	}
 #}
 
@@ -521,7 +521,7 @@ brazil_republican = {
 	possible = {
 		exists = c:BRZ
 		THIS = c:BRZ
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		NOT = {
 			coa_fascist_trigger = yes
 		}
@@ -534,10 +534,10 @@ spain_communist = {
 	possible = {
 		exists = c:SPA
 		THIS = c:SPA
-		has_law = law_type:law_republic
-		has_law = law_type:law_single_party_state
-		has_law = law_type:law_vanguardism
-		has_law = law_type:law_command_economy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_single_party_state
+		has_law_or_variant = law_type:law_vanguardism
+		has_law_or_variant = law_type:law_command_economy
 	}
 }
 

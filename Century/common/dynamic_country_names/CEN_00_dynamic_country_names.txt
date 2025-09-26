@@ -9,7 +9,7 @@
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}	
@@ -23,10 +23,10 @@
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 		}
@@ -41,13 +41,13 @@
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_republic
-				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_universal_suffrage
-				has_law = law_type:law_total_separation
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_no_colonial_affairs
+				has_law_or_variant = law_type:law_republic
+				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_universal_suffrage
+				has_law_or_variant = law_type:law_total_separation
+				has_law_or_variant = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_guaranteed_liberties
+				has_law_or_variant = law_type:law_no_colonial_affairs
 				
 				NOT = {
 					any_scope_state = {
@@ -161,7 +161,7 @@ BRZ = { # Brazil
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}
@@ -190,7 +190,7 @@ FRA = { # France
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_republic
+				has_law_or_variant = law_type:law_republic
 			}
 		}
 	}
@@ -204,11 +204,11 @@ FRA = { # France
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
 					has_variable = orleanist_restoration_var
 					has_variable = legitimist_restoration_var
-					NOT = { has_law = law_type:law_autocracy }
+					NOT = { has_law_or_variant = law_type:law_autocracy }
 				}
 			}
 		}
@@ -224,10 +224,10 @@ FRA = { # France
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
 					has_variable = bonapartist_restoration_var
-					has_law = law_type:law_autocracy
+					has_law_or_variant = law_type:law_autocracy
 				}
 			}
 		}
@@ -242,8 +242,8 @@ FRA = { # France
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_command_economy
-				NOT = { has_law = law_type:law_technocracy }
+				has_law_or_variant = law_type:law_command_economy
+				NOT = { has_law_or_variant = law_type:law_technocracy }
 			}
 		}
 	}
@@ -260,11 +260,11 @@ RUS = { # Russia
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
-					has_law = law_type:law_landed_voting
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_landed_voting
 				}
 			}
 		}
@@ -316,10 +316,10 @@ AUS = { # Austria
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 		}
@@ -337,7 +337,7 @@ SPA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 		}
 	}	

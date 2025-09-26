@@ -266,25 +266,25 @@ calculate_tpg_reconstruction_law_progress = {
 	set_variable = { name = temp_policing_var_contribution value = institution:institution_police.investment }
 	if = {
 		limit = {
-			has_law = law_type:law_no_police
+			has_law_or_variant = law_type:law_no_police
 		}
 		change_variable = { name = temp_policing_var_contribution add = 0 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_local_police
+			has_law_or_variant = law_type:law_local_police
 		}
 		change_variable = { name = temp_policing_var_contribution multiply = 0.1 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_dedicated_police
+			has_law_or_variant = law_type:law_dedicated_police
 		}
 		change_variable = { name = temp_policing_var_contribution multiply = 0.2 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_militarized_police
+			has_law_or_variant = law_type:law_militarized_police
 		}
 		change_variable = { name = temp_policing_var_contribution multiply = 0.3 }
 	}
@@ -293,25 +293,25 @@ calculate_tpg_reconstruction_law_progress = {
 	set_variable = { name = temp_ha_var_contribution value = institution:institution_home_affairs.investment }
 	if = {
 		limit = {
-			has_law = law_type:law_no_home_affairs
+			has_law_or_variant = law_type:law_no_home_affairs
 		}
 		change_variable = { name = temp_ha_var_contribution add = 0 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_guaranteed_liberties
+			has_law_or_variant = law_type:law_guaranteed_liberties
 		}
 		change_variable = { name = temp_ha_var_contribution multiply = 0.1 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_national_guard
+			has_law_or_variant = law_type:law_national_guard
 		}
 		change_variable = { name = temp_ha_var_contribution multiply = 0.2 }
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_secret_police
+			has_law_or_variant = law_type:law_secret_police
 		}
 		change_variable = { name = temp_ha_var_contribution multiply = 0.3 }
 	}

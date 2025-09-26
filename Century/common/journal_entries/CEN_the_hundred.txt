@@ -26,12 +26,12 @@
 		}
 		hidden_trigger = {
 			has_journal_entry = je_warlord_china
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 			NOT = { has_global_variable = 100_days_attempted }
 		}
     }
     possible = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		has_journal_entry = je_warlord_china
 		custom_tooltip = {
 			text = fracture_val_35_tt
@@ -76,34 +76,34 @@
 	on_fail = {
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_autocracy }
+				NOT = { has_law_or_variant = law_type:law_autocracy }
 			}
 			activate_law = law_type:law_autocracy
 		}
 		if = {
 			limit = {
 				NOR = {
-					has_law = law_type:law_traditionalism
-					has_law = law_type:law_agrarianism
+					has_law_or_variant = law_type:law_traditionalism
+					has_law_or_variant = law_type:law_agrarianism
 				}
 			}
 			activate_law = law_type:law_agrarianism
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_no_schools }
+				NOT = { has_law_or_variant = law_type:law_no_schools }
 			}
 			activate_law = law_type:law_no_schools
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_peasant_levies }
+				NOT = { has_law_or_variant = law_type:law_peasant_levies }
 			}
 			activate_law = law_type:law_peasant_levies
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_national_supremacy }
+				NOT = { has_law_or_variant = law_type:law_national_supremacy }
 			}
 			activate_law = law_type:law_national_supremacy
 		}

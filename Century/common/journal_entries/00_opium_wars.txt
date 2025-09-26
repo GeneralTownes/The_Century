@@ -50,7 +50,7 @@
 
 	fail = {
 		OR = {
-			has_law = law_type:law_free_trade
+			has_law_or_variant = law_type:law_free_trade
 			custom_tooltip = {
 				text = cust_chi_tp_tt
 				any_country = {

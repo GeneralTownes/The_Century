@@ -187,7 +187,7 @@ bpm_decrease_police_sway_gui = {
 		OR = {
 			is_interest_group_type = ig_anarchists
 			AND = {
-				NOT = { owner = { has_law = law_type:law_council_republic } }
+				NOT = { owner = { has_law_or_variant = law_type:law_council_republic } }
 				OR = {
 					bpm_ig_is_radical_left = yes
 					is_interest_group_type = ig_trade_unions
@@ -217,15 +217,15 @@ bpm_decrease_home_affairs_sway_gui = {
 		NOT = { has_variable = bpm_decrease_home_affairs_sway_used }
 		owner = {
 			OR = {
-				has_law = law_type:law_national_guard
-				has_law = law_type:law_secret_police
+				has_law_or_variant = law_type:law_national_guard
+				has_law_or_variant = law_type:law_secret_police
 			}
 			institution_investment_level = { institution = institution_home_affairs value > 1 }
 		}
 		OR = {
 			is_interest_group_type = ig_anarchists
 			trigger_if = {
-				limit = { owner = { has_law = law_type:law_council_republic } }
+				limit = { owner = { has_law_or_variant = law_type:law_council_republic } }
 				bpm_ig_is_labor = no
 				leader = { bpm_leader_is_socialist = no }
 			}
@@ -259,8 +259,8 @@ bpm_decrease_environmental_sway_gui = {
 		NOT = { has_variable = bpm_decrease_environmental_sway_used }
 		owner = {
 			OR = {
-				has_law = law_type:law_limited_environmental_regulations
-				has_law = law_type:law_firm_environmental_regulations
+				has_law_or_variant = law_type:law_limited_environmental_regulations
+				has_law_or_variant = law_type:law_firm_environmental_regulations
 			}
 			institution_investment_level = { institution = institution_environmental_regulations value > 1 }
 		}
@@ -293,8 +293,8 @@ bpm_tax_break_rich_sway_gui = {
 		}
 		owner = {
 			OR = {
-				has_law = law_type:law_moderate_corporation_tax
-				has_law = law_type:law_high_corporation_tax
+				has_law_or_variant = law_type:law_moderate_corporation_tax
+				has_law_or_variant = law_type:law_high_corporation_tax
 			}
 		}
 		NOT = { has_variable = bpm_tax_break_rich_sway_used }
@@ -324,8 +324,8 @@ bpm_tax_break_middle_sway_gui = {
 		}
 		owner = {
 			OR = {
-				has_law = law_type:law_moderate_income_tax
-				has_law = law_type:law_high_income_tax
+				has_law_or_variant = law_type:law_moderate_income_tax
+				has_law_or_variant = law_type:law_high_income_tax
 			}
 		}
 		NOT = { has_variable = bpm_tax_break_middle_sway_used }
@@ -350,7 +350,7 @@ bpm_tax_break_poor_sway_gui = {
 	scope = interest_group
 	is_shown = {
 		is_interest_group_type = ig_trade_unions
-		owner = { has_law = law_type:law_per_capita_based_taxation }
+		owner = { has_law_or_variant = law_type:law_per_capita_based_taxation }
 		NOT = { has_variable = bpm_tax_break_poor_sway_used }
 	}
 	is_valid = {
@@ -375,8 +375,8 @@ bpm_tax_break_peasant_sway_gui = {
 		is_interest_group_type = ig_rural_folk
 		owner = {
 			OR = {
-				has_law = law_type:law_per_capita_based_taxation
-				has_law = law_type:law_land_based_taxation
+				has_law_or_variant = law_type:law_per_capita_based_taxation
+				has_law_or_variant = law_type:law_land_based_taxation
 			}
 		}
 		NOT = { has_variable = bpm_tax_break_peasant_sway_used }

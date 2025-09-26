@@ -7,11 +7,11 @@ gov_dual_democracy_aristocratic = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_dual_executive
-		has_law = law_type:law_hereditary_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_dual_executive
+		has_law_or_variant = law_type:law_hereditary_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -29,11 +29,11 @@ gov_dual_democracy_unitary = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_dual_executive
-		has_law = law_type:law_appointed_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_dual_executive
+		has_law_or_variant = law_type:law_appointed_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -51,11 +51,11 @@ gov_dual_democracy_federal = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_dual_executive
-		has_law = law_type:law_elected_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_dual_executive
+		has_law_or_variant = law_type:law_elected_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -76,21 +76,21 @@ gov_vanguard_communist = {
 	female_ruler = "RULER_TITLE_PREMIER"
 	
 	possible = {
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		OR = {
 			AND = {
 				OR = {
 					country_has_voting_franchise = no
-					has_law = law_type:law_vanguardism
+					has_law_or_variant = law_type:law_vanguardism
 				}
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 			AND = {
-				has_law = law_type:law_vanguardism
-				has_law = law_type:law_command_economy
+				has_law_or_variant = law_type:law_vanguardism
+				has_law_or_variant = law_type:law_command_economy
 			}
 		}
-		NOT = { has_law = law_type:law_anarchy }
+		NOT = { has_law_or_variant = law_type:law_anarchy }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -114,9 +114,9 @@ gov_anarchist_commune_unitary = {
 	female_ruler = "RULER_REPRESENTATIVE"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_anarchy
-		NOT = { has_law = law_type:law_elected_bureaucrats }
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_anarchy
+		NOT = { has_law_or_variant = law_type:law_elected_bureaucrats }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -138,9 +138,9 @@ gov_anarchist_commune_federal = {
 	female_ruler = "RULER_TITLE_FEDERAL_REPRESENTATIVE"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_anarchy
-		has_law = law_type:law_elected_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_anarchy
+		has_law_or_variant = law_type:law_elected_bureaucrats
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -164,8 +164,8 @@ gov_technate = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_technocracy
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_technocracy
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet

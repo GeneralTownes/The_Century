@@ -369,9 +369,9 @@ chinese_agriculture_progress_bar = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_wealth_voting
-					has_law = law_type:law_census_voting
-					has_law = law_type:law_universal_suffrage
+					has_law_or_variant = law_type:law_wealth_voting
+					has_law_or_variant = law_type:law_census_voting
+					has_law_or_variant = law_type:law_universal_suffrage
 				}
 			}
 			add = {
@@ -381,7 +381,7 @@ chinese_agriculture_progress_bar = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_public_schools
+				has_law_or_variant = law_type:law_public_schools
 			}
 			add = {
 				desc = "reformed_edu_law"
@@ -400,8 +400,8 @@ chinese_agriculture_progress_bar = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_interventionism
-					has_law = law_type:law_laissez_faire
+					has_law_or_variant = law_type:law_interventionism
+					has_law_or_variant = law_type:law_laissez_faire
 				}
 			}
 			add = {
@@ -411,7 +411,7 @@ chinese_agriculture_progress_bar = {
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_peasant_levies }
+				NOT = { has_law_or_variant = law_type:law_peasant_levies }
 			}
 			add = {
 				desc = "reformed_military"

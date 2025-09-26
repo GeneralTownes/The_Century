@@ -268,7 +268,7 @@
 						country_has_primary_culture = cu:han
 						country_has_primary_culture = cu:manchu
 					}
-					has_law = law_type:law_republic
+					has_law_or_variant = law_type:law_republic
 				}
 			}
 			ig:ig_landowners = { 
@@ -307,7 +307,7 @@
 		else_if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_republic
+					has_law_or_variant = law_type:law_republic
 				}
 			}
 			ig:ig_landowners = {
@@ -410,7 +410,7 @@
 				add = this.standard_of_living
 				
 				if = {
-					limit = { owner = { has_law = law_type:law_homesteading } }
+					limit = { owner = { has_law_or_variant = law_type:law_homesteading } }
 					multiply = 1.25
 				}
 
@@ -518,9 +518,9 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_serfdom
-						has_law = law_type:law_slave_trade
-						has_law = law_type:law_legacy_slavery
+						has_law_or_variant = law_type:law_serfdom
+						has_law_or_variant = law_type:law_slave_trade
+						has_law_or_variant = law_type:law_legacy_slavery
 					}
 				}
 			}
@@ -533,9 +533,9 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_landed_voting
+						has_law_or_variant = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_autocracy
+						has_law_or_variant = law_type:law_landed_voting
 					}
 				}
 			}
@@ -579,7 +579,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_womens_suffrage
 				}
 
 			}
@@ -595,7 +595,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_women_own_property
+					has_law_or_variant = law_type:law_women_own_property
 				}
 
 			}
@@ -607,7 +607,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_women_in_the_workplace
+					has_law_or_variant = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -619,7 +619,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_womens_suffrage
 				}
 
 			}

@@ -9,7 +9,7 @@ bpm_suffrage_institution_workaround = {
 	if = {
 		limit = {
 			exists = root
-			has_law = law_type:$VARIABLE$
+			has_law_or_variant = law_type:$VARIABLE$
 		}
 		add_modifier = { 
 			name = institution_$VARIABLE$_workaround

@@ -29,8 +29,8 @@ coup.1 = {
 		OR = {
 			AND = {
 				NOR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -43,7 +43,7 @@ coup.1 = {
 				}
 			}
 			AND = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
@@ -55,7 +55,7 @@ coup.1 = {
 				}
 			}
 			AND = {
-				has_law = law_type:law_republic
+				has_law_or_variant = law_type:law_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
@@ -68,7 +68,7 @@ coup.1 = {
 			}
 			AND = {
 				OR = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -91,8 +91,8 @@ coup.1 = {
 		if = {
 			limit = {
 				NOR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -129,7 +129,7 @@ coup.1 = {
 		### Anti-Communist Coup
 		else_if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
@@ -219,8 +219,8 @@ coup.1 = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -276,7 +276,7 @@ coup.1 = {
 		### Anti-Monarchist Coup
 		else_if = {
 			limit = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
@@ -386,7 +386,7 @@ coup.2 = {
 							}
 						}
 					}
-					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_law_or_variant = law_type:law_monarchy }
 					scope:coup_ig = {
 						law_stance = {
 							law = law_type:law_monarchy
@@ -474,7 +474,7 @@ coup.2 = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 				NOT = {
 					scope:coup_desired_law = {
 						type = law_type:law_autocracy
@@ -518,7 +518,7 @@ coup.2 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			scope:coup_ig = {
@@ -529,7 +529,7 @@ coup.2 = {
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			if = {
 				limit = {
@@ -602,7 +602,7 @@ coup.2 = {
 					type = law_type:law_monarchy
 				}
 				AND = {
-					NOT = { has_law = law_type:law_monarchy }
+					NOT = { has_law_or_variant = law_type:law_monarchy }
 					scope:coup_ig = {
 						law_stance = {
 							law = law_type:law_monarchy
@@ -655,7 +655,7 @@ coup.2 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			activate_law = law_type:law_oligarchy
@@ -824,7 +824,7 @@ coup.2 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			activate_law = law_type:law_oligarchy
@@ -874,7 +874,7 @@ coup.2 = {
 			limit = {
 				has_technology_researched = political_agitation
 				NOT = {
-					has_law = law_type:law_single_party_state
+					has_law_or_variant = law_type:law_single_party_state
 				}
 			}
 			activate_law = law_type:law_single_party_state
@@ -882,7 +882,7 @@ coup.2 = {
 		else_if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			activate_law = law_type:law_oligarchy
@@ -931,7 +931,7 @@ coup.2 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			activate_law = law_type:law_oligarchy
@@ -981,7 +981,7 @@ coup.2 = {
 			limit = {
 				has_technology_researched = political_agitation
 				NOT = {
-					has_law = law_type:law_single_party_state
+					has_law_or_variant = law_type:law_single_party_state
 				}
 			}
 			activate_law = law_type:law_single_party_state
@@ -989,7 +989,7 @@ coup.2 = {
 		else_if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_oligarchy
+					has_law_or_variant = law_type:law_oligarchy
 				}
 			}
 			activate_law = law_type:law_oligarchy

@@ -70,7 +70,7 @@ law_religious_schools = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -91,7 +91,7 @@ law_religious_schools = {
 					has_journal_entry = je_sick_man_education
 					has_journal_entry = je_terakoya
 				}
-				has_law = law_type:law_no_schools
+				has_law_or_variant = law_type:law_no_schools
 			}
 			add = 1000
 		}				
@@ -131,7 +131,7 @@ law_private_schools = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -152,7 +152,7 @@ law_private_schools = {
 					has_journal_entry = je_sick_man_education
 					has_journal_entry = je_terakoya
 				}
-				has_law = law_type:law_no_schools
+				has_law_or_variant = law_type:law_no_schools
 			}
 			add = 1000
 		}		
@@ -189,7 +189,7 @@ law_public_schools = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -210,7 +210,7 @@ law_public_schools = {
 					has_journal_entry = je_sick_man_education
 					has_journal_entry = je_terakoya
 				}
-				has_law = law_type:law_no_schools
+				has_law_or_variant = law_type:law_no_schools
 			}
 			add = 1000
 		}			

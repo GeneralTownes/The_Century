@@ -26,9 +26,9 @@ gov_colonial_administration = {
 	female_ruler = "RULER_TITLE_GOVERNOR"
 	
 	possible = {
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		OR = {
-			has_law = law_type:law_extraction_economy
+			has_law_or_variant = law_type:law_extraction_economy
 			is_subject_type = subject_type_puppet
 			is_subject_type = subject_type_colony
 		}
@@ -65,7 +65,7 @@ gov_governorate = {
 	female_ruler = "RULER_TITLE_GOVERNOR"
 	
 	possible = {
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		OR = {
 			is_subject_type = subject_type_dominion
 			is_subject_type = subject_type_puppet
@@ -101,16 +101,16 @@ gov_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
+		has_law_or_variant = law_type:law_republic
 		OR = {
-			has_law = law_type:law_vanguardism
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_vanguardism
+			has_law_or_variant = law_type:law_autocracy
 		}
 		OR = {
 			country_has_voting_franchise = no
-			has_law = law_type:law_vanguardism
+			has_law_or_variant = law_type:law_vanguardism
 		}
-		NOT = { has_law = law_type:law_command_economy }
+		NOT = { has_law_or_variant = law_type:law_command_economy }
 		NOR = {
 			is_subject_type = subject_type_puppet
 			is_subject_type = subject_type_dominion
@@ -133,9 +133,9 @@ gov_presidential_oligarchy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_oligarchy 
-		has_law = law_type:law_independent_executive
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_oligarchy 
+		has_law_or_variant = law_type:law_independent_executive
 		country_has_voting_franchise = no
 		NOT = {
 			OR = {
@@ -162,11 +162,11 @@ gov_presidential_democracy_aristocratic = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_independent_executive
-		has_law = law_type:law_hereditary_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_independent_executive
+		has_law_or_variant = law_type:law_hereditary_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -192,11 +192,11 @@ gov_presidential_democracy_unitary = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_independent_executive
-		has_law = law_type:law_appointed_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_independent_executive
+		has_law_or_variant = law_type:law_appointed_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet
@@ -222,11 +222,11 @@ gov_presidential_democracy_federal = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_republic
-		has_law = law_type:law_independent_executive
-		has_law = law_type:law_elected_bureaucrats
+		has_law_or_variant = law_type:law_republic
+		has_law_or_variant = law_type:law_independent_executive
+		has_law_or_variant = law_type:law_elected_bureaucrats
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_vanguardism }
+		NOT = { has_law_or_variant = law_type:law_vanguardism }
 		NOT = {
 			OR = {
 				is_subject_type = subject_type_puppet

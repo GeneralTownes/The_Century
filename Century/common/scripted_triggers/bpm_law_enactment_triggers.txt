@@ -6,15 +6,15 @@
 	}
 	trigger_else_if = {
 		limit = { 
-			has_law = law_type:law_autocracy
+			has_law_or_variant = law_type:law_autocracy
 		}
 		always = no
 	}
 	trigger_else_if = {
 		limit = {
 			OR = {
-				has_law = law_type:law_independent_executive
-				has_law = law_type:law_dual_executive
+				has_law_or_variant = law_type:law_independent_executive
+				has_law_or_variant = law_type:law_dual_executive
 			}
 		}
 		var:bpm_law_enactment_yea_votes_cached > 0.6666

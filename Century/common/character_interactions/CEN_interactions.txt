@@ -7,7 +7,7 @@ abdicate_monarch = {
 		owner ?= scope:actor
 		is_ruler = yes
 		owner ?= {
-			has_law = law_type:law_monarchy
+			has_law_or_variant = law_type:law_monarchy
 		}
 		exists = owner.heir
 		is_immortal = no
@@ -150,8 +150,8 @@ resign_from_office = {
 		is_immortal = no
 		owner ?= {
 			NOR = {
-				has_law = law_type:law_monarchy
-				has_law = law_type:law_theocracy
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_theocracy
 			}
 		}
 	}

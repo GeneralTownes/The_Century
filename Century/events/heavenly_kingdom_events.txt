@@ -357,7 +357,7 @@ heavenly.4 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_theocracy
+							has_law_or_variant = law_type:law_theocracy
 						}
 					}
 					activate_law = law_type:law_theocracy
@@ -365,7 +365,7 @@ heavenly.4 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_state_religion
+							has_law_or_variant = law_type:law_state_religion
 						}
 					}
 					activate_law = law_type:law_state_religion
@@ -373,7 +373,7 @@ heavenly.4 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_peasant_levies
+							has_law_or_variant = law_type:law_peasant_levies
 						}
 					}
 					activate_law = law_type:law_peasant_levies
@@ -381,7 +381,7 @@ heavenly.4 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_collectivized_agriculture
+							has_law_or_variant = law_type:law_collectivized_agriculture
 						}
 					}
 					activate_law = law_type:law_collectivized_agriculture
@@ -1034,7 +1034,7 @@ CHI_missionaries.2 = {
 
 	trigger = {
 		NOT = {
-			has_law = law_type:law_closed_borders
+			has_law_or_variant = law_type:law_closed_borders
 		}
 		any_scope_state = {
 			any_neighbouring_state = {

@@ -79,7 +79,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 1
 				}
-				has_law = law_type:law_colonial_resettlement
+				has_law_or_variant = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
 				limit = {
@@ -96,7 +96,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 2
 				}
-				has_law = law_type:law_colonial_resettlement
+				has_law_or_variant = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
 				limit = {
@@ -114,7 +114,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 3
 				}
-				has_law = law_type:law_colonial_resettlement
+				has_law_or_variant = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
 				limit = {
@@ -132,7 +132,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 4
 				}
-				has_law = law_type:law_colonial_resettlement
+				has_law_or_variant = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
 				limit = {
@@ -150,7 +150,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 5
 				}
-				has_law = law_type:law_colonial_resettlement
+				has_law_or_variant = law_type:law_colonial_resettlement
 			}
 			every_scope_state = {
 				limit = {
@@ -168,7 +168,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 1
 				}
-				has_law = law_type:law_colonial_exploitation
+				has_law_or_variant = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
 				limit = {
@@ -185,7 +185,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 2
 				}
-				has_law = law_type:law_colonial_exploitation
+				has_law_or_variant = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
 				limit = {
@@ -203,7 +203,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 3
 				}
-				has_law = law_type:law_colonial_exploitation
+				has_law_or_variant = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
 				limit = {
@@ -221,7 +221,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 4
 				}
-				has_law = law_type:law_colonial_exploitation
+				has_law_or_variant = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
 				limit = {
@@ -239,7 +239,7 @@ CEN_colonial_institution_fix = {
 					institution = institution_colonial_affairs
 					value = 5
 				}
-				has_law = law_type:law_colonial_exploitation
+				has_law_or_variant = law_type:law_colonial_exploitation
 			}
 			every_scope_state = {
 				limit = {

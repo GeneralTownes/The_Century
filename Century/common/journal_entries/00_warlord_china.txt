@@ -26,8 +26,8 @@
 			}
 			AND = {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_monarchy
+					has_law_or_variant = law_type:law_theocracy
 				}
 				OR = {
 					AND = {
@@ -221,7 +221,7 @@
 			if = {
 				limit = {
 					NOT = { has_global_variable = china_abolished_monarchy }
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 					NOT = { has_variable = china_han_empire }
 					AND = {
 						exists = c:CHI
@@ -239,12 +239,12 @@
 						AND = {
 							exists = c:CHI
 							c:CHI = ROOT
-							NOT = { has_law = law_type:law_monarchy }
+							NOT = { has_law_or_variant = law_type:law_monarchy }
 						}
 						AND = {
 							exists = c:TPG
 							c:TPG = ROOT
-							has_law = law_type:law_republic
+							has_law_or_variant = law_type:law_republic
 						}
 					}
 				}
@@ -314,7 +314,7 @@
 			### Fracture Gain
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_autocracy }
+					NOT = { has_law_or_variant = law_type:law_autocracy }
 				}
 				change_global_variable = {
 					name = china_warlord_explosion
@@ -323,7 +323,7 @@
 			}
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_outlawed_dissent }
+					NOT = { has_law_or_variant = law_type:law_outlawed_dissent }
 				}
 				change_global_variable = {
 					name = china_warlord_explosion
@@ -332,7 +332,7 @@
 			}			
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_peasant_levies }
+					NOT = { has_law_or_variant = law_type:law_peasant_levies }
 				}
 				change_global_variable = {
 					name = china_warlord_explosion
@@ -341,7 +341,7 @@
 			}
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_no_womens_rights }
+					NOT = { has_law_or_variant = law_type:law_no_womens_rights }
 				}
 				change_global_variable = {
 					name = china_warlord_explosion

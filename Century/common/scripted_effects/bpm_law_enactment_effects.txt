@@ -62,7 +62,7 @@ bpm_set_ig_current_law_stance_to_number = {
 					is_same_law_group_as = scope:enacting_law_type
 				}		
 				owner = {
-					has_law = scope:law_type
+					has_law_or_variant = scope:law_type
 				}	
 			}
 			scope:stance_ig = {

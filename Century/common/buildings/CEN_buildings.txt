@@ -19,8 +19,8 @@ building_synthetic_oil_plants = {
 		owner = {
 			NOT = { 
 				OR = {
-					has_law = law_type:law_industry_banned 
-					has_law = law_type:law_extraction_economy 
+					has_law_or_variant = law_type:law_industry_banned 
+					has_law_or_variant = law_type:law_extraction_economy 
 				}
 			}
 		}
@@ -53,8 +53,8 @@ building_synthetic_rubber_plants = {
 		owner = {
 			NOT = { 
 				OR = {
-					has_law = law_type:law_industry_banned 
-					has_law = law_type:law_extraction_economy 
+					has_law_or_variant = law_type:law_industry_banned 
+					has_law_or_variant = law_type:law_extraction_economy 
 				}
 			}
 		}

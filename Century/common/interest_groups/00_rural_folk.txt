@@ -176,7 +176,7 @@
 		# HMPS Rural Monarchism
 		if = {
 			limit = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}			
 			ig:ig_rural_folk = {
 				add_ideology = ideology_monarchist
@@ -381,7 +381,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_homesteading
+					has_law_or_variant = law_type:law_homesteading
 				}
 			}
 			multiply = {
@@ -392,7 +392,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_serfdom
+					has_law_or_variant = law_type:law_serfdom
 				}
 			}
 			multiply = {
@@ -435,7 +435,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_womens_suffrage
 				}
 
 			}
@@ -451,7 +451,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_women_own_property
+					has_law_or_variant = law_type:law_women_own_property
 				}
 
 			}
@@ -463,7 +463,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_women_in_the_workplace
+					has_law_or_variant = law_type:law_women_in_the_workplace
 				}
 
 			}
@@ -475,7 +475,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_womens_suffrage
 				}
 
 			}

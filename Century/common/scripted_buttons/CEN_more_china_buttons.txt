@@ -11,7 +11,7 @@ qing_accept_han = {
 				value < 1
 			}
 		}
-		NOT = { has_law = law_type:law_language_discrimination }
+		NOT = { has_law_or_variant = law_type:law_language_discrimination }
 	}
 
 	effect = {
@@ -190,9 +190,9 @@ taiping_interest_moratorium = {
 			NOT = { has_global_variable = 100_days_con_mon_issued }
 		}
 		NOR = {
-			has_law = law_type:law_wealth_voting
-			has_law = law_type:law_census_voting
-			has_law = law_type:law_universal_suffrage
+			has_law_or_variant = law_type:law_wealth_voting
+			has_law_or_variant = law_type:law_census_voting
+			has_law_or_variant = law_type:law_universal_suffrage
 		}
 	}
 
@@ -200,7 +200,7 @@ taiping_interest_moratorium = {
 		activate_law = law_type:law_wealth_voting
 		if = {
 			limit = {
-				has_law = law_type:law_outlawed_dissent
+				has_law_or_variant = law_type:law_outlawed_dissent
 			}
 			activate_law = law_type:law_censorship
 		}
@@ -286,7 +286,7 @@ taiping_interest_moratorium = {
 			text = issued_100_days_reform_already_tt
 			NOT = { has_global_variable = 100_days_modern_edu_issued }
 		}
-		NOT = { has_law = law_type:law_public_schools }
+		NOT = { has_law_or_variant = law_type:law_public_schools }
 	}
 
 	effect = {
@@ -332,7 +332,7 @@ taiping_interest_moratorium = {
 			NOT = { has_global_variable = 100_days_capitalism_issued }
 		}
 		NOT = {
-			has_law = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_laissez_faire
 		}
 	}
 
@@ -374,7 +374,7 @@ taiping_interest_moratorium = {
 			text = issued_100_days_reform_already_tt
 			NOT = { has_global_variable = 100_days_mil_reforms_issued }
 		}
-		has_law = law_type:law_peasant_levies
+		has_law_or_variant = law_type:law_peasant_levies
 	}
 
 	effect = {

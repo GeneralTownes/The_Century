@@ -21,7 +21,7 @@
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -33,14 +33,14 @@
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_peasant_levies
+					has_law_or_variant = law_type:law_peasant_levies
 				}
 			}
 			custom_tooltip = aristocrats_af_ig_shift_effect_tt
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_professional_army
+				has_law_or_variant = law_type:law_professional_army
 			}
 			custom_tooltip = military_pops_af_ig_shift_effect_negative_tt
 			custom_tooltip = non_military_pops_af_ig_shift_effect_negative_tt
@@ -94,13 +94,13 @@ law_national_militia = {
 	on_enact = {
 		if = {
 			limit = {
-				has_law = law_type:law_peasant_levies
+				has_law_or_variant = law_type:law_peasant_levies
 			}
 			custom_tooltip = aristocrats_af_ig_shift_effect_negative_tt
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_professional_army
+				has_law_or_variant = law_type:law_professional_army
 			}
 			custom_tooltip = military_pops_af_ig_shift_effect_negative_tt
 			custom_tooltip = non_military_pops_af_ig_shift_effect_negative_tt
@@ -142,7 +142,7 @@ law_professional_army = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -161,14 +161,14 @@ law_professional_army = {
 	on_enact = {
 		if = {
 			limit = {
-				has_law = law_type:law_peasant_levies
+				has_law_or_variant = law_type:law_peasant_levies
 			}
 			custom_tooltip = aristocrats_af_ig_shift_effect_negative_tt
 		}
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_professional_army
+					has_law_or_variant = law_type:law_professional_army
 				}
 			}
 			custom_tooltip = non_military_pops_af_ig_shift_effect_tt
@@ -211,7 +211,7 @@ law_mass_conscription = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -221,13 +221,13 @@ law_mass_conscription = {
 	on_enact = {
 		if = {
 			limit = {
-				has_law = law_type:law_peasant_levies
+				has_law_or_variant = law_type:law_peasant_levies
 			}
 			custom_tooltip = aristocrats_af_ig_shift_effect_negative_tt
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_professional_army
+				has_law_or_variant = law_type:law_professional_army
 			}
 			custom_tooltip = military_pops_af_ig_shift_effect_negative_tt
 			custom_tooltip = non_military_pops_af_ig_shift_effect_negative_tt

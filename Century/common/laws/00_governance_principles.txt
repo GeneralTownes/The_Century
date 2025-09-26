@@ -62,7 +62,7 @@ law_monarchy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -119,7 +119,7 @@ law_theocracy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -166,7 +166,7 @@ law_republic = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes

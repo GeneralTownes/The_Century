@@ -50,7 +50,7 @@
                 scope:article = {
                     source_country = {
                         NOR = {
-							has_law = scope:article.input_law
+							has_law_or_variant = scope:article.input_law
 							is_enacting_law = scope:article.input_law
 						}
                     }
@@ -115,7 +115,7 @@
         }
         scope:other_country = {
             OR = {
-                has_law = scope:input
+                has_law_or_variant = scope:input
                 any_interest_group = {
                     is_in_government = yes
                     law_stance = {
@@ -269,7 +269,7 @@
 		}
 
         law_type_input_filter = {
-            has_law = scope:input
+            has_law_or_variant = scope:input
         }
 
 		evaluation_chance = {
@@ -425,7 +425,7 @@
 
                     if = {
                         limit = {
-                            has_law = scope:article.input_law
+                            has_law_or_variant = scope:article.input_law
                         }
                         add = 5
                     }
@@ -448,7 +448,7 @@
                 if = {
                     limit = {
                         scope:article.input_law = law_type:law_council_republic
-                        has_law = law_type:law_council_republic
+                        has_law_or_variant = law_type:law_council_republic
                     }
                     add = {
                         desc = "communist_solidarity"
@@ -485,7 +485,7 @@
 
                     if = {
                         limit = {
-                            has_law = scope:article.input_law
+                            has_law_or_variant = scope:article.input_law
                         }
                         add = 5
                     }
@@ -525,7 +525,7 @@
                 if = {
                     limit = {
                         scope:article.input_law = law_type:law_council_republic
-                        has_law = law_type:law_council_republic
+                        has_law_or_variant = law_type:law_council_republic
                     }
                     add = {
                         desc = "communist_solidarity"
@@ -536,7 +536,7 @@
                 if = {
                     limit = {
                         scope:article.input_law = law_type:law_monarchy
-                        has_law = law_type:law_monarchy
+                        has_law_or_variant = law_type:law_monarchy
                         country_rank >= rank_value:great_power
                         OR = {
                             has_strategy = ai_strategy_reactionary_agenda
@@ -553,7 +553,7 @@
                     limit = {
                         # We want to support them irrespective of which law we have and they wish to enact
                         scope:article.input_law = law_type:law_republic
-                        has_law = law_type:law_republic
+                        has_law_or_variant = law_type:law_republic
                         OR = {
                             has_strategy = ai_strategy_progressive_agenda
                             ruler ?= {
@@ -637,12 +637,12 @@
 				# Great Powers with slavery banned will prioritize ending slavery in Brazil if that country failed its slavery JE
 				if = {
 					limit = {
-						has_law = law_type:law_slavery_banned
+						has_law_or_variant = law_type:law_slavery_banned
 						country_rank >= rank_value:great_power
 						scope:source_country = {
 							c:BRZ ?= this
 							has_modifier = brazil_slaving_pariah_modifier
-							has_law = law_type:law_slave_trade
+							has_law_or_variant = law_type:law_slave_trade
 						}
 					}
 					add = 0.25

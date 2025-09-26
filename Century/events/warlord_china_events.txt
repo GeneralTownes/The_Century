@@ -806,7 +806,7 @@ warlord_china_events.301 = {
 			country_has_primary_culture = cu:yi
 		}
 		NOT = { c:LAN ?= this }
-		has_law = law_type:law_autocracy
+		has_law_or_variant = law_type:law_autocracy
 		has_technology_researched = mass_propaganda
 		NOT = {
 			ruler = {

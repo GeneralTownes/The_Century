@@ -430,13 +430,13 @@ bpm_ig_is_institutional = {
 		trigger_if = {
 			limit = { is_interest_group_type = ig_landowners }
 			owner = {
-				NOT = { has_law = law_type:law_council_republic }
+				NOT = { has_law_or_variant = law_type:law_council_republic }
 			}
 		}
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_petty_bourgeoisie }
 			owner = {
-				NOT = { has_law = law_type:law_hereditary_bureaucrats }
+				NOT = { has_law_or_variant = law_type:law_hereditary_bureaucrats }
 			}
 		}
 		trigger_else_if = {
@@ -446,16 +446,16 @@ bpm_ig_is_institutional = {
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_trade_unions }
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_devout }
 			owner = {
 				OR = {
-					has_law = law_type:law_theocracy
-					has_law = law_type:law_state_religion
-					has_law = law_type:law_religious_schools
+					has_law_or_variant = law_type:law_theocracy
+					has_law_or_variant = law_type:law_state_religion
+					has_law_or_variant = law_type:law_religious_schools
 				}
 			}
 		}
@@ -463,7 +463,7 @@ bpm_ig_is_institutional = {
 			limit = { is_interest_group_type = ig_industrialists }
 			owner = {
 				OR = {
-					has_law = law_type:law_laissez_faire
+					has_law_or_variant = law_type:law_laissez_faire
 				}
 			}
 		}
@@ -504,11 +504,11 @@ bpm_ig_is_state_institutional = {
 			is_interest_group_type = ig_petty_bourgeoisie
 			AND = {
 				is_interest_group_type = ig_devout
-				owner = { has_law = law_type:law_theocracy }
+				owner = { has_law_or_variant = law_type:law_theocracy }
 			}
 			AND = {
 				is_interest_group_type = ig_trade_unions
-				owner = { has_law = law_type:law_state_controlled_labor_unions }
+				owner = { has_law_or_variant = law_type:law_state_controlled_labor_unions }
 			}
 		}
 	}
@@ -586,7 +586,7 @@ bpm_ig_is_strongly_anti_electoralist_socialist = {
 		# No anti-electoralism in a socialist state by socialists
 		NOR = {
 			bpm_ig_is_socialist = no
-			owner = { has_law = law_type:law_council_republic }
+			owner = { has_law_or_variant = law_type:law_council_republic }
 		}
 
 		OR = {
@@ -616,7 +616,7 @@ bpm_ig_is_anti_electoralist_socialist = {
 		
 		NOR = {
 			bpm_ig_is_socialist = no # Can't be anti-electoralist socialist if you aren't a socialist
-			owner = { has_law = law_type:law_council_republic } # No anti-electoralism in a socialist state by socialists
+			owner = { has_law_or_variant = law_type:law_council_republic } # No anti-electoralism in a socialist state by socialists
 			bpm_ig_is_strongly_anti_electoralist_socialist = yes # We are strongly anti-electoralist instead
 		}
 
@@ -685,7 +685,7 @@ bpm_ig_law_can_be_promised = {
 	NOT = {
 		prev = {
 			owner = {
-				has_law = scope:petition_law_trig.type
+				has_law_or_variant = scope:petition_law_trig.type
 			}
 		}
 	}  

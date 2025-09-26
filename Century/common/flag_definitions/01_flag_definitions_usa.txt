@@ -62,8 +62,8 @@ USA = {	# United States of America
 		priority = 1500
 		trigger = { 
 			scope:actor ?= {
-				has_law = law_type:law_republic
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_republic
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}

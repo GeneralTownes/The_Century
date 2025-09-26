@@ -178,22 +178,22 @@ bpm_socialist_electoralism_update_baseline_target = {
 	set_variable = { name = bpm_je_socialist_electoralism_from_censorship value = 0 }
 	if = {
 		limit = {
-			has_law = law_type:law_protected_speech
+			has_law_or_variant = law_type:law_protected_speech
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_censorship value = 10 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_right_of_assembly
+			has_law_or_variant = law_type:law_right_of_assembly
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_censorship value = 5 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_censorship
+			has_law_or_variant = law_type:law_censorship
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_censorship value = -10 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_outlawed_dissent
+			has_law_or_variant = law_type:law_outlawed_dissent
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_censorship value = -20 }
 	}
@@ -202,22 +202,22 @@ bpm_socialist_electoralism_update_baseline_target = {
 	set_variable = { name = bpm_je_socialist_electoralism_from_party_ban value = 0 }
 	if = {
 		limit = {
-			has_law = law_type:law_party_anti_socialist
+			has_law_or_variant = law_type:law_party_anti_socialist
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_party_ban value = -10 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_party_reactionary_only
+			has_law_or_variant = law_type:law_party_reactionary_only
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_party_ban value = -25 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_party_liberal_only
+			has_law_or_variant = law_type:law_party_liberal_only
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_party_ban value = -10 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_party_anti_reactionary
+			has_law_or_variant = law_type:law_party_anti_reactionary
 		}
 		set_variable = { name = bpm_je_socialist_electoralism_from_party_ban value = 5 }
 	}
@@ -226,17 +226,17 @@ bpm_socialist_electoralism_update_baseline_target = {
 	set_variable = { name = bpm_je_socialist_electoralism_from_home_affairs value = institution:institution_home_affairs.investment }
 	if = {
 		limit = {
-			has_law = law_type:law_guaranteed_liberties
+			has_law_or_variant = law_type:law_guaranteed_liberties
 		}
 		change_variable = { name = bpm_je_socialist_electoralism_from_home_affairs multiply = 4 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_national_guard
+			has_law_or_variant = law_type:law_national_guard
 		}
 		change_variable = { name = bpm_je_socialist_electoralism_from_home_affairs multiply = -2 }
 	} else_if = {
 		limit = {
-			has_law = law_type:law_secret_police
+			has_law_or_variant = law_type:law_secret_police
 		}
 		change_variable = { name = bpm_je_socialist_electoralism_from_home_affairs multiply = -4 }
 	}

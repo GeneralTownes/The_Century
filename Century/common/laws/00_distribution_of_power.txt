@@ -116,11 +116,11 @@ law_vanguardism = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			AND = { # modification of the standard trigger, only other vanguardist countries can impose vanguardism on their subjects
-				has_law = scope:law
+				has_law_or_variant = scope:law
 				can_impose_law_default = yes
 			}
 		}
@@ -146,17 +146,17 @@ law_autocracy = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_monarchy
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
 			activate_law = law_type:law_hereditary_bureaucrats
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_elected_bureaucrats
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
@@ -191,7 +191,7 @@ law_autocracy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -218,17 +218,17 @@ law_oligarchy = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_monarchy
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
 			activate_law = law_type:law_hereditary_bureaucrats
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_elected_bureaucrats
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
@@ -264,7 +264,7 @@ law_oligarchy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -299,8 +299,8 @@ law_technocracy = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_hereditary_bureaucrats
-					has_law = law_type:law_elected_bureaucrats
+					has_law_or_variant = law_type:law_hereditary_bureaucrats
+					has_law_or_variant = law_type:law_elected_bureaucrats
 				}
 			}
 			activate_law = law_type:law_appointed_bureaucrats
@@ -338,11 +338,11 @@ law_technocracy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			AND = { # modification of the standard trigger, only other technocracy countries can impose technocracy on their subjects
-				has_law = scope:law
+				has_law_or_variant = scope:law
 				can_impose_law_default = yes
 			}
 		}
@@ -376,17 +376,17 @@ law_elder_council = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_monarchy
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
 			activate_law = law_type:law_hereditary_bureaucrats
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_elected_bureaucrats
 				NOT = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 			deactivate_law = law_type:law_elected_bureaucrats
@@ -396,7 +396,7 @@ law_elder_council = {
 		clear_legal_single_party = yes
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
@@ -436,25 +436,25 @@ law_clerical_voting = {
 	}
 
 	is_visible = {
-		has_law = law_type:law_theocracy
+		has_law_or_variant = law_type:law_theocracy
 	}
 	
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_legislature
+				has_law_or_variant = law_type:law_no_legislature
 			}
 			activate_law = law_type:law_unicameralism
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_voting
+				has_law_or_variant = law_type:law_no_voting
 			}
 			activate_law = law_type:law_plurality
 		}
@@ -498,25 +498,25 @@ law_landed_voting = {
 	}
 
 	is_visible = {
-		NOT = { has_law = law_type:law_theocracy }
+		NOT = { has_law_or_variant = law_type:law_theocracy }
 	}
 	
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_legislature
+				has_law_or_variant = law_type:law_no_legislature
 			}
 			activate_law = law_type:law_unicameralism
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_voting
+				has_law_or_variant = law_type:law_no_voting
 			}
 			activate_law = law_type:law_plurality
 		}
@@ -567,7 +567,7 @@ law_landed_voting = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -598,19 +598,19 @@ law_wealth_voting = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_legislature
+				has_law_or_variant = law_type:law_no_legislature
 			}
 			activate_law = law_type:law_unicameralism
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_voting
+				has_law_or_variant = law_type:law_no_voting
 			}
 			activate_law = law_type:law_plurality
 		}
@@ -662,7 +662,7 @@ law_wealth_voting = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -697,19 +697,19 @@ law_census_voting = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_legislature
+				has_law_or_variant = law_type:law_no_legislature
 			}
 			activate_law = law_type:law_unicameralism
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_voting
+				has_law_or_variant = law_type:law_no_voting
 			}
 			activate_law = law_type:law_plurality
 		}
@@ -763,7 +763,7 @@ law_census_voting = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -798,19 +798,19 @@ law_universal_suffrage = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_single_party_state
+				has_law_or_variant = law_type:law_single_party_state
 			}
 			activate_law = law_type:law_independent_executive
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_legislature
+				has_law_or_variant = law_type:law_no_legislature
 			}
 			activate_law = law_type:law_unicameralism
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_no_voting
+				has_law_or_variant = law_type:law_no_voting
 			}
 			activate_law = law_type:law_plurality
 		}
@@ -864,7 +864,7 @@ law_universal_suffrage = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -899,27 +899,27 @@ law_anarchy = {
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_hereditary_bureaucrats
+				has_law_or_variant = law_type:law_hereditary_bureaucrats
 			}
 			activate_law = law_type:law_elected_bureaucrats
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_no_police }
+				NOT = { has_law_or_variant = law_type:law_no_police }
 			}
 			activate_law = law_type:law_no_police
 		}
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_no_home_affairs }
+				NOT = { has_law_or_variant = law_type:law_no_home_affairs }
 			}
 			activate_law = law_type:law_no_home_affairs
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_peasant_levies
-					has_law = law_type:law_mass_conscription
+					has_law_or_variant = law_type:law_peasant_levies
+					has_law_or_variant = law_type:law_mass_conscription
 				}
 			}
 			activate_law = law_type:law_national_militia
@@ -950,11 +950,11 @@ law_anarchy = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			AND = { # modification of the standard trigger, only other anarchic countries can impose anarchy on their subjects
-				has_law = scope:law
+				has_law_or_variant = scope:law
 				can_impose_law_default = yes
 			}
 		}

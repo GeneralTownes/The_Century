@@ -27,7 +27,7 @@
 	
 	# AI will never fully dismantle institutions
 	ai_will_do = {
-		has_law = law_type:law_council_republic
+		has_law_or_variant = law_type:law_council_republic
 	}	
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -83,8 +83,8 @@ law_frontier_colonization = {
 	
 	ai_will_do = {
 		NOR = {
-			has_law = law_type:law_colonial_exploitation
-			has_law = law_type:law_colonial_resettlement
+			has_law_or_variant = law_type:law_colonial_exploitation
+			has_law_or_variant = law_type:law_colonial_resettlement
 		}
 	}
 }
@@ -111,7 +111,7 @@ law_colonial_resettlement = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -126,7 +126,7 @@ law_colonial_resettlement = {
 			if = {
 				limit = {
 					owner = { 
-						has_law = law_type:law_no_colonial_affairs 
+						has_law_or_variant = law_type:law_no_colonial_affairs 
 					} 
 					is_pop_type = officers
 				}
@@ -137,7 +137,7 @@ law_colonial_resettlement = {
 	
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_colonial_exploitation
+			has_law_or_variant = law_type:law_colonial_exploitation
 			navy_size >= 50
 		}
 	}
@@ -176,7 +176,7 @@ law_colonial_exploitation = {
 				is_in_same_power_bloc = scope:target_country
 				AND = {
 					modifier:country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
-					has_law = scope:law
+					has_law_or_variant = scope:law
 				}
 			}
 			can_impose_law_default = yes
@@ -191,7 +191,7 @@ law_colonial_exploitation = {
 			if = {
 				limit = {
 					owner = { 
-						has_law = law_type:law_no_colonial_affairs 
+						has_law_or_variant = law_type:law_no_colonial_affairs 
 					} 
 					is_pop_type = officers
 				}
@@ -202,7 +202,7 @@ law_colonial_exploitation = {
 	
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_colonial_resettlement
+			has_law_or_variant = law_type:law_colonial_resettlement
 			navy_size >= 50
 		}
 	}
