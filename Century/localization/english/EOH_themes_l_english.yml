@@ -1,0 +1,21 @@
+﻿l_english:
+ papermap_eoh_rough_marble: "Empires of History - Rough / Marble"
+ papermap_eoh_rough_marble_desc: "Rough map relief, marble oceans."
+
+ papermap_eoh_rough_dark: "Empires of History - Rough / Dark"
+ papermap_eoh_rough_dark_desc: "Rough map relief, dark oceans."
+
+ papermap_eoh_rough_regular: "Empires of History - Rough / Regular"
+ papermap_eoh_rough_regular_desc: "Rough map relief, regular oceans."
+
+ papermap_eoh_rough_light: "Empires of History - Rough / Light"
+ papermap_eoh_rough_light_desc: "Rough map relief, light oceans."
+
+ papermap_eoh_smooth_dark: "Empires of History - Smooth / Dark"
+ papermap_eoh_smooth_dark_desc: "Smooth map relief, dark oceans."
+
+ papermap_eoh_smooth_regular: "Empires of History - Smooth / Regular"
+ papermap_eoh_smooth_regular_desc: "Smooth map relief, regular oceans."
+
+ papermap_eoh_smooth_light: "Empires of History - Smooth / Light"
+ papermap_eoh_smooth_light_desc: "Smooth map relief, light oceans."
