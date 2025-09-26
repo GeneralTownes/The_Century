@@ -37,9 +37,6 @@ building_power_plant = {
 	}
 
 	possible = {
-		owner = {
-			NOT = { has_law = law_type:law_industry_banned } 
-		}
 		is_incorporated = yes
 	}
 	
