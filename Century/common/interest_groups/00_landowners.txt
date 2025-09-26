@@ -184,6 +184,7 @@
 			ig:ig_landowners = { 
 				set_interest_group_name = ig_scholar_officials
 				remove_ideology = ideology_paternalistic
+				remove_ideology = ideology_cultural_chauvinism
 				add_ideology = ideology_scholar_paternalistic
 			}
 		}

@@ -70,7 +70,8 @@ ideology_liberal_modern = {
 		law_racial_segregation = disapprove
 		law_language_discrimination = neutral
 		law_cultural_exclusion = approve
-		law_multicultural = strongly_approve	
+		law_multicultural = strongly_approve
+		law_subjecthood = strongly_disapprove
 	}
 	
 	lawgroup_army_model = {

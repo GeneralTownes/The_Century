@@ -1038,6 +1038,7 @@ ideology_radical = {
 		law_language_discrimination = neutral
 		law_cultural_exclusion = neutral
 		law_multicultural = approve
+		law_subjecthood = strongly_disapprove
 	}
 	
 	lawgroup_church_and_state = {
@@ -1483,7 +1484,8 @@ ideology_reformer = {
 		law_racial_segregation = disapprove
 		law_language_discrimination = neutral
 		law_cultural_exclusion = approve
-		law_multicultural = neutral	
+		law_multicultural = neutral
+		law_subjecthood = disapprove
 	}
 
 	lawgroup_rights_of_women = {
@@ -4095,7 +4097,8 @@ ideology_fascist = {
 		law_racial_segregation = approve
 		law_language_discrimination = neutral
 		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
+		law_multicultural = strongly_disapprove
+		law_subjecthood = strongly_disapprove
 	}
 
 	lawgroup_army_model = {
@@ -4621,7 +4624,8 @@ ideology_anarchist = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = approve
-		law_multicultural = strongly_approve	
+		law_multicultural = strongly_approve
+		law_subjecthood = strongly_disapprove
 	}	
 	
 	lawgroup_migration = {
@@ -4969,7 +4973,8 @@ ideology_ethno_nationalist = {
 		law_racial_segregation = approve
 		law_language_discrimination = neutral
 		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
+		law_multicultural = strongly_disapprove
+		law_subjecthood = strongly_disapprove
 	}
 	
 	lawgroup_migration = {
@@ -6533,7 +6538,8 @@ ideology_humanitarian = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = approve
+		law_subjecthood = disapprove
 	}
 
 	lawgroup_internal_security = {
@@ -6811,7 +6817,8 @@ ideology_jacksonian_democrat = {
 		law_racial_segregation = approve
 		law_cultural_exclusion = neutral
 		law_language_discrimination = disapprove
-		law_multicultural = strongly_disapprove	
+		law_multicultural = strongly_disapprove
+		law_subjecthood = strongly_disapprove
 	}
 	
 	country_trigger = {
@@ -7470,6 +7477,7 @@ ideology_integralist = {
 		law_multicultural = disapprove	
 		law_ethnostate = disapprove
 		law_national_supremacy = disapprove
+		law_subjecthood = approve
 	}
 
 	lawgroup_church_and_state = {
@@ -8445,7 +8453,8 @@ ideology_humanitarian_royalist = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = approve
+		law_subjecthood = neutral
 	}
 
 	lawgroup_free_speech = {
@@ -8709,7 +8718,8 @@ ideology_despotic_utopian = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = approve
+		law_subjecthood = disapprove
 	}
 
 	lawgroup_trade_policy = {		
@@ -9081,7 +9091,8 @@ ideology_sovereignist_leader = { # For colonised peoples
 		law_national_supremacy = disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = approve
+		law_subjecthood = disapprove
 	}
 
 	country_trigger = {
