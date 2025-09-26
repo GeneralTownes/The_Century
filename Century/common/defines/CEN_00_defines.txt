@@ -33,6 +33,7 @@ NDiplomacy = {
 
 NEconomy = {
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 1000000000	# The country_gdp modifier multiplier cannot be higher than this
+	GOLD_RESERVE_RATIO_AT_START = 0.2			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
 }
 
 NPops = {
