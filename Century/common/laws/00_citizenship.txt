@@ -147,6 +147,8 @@ law_ethnostate = {
 
 		#Fervor
 		country_primary_culture_fervor_from_laws_add = 20
+		
+		state_allow_assimilation_in_homeland_bool = yes
 	}
 	
 	acceptance_modifier = {
