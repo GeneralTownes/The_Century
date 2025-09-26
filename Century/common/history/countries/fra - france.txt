@@ -33,6 +33,8 @@
 		activate_law = law_type:law_plurality
 		activate_law = law_type:law_debtors_prisons
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_combination_acts # Legacy of the Napoleonic Code and 1791 Le Chapelier Law
+		activate_law = law_type:law_colonial_slavery # Slavery in French colonies was only abolished in 1848
 
 			
 		set_institution_investment_level = {

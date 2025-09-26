@@ -272,7 +272,7 @@ bpm_ig_is_militaristic = {
 		text = "tooltip_bpm_ig_is_militaristic"
 		OR = {
 			has_ideology = ideology:ideology_jingoist
-			has_ideology = ideology:ideology_stratocratic
+			has_ideology = ideology:ideology_hierarchic
 		}
 	}
 }

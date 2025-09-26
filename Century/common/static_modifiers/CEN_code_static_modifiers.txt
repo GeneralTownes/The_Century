@@ -68,6 +68,13 @@ base_values = {
 	state_building_barracks_max_level_add = 1000
 	state_building_conscription_center_max_level_add = 1000
 	state_building_naval_base_max_level_add = 1000
+	
+	# To account for the power derived from bearing arms
+	country_officers_pol_str_mult = 3
+	country_soldiers_pol_str_mult = 1.5
+
+	country_support_separatism_strength_mult = 1.0
+	country_support_separatism_resistance_mult = 1.0
 }
 
 government_wages_very_low = {

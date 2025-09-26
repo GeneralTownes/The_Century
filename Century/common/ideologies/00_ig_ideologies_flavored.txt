@@ -1463,6 +1463,7 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_slavery_banned = neutral
 		law_debt_slavery = strongly_disapprove		
 		law_slave_trade = strongly_disapprove
+		law_colonial_slavery = disapprove
 		law_legacy_slavery = disapprove
 	}
 

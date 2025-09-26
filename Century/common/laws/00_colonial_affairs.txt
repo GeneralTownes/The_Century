@@ -16,6 +16,10 @@
 			}
 		}
 	}
+
+	modifier = {
+		country_acceptance_homeland_add = 10
+	}
 	
 	pop_support = {
 		value = 0
