@@ -1480,10 +1480,10 @@ ideology_reformer = {
 
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
-		law_national_supremacy = strongly_disapprove
-		law_racial_segregation = disapprove
-		law_language_discrimination = neutral
-		law_cultural_exclusion = approve
+		law_national_supremacy = disapprove
+		law_racial_segregation = neutral
+		law_language_discrimination = approve
+		law_cultural_exclusion = strongly_approve
 		law_multicultural = neutral
 		law_subjecthood = disapprove
 	}
