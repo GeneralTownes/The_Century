@@ -275,7 +275,6 @@ bpm_je_march_to_radicalism_progress_update = {
 					has_role = politician
 				}
 				OR = {
-					bpm_leader_is_radical_leftist = yes
 					interest_group = {
 						bpm_ig_is_radical_left = yes
 					}
