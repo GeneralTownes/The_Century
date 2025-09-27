@@ -5,6 +5,17 @@
 		always = yes 
 	}
 	trigger_else_if = {
+		limit = {
+			has_law_or_variant = law_type:law_autocracy
+			OR = {
+				is_enacting_law = law_type:law_republic
+				is_enacting_law = law_type:law_monarchy
+				is_enacting_law = law_type:law_theocracy
+			}
+		}
+		var:bpm_law_enactment_yea_votes_cached > 0.6666
+	}
+	trigger_else_if = {
 		limit = { 
 			has_law_or_variant = law_type:law_autocracy
 		}

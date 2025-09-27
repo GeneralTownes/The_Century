@@ -120,6 +120,22 @@ bpm_law_voting_executive_must_pass = {
 	text = {
 		trigger = {
 			has_law_or_variant = law_type:law_autocracy
+			OR = {
+				is_enacting_law = law_type:law_republic
+				is_enacting_law = law_type:law_monarchy
+				is_enacting_law = law_type:law_theocracy
+			}
+		}
+		localization_key = bpm_law_voting_principle_change_autocracy
+	}
+	text = {
+		trigger = {
+			has_law_or_variant = law_type:law_autocracy
+			NOR = {
+				is_enacting_law = law_type:law_republic
+				is_enacting_law = law_type:law_monarchy
+				is_enacting_law = law_type:law_theocracy
+			}
 		}
 		localization_key = bpm_law_voting_executive_must_pass_autocracy
 	}
