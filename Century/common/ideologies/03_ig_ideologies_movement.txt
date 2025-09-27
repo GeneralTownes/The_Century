@@ -606,7 +606,7 @@ ideology_liberal_movement = {
 		law_tenant_farmers = neutral
 		law_homesteading = neutral
 		law_collectivized_agriculture = neutral
-		law_commercialized_agriculture = strongly_disapprove
+		law_commercialized_agriculture = approve
 	}
 }
 
