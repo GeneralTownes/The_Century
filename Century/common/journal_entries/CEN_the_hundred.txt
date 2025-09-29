@@ -1,7 +1,11 @@
 ﻿je_the_hundred = {
     icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	
-	group = je_group_historical_content
+	group = je_group_qing
+
+    is_shown_in_lobby = {
+        c:CHI ?= THIS
+    }
 	
 	scripted_button = 100_days_con_mon
 	scripted_button = 100_days_peking_uni

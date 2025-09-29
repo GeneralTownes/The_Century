@@ -3,6 +3,10 @@
 	
 	group = je_group_internal_affairs
 	
+	is_shown_in_lobby = {
+		c:CHI = THIS
+	}
+	
 	scripted_button = ban_opium_button
 	scripted_button = unban_opium_button
 
