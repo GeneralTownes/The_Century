@@ -2,6 +2,9 @@
 	c:USA = {
 		ig:ig_landowners = { remove_ideology = ideology_pro_slavery }
 	}
+	c:SPA = {
+		ig:ig_landowners = { remove_ideology = ideology_pro_slavery }
+	}
 
 	every_country = {
 		limit = {
