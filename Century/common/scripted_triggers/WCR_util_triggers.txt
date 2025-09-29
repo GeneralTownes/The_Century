@@ -63,7 +63,7 @@ WCR_st_is_country_pre_westernized = {
 WCR_st_is_western_culture = {
     OR = {
         # European
-        has_discrimination_trait = european_heritage
+        has_discrimination_trait_group = heritage_group_european
         
         # African diaspora
         cu:afro_caribbean ?= THIS
@@ -360,53 +360,3 @@ WCR_st_is_part_west_character_westernized_trigger = {
 		} # owner
     }
 }
-
-# ==================================================================================================================== #
-
-# Unused stuff, keeping around for reference and giggles
-# WCR_st_is_country_westernized = {
-#     OR = {
-#         # Option A: They completed westernization
-#         AND = {
-#             has_variable = WCR_westernized_nation
-#             THIS.var:WCR_westernized_nation = yes
-#         }
-#         
-#         # Option B: They start off westernized
-#         AND = {
-#             # Westernized check
-#             OR = {
-#                 # Option I: They're European (duh)
-#                 any_primary_culture = {
-#                     has_discrimination_trait = european_heritage
-#                 }
-#                 
-#                 # Option II: Christian religion (helps catch European colonies and former colonies)
-#                 # Specifically excludes Oriental Orthodox (Ethiopia)
-#                 # Done this way because of https://forum.paradoxplaza.com/forum/threads/religion-target-in-country-scope-does-not-give-the-scope-of-the-current-state-religion.1600183/
-#                 # 2024-07-07: They finally changed the `religion` event target behavior in 1.7.2 lmao
-#                 OR = {
-#                     country_has_state_religion = rel:catholic
-#                     country_has_state_religion = rel:protestant
-#                     country_has_state_religion = rel:orthodox
-#                 }
-#                 # religion = { # Original logic, kept for reference
-#                 #     has_discrimination_trait = christian
-#                 # }
-#             }
-#             
-#             # Exclusions
-#             NOR = {
-#                 c:PLY ?= THIS # Tahiti (Polynesia?)
-#                 c:PHI ?= THIS # The Philippines
-#                 c:KON ?= THIS # Kongo
-#                 c:SEQ ?= THIS # Indian Territory
-#                 c:IQU ?= THIS # Iquicha (in Peru)
-#                 c:TPG ?= THIS # Taiping Rebellion
-#             }
-#         }
-#         
-#         # Option C: Alternative Westernization mechanic
-#         WCR_st_is_country_westernized_by_vanilla = yes
-#     }
-# }

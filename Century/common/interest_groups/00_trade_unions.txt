@@ -44,8 +44,8 @@
 				limit = {
 					any_primary_culture = {
 						OR = {
-							has_discrimination_trait = sinosphere
-							has_discrimination_trait = han_chinese
+							has_discrimination_trait = tradition_sinosphere
+							has_discrimination_trait = heritage_han
 						}
 					}
 				}

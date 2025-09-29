@@ -150,7 +150,7 @@ law_isolationism = {
 	is_visible = {
 		NAND = {
 			any_primary_culture = {
-				has_discrimination_trait = sinosphere
+				has_discrimination_trait = tradition_sinosphere
 			}
 			any_scope_state = {
 				state_region = s:STATE_GUANGDONG
@@ -167,7 +167,7 @@ law_isolationism = {
 		hidden_trigger = {
 			NAND = {
 				any_primary_culture = {
-					has_discrimination_trait = sinosphere
+					has_discrimination_trait = tradition_sinosphere
 				}
 				any_scope_state = {
 					state_region = s:STATE_GUANGDONG
@@ -227,7 +227,7 @@ law_canton_system = {
 
 	is_visible = {
 		any_primary_culture = {
-			has_discrimination_trait = sinosphere
+			has_discrimination_trait = tradition_sinosphere
 		}
 		any_scope_state = {
 			state_region = s:STATE_GUANGDONG
@@ -237,7 +237,7 @@ law_canton_system = {
 
 	can_enact = {
 		any_primary_culture = {
-			has_discrimination_trait = sinosphere
+			has_discrimination_trait = tradition_sinosphere
 		}
 		any_scope_state = {
 			state_region = s:STATE_GUANGDONG

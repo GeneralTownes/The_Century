@@ -36,7 +36,7 @@ heavenly.1 = {
 					is_treaty_port = yes
 					owner = {
 						religion = {
-							has_discrimination_trait = christian
+							has_discrimination_trait = heritage_christian
 						}
 					}
 				}
@@ -47,7 +47,7 @@ heavenly.1 = {
 					is_treaty_port = yes
 					owner = {
 						religion = {
-							has_discrimination_trait = christian
+							has_discrimination_trait = heritage_christian
 						}
 					}
 				}
@@ -740,7 +740,7 @@ heavenly.5 = {
 			limit = {
 				country_rank >= rank_value:great_power
 				religion = {
-					has_discrimination_trait = christian
+					has_discrimination_trait = heritage_christian
 				}
 			}
 			change_relations = {
@@ -755,7 +755,7 @@ heavenly.5 = {
 			limit = {
 				country_rank >= rank_value:great_power
 				religion = {
-					has_discrimination_trait = christian
+					has_discrimination_trait = heritage_christian
 				}
 			}
 			change_relations = {
@@ -923,7 +923,7 @@ heavenly.6 = {
 			limit = {
 				country_rank >= rank_value:great_power
 				religion = {
-					has_discrimination_trait = christian
+					has_discrimination_trait = heritage_christian
 				}
 			}
 			change_relations = {

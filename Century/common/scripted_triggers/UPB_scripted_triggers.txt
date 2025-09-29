@@ -5,14 +5,14 @@
         any_primary_culture = {
             OR = {
                 AND = {
-                    has_discrimination_trait = east_asian_heritage
+                    has_discrimination_trait_group = heritage_group_east_asian
                     NOR = {
                         THIS = cu:korean
                         THIS = cu:japanese
                     }
                 }
                 AND = {
-                    has_discrimination_trait = sinosphere
+                    has_discrimination_trait = tradition_sinosphere
                     NOR = {
                         THIS = cu:vietnamese
                     }
