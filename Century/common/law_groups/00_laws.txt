@@ -232,13 +232,13 @@ lawgroup_labour_associations = {
 	regressive_movement_chance = 0.255
 }
 
-lawgroup_work_hours = {
-	law_group_category = human_rights
-	ideological_opinion_impact = 0.25
-	
-	progressive_movement_chance = 2.5
-	regressive_movement_chance = 0.25
-}
+#lawgroup_work_hours = {
+#	law_group_category = human_rights
+#	ideological_opinion_impact = 0.25
+#	
+#	progressive_movement_chance = 2.5
+#	regressive_movement_chance = 0.25
+#}
 
 lawgroup_childrens_rights = {
 	law_group_category = human_rights
