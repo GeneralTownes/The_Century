@@ -5394,7 +5394,7 @@ ideology_market_liberal = {
 		law_guild_system = strongly_disapprove
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = strongly_disapprove
-		law_right_to_associate = disapprove
+		law_right_to_associate = strongly_disapprove
 	}
 	
 	lawgroup_debt = {
