@@ -1244,6 +1244,7 @@ ideology_southern_economy = {
 	lawgroup_slavery = {
 		law_slave_trade = strongly_approve
 		law_debt_slavery = neutral
+		law_colonial_slavery = neutral
 		law_legacy_slavery = approve
 		law_slavery_banned = strongly_disapprove
 	}
