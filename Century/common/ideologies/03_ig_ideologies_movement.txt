@@ -228,11 +228,11 @@ ideology_socialist_movement = {
 		law_worker_protections = approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = disapprove
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = approve
+	#}
 
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
