@@ -42,10 +42,12 @@
 			}
 			else_if = {
 				limit = {
-					any_primary_culture = {
-						OR = {
-							has_discrimination_trait = tradition_sinosphere
-							has_discrimination_trait = heritage_han
+					owner = {
+						any_primary_culture = {
+							OR = {
+								has_discrimination_trait = tradition_sinosphere
+								has_discrimination_trait = heritage_han
+							}
 						}
 					}
 				}
