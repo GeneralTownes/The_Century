@@ -173,6 +173,8 @@ law_freedom_of_conscience = {
 		country_radicalism_increases_cultural_erasure_mult = 0.1
 		country_loyalism_increases_second_rate_citizen_mult = 0.1
 		country_loyalism_increases_full_acceptance_mult = 0.1
+		
+		state_migration_pull_mult = 0.05
 	}
 
 	can_impose = {
@@ -257,6 +259,8 @@ law_total_separation = {
 		country_allow_conversion_open_prejudice_bool = no
 		country_allow_conversion_second_rate_citizen_bool = no
 		country_allow_conversion_full_acceptance_bool = no
+		
+		state_migration_pull_mult = 0.1
 	}
 
 	can_impose = {
