@@ -9162,10 +9162,10 @@ ideology_utopian = {
 
 	character_ideology = yes
 
-	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
-		law_regulatory_bodies = approve
-		law_no_workers_rights = neutral
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_republic = approve
+		law_theocracy = strongly_disapprove
 	}
 
 	lawgroup_distribution_of_power = {
@@ -9178,12 +9178,6 @@ ideology_utopian = {
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_single_party_state = disapprove
-	}
-
-	lawgroup_governance_principles = {
-		law_monarchy = strongly_disapprove
-		law_republic = approve
-		law_theocracy = strongly_disapprove
 	}
 
 	lawgroup_economic_system = {
@@ -9210,6 +9204,12 @@ ideology_utopian = {
 		law_colonial_slavery = disapprove
 		law_debt_slavery = strongly_disapprove
 		law_slave_trade = strongly_disapprove
+	}
+
+	lawgroup_labor_rights = {
+		law_worker_protections = strongly_approve
+		law_regulatory_bodies = approve
+		law_no_workers_rights = neutral
 	}
 
 	country_trigger = {
