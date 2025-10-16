@@ -525,6 +525,7 @@ chinese_agriculture_progress_bar = {
 						is_homeland = cu:manchu
 					}
 					is_treaty_port = no
+					is_split_state = no
 					NOT = { owner = ROOT }
 				}
 			}
@@ -540,6 +541,7 @@ chinese_agriculture_progress_bar = {
 						is_homeland = cu:han
 					}
 					is_treaty_port = no
+					is_split_state = no
 					NOT = { owner = ROOT }
 				}
 			}

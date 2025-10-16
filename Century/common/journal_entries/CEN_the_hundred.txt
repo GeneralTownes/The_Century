@@ -107,9 +107,9 @@
 		}
 		if = {
 			limit = {
-				NOT = { has_law_or_variant = law_type:law_national_supremacy }
+				NOT = { has_law_or_variant = law_type:law_subjecthood }
 			}
-			activate_law = law_type:law_national_supremacy
+			activate_law = law_type:law_subjecthood
 		}
 		
 		every_interest_group = {
