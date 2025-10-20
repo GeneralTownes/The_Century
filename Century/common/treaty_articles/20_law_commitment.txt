@@ -108,7 +108,7 @@
     law_type_valid_trigger = {
         any_law = {
             law_is_available = yes
-            type = scope:input
+            #type = scope:input
         }
         scope:other_country = {
             OR = {
