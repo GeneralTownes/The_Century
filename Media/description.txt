@@ -44,7 +44,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
 
 [h3] To Note [/h3]
 This mod is [u] not intended[/u] for less experienced players. You may end up collapsing into The Warlord Era, however whilst this will be challenging, it is recoverable.
-Winning (cheesing) the Opium War will result in a trivially easy campaign. It is not intended to be won. Setting AI aggression to "High" is strongly recommended."
+Winning (cheesing) the Opium War will result in a trivially easy campaign. It is not intended to be won. Setting AI aggression to "High" is strongly recommended.
 
 [h3] With great thanks to: [/h3]
 [list]
