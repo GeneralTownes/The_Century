@@ -38,4 +38,9 @@ NEconomy = {
 
 NPops = {
 	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT_MAX = 0				# Migration pull from available subsistence jobs cannot exceed this
+	
+	# Cultural Fervor #
+	CULTURAL_FERVOR_LITERACY_IMPACT = 20										# The impact of pops literacy on the cultural fervor
+    CULTURAL_FERVOR_CASUALTIES_IMPACT_MAX = 10									# The maximum impact of casualties from war and attrition on the cultural fervor
+	CULTURAL_FERVOR_ACADEMICS_IMPACT_CAP = 20									# Cap for the academics impact
 }
