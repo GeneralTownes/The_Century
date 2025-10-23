@@ -114,19 +114,59 @@ law_agrarianism = {
 	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-		
+
+		# Once the AI gets to a certain society tech level they should try to ditch Traditionalism for either Agrarianism or Interventionism
 		if = {
-			limit = { 
+			limit = {
+				OR = {
+					has_technology_researched = civilizing_mission
+					has_technology_researched = human_rights
+					has_technology_researched = pan-nationalism
+				}
+				has_law_or_variant = law_type:law_traditionalism
+			}
+
+			add = 1000
+		}
+
+		if = {
+			limit = {
 				has_journal_entry = je_sick_man_bureaucracy
 				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat AI is to get out of Traditionalism
-		}			
+		}
+
+		if = {
+			limit = {
+				has_journal_entry = je_great_reforms_serfdom
+			}
+			add = 1000 # Less preferred than either laissez-faire or interventionism
+		}
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = {
+						law_enactment_stance = {
+							law = law_type:law_agrarianism
+							value > neutral
+						}
+						political_movement_support >= 0.10
+					}
+				}
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -168,23 +208,58 @@ law_interventionism = {
 	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-		
+
+		# Once the AI gets to a certain society tech level they should try to ditch Traditionalism for either Agrarianism or Interventionism
 		if = {
-			limit = { 
+			limit = {
+				OR = {
+					has_technology_researched = civilizing_mission
+					has_technology_researched = human_rights
+					has_technology_researched = pan-nationalism
+				}
+				has_law_or_variant = law_type:law_traditionalism
+			}
+
+			add = 1000
+		}
+
+		if = {
+			limit = {
 				OR = {
 					has_journal_entry = je_sick_man_bureaucracy
 					has_modifier = shogun_ig_forced_to_open_market
 					has_journal_entry = je_meiji_main
+					has_journal_entry = je_great_reforms_serfdom
+					has_journal_entry = je_hawaii
 				}
 				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
-		}			
+		}
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = {
+						law_enactment_stance = {
+							law = law_type:law_interventionism
+							value > neutral
+						}
+						political_movement_support >= 0.10
+					}
+				}
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -235,20 +310,43 @@ law_laissez_faire = {
 	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-		
+
 		if = {
-			limit = { 
-				has_modifier = shogun_ig_forced_to_open_market
-				has_journal_entry = je_meiji_main
+			limit = {
+				OR = {
+					has_modifier = shogun_ig_forced_to_open_market
+					has_journal_entry = je_meiji_main
+					has_journal_entry = je_great_reforms_serfdom
+					has_journal_entry = je_hawaii
+				}
 				has_law_or_variant = law_type:law_traditionalism
 			}
 			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
-		}		
+		}
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = {
+						law_enactment_stance = {
+							law = law_type:law_laissez_faire
+							value > neutral
+						}
+						political_movement_support >= 0.10
+					}
+				}
+			}
+			add = 1000
+		}
 	}
 }
 
@@ -295,10 +393,44 @@ law_cooperative_ownership = {
 	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+			add = 400
+		}
+	}
+
+	ai_impose_chance = {
+		value = 0
+
+		if = {
+			limit = {
+				has_law = law_type:law_cooperative_ownership
+			}
+
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+
+		if = {
+			limit = {
+				scope:target_country = {
+					c:BIC ?= this
+					OR = {
+						has_journal_entry = je_british_dictate_plantations
+						has_journal_entry = je_british_dictate_military
+						has_journal_entry = je_british_dictate_universities
+					}
+				}
+			}
+			multiply = 0
 		}
 	}
 }
@@ -367,22 +499,64 @@ law_command_economy = {
 	
 	ai_will_do = {
 		OR = {
-			has_law_or_variant = law_type:law_council_republic
+			has_law_or_variant = law_type:law_technocracy
 			AND = {
-				exists = ruler
-				ruler = {
+				has_law_or_variant = law_type:law_council_republic
+				ruler ?= {
 					has_ideology = ideology:ideology_vanguardist
-				}			
+					has_ideology = ideology:ideology_communist
+				}
 			}
 		}
 	}
-	
+
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+			add = 250
+		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_technocracy
+			}
+			add = 100
+		}
+	}
+
+	ai_impose_chance = {
+		value = 0
+
+		if = {
+			limit = {
+				has_law = law_type:law_command_economy
+			}
+
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+
+		if = {
+			limit = {
+				scope:target_country = {
+					c:BIC ?= this
+					OR = {
+						has_journal_entry = je_british_dictate_plantations
+						has_journal_entry = je_british_dictate_military
+						has_journal_entry = je_british_dictate_universities
+					}
+				}
+			}
+			multiply = 0
 		}
 	}
 }
