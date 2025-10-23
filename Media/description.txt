@@ -25,6 +25,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
     [*]Education level alone provides innovation
     [*]Universities are capped via tech and give tech spread & qualifications
     [*]Early era tech slightly cheaper, late era tech significantly more expensive
+    [*]Only primary cultures reach 100 acceptance from culture, so all others can assimilate
     [*]Oil output increased ~50%
     [*]Take state infamy costs scale up to a base of 100
     [*]Greater historical resources in Chinese states & new state traits
