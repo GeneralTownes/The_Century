@@ -1,0 +1,35 @@
+﻿welsh_acceptance = {
+	is_shown = {
+		exists = c:GBR
+		root = c:GBR
+		NOT = { country_has_primary_culture = cu:welsh }
+	}
+
+	possible = {
+		OR = {
+			has_technology_researched = civil_rights
+			has_technology_researched = multiculturalism
+		}
+		country_has_primary_culture = cu:irish
+	}
+
+	when_taken = {
+		add_primary_culture = cu:welsh
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:british
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:scottish
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:irish
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
