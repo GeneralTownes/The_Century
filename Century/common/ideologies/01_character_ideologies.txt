@@ -2865,11 +2865,11 @@ ideology_social_democrat = {
 		law_compulsory_primary_school = approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = disapprove
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = approve
+	#}
 	
 	lawgroup_minimum_wage = {
 		law_no_minimum_wage = disapprove
@@ -3181,11 +3181,11 @@ ideology_communist = {
 		law_compulsory_primary_school = approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = disapprove
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = approve
+	#}
 	
 	lawgroup_minimum_wage = {
 		law_no_minimum_wage = disapprove
@@ -8177,11 +8177,11 @@ ideology_corporatist_leader = {
 		law_worker_protections = neutral
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = approve
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = disapprove
+	#}
 
 	lawgroup_welfare = {
 		law_poor_laws = neutral

@@ -111,11 +111,11 @@ ideology_laissez_faire = {
 		law_no_workers_rights = strongly_approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = approve
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = disapprove
+	#}
 	
 	lawgroup_minimum_wage = {
 		law_no_minimum_wage = approve
@@ -537,11 +537,11 @@ ideology_meritocratic = {
 		law_private_health_insurance = approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = neutral
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = neutral
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = disapprove
+	#}
 }
 
 ideology_patriotic = {
@@ -782,11 +782,11 @@ ideology_proletarian = {
 		law_worker_protections = strongly_approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = disapprove
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = approve
+	#}
 	
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
@@ -1167,11 +1167,11 @@ ideology_corporatist = {
 		law_worker_protections = neutral
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = approve
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = disapprove
+	#}
 
 	lawgroup_welfare = {
 		law_poor_laws = neutral

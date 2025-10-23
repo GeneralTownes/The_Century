@@ -1146,11 +1146,11 @@ ideology_american_meritocracy = {
 		law_private_health_insurance = approve
 	}
 	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = neutral
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
+	#lawgroup_work_hours = {
+	#	law_no_work_hour_limits = neutral
+	#	law_12_hour_limit = neutral
+	#	law_8_hour_limit = disapprove
+	#}
 }
 
 ideology_protectionism = {
