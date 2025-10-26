@@ -11,7 +11,7 @@
  bpm_legislature_adj_oligarchy:0 "Assembly"
  bpm_legislature_adj_autocracy:0 "Advisory"
  bpm_legislature_adj_parliament:0 "Parliamentary"
- bpm_legislature_adj_council:0 "Councilar"
+ bpm_legislature_adj_council:0 "Councillor"
  bpm_legislature_adj:0 "[GetPlayer.GetCustom('bpm_legislature_adj')]"
  bpm_legislative_vote_name_decision:0 "Opinion"
  bpm_legislative_vote_name_vote:0 "Vote"
