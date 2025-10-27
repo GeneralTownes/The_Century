@@ -196,4 +196,11 @@ ideology_egalitarian_modern = {
 		law_limited_environmental_regulations = approve
 		law_firm_environmental_regulations = strongly_approve
 	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = approve
+	}
 }

@@ -1099,6 +1099,13 @@ ideology_radical = {
 		law_high_corporation_tax = strongly_approve
 	}
 	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = approve
+	}
+	
 	country_trigger = {
 		has_technology_researched = egalitarianism
 
@@ -3198,6 +3205,13 @@ ideology_communist = {
 		law_no_environmental_regulations = neutral
 		law_limited_environmental_regulations = approve
 		law_firm_environmental_regulations = strongly_approve
+	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = approve
 	}
 
 	country_trigger = {
@@ -6567,6 +6581,13 @@ ideology_humanitarian = {
 		law_child_labor_allowed = strongly_disapprove
 		law_restricted_child_labor = disapprove
 		law_compulsory_primary_school = approve
+	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = approve
 	}
 	
 	country_trigger = {

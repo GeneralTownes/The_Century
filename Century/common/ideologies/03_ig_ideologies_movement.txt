@@ -400,6 +400,13 @@ ideology_anarchist_movement = {
 		law_corporatized_unions = strongly_disapprove
 		law_right_to_associate = strongly_approve
 	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = disapprove
+		law_no_colonial_affairs = approve
+	}
 }
 
 ideology_vanguardist_movement = {

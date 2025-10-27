@@ -640,10 +640,7 @@ law_multicultural = {
 	progressiveness = 100
 	
 	can_enact = {
-		OR = {
-			has_law_or_variant = law_type:law_no_colonial_affairs
-			has_law_or_variant = law_type:law_frontier_colonization
-		}
+		has_law_or_variant = law_type:law_no_colonial_affairs
 	}
 	
 	unlocking_technologies = {
