@@ -20,7 +20,7 @@ law_vanguardism = {
 				exists = ruler
 				OR = {
 					ruler = {
-						this.interest_group = {
+						this.interest_group ?= {
 							has_party = yes
 						}
 					}
@@ -29,6 +29,17 @@ law_vanguardism = {
 			custom_tooltip = {
 				text = sps_no_party_tt
 				country_has_voting_franchise = no
+			}
+		}
+		trigger_if = {
+			limit = {
+				c:BIC ?= ROOT
+				is_subject = yes
+				NOT = { has_law = scope:law }
+			}
+			custom_tooltip = {
+				text = BIC_not_able_to_change_distribution_of_power_tt
+				has_variable = britain_granted_dop_permission
 			}
 		}
 	}
@@ -47,66 +58,58 @@ law_vanguardism = {
 	}
 	
 	on_activate = {
-		if = {
-			limit = {
-				game_date > 1836.01.01
-			}
-			activate_law = law_type:law_no_legislature
-			activate_law = law_type:law_no_voting
-			activate_law = law_type:law_single_party_state
-			hidden_effect = {
-				if = {
-					limit = {
-						ROOT = {
-							ruler.interest_group = {
-								has_party = yes
-							}
-						}
-					}
-					ROOT = {
-						set_variable = { name = only_valid_party value = ruler.interest_group.party }
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							any_active_party = {
-								exists = this
-							}
-						}
-					}
-					root = { gen_ruler_party = yes }
-				}
-			}
-			hidden_effect = { #Clears all currently active parties
-				deactivate_parties = yes
-			}
-			update_party_support = yes #Reactivates precisely one legal party
-			custom_tooltip = {
-				text = sps_government_reshuffle_tt
-				every_interest_group = {
-					limit = {
-						is_in_government = yes
-						NOT = { #Removes all IGs from government that aren't in your party
-							has_party = yes
-						}
-					}
-					remove_ruling_interest_group = yes
-				}
-				every_interest_group = {
-					limit = { #Adds all IGs that are in your party to the government
-						is_in_government = no
+		set_only_legal_party_from_ig = ruler.interest_group
+
+		custom_tooltip = {
+			text = sps_government_reshuffle_tt
+			every_interest_group = {
+				limit = {
+					is_in_government = yes
+					NOT = { #Removes all IGs from government that aren't in your party
 						has_party = yes
 					}
-					add_ruling_interest_group = yes
 				}
+				remove_ruling_interest_group = yes
+			}
+			every_interest_group = {
+				limit = { #Adds all IGs that are in your party to the government
+					is_in_government = no
+					has_party = yes
+				}
+				add_ruling_interest_group = yes
 			}
 		}
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_monarchy
+				has_variable = king_in_parliament_possible
+				NOT = {
+					has_journal_entry = je_king_in_parliament
+				}
+			}
+			custom_tooltip = {
+				text = king_in_parliament_tt
+				add_journal_entry = { type = je_king_in_parliament }
+			}
+		}
+		clear_geheime_staatskonferenz = yes
 		if = {
 			limit = {
 				has_modifier = missouri_compromise
 			}
 			remove_modifier = missouri_compromise
+		}
+	}
+
+	on_deactivate = {
+		unset_only_legal_party = yes
+		update_party_support = yes
+		if = {
+			limit = {
+				has_variable = fatherland_front_var
+			}
+			remove_variable = fatherland_front_var
 		}
 	}
 	
