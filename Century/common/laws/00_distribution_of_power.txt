@@ -102,16 +102,16 @@ law_vanguardism = {
 		}
 	}
 
-	on_deactivate = {
-		unset_only_legal_party = yes
-		update_party_support = yes
-		if = {
-			limit = {
-				has_variable = fatherland_front_var
-			}
-			remove_variable = fatherland_front_var
-		}
-	}
+	#on_deactivate = { # Order of enactment with new law on_activate is bugged, so added manually to all laws
+	#	unset_only_legal_party = yes
+	#	update_party_support = yes
+	#	if = {
+	#		limit = {
+	#			has_variable = fatherland_front_var
+	#		}
+	#		remove_variable = fatherland_front_var
+	#	}
+	#}
 	
 	can_impose = {
 		OR = {
@@ -168,6 +168,8 @@ law_autocracy = {
 		activate_law = law_type:law_no_legislature
 		activate_law = law_type:law_no_voting
 		activate_law = law_type:law_independent_executive
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 		if = {
 			limit = {
@@ -246,6 +248,8 @@ law_oligarchy = {
 		activate_law = law_type:law_no_legislature
 		activate_law = law_type:law_no_voting
 		activate_law = law_type:law_independent_executive
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 		if = {
 			limit = {
@@ -309,6 +313,8 @@ law_organic_regulation = {
 	}
 
 	on_activate = {
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 	}
 
@@ -398,6 +404,8 @@ law_technocracy = {
 			}
 			activate_law = law_type:law_appointed_bureaucrats
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 		if = {
 			limit = {
@@ -484,6 +492,8 @@ law_elder_council = {
 			deactivate_law = law_type:law_elected_bureaucrats
 			activate_law = law_type:law_appointed_bureaucrats
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 		if = {
 			limit = {
@@ -549,6 +559,8 @@ law_clerical_voting = {
 			}
 			activate_law = law_type:law_plurality
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_emergence = yes
 	}
 
@@ -610,6 +622,8 @@ law_landed_voting = {
 			}
 			activate_law = law_type:law_plurality
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
@@ -703,6 +717,8 @@ law_wealth_voting = {
 			}
 			activate_law = law_type:law_plurality
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
@@ -801,6 +817,8 @@ law_census_voting = {
 			}
 			activate_law = law_type:law_plurality
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
@@ -901,6 +919,8 @@ law_universal_suffrage = {
 			}
 			activate_law = law_type:law_plurality
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
@@ -1010,6 +1030,8 @@ law_anarchy = {
 			}
 			activate_law = law_type:law_national_militia
 		}
+		unset_only_legal_party = yes
+		update_party_support = yes
 		scripted_effect_parties_disappearence = yes
 	}
 
