@@ -169,7 +169,6 @@ law_autocracy = {
 		activate_law = law_type:law_no_voting
 		activate_law = law_type:law_independent_executive
 		scripted_effect_parties_disappearence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				has_modifier = missouri_compromise
@@ -248,7 +247,6 @@ law_oligarchy = {
 		activate_law = law_type:law_no_voting
 		activate_law = law_type:law_independent_executive
 		scripted_effect_parties_disappearence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				has_modifier = missouri_compromise
@@ -401,7 +399,6 @@ law_technocracy = {
 			activate_law = law_type:law_appointed_bureaucrats
 		}
 		scripted_effect_parties_disappearence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				has_modifier = missouri_compromise
@@ -488,7 +485,6 @@ law_elder_council = {
 			activate_law = law_type:law_appointed_bureaucrats
 		}
 		scripted_effect_parties_disappearence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				has_law_or_variant = law_type:law_single_party_state
@@ -554,7 +550,6 @@ law_clerical_voting = {
 			activate_law = law_type:law_plurality
 		}
 		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 	}
 
 	disallowing_laws = {
@@ -616,7 +611,6 @@ law_landed_voting = {
 			activate_law = law_type:law_plurality
 		}
 		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				OR = {
@@ -710,7 +704,6 @@ law_wealth_voting = {
 			activate_law = law_type:law_plurality
 		}
 		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				OR = {
@@ -809,7 +802,6 @@ law_census_voting = {
 			activate_law = law_type:law_plurality
 		}
 		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				OR = {
@@ -910,7 +902,6 @@ law_universal_suffrage = {
 			activate_law = law_type:law_plurality
 		}
 		scripted_effect_parties_emergence = yes
-		clear_legal_single_party = yes
 		if = {
 			limit = {
 				OR = {
@@ -1020,7 +1011,6 @@ law_anarchy = {
 			activate_law = law_type:law_national_militia
 		}
 		scripted_effect_parties_disappearence = yes
-		clear_legal_single_party = yes
 	}
 
 	disallowing_laws = {
