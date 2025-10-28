@@ -59,6 +59,10 @@ law_vanguardism = {
 	
 	on_activate = {
 		set_only_legal_party_from_ig = ruler.interest_group
+		
+		activate_law = law_type:law_no_legislature
+		activate_law = law_type:law_no_voting
+		activate_law = law_type:law_single_party_state
 
 		custom_tooltip = {
 			text = sps_government_reshuffle_tt
