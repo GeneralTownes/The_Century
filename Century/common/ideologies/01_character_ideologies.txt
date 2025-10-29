@@ -7482,6 +7482,7 @@ ideology_integralist = {
 	}
 
 	lawgroup_distribution_of_power = {
+		law_vanguardism = strongly_approve
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
 		law_landed_voting = neutral
