@@ -7945,6 +7945,7 @@ ideology_liberal_leader = {
 		law_technocracy = disapprove
 		law_oligarchy = disapprove
 		law_autocracy = strongly_disapprove
+		law_vanguardism = strongly_disapprove
 		law_anarchy = strongly_disapprove
 	}
 
