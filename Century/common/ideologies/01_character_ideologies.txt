@@ -6018,6 +6018,12 @@ ideology_authoritarian = {
 		law_outlawed_dissent = strongly_approve
 	}
 
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = disapprove
+		law_appointed_bureaucrats = strongly_approve
+		law_hereditary_bureaucrats = neutral
+	}
+
 	lawgroup_policing = {
 		law_local_police = neutral
 		law_dedicated_police = approve
@@ -6823,7 +6829,7 @@ ideology_jacksonian_democrat = {
 		law_censorship = disapprove
 		law_right_of_assembly = strongly_approve
 		law_protected_speech = neutral
-	}	
+	}
 
 	lawgroup_bureaucracy = {
 		law_elected_bureaucrats = approve
