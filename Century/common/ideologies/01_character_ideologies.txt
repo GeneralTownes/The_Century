@@ -3132,8 +3132,8 @@ ideology_communist = {
 
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = neutral
-		law_total_separation = approve
+		law_freedom_of_conscience = disapprove
+		law_total_separation = neutral
 		law_state_atheism = strongly_approve
 	}
 	
@@ -3543,6 +3543,13 @@ ideology_vanguardist = {
 		law_parliamentary_system = disapprove
 		law_council_republic = approve
 		law_single_party_state = strongly_approve
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = strongly_approve
 	}
 	
 	lawgroup_voting_system = {
