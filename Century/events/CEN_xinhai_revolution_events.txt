@@ -119,6 +119,14 @@ xinhai_revolution_events.2 = {
 			}
 			activate_law = law_type:law_censorship
 		}
+		if = {
+			limit = {
+				OR = {
+					has_law_or_variant = law_type:law_subjecthood
+				}
+			}
+			activate_law = law_type:law_national_supremacy
+		}
 		chi_add_1_fracture = yes
 		set_global_variable = xinhai_happened
 		if = {
@@ -193,6 +201,14 @@ xinhai_revolution_events.2 = {
 				}
 			}
 			activate_law = law_type:law_right_of_assembly
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law_or_variant = law_type:law_subjecthood
+				}
+			}
+			activate_law = law_type:law_national_supremacy
 		}
 		chi_add_1_fracture = yes
 		set_global_variable = xinhai_happened
