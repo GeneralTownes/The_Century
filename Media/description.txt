@@ -12,7 +12,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
     [*]Anti-radicalism decree & greater taxation decree added
     [*]Wood split into regular and hardwood forestries
     [*]Lumber and rubber use arable land
-    [*]Forestries now employ 2.5k, Plantations 3.5k, and Rice 5k
+    [*]Forestries now employ 2.5k and Rice 5k (like all other grain producers)
     [*]Canal building added to represent Grand Canal
     [*]Synthetic rubber and oil plants
     [*]China flavour (JEs, events, modifiers, unique IGs)
