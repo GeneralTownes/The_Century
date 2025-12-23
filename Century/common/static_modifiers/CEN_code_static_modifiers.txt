@@ -1,204 +1,90 @@
-﻿# All global modifiers are here.  They are applied from certain game-features.
-#
-# Effects are fully scriptable here.
-#these names can NOT be removed or changed, as the code uses them....
-
-# Global Static Modifiers
-base_values = {
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 25
-	
-	country_loan_interest_rate_add = 0.2
-	
-	country_legitimacy_govt_size_add = 1
-	
-	country_bureaucracy_add = 0
-	country_authority_add = 0
-	country_influence_add = 0
+﻿# Global Static Modifiers
+INJECT:base_values = {	
+	country_bureaucracy_add = -100
+	country_authority_add = -100
+	country_influence_add = -100
 
 	country_secession_progress_add = 0.1
 	
 	country_law_enactment_max_setbacks_add = 3
 	
-	country_minting_add = 0
-	country_government_dividends_efficiency_add = 0.25
+	country_minting_add = -500
 
-	state_tax_capacity_add = 0
-	state_infrastructure_add = 0
-	state_infrastructure_from_automobiles_consumption_add = 0.25
+	state_tax_capacity_add = -100
+	state_infrastructure_add = -3
 	
-	state_lower_strata_expected_sol_add = 5
-	state_middle_strata_expected_sol_add = 10
-	state_upper_strata_expected_sol_add = 15
-	state_expected_sol_from_literacy = 5
-	
-	state_machinists_investment_pool_contribution_add = 0.10
-	state_farmers_investment_pool_contribution_add = 0.10
-	state_engineers_investment_pool_contribution_add = 0.15
-	state_bureaucrats_investment_pool_contribution_add = 0.15
-	state_shopkeepers_investment_pool_contribution_add = 0.20
-	state_clergymen_investment_pool_contribution_add = 0.20
-	state_aristocrats_investment_pool_contribution_add = 0.20
-	state_capitalists_investment_pool_contribution_add = 0.30
-	
-	# To balance for unincorporated states not paying taxes
-	state_unincorporated_starting_wages_mult = -0.20
-	building_unincorporated_subsistence_output_mult = -0.20
-		
-	country_construction_add = 10
-	
-	building_mobilization_cost_mult = 0.6
-	
-	building_economy_of_scale_level_cap_add = 20
-	
-	state_market_access_price_impact = 0.7
-	
-	country_company_throughput_bonus_add = 0.2
-	country_company_construction_efficiency_bonus_add = 0.5
-	
-	country_max_weekly_construction_progress_add = 10
-	
-	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
-	
-	state_urbanization_per_level_add = 100
-	
-	unit_experience_gain_add = 0.5
-	
-	state_trade_advantage_from_capacity_add = 0.0005
-	state_max_trade_advantage_from_capacity_add = 0.2
-	
-	state_building_barracks_max_level_add = 1000
-	state_building_conscription_center_max_level_add = 1000
-	state_building_naval_base_max_level_add = 1000
-	
-	# To account for the power derived from bearing arms
-	country_officers_pol_str_mult = 3
-	country_soldiers_pol_str_mult = 1.5
-
-	country_support_separatism_strength_mult = 1.0
-	country_support_separatism_resistance_mult = 1.0
+	state_market_access_price_impact = -0.05
 }
 
-government_wages_very_low = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_government_wages_mult = -0.3
-	interest_group_ig_intelligentsia_approval_add = -8
-	interest_group_ig_petty_bourgeoisie_approval_add = -5
+INJECT:government_wages_very_low = {
+	interest_group_ig_intelligentsia_approval_add = -6
+	interest_group_ig_petty_bourgeoisie_approval_add = -3
 	state_construction_mult = -0.15
 	country_authority_mult = -0.15
 	country_bureaucracy_mult = -0.15
 }
 
-government_wages_low = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_government_wages_mult = -0.15
-	interest_group_ig_intelligentsia_approval_add = -3
-	interest_group_ig_petty_bourgeoisie_approval_add = -2
+INJECT:government_wages_low = {
+	interest_group_ig_intelligentsia_approval_add = -2
+	interest_group_ig_petty_bourgeoisie_approval_add = -1
 	state_construction_mult = -0.05
 	country_authority_mult = -0.05
 	country_bureaucracy_mult = -0.05
 }
 
-government_wages_medium = {
-}
-
-government_wages_high = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_government_wages_mult = 0.15
-	interest_group_ig_intelligentsia_approval_add = 1	
-	interest_group_ig_petty_bourgeoisie_approval_add = 1
-	country_authority_mult = 0.05
+INJECT:government_wages_high = {
 	country_bureaucracy_mult = 0.05
 }
 
-government_wages_very_high = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_government_wages_mult = 0.3
-	interest_group_ig_intelligentsia_approval_add = 2
-	interest_group_ig_petty_bourgeoisie_approval_add = 2
-	country_authority_mult = 0.1
+INJECT:government_wages_very_high = {
 	country_bureaucracy_mult = 0.1
 }
 
-military_wages_very_low = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_military_wages_mult = -0.3
-	interest_group_ig_armed_forces_approval_add = -8	
-	building_training_rate_mult = -0.75
+INJECT:military_wages_very_low = {
+	interest_group_ig_armed_forces_approval_add = -6
 	country_military_tech_spread_mult = -0.25
 }
 
-military_wages_low = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_military_wages_mult = -0.15
-	interest_group_ig_armed_forces_approval_add = -3
-	building_training_rate_mult = -0.5
+INJECT:military_wages_low = {
+	interest_group_ig_armed_forces_approval_add = -2
 	country_military_tech_spread_mult = -0.10
 }
 
-military_wages_medium = {
-}
-
-military_wages_high = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_military_wages_mult = 0.15
-	interest_group_ig_armed_forces_approval_add = 1
-	unit_morale_recovery_mult = 0.1
-}
-
-military_wages_very_high = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_military_wages_mult = 0.3
-	interest_group_ig_armed_forces_approval_add = 2
-	unit_morale_recovery_mult = 0.2
-}
-
-pm_retooling = {
+REPLACE:pm_retooling = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	building_throughput_add = -0.25
 	building_goods_input_mult = 0.1
 }
 
 # Excess BUR increases construction speed by +10% at 2x production to usage
-efficient_bureaucracy = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	state_construction_mult = 0.20
+INJECT:efficient_bureaucracy = {
+	state_construction_mult = 0.10
 }
 
 # Excess AUT reduces enactment time by -25% at 2x production to usage
-legislative_efficiency = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	country_law_enactment_time_mult = -0.25
+INJECT:legislative_efficiency = {
 	country_opposition_ig_approval_add = 5
 }
 
 # Insufficent AUT reduces opposition Interest Groups' Approval by -10 at 2x usage to production
-political_dysfunction = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_opposition_ig_approval_add = -20
-	state_radicals_from_political_movements_mult = 0.20
+INJECT:political_dysfunction = {
+	country_opposition_ig_approval_add = -10
 	country_law_enactment_time_mult = 1
 }
 
 # Excess DIP increases Infamy decay by up to 25% at 2x production to usage
-diplomatic_mitigation = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_leverage_generation_mult = 0.25
-	country_infamy_decay_mult = 0.25
+INJECT:diplomatic_mitigation = {
 	country_prestige_mult = 0.10
 }
 
-# Infamy modifiers, applied from current infamy level
-infamy_reputable = {}
 
-infamy_infamous = {
+REPLACE:infamy_infamous = {
 	country_radicals_from_conquest_mult = 0.1
 	country_loan_interest_rate_add = 0.05
 	country_loan_interest_rate_mult = 0.1
 }
 
-infamy_notorious = {
+REPLACE:infamy_notorious = {
 	country_radicals_from_conquest_mult = 0.25
 	country_tech_spread_mult = -0.20
 	country_trade_route_competitiveness_mult = -0.4
@@ -206,7 +92,7 @@ infamy_notorious = {
 	country_loan_interest_rate_add = 0.1
 }
 
-infamy_pariah = {
+REPLACE:infamy_pariah = {
 	country_radicals_from_conquest_mult = 0.5
 	country_tech_spread_mult = -0.50
 	market_disallow_trade_routes_bool = yes
@@ -216,7 +102,7 @@ infamy_pariah = {
 }
 
 # Scales with devastation level
-state_region_devastation = {
+REPLACE:state_region_devastation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -1.0
 	state_infrastructure_from_population_mult = -0.75
@@ -230,15 +116,12 @@ state_region_devastation = {
 }
 
 # Scales with country literacy rate
-country_literacy_rate = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_weekly_innovation_max_add = 150
+INJECT:country_literacy_rate = {
 	country_weekly_innovation_add = 150
-	country_tech_spread_add = 75
 }
 
 # Scales with how much population is under low pop threshold
-low_pop_state = {
+REPLACE:low_pop_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	state_migration_pull_mult = 0.5
 }

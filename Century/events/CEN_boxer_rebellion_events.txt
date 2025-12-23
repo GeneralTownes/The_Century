@@ -1,7 +1,7 @@
 ﻿namespace = boxer_rebellion_events
 
 # The Yihetuan Movement
-boxer_rebellion_events.1 = {
+REPLACE:boxer_rebellion_events.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -120,7 +120,7 @@ boxer_rebellion_events.1 = {
 }
 
 # The Mandate of Heaven
-boxer_rebellion_events.2 = {
+REPLACE:boxer_rebellion_events.2 = {
 	type = country_event
 	placement = ROOT
 
@@ -171,7 +171,7 @@ boxer_rebellion_events.2 = {
 }
 
 # The Qing and the Han
-boxer_rebellion_events.3 = {
+REPLACE:boxer_rebellion_events.3 = {
 	type = country_event
 	placement = ROOT
 
@@ -379,7 +379,7 @@ boxer_rebellion_events.3 = {
 }
 
 # The Fall of the Qing Dynasty
-boxer_rebellion_events.4 = {
+REPLACE:boxer_rebellion_events.4 = {
 	type = country_event
 	placement = ROOT
 

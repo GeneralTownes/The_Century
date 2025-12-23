@@ -1,5 +1,5 @@
 ﻿# Max unis cap
-academia = {
+REPLACE:academia = {
 	# Unlocks University building
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/academia.dds"
@@ -18,7 +18,7 @@ academia = {
 		value = 1.5 # Important in general
 	}
 }
-empiricism = {
+REPLACE:empiricism = {
 	# Unlocks Total Separation - Church and State Law
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/empiricism.dds"
@@ -40,7 +40,7 @@ empiricism = {
 		value = 1.5 # Important in general
 	}
 }
-dialectics = {
+REPLACE:dialectics = {
 	# Unlocks Philosophy Department PM in Universities
 	
 	era = era_2
@@ -62,7 +62,7 @@ dialectics = {
 }
 
 # MAPI
-stock_exchange = {
+REPLACE:stock_exchange = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
 	category = society	
@@ -80,7 +80,7 @@ stock_exchange = {
 		value = 1
 	}
 }
-central_banking = {
+REPLACE:central_banking = {
 	era = era_2
 	texture = "gfx/interface/icons/invention_icons/central_banking.dds"
 	category = society
@@ -99,7 +99,7 @@ central_banking = {
 		value = 1
 	}
 }
-investment_banks = {
+REPLACE:investment_banks = {
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/investment_banks.dds"
 	category = society
@@ -119,7 +119,7 @@ investment_banks = {
 		value = 2 # important tech
 	}
 }
-international_exchange_standards = {
+REPLACE:international_exchange_standards = {
 	# Should increase trade power maybe
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/international_exchange_standards.dds"
@@ -139,7 +139,7 @@ international_exchange_standards = {
 		value = 1
 	}
 }
-zeppelins = {
+REPLACE:zeppelins = {
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
 	category = society
@@ -156,7 +156,7 @@ zeppelins = {
 		value = 1
 	}
 }
-modern_financial_instruments = {
+REPLACE:modern_financial_instruments = {
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/modern_financial_instruments.dds"
 	category = society
@@ -174,7 +174,7 @@ modern_financial_instruments = {
 		value = 1
 	}
 }
-macroeconomics = {
+REPLACE:macroeconomics = {
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/macroeconomics.dds"
 	category = society
@@ -195,7 +195,7 @@ macroeconomics = {
 }
 
 # Suffrage institution
-democracy = {
+REPLACE:democracy = {
 	# Unlocks Right of Assembly - Freedom of Speech Law
 	# Unlocks Landed Voting, Wealth Voting, Census Voting - Distribution of Power Laws
 	# Unlocks Presidential Republic, Parliamentary Republic - Governance Principles Law
@@ -216,7 +216,7 @@ democracy = {
 		value = 3 # Very important in general
 	}
 }
-mass_communication = {
+REPLACE:mass_communication = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/mass_communication.dds"
 	category = society
@@ -234,7 +234,7 @@ mass_communication = {
 		value = 1.5 # Important in general
 	}
 }
-identification_documents = {
+REPLACE:identification_documents = {
 	# Unlocks Identification Documents PM in Government Administrations
 	# Unlocks Closed Borders Law in Migration
 	era = era_3

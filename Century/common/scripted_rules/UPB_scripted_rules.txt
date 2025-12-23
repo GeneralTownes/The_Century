@@ -1,5 +1,5 @@
 ﻿# Root = Country
-can_lead_power_bloc = {
+REPLACE:can_lead_power_bloc = {
     # Let unrec majors lead
 	country_rank >= rank_value:unrecognized_major_power
     

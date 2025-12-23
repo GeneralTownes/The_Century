@@ -1,4 +1,4 @@
-﻿legitimacy_level_illegitimate = {
+﻿REPLACE:legitimacy_level_illegitimate = {
 	threshold = 0
 
 	modifier = {
@@ -24,7 +24,7 @@
 	}
 }
 
-legitimacy_level_unacceptable = {
+REPLACE:legitimacy_level_unacceptable = {
 	threshold = 10
 
 	modifier = {
@@ -49,7 +49,7 @@ legitimacy_level_unacceptable = {
 	}
 }
 
-legitimacy_level_contested = {
+REPLACE:legitimacy_level_contested = {
 	threshold = 30
 
 	modifier = {
@@ -57,7 +57,7 @@ legitimacy_level_contested = {
 	}
 }
 
-legitimacy_level_legitimate = {
+REPLACE:legitimacy_level_legitimate = {
 	threshold = 70
 
 	modifier = {
@@ -79,7 +79,7 @@ legitimacy_level_legitimate = {
 	}
 }
 
-legitimacy_level_righteous = {
+REPLACE:legitimacy_level_righteous = {
 	threshold = 90
 
 	modifier = {

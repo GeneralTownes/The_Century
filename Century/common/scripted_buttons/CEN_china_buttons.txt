@@ -1,4 +1,4 @@
-﻿CHI_deport_missionaries_button = {
+﻿REPLACE:CHI_deport_missionaries_button = {
 	name = "CHI_deport_missionaries_button"
 	desc = "CHI_deport_missionaries_button_desc"
 
@@ -52,7 +52,7 @@
 	}
 }
 
-ban_opium_button = {
+REPLACE:ban_opium_button = {
 	name = "ban_opium"
 	desc = "ban_opium_desc"
 
@@ -98,7 +98,7 @@ ban_opium_button = {
 }
 
 
-unban_opium_button = {
+REPLACE:unban_opium_button = {
 	name = "remove_opium_ban"
 	desc = "remove_opium_ban_desc"
 

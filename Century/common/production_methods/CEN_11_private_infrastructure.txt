@@ -1,5 +1,5 @@
 ﻿# Vanilla + infra from pops max add
-pm_early_trains = {
+REPLACE:pm_early_trains = {
 	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
 
 	building_modifiers = {
@@ -23,7 +23,7 @@ pm_early_trains = {
 		}
 	}
 }
-pm_steam_trains = {
+REPLACE:pm_steam_trains = {
 	texture = "gfx/interface/icons/production_method_icons/trains_steam.dds"
 	replacement_if_valid = pm_steam_trains_principle_transport_3
 
@@ -52,7 +52,7 @@ pm_steam_trains = {
 		}
 	}
 }
-pm_steam_trains_principle_transport_3 = {
+REPLACE:pm_steam_trains_principle_transport_3 = {
 	texture = "gfx/interface/icons/production_method_icons/trains_steam.dds"
 	is_hidden_when_unavailable = yes
 
@@ -85,7 +85,7 @@ pm_steam_trains_principle_transport_3 = {
 		}
 	}
 }
-pm_electric_trains = {
+REPLACE:pm_electric_trains = {
 	texture = "gfx/interface/icons/production_method_icons/trains_electric.dds"
 	replacement_if_valid = pm_electric_trains_principle_transport_3
 	
@@ -115,7 +115,7 @@ pm_electric_trains = {
 	
 	required_input_goods = electricity
 }
-pm_diesel_trains = {
+REPLACE:pm_diesel_trains = {
 	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"
 	replacement_if_valid = pm_diesel_trains_principle_transport_3
 	
@@ -146,7 +146,7 @@ pm_diesel_trains = {
 }
 
 # Power blocks only use single lvl principles
-pm_electric_trains_principle_transport_3 = {
+REPLACE:pm_electric_trains_principle_transport_3 = {
 	texture = "gfx/interface/icons/production_method_icons/trains_electric.dds"
 	is_hidden_when_unavailable = yes
 
@@ -181,7 +181,7 @@ pm_electric_trains_principle_transport_3 = {
 
 	required_input_goods = electricity
 }
-pm_diesel_trains_principle_transport_3 = {
+REPLACE:pm_diesel_trains_principle_transport_3 = {
 	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
 	is_hidden_when_unavailable = yes
 
@@ -214,7 +214,7 @@ pm_diesel_trains_principle_transport_3 = {
 		}
 	}
 }
-pm_trade_center_principle_external_trade_2 = {
+REPLACE:pm_trade_center_principle_external_trade_2 = {
 	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
 	is_hidden_when_unavailable = yes
 	
@@ -241,7 +241,7 @@ pm_trade_center_principle_external_trade_2 = {
 		}
 	}
 }
-pm_financial_district_principle_divine_economics_2 = {
+REPLACE:pm_financial_district_principle_divine_economics_2 = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 	is_hidden_when_unavailable = yes
 	
@@ -261,7 +261,7 @@ pm_financial_district_principle_divine_economics_2 = {
 		}
 	}
 }
-pm_manor_house_principle_divine_economics_2 = {
+REPLACE:pm_manor_house_principle_divine_economics_2 = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 	is_hidden_when_unavailable = yes
 	

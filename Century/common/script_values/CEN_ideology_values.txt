@@ -1,4 +1,4 @@
-﻿ideology_republican_leader_favoured_laws = {
+﻿REPLACE:ideology_republican_leader_favoured_laws = {
 	# Laws that ideology_republican_leader likes the most.
 	# Maximum value = 2
 	value = 0
@@ -16,7 +16,7 @@
 	}
 }
 
-ideology_republican_leader_disfavoured_laws = {
+REPLACE:ideology_republican_leader_disfavoured_laws = {
 	# Laws that ideology_republican_leader likes the least.
 	# Maximum value = 2
 	value = 0
@@ -37,7 +37,7 @@ ideology_republican_leader_disfavoured_laws = {
 	}
 }
 
-ideology_radical_favoured_laws = {
+REPLACE:ideology_radical_favoured_laws = {
 	# Laws that ideology_radical likes the most.
 	# Maximum value = 6
 	value = 0
@@ -82,7 +82,7 @@ ideology_radical_favoured_laws = {
 	}
 }
 
-ideology_radical_disfavoured_laws = {
+REPLACE:ideology_radical_disfavoured_laws = {
 	# Laws that ideology_radical likes the least.
 	# Maximum value = 6
 	value = 0
@@ -134,7 +134,7 @@ ideology_radical_disfavoured_laws = {
 	}
 }
 
-ideology_positivist_favoured_laws = {
+REPLACE:ideology_positivist_favoured_laws = {
 	# Laws that ideology_positivist likes the most.
 	# Maximum value = 4
 	value = 0

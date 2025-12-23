@@ -1,15 +1,15 @@
-﻿state_pop_pol_str_add = {
+﻿REPLACE:state_pop_pol_str_add = {
 	color=neutral
 	decimals = 2
 }
 
-state_mortality_wealth_mult = {
+REPLACE:state_mortality_wealth_mult = {
 	color=bad
 	percent = yes
 	decimals = 2
 }
 
-state_mortality_mult={
+REPLACE:state_mortality_mult={
 	decimals=2
 	color=bad
 	percent=yes
@@ -18,37 +18,37 @@ state_mortality_mult={
 	}
 }
 
-state_birth_rate_mult = {
+REPLACE:state_birth_rate_mult = {
 	color=good
 	percent = yes
 	decimals = 2
 }
 
-state_migration_pull_mult = {
+REPLACE:state_migration_pull_mult = {
 	color=good
 	percent = yes
 	decimals = 1
 }
 
-state_education_access_add = {
+REPLACE:state_education_access_add = {
 	color=good
 	percent = yes
 	decimals = 1
 }
 
-state_mortality_turmoil_mult = {
+REPLACE:state_mortality_turmoil_mult = {
 	color=bad
 	percent = yes
 	decimals = 1
 }
 
 
-state_tax_collection_mult = {
+REPLACE:state_tax_collection_mult = {
 	color=good
 	percent = yes
 }
 
-unit_offense_mult = {
+REPLACE:unit_offense_mult = {
 	color=good
 	percent = yes
 	decimals = 1
@@ -57,7 +57,7 @@ unit_offense_mult = {
 	}
 }
 
-unit_defense_mult = {
+REPLACE:unit_defense_mult = {
 	color=good
 	percent = yes
 	decimals = 1
@@ -66,31 +66,31 @@ unit_defense_mult = {
 	}
 }
 
-state_conscription_rate_add = {
+REPLACE:state_conscription_rate_add = {
 	color=good
 	percent = yes
 	decimals = 1
 }
 
-country_suppression_ig_attraction_mult = {
+REPLACE:country_suppression_ig_attraction_mult = {
 	color=bad
 	percent = yes
 	decimals = 0
 }
 
-country_bolster_ig_attraction_mult = {
+REPLACE:country_bolster_ig_attraction_mult = {
 	color=good
 	percent = yes
 	decimals = 0
 }
 
-state_working_adult_ratio_add = {
+REPLACE:state_working_adult_ratio_add = {
 	color=good
 	percent = yes
 	decimals = 1
 }
 
-country_institution_army_model_max_investment_add={
+REPLACE:country_institution_army_model_max_investment_add={
 	decimals=0
 	color=good
 	game_data={
@@ -98,7 +98,7 @@ country_institution_army_model_max_investment_add={
 	}
 }
 
-country_institution_environmental_regulations_max_investment_add={
+REPLACE:country_institution_environmental_regulations_max_investment_add={
 	decimals=0
 	color=good
 	game_data={
@@ -106,7 +106,7 @@ country_institution_environmental_regulations_max_investment_add={
 	}
 }
 
-country_soldiers_pol_str_mult={
+REPLACE:country_soldiers_pol_str_mult={
 	decimals=1
 	color=neutral
 	percent=yes
@@ -115,7 +115,7 @@ country_soldiers_pol_str_mult={
 	}
 }
 
-state_pop_support_law_republic_add={
+REPLACE:state_pop_support_law_republic_add={
 	decimals=2
 	color=good
 	game_data={
@@ -123,25 +123,25 @@ state_pop_support_law_republic_add={
 	}
 }
 
-interest_group_ig_armed_forces_approval_add = {
+REPLACE:interest_group_ig_armed_forces_approval_add = {
 	color=good
 	percent = no
 	decimals=1
 }
 
-weekly_devastation_add = {
+REPLACE:weekly_devastation_add = {
 	color=bad
 	percent=yes
 	decimals=2
 }
 
-regime_change_allowed = {
+REPLACE:regime_change_allowed = {
 	color=good
 	percent=no
 	decimals=0
 }
 
-country_institution_cost_institution_health_system_mult={
+REPLACE:country_institution_cost_institution_health_system_mult={
 	decimals=0
 	color=bad
 	percent=yes
@@ -150,7 +150,7 @@ country_institution_cost_institution_health_system_mult={
 	}
 }
 
-country_institution_cost_institution_army_model_mult={
+REPLACE:country_institution_cost_institution_army_model_mult={
 	decimals=0
 	color=bad
 	percent=yes
@@ -159,7 +159,7 @@ country_institution_cost_institution_army_model_mult={
 	}
 }
 
-country_institution_size_change_speed_institution_army_model_mult={
+REPLACE:country_institution_size_change_speed_institution_army_model_mult={
 	decimals=0
 	color=good
 	percent=yes
@@ -168,7 +168,7 @@ country_institution_size_change_speed_institution_army_model_mult={
 	}
 }
 
-country_institution_size_change_speed_institution_environmental_regulations_mult={
+REPLACE:country_institution_size_change_speed_institution_environmental_regulations_mult={
 	decimals=0
 	color=good
 	percent=yes
@@ -177,7 +177,7 @@ country_institution_size_change_speed_institution_environmental_regulations_mult
 	}
 }
 
-state_market_access_price_impact={
+REPLACE:state_market_access_price_impact={
 	decimals=1
 	color=neutral
 	percent=yes

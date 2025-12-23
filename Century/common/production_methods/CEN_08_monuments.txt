@@ -1,5 +1,5 @@
 ﻿# Monument religion locking & buffing
-pm_default_building_cristo_redentor = {
+REPLACE:pm_default_building_cristo_redentor = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -28,7 +28,7 @@ pm_default_building_cristo_redentor = {
 		}
 	}
 }
-pm_default_building_angkor_wat = {
+REPLACE:pm_default_building_angkor_wat = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -52,7 +52,7 @@ pm_default_building_angkor_wat = {
 		}
 	}
 }
-pm_default_building_forbidden_city = {
+REPLACE:pm_default_building_forbidden_city = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -77,7 +77,7 @@ pm_default_building_forbidden_city = {
 		}
 	}
 }
-pm_default_building_hagia_sophia = {
+REPLACE:pm_default_building_hagia_sophia = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -101,7 +101,7 @@ pm_default_building_hagia_sophia = {
 		}
 	}
 }
-pm_default_building_mosque_of_djenne = {
+REPLACE:pm_default_building_mosque_of_djenne = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -130,7 +130,7 @@ pm_default_building_mosque_of_djenne = {
 		}
 	}
 }
-pm_default_building_saint_basils_cathedral = {
+REPLACE:pm_default_building_saint_basils_cathedral = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -154,7 +154,7 @@ pm_default_building_saint_basils_cathedral = {
 		}
 	}
 }
-pm_default_building_statue_of_liberty = {
+REPLACE:pm_default_building_statue_of_liberty = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -180,7 +180,7 @@ pm_default_building_statue_of_liberty = {
 		}
 	}
 }
-pm_default_building_taj_mahal = {
+REPLACE:pm_default_building_taj_mahal = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
@@ -204,7 +204,7 @@ pm_default_building_taj_mahal = {
 		}
 	}
 }
-pm_default_building_vatican_city = {
+REPLACE:pm_default_building_vatican_city = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	unlocking_religions = { catholic }

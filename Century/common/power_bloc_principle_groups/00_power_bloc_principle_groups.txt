@@ -1,12 +1,21 @@
 ﻿### See power_bloc_principles for the individual effects
 
-principle_group_construction = {
+REPLACE:principle_group_shared_canon = {
+	primary_for_identity = identity_cultural
+	unlocking_identity = identity_cultural
+
+	levels = {
+		principle_shared_canon_1
+	}
+}
+
+REPLACE:principle_group_construction = {
 	levels = {
 		principle_construction_3
 	}
 }
 
-principle_group_internal_trade = {
+REPLACE:principle_group_internal_trade = {
 	primary_for_identity = identity_trade_league
 	unlocking_identity = identity_trade_league
 	
@@ -15,7 +24,7 @@ principle_group_internal_trade = {
 	}
 }
 
-principle_group_market_unification = {
+REPLACE:principle_group_market_unification = {
 	blocking_identity = identity_trade_league
 	
 	levels = {
@@ -23,7 +32,7 @@ principle_group_market_unification = {
 	}
 }
 
-principle_group_vassalization = {
+REPLACE:principle_group_vassalization = {
 	primary_for_identity = identity_sovereign_empire
 
 	levels = {
@@ -31,13 +40,13 @@ principle_group_vassalization = {
 	}
 }
 
-principle_group_advanced_research = {
+REPLACE:principle_group_advanced_research = {
 	levels = {
 		principle_advanced_research_1
 	}
 }
 
-principle_group_defensive_cooperation = {
+REPLACE:principle_group_defensive_cooperation = {
 	primary_for_identity = identity_military_treaty_organization
 	
 	levels = {
@@ -45,7 +54,7 @@ principle_group_defensive_cooperation = {
 	}
 }
 
-principle_group_aggressive_coordination = {
+REPLACE:principle_group_aggressive_coordination = {
 	unlocking_identity = identity_military_treaty_organization
 	primary_for_identity = identity_military_treaty_organization
 
@@ -54,7 +63,7 @@ principle_group_aggressive_coordination = {
 	}
 }
 
-principle_group_external_trade = {
+REPLACE:principle_group_external_trade = {
 	primary_for_identity = identity_trade_league
 	
 	levels = {
@@ -62,43 +71,43 @@ principle_group_external_trade = {
 	}
 }
 
-principle_group_food_standardization = {
+REPLACE:principle_group_food_standardization = {
 	levels = {
 		principle_food_standardization_1
 	}
 }
 
-principle_group_police_coordination = {
+REPLACE:principle_group_police_coordination = {
 	levels = {
 		principle_police_coordination_1
 	}
 }
 
-principle_group_transport = {
+REPLACE:principle_group_transport = {
 	levels = {
 		principle_transport_1
 	}
 }
 
-principle_group_military_industry = {
+REPLACE:principle_group_military_industry = {
 	levels = {
 		principle_military_industry_3
 	}
 }
 
-principle_group_colonial_offices = {
+REPLACE:principle_group_colonial_offices = {
 	levels = {
 		principle_colonial_offices_1
 	}
 }
 
-principle_group_foreign_investment = {
+REPLACE:principle_group_foreign_investment = {
 	levels = {
 		principle_foreign_investment_1
 	}
 }
 
-principle_group_creative_legislature = {
+REPLACE:principle_group_creative_legislature = {
 	primary_for_identity = identity_ideological_union
 	
 	levels = {
@@ -106,13 +115,13 @@ principle_group_creative_legislature = {
 	}
 }
 
-principle_group_freedom_of_movement = {
+REPLACE:principle_group_freedom_of_movement = {
 	levels = {
 		principle_freedom_of_movement_1
 	}
 }
 
-principle_group_divine_economics = {
+REPLACE:principle_group_divine_economics = {
 	unlocking_identity = identity_religious
 	primary_for_identity = identity_religious
 
@@ -121,7 +130,7 @@ principle_group_divine_economics = {
 	}
 }
 
-principle_group_exploit_members = {
+REPLACE:principle_group_exploit_members = {
 	primary_for_identity = identity_sovereign_empire
 	unlocking_identity = identity_sovereign_empire
 
@@ -130,7 +139,7 @@ principle_group_exploit_members = {
 	}
 }
 
-principle_group_sacred_civics = {
+REPLACE:principle_group_sacred_civics = {
 	primary_for_identity = identity_religious
 
 	levels = {
@@ -138,7 +147,7 @@ principle_group_sacred_civics = {
 	}
 }
 
-principle_group_ideological_truth = {
+REPLACE:principle_group_ideological_truth = {
 	primary_for_identity = identity_ideological_union
 	unlocking_identity = identity_ideological_union
 

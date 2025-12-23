@@ -1,5 +1,5 @@
 ﻿# Half employment and output per level vs Vanilla
-pm_simple_forestry = {
+REPLACE:pm_simple_forestry = {
 	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
 
 	building_modifiers = {
@@ -14,7 +14,7 @@ pm_simple_forestry = {
 		}
 	}
 }
-pm_saw_mills = {
+REPLACE:pm_saw_mills = {
 	texture = "gfx/interface/icons/production_method_icons/saw_mills.dds"
 	unlocking_technologies = {
 		steelworking
@@ -37,7 +37,7 @@ pm_saw_mills = {
 		}
 	}
 }
-pm_electric_saw_mills = {
+REPLACE:pm_electric_saw_mills = {
 	texture = "gfx/interface/icons/production_method_icons/electric_saw_mills.dds"
 	unlocking_technologies = {
 		electrical_generation
@@ -64,10 +64,7 @@ pm_electric_saw_mills = {
 
 	required_input_goods = electricity
 }
-pm_no_equipment = {
-	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
-}
-pm_steam_donkey_building_logging_camp = {
+REPLACE:pm_steam_donkey_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
 	
 	unlocking_technologies = {
@@ -87,7 +84,7 @@ pm_steam_donkey_building_logging_camp = {
 		}
 	}
 }
-pm_chainsaws = {
+REPLACE:pm_chainsaws = {
 	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
 	unlocking_technologies = {
 		combustion_engine
@@ -108,7 +105,7 @@ pm_chainsaws = {
 		}
 	}
 }
-pm_rail_transport_building_logging_camp = {
+REPLACE:pm_rail_transport_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
 
 	state_modifiers = {
@@ -132,7 +129,7 @@ pm_rail_transport_building_logging_camp = {
 
 	required_input_goods = transportation
 }
-pm_log_carts = {
+REPLACE:pm_log_carts = {
 	texture = "gfx/interface/icons/production_method_icons/log_carts.dds"
 
 	state_modifiers = {
@@ -226,7 +223,7 @@ pm_hardwood_electric_saw_mills = {
 }
 
 # Better oil output
-pm_steam_derricks = {
+REPLACE:pm_steam_derricks = {
 	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds"
 	
 	state_modifiers = {
@@ -253,7 +250,7 @@ pm_steam_derricks = {
 		}
 	}
 }
-pm_combustion_derricks = {
+REPLACE:pm_combustion_derricks = {
 	texture = "gfx/interface/icons/production_method_icons/combustion_derricks.dds"
 	
 	state_modifiers = {

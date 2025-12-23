@@ -1,5 +1,5 @@
 ﻿# Adjustements for rice change of 10k to 5k per arable land
-pm_simple_farming_building_rice_farm = {
+REPLACE:pm_simple_farming_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
 	building_modifiers = {
 		workforce_scaled = {
@@ -11,10 +11,13 @@ pm_simple_farming_building_rice_farm = {
 			building_employment_laborers_add = 4000
 			building_employment_farmers_add = 1000
 		}
+		unscaled = {
+			building_slaves_mortality_mult = 0.2
+		}
 	}
 }
 
-pm_soil_enriching_farming_building_rice_farm = {
+REPLACE:pm_soil_enriching_farming_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
 
 	building_modifiers = {
@@ -31,9 +34,12 @@ pm_soil_enriching_farming_building_rice_farm = {
 			building_employment_laborers_add = 3500
 			building_employment_farmers_add = 1500
 		}
+		unscaled = {
+			building_slaves_mortality_mult = 0.1
+		}
 	}
 }
-pm_fertilization_building_rice_farm = {
+REPLACE:pm_fertilization_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/fertilization.dds"
 	
 	unlocking_technologies = {
@@ -56,7 +62,7 @@ pm_fertilization_building_rice_farm = {
 		}
 	}
 }
-pm_chemical_fertilizer_building_rice_farm = {
+REPLACE:pm_chemical_fertilizer_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/chemical_fertilizers.dds"
 	unlocking_technologies = {
 		nitrogen_fixation
@@ -77,7 +83,7 @@ pm_chemical_fertilizer_building_rice_farm = {
 		}
 	}
 }
-pm_fig_orchards_building_rice_farm = {
+REPLACE:pm_fig_orchards_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
 	
 	building_modifiers = {
@@ -88,7 +94,7 @@ pm_fig_orchards_building_rice_farm = {
 		}
 	}
 }
-pm_tools_building_rice_farm = {
+REPLACE:pm_tools_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
 	
 	building_modifiers = {
@@ -102,7 +108,7 @@ pm_tools_building_rice_farm = {
 		}
 	}
 }
-pm_steam_threshers_building_rice_farm = {
+REPLACE:pm_steam_threshers_building_rice_farm = {
 	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
 
 	state_modifiers = {
@@ -126,7 +132,7 @@ pm_steam_threshers_building_rice_farm = {
 		}
 	}
 }
-pm_rice_wine = {
+REPLACE:pm_rice_wine = {
 	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
 	
 	building_modifiers = {
@@ -143,7 +149,7 @@ pm_rice_wine = {
 }
 
 # Halfed livestock employment & added electricity for mechanisation
-pm_open_air_stockyards = {
+REPLACE:pm_open_air_stockyards = {
 	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"		
 	building_modifiers = {	
 		workforce_scaled = {
@@ -156,7 +162,7 @@ pm_open_air_stockyards = {
 		}
 	}
 }		
-pm_butchering_tools = {
+REPLACE:pm_butchering_tools = {
 	texture = "gfx/interface/icons/production_method_icons/butchering_tools.dds"			
 	building_modifiers = {				
 		workforce_scaled = {
@@ -171,7 +177,7 @@ pm_butchering_tools = {
 		}
 	}							
 }
-pm_slaughterhouses = {
+REPLACE:pm_slaughterhouses = {
 	texture = "gfx/interface/icons/production_method_icons/slaughterhouses.dds"	
 
 	state_modifiers = {
@@ -196,7 +202,7 @@ pm_slaughterhouses = {
 		}
 	}
 }
-pm_mechanized_slaughtering = {
+REPLACE:pm_mechanized_slaughtering = {
 	texture = "gfx/interface/icons/production_method_icons/mechanized_slaughtering.dds"	
 
 	state_modifiers = {
@@ -225,7 +231,7 @@ pm_mechanized_slaughtering = {
 
 
 # Less workers for homesteading subsistence
-pm_homesteading_building_subsistence = {
+REPLACE:pm_homesteading_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/homesteading.dds"
 	unlocking_laws = {
 		law_homesteading

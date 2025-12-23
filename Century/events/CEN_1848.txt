@@ -2,7 +2,7 @@
 
 # Regicide
 # Triggered from enactment pulse
-1848.1 = {
+REPLACE:1848.1 = {
 	type = country_event
 	placement = root
 	title = 1848.1.t
@@ -84,7 +84,7 @@
 }
 
 # Monarchism Stamped Out
-1848.2 = {
+REPLACE:1848.2 = {
 	type = country_event
 	placement = root
 	title = 1848.2.t
@@ -150,7 +150,7 @@
 }
 
 # Rise of Radicalism
-1848.4 = {
+REPLACE:1848.4 = {
 	type = country_event
 	placement = root
 	title = 1848.4.t
@@ -252,7 +252,7 @@
 }
 
 # Radicals at the Gates
-1848.5 = {
+REPLACE:1848.5 = {
 	type = country_event
 	placement = root
 	title = 1848.5.t
@@ -385,7 +385,7 @@
 }
 
 # reaction completion event
-1848.6 = {
+REPLACE:1848.6 = {
 	type = country_event
 	placement = root
 	title = 1848.6.t
@@ -467,7 +467,7 @@
 }
 
 # Theocracy Stamped Out
-1848.8 = {
+REPLACE:1848.8 = {
 	type = country_event
 	placement = root
 	title = 1848.2.ta
@@ -532,7 +532,7 @@
 	}
 }
 # Slavery Stamped Out
-1848.7 = {
+REPLACE:1848.7 = {
 	type = country_event
 	placement = root
 	title = 1848.2.tb
@@ -591,7 +591,7 @@
 
 # New Constitution
 # Triggered from enactment pulse
-1848.3 = {
+REPLACE:1848.3 = {
 	type = country_event
 	placement = root
 	title = 1848.3.t
@@ -744,7 +744,7 @@
 #########
 
 # Growing frustration
-1848.10 = {
+REPLACE:1848.10 = {
 	type = country_event
 	placement = root
 	title = 1848.10.t
@@ -858,7 +858,7 @@
 }
 
 # Financial Squeeze
-1848.11 = {
+REPLACE:1848.11 = {
 	type = country_event
 	placement = root
 	title = 1848.11.t
@@ -984,7 +984,7 @@
 }
 
 # The Crisis of Bread
-1848.12 = {
+REPLACE:1848.12 = {
 	type = country_event
 	placement = scope:1848_famine_state
 	title = 1848.12.t

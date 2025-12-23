@@ -1,11 +1,3 @@
-﻿bpm_je_group_global = {
-
-}
-
-bpm_je_group_interest_groups = {
-	
-}
-
-bpm_je_group_party_laws = {
-	
+﻿je_group_crises = {
+	context = country
 }

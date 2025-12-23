@@ -1,5 +1,5 @@
 ﻿# Removes hardwood from tier 1 PMs
-pm_muskets = {
+REPLACE:pm_muskets = {
 	texture = "gfx/interface/icons/production_method_icons/muskets.dds"
 	
 	building_modifiers = {
@@ -20,7 +20,7 @@ pm_muskets = {
 		}
 	}
 }
-pm_cannons = {
+REPLACE:pm_cannons = {
 	texture = "gfx/interface/icons/production_method_icons/artillery_production.dds"
 	
 	unlocking_technologies = {
@@ -46,7 +46,7 @@ pm_cannons = {
 }
 
 # Swapping Oil for Electricity in main PMs
-pm_bolt_action_rifles = {
+REPLACE:pm_bolt_action_rifles = {
 	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
 	
 	unlocking_technologies = {
@@ -74,7 +74,7 @@ pm_bolt_action_rifles = {
 		}
 	}
 }
-pm_recoiled_barrels = {
+REPLACE:pm_recoiled_barrels = {
 	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
 	
 	unlocking_technologies = {
@@ -181,7 +181,7 @@ pm_synth_rubber_production = {
 }
 
 # Swapping Oil for Electricity in Automation
-pm_vacuum_canning = {
+REPLACE:pm_vacuum_canning = {
 	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
 	replacement_if_valid = pm_vacuum_canning_principle_3
 	
@@ -212,7 +212,7 @@ pm_vacuum_canning = {
 	required_input_goods = electricity
 }
 
-pm_vacuum_canning_principle_3 = {
+REPLACE:pm_vacuum_canning_principle_3 = {
 	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
 	is_hidden_when_unavailable = yes
 
@@ -251,7 +251,7 @@ pm_vacuum_canning_principle_3 = {
 	}
 }
 
-pm_nitrogen_fixation = {
+REPLACE:pm_nitrogen_fixation = {
 	texture = "gfx/interface/icons/production_method_icons/nitrogen_fixation.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -284,7 +284,7 @@ pm_nitrogen_fixation = {
 	}
 }
 
-pm_assembly_lines_building_furniture_manufacturies = {
+REPLACE:pm_assembly_lines_building_furniture_manufacturies = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	
 	unlocking_technologies = {
@@ -312,7 +312,7 @@ pm_assembly_lines_building_furniture_manufacturies = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_tooling_workshops = {
+REPLACE:pm_assembly_lines_building_tooling_workshops = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	
 	state_modifiers = {
@@ -338,7 +338,7 @@ pm_assembly_lines_building_tooling_workshops = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_motor_industry = {
+REPLACE:pm_assembly_lines_building_motor_industry = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	
 	state_modifiers = {
@@ -367,7 +367,7 @@ pm_assembly_lines_building_motor_industry = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_arms_industry = {
+REPLACE:pm_assembly_lines_building_arms_industry = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	
 	state_modifiers = {
@@ -393,7 +393,7 @@ pm_assembly_lines_building_arms_industry = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_munition_plants = {
+REPLACE:pm_assembly_lines_building_munition_plants = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	
 	state_modifiers = {
@@ -419,7 +419,7 @@ pm_assembly_lines_building_munition_plants = {
 	required_input_goods = electricity
 }
 
-pm_automatic_bottle_blowers = {
+REPLACE:pm_automatic_bottle_blowers = {
 	texture = "gfx/interface/icons/production_method_icons/automated_bottle_blowers.dds"
 	state_modifiers = {
 		workforce_scaled = {
@@ -445,7 +445,7 @@ pm_automatic_bottle_blowers = {
 	required_input_goods = electricity
 }
 
-pm_assembly_lines_building_automotive_industry = {
+REPLACE:pm_assembly_lines_building_automotive_industry = {
 	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
 	state_modifiers = {
 		workforce_scaled = {

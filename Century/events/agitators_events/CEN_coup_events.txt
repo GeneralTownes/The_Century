@@ -1,7 +1,7 @@
 ﻿namespace = coup
 
 # Start event
-coup.1 = {
+REPLACE:coup.1 = {
 	type = country_event
 	placement = root
 
@@ -361,7 +361,7 @@ coup.1 = {
 }
 
 # Successful coup
-coup.2 = {
+REPLACE:coup.2 = {
 	type = country_event
 	placement = root
 

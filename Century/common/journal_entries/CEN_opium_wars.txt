@@ -1,4 +1,4 @@
-﻿je_opium_obsession = {
+﻿REPLACE:je_opium_obsession = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	
 	group = je_group_internal_affairs
@@ -104,7 +104,7 @@
 	should_be_pinned_by_default = yes
 }
 
-je_opium_wars = {
+REPLACE:je_opium_wars = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_foreign_affairs

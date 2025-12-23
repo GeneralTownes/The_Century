@@ -1,4 +1,4 @@
-﻿chinese_imperial_clothes_trigger = {
+﻿REPLACE:chinese_imperial_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		is_ruler = yes
@@ -18,7 +18,7 @@
 	}
 }
 
-chinese_manchu_queue_hairstyle_character_trigger = { # hairsyle for Manchu characters not living living under discriminatory Han rule, and Han characters living under discriminatory Manchu rule
+REPLACE:chinese_manchu_queue_hairstyle_character_trigger = { # hairsyle for Manchu characters not living living under discriminatory Han rule, and Han characters living under discriminatory Manchu rule
 	exists = scope:character
 	scope:character = {
 		exists = home_country
@@ -54,7 +54,7 @@ chinese_manchu_queue_hairstyle_character_trigger = { # hairsyle for Manchu chara
 	}
 }
 
-chinese_manchu_queue_hairstyle_pops_trigger = { # hairsyle for Manchu pops not living living under discriminatory Han rule, and Han pops living under discriminatory Manchu rule
+REPLACE:chinese_manchu_queue_hairstyle_pops_trigger = { # hairsyle for Manchu pops not living living under discriminatory Han rule, and Han pops living under discriminatory Manchu rule
 	exists = scope:pop
 	scope:pop = {
 		OR = {
@@ -89,7 +89,7 @@ chinese_manchu_queue_hairstyle_pops_trigger = { # hairsyle for Manchu pops not l
 	}
 }
 
-chinese_court_clothes_trigger = {
+REPLACE:chinese_court_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		NOT = {
@@ -122,7 +122,7 @@ chinese_court_clothes_trigger = {
 	}
 }
 
-chinese_court_clothes_pop_trigger = {
+REPLACE:chinese_court_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		culture = {

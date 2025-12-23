@@ -1,5 +1,5 @@
 ﻿# Army model institution
-mandatory_service = {
+REPLACE:mandatory_service = {
 	# Unlocks Army Model - National Militia
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/mandatory_service.dds"
@@ -18,7 +18,7 @@ mandatory_service = {
 		value = 2 # Important tech in general
 	}
 }
-military_statistics = {
+REPLACE:military_statistics = {
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/military_statistics.dds"
 	category = military
@@ -38,7 +38,7 @@ military_statistics = {
 		value = 1
 	}
 }
-war_propaganda = {
+REPLACE:war_propaganda = {
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
 	category = military
@@ -59,7 +59,7 @@ war_propaganda = {
 }
 
 # Adding market access to naval base tech
-hydraulic_cranes = {
+REPLACE:hydraulic_cranes = {
 	# Increases Port max level by 3
 	era = era_2
 	texture = "gfx/interface/icons/invention_icons/hydraulic_cranes.dds"
@@ -84,7 +84,7 @@ hydraulic_cranes = {
 		}
 	}
 }
-floating_harbor = {
+REPLACE:floating_harbor = {
 	# Unlocks Industrial Port PM in Ports
 	# Increases Port Level by 4
 	era = era_3
@@ -110,7 +110,7 @@ floating_harbor = {
 		}		
 	}
 }
-concrete_dockyards = {
+REPLACE:concrete_dockyards = {
 	# Unlocks Modern Port PM in Ports
 	# Increases Max Port Level by 4
 	era = era_4
@@ -138,7 +138,7 @@ concrete_dockyards = {
 }
 
 # Removing max naval bases
-admiralty = {
+REPLACE:admiralty = {
 	# Unlocks Naval Base building
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/admiralty.dds"
@@ -152,7 +152,7 @@ admiralty = {
 		value = 3 # Very important in general
 	}
 }
-power_of_the_purse = {
+REPLACE:power_of_the_purse = {
 	# Unlocks the Power of the Purse PM in Naval Bases
 	era = era_2
 	texture = "gfx/interface/icons/invention_icons/power_of_the_purse.dds"
@@ -166,7 +166,7 @@ power_of_the_purse = {
 		value = 1
 	}
 }
-jeune_ecole = {
+REPLACE:jeune_ecole = {
 	# Unlocks Jeune Ecole PM in Naval Base
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/jeune_ecole.dds"
@@ -180,7 +180,7 @@ jeune_ecole = {
 		value = 1
 	}
 }
-sea_lane_strategies = {
+REPLACE:sea_lane_strategies = {
 	# Unlocks Sea Lane Strategies PM in Naval Bases
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/sea_lane_strategies.dds"
@@ -194,7 +194,7 @@ sea_lane_strategies = {
 		value = 1
 	}
 }
-battlefleet_tactics = {
+REPLACE:battlefleet_tactics = {
 	# Unlocks Battlefleet Tactics PM in Naval Bases
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/battlefleet_tactics.dds"

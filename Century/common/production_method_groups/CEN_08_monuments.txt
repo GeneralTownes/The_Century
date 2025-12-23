@@ -1,5 +1,5 @@
 ﻿# Adding PM for wrong-religion prestige only
-mg_base_building_cristo_redentor = {
+REPLACE:pmg_base_building_cristo_redentor = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -11,7 +11,7 @@ mg_base_building_cristo_redentor = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_angkor_wat = {
+REPLACE:pmg_base_building_angkor_wat = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -23,7 +23,7 @@ pmg_base_building_angkor_wat = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_forbidden_city = {
+REPLACE:pmg_base_building_forbidden_city = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -35,7 +35,7 @@ pmg_base_building_forbidden_city = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_hagia_sophia = {
+REPLACE:pmg_base_building_hagia_sophia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -47,7 +47,7 @@ pmg_base_building_hagia_sophia = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_mosque_of_djenne = {
+REPLACE:pmg_base_building_mosque_of_djenne = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -59,7 +59,7 @@ pmg_base_building_mosque_of_djenne = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_saint_basils_cathedral = {
+REPLACE:pmg_base_building_saint_basils_cathedral = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes
@@ -71,7 +71,7 @@ pmg_base_building_saint_basils_cathedral = {
 		pm_monument_no_effects
 	}
 }
-pmg_base_building_taj_mahal = {
+REPLACE:pmg_base_building_taj_mahal = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 	is_hidden_when_unavailable = yes

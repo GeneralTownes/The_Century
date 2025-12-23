@@ -1,4 +1,4 @@
-﻿legitimacy_level_illegitimate_alert = {
+﻿REPLACE:legitimacy_level_illegitimate_alert = {
 	script_context = player_country
 	texture = "gfx/interface/icons/alert_icons/low_legitimacy.dds"
 
@@ -11,7 +11,7 @@
 	color = red
 }
 
-legitimacy_level_unacceptable_alert = {
+REPLACE:legitimacy_level_unacceptable_alert = {
 	texture = "gfx/interface/icons/alert_icons/low_legitimacy.dds"
 	script_context = player_country
 

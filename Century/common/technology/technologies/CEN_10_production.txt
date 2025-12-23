@@ -1,5 +1,5 @@
 ﻿# Greater economies of scale cap
-lathe = {
+REPLACE:lathe = {
 	# Unlocks Lathes PM in Furniture Manufacturies
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/lathe.dds"
@@ -27,7 +27,7 @@ lathe = {
 		}		
 	}
 }
-mechanized_workshops = {
+REPLACE:mechanized_workshops = {
 	# Unlocks Slaughterhouses PM in Livestock Ranches
 	# Unlocks Sewing Machines PM and Mechanized Looms PM in Textile Mills
 	era = era_2
@@ -54,7 +54,7 @@ mechanized_workshops = {
 		}		
 	}
 }
-shift_work = {
+REPLACE:shift_work = {
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
 	category = production
@@ -90,7 +90,7 @@ alternators = {
 		value = 1
 	}
 }
-vacuum_canning = {
+REPLACE:vacuum_canning = {
 	# Unlocks Vacuum Canning PM in Food Industries
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/vacuum_canning.dds"

@@ -1,4 +1,4 @@
-﻿warlord_setup_effect = {
+﻿REPLACE:warlord_setup_effect = {
 	set_country_type = recognized
 	
 	set_variable = {

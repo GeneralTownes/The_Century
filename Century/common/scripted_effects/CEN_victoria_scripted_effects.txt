@@ -1,5 +1,5 @@
-﻿assign_taiping_states = {
-	c:TPG = {
+﻿REPLACE:assign_taiping_states = {
+	c:TPG ?= {
 		every_scope_state = {
 			create_building = {
 				building = building_iron_mine
@@ -85,7 +85,7 @@
 			}
 		}
 	}
-	c:TPG = {
+	c:TPG ?= {
 		every_scope_state = {
 			limit = {
                 OR = {
@@ -99,7 +99,7 @@
 			}
 		}
 	}
-	c:TPG = {
+	c:TPG ?= {
 		every_scope_state = {
 			limit = {
                 OR = {
@@ -167,7 +167,7 @@ taiping_concurrent_rebellion_setup = {
 	}	
 }
 
-create_taiping_characters = {
+REPLACE:create_taiping_characters = {
 	if = {
 		limit = {
 			game_date < 1880.1.1

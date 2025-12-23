@@ -1,4 +1,4 @@
-﻿law_commitment = {
+﻿REPLACE:law_commitment = {
     kind = directed
     cost = 25
 

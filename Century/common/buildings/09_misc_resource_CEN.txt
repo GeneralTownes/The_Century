@@ -1,6 +1,6 @@
 ﻿# NOTE: File named to place in load order directly after vanilla file
 
-building_logging_camp = {
+REPLACE:building_logging_camp = {
 	building_group = bg_logging
 	icon = "gfx/interface/icons/building_icons/logging_camp.dds"
 	city_type = wood
