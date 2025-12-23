@@ -1,0 +1,105 @@
+﻿# Max unis cap
+INJECT:academia = {
+	modifier = {
+		state_building_university_max_level_add = 3
+	}
+}
+INJECT:empiricism = {
+	modifier = {
+		state_building_university_max_level_add = 3
+	}
+}
+INJECT:dialectics = {
+	modifier = {
+		state_building_university_max_level_add = 4
+	}
+}
+
+# MAPI (so all 0.025 impact)
+INJECT:stock_exchange = {
+	modifier = {
+		state_market_access_price_impact = -0.075
+	}
+}
+INJECT:central_banking = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:investment_banks = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:international_exchange_standards = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:zeppelins = {
+	modifier = {
+		state_market_access_price_impact = -0.025
+	}
+}
+INJECT:modern_financial_instruments = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:macroeconomics = {
+	modifier = {
+		state_market_access_price_impact = -0.025
+	}
+}
+
+# Suffrage institution
+INJECT:democracy = {
+	modifier = {
+		country_institution_suffrage_max_investment_add = 1
+	}
+}
+INJECT:mass_communication = {
+	modifier = {
+		country_institution_suffrage_max_investment_add = 1
+	}
+}
+INJECT:identification_documents = {
+	modifier = {
+		country_institution_suffrage_max_investment_add = 1
+	}
+}
+
+# New culture law tech-locks
+civil_rights = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/civil_rights.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+multiculturalism = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/civil_rights_2.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+		anarchism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

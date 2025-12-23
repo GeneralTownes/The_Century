@@ -1,0 +1,60 @@
+﻿# Army model institution
+INJECT:mandatory_service = {
+	modifier = {
+		country_institution_army_model_max_investment_add = 1
+	}
+}
+INJECT:military_statistics = {
+	modifier = {
+		country_institution_army_model_max_investment_add = 1
+	}
+}
+INJECT:war_propaganda = {
+	modifier = {
+		country_institution_army_model_max_investment_add = 1
+	}
+}
+
+# Adding market access to naval base tech
+INJECT:hydraulic_cranes = {	
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:floating_harbor = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+INJECT:concrete_dockyards = {
+	modifier = {
+		state_market_access_price_impact = 0.025
+	}
+}
+
+# Removing max naval bases
+INJECT:admiralty = {
+	modifier = {
+		state_building_naval_base_max_level_add = -20
+    }
+}
+INJECT:power_of_the_purse = {
+	modifier = {
+		state_building_naval_base_max_level_add = -10
+	}
+}
+INJECT:jeune_ecole = {
+	modifier = {
+		state_building_naval_base_max_level_add = -10
+	}
+}
+INJECT:sea_lane_strategies = {
+	modifier = {
+		state_building_naval_base_max_level_add = -10
+	}
+}
+INJECT:battlefleet_tactics = {
+	modifier = {
+		state_building_naval_base_max_level_add = -10
+	}
+}
