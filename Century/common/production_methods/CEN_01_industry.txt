@@ -1,102 +1,19 @@
-﻿# Removes hardwood from tier 1 PMs
-REPLACE:pm_muskets = {
-	texture = "gfx/interface/icons/production_method_icons/muskets.dds"
-	
+﻿# Swapping Oil for Electricity in main PMs
+INJECT:pm_bolt_action_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_iron_add = 10
-			goods_input_wood_add = 15
-			
-			# output goods
-			goods_output_small_arms_add = 30
-		}
-
-		level_scaled = {
-			# employment
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 4000
-			building_employment_machinists_add = 500
-		}
-	}
-}
-REPLACE:pm_cannons = {
-	texture = "gfx/interface/icons/production_method_icons/artillery_production.dds"
-	
-	unlocking_technologies = {
-		artillery
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_iron_add = 15
-			goods_input_wood_add = 15
-
-			# output goods
-			goods_output_artillery_add = 25
-		}
-
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 3500
-			building_employment_machinists_add = 1000
-		}
-	}
-}
-
-# Swapping Oil for Electricity in main PMs
-REPLACE:pm_bolt_action_rifles = {
-	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
-	
-	unlocking_technologies = {
-		bolt_action_rifles
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_steel_add = 20
-			goods_input_hardwood_add = 10
-			goods_input_tools_add = 20
+			goods_input_oil_add = -10
 			goods_input_electricity_add = 20
-			
-			# output goods
-			goods_output_small_arms_add = 100
-		}
-
-		level_scaled = {
-			# employment
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 750
 		}
 	}
 }
-REPLACE:pm_recoiled_barrels = {
-	texture = "gfx/interface/icons/production_method_icons/recoil_mechanism_artillery_production.dds"
-	
-	unlocking_technologies = {
-		automatic_machine_guns
-	}
-	
+INJECT:pm_recoiled_barrels = {	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 40
-			goods_input_tools_add = 20
+			goods_input_oil_add = -10
 			goods_input_electricity_add = 20
-
-			# output goods
-			goods_output_artillery_add = 90
-		}
-
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -180,296 +97,96 @@ pm_synth_rubber_production = {
 	}
 }
 
-# Swapping Oil for Electricity in Automation
-REPLACE:pm_vacuum_canning = {
-	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
-	replacement_if_valid = pm_vacuum_canning_principle_3
-	
-	unlocking_technologies = {
-		vacuum_canning
-	}
-	
+# Swapping Oil for Electricity in Main PMs
+INJECT:pm_nitrogen_fixation = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_grain_add = -30		# x20 = -600
-			goods_input_fish_add = 30		# x20 = 600
-			goods_input_meat_add = 20		# x30 = 600
-			goods_input_iron_add = 10		# x40 = 400
-			goods_input_electricity_add = 10	# x30 = 300
-			
-			# output goods
-			goods_output_groceries_add = 60	# x30 = 1800
-		}
-
-		level_scaled = {
-			# profit = 500
-			building_employment_shopkeepers_add = 500
-			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
-			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
-		}
-	}
-	required_input_goods = electricity
-}
-
-REPLACE:pm_vacuum_canning_principle_3 = {
-	texture = "gfx/interface/icons/production_method_icons/vaccum_canning.dds"
-	is_hidden_when_unavailable = yes
-
-	unlocking_principles = {
-		principle_food_standardization_1
-	}
-	
-	unlocking_technologies = {
-		vacuum_canning
-	}
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 5
-		}
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_grain_add = -30		# x20 = -600
-			goods_input_fish_add = 30		# x20 = 600
-			goods_input_meat_add = 20		# x30 = 600
-			goods_input_iron_add = 10		# x40 =  400
-			goods_input_electricity_add = 10	# x30 = 300
-			
-			# output goods
-			goods_output_groceries_add = 70	# x30 = 2100
-		}
-
-		level_scaled = {
-			# profit = 600 (23.1)
-			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
-			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
-		}
-	}
-}
-
-REPLACE:pm_nitrogen_fixation = {
-	texture = "gfx/interface/icons/production_method_icons/nitrogen_fixation.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-
-	unlocking_technologies = {
-		nitrogen_fixation
-	}
-
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_sulfur_add = 40
+			goods_input_oil_add = -20
 			goods_input_electricity_add = 40
-			goods_input_iron_add = 30
-
-			# output goods
-			goods_output_fertilizer_add = 200
-		}
-
-		level_scaled = {
-			# employment
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 2000
-			building_employment_engineers_add = 1500
 		}
 	}
 }
 
-REPLACE:pm_assembly_lines_building_furniture_manufacturies = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	
-	unlocking_technologies = {
-		conveyors
-	}
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	
+# Swapping Oil for Electricity in Automation
+INJECT:pm_vacuum_canning = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
-			goods_input_electricity_add = 9
-			goods_input_rubber_add = 3
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -3000
-		}
-	}
-	required_input_goods = electricity
-}
-
-REPLACE:pm_assembly_lines_building_tooling_workshops = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	
-	unlocking_technologies = {
-		conveyors
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_electricity_add = 15
-			goods_input_rubber_add = 4
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -3000
-		}
-	}
-	required_input_goods = electricity
-}
-
-REPLACE:pm_assembly_lines_building_motor_industry = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-	
-	unlocking_technologies = {
-		conveyors
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_tools_add = 5
+			goods_input_oil_add = -5
 			goods_input_electricity_add = 10
-			goods_input_rubber_add = 2
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -1500
-			building_employment_machinists_add = -500
 		}
 	}
-	required_input_goods = electricity
 }
-
-REPLACE:pm_assembly_lines_building_arms_industry = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-
-	unlocking_technologies = {
-		conveyors
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_electricity_add = 15
-			goods_input_rubber_add = 4
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -3000
-		}
-	}
-	required_input_goods = electricity
-}
-
-REPLACE:pm_assembly_lines_building_munition_plants = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-
-	unlocking_technologies = {
-		conveyors
-	}
-	
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_electricity_add = 15
-			goods_input_rubber_add = 4
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -3000
-		}
-	}
-	required_input_goods = electricity
-}
-
-REPLACE:pm_automatic_bottle_blowers = {
-	texture = "gfx/interface/icons/production_method_icons/automated_bottle_blowers.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 5
-		}
-	}
-	
-	unlocking_technologies = {
-		automatic_bottle_blowers
-	}
-	
+INJECT:pm_vacuum_canning_principle_3 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
-			goods_input_electricity_add = 15
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -2500
+			goods_input_oil_add = -5
+			goods_input_electricity_add = 10
 		}
 	}
-	required_input_goods = electricity
 }
-
-REPLACE:pm_assembly_lines_building_automotive_industry = {
-	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-
-	unlocking_technologies = {
-		conveyors
-	}
-
+INJECT:pm_assembly_lines_building_furniture_manufactory = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_oil_add = -5
 			goods_input_rubber_add = 5
-			goods_input_electricity_add = 20
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = -1500
-			building_employment_machinists_add = -500
 		}
 	}
-
-	required_input_goods = electricity
+}
+INJECT:pm_assembly_lines_building_tooling_workshop = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -10
+			goods_input_rubber_add = 10
+		}
+	}
+}
+INJECT:pm_assembly_lines_building_motor_industry = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -5
+			goods_input_rubber_add = 5
+		}
+	}
+}
+INJECT:pm_assembly_lines_building_arms_industry = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -10
+			goods_input_rubber_add = 10
+		}
+	}
+}
+INJECT:pm_assembly_lines_building_munition_plant = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -10
+			goods_input_rubber_add = 10
+		}
+	}
+}
+INJECT:pm_automatic_bottle_blowers = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -5
+			goods_input_rubber_add = 5
+		}
+	}
+}
+INJECT:pm_assembly_lines_building_automotive_industry = {
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = -5
+			goods_input_rubber_add = 5
+		}
+	}
 }
