@@ -1,157 +1,105 @@
 ﻿# Half employment and output per level vs Vanilla
-REPLACE:pm_simple_forestry = {
-	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
-
+INJECT:pm_simple_forestry = {
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_wood_add = 15 #30, 300
+			goods_output_wood_add = -15
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2250
+			building_employment_shopkeepers_add = -250
+			building_employment_laborers_add = -2250
 		}
 	}
 }
-REPLACE:pm_saw_mills = {
-	texture = "gfx/interface/icons/production_method_icons/saw_mills.dds"
-	unlocking_technologies = {
-		steelworking
-	}				
-
+INJECT:pm_saw_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 2.5
+			goods_input_tools_add = -2.5
 			
 			# output goods
-			goods_output_wood_add = 30
+			goods_output_wood_add = -30
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 250
+			building_employment_shopkeepers_add = -250
+			building_employment_laborers_add = -2000
+			building_employment_machinists_add = -250
 		}
 	}
 }
-REPLACE:pm_electric_saw_mills = {
-	texture = "gfx/interface/icons/production_method_icons/electric_saw_mills.dds"
-	unlocking_technologies = {
-		electrical_generation
-	}
-
+INJECT:pm_electric_saw_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
-			goods_input_electricity_add = 2.5
+			goods_input_tools_add = -5
+			goods_input_electricity_add = -2.5
 			
 			# output goods
-			goods_output_wood_add = 50 #2400
+			goods_output_wood_add = -50
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 500
-			building_employment_engineers_add = 250
+			building_employment_shopkeepers_add = -250
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -500
+			building_employment_engineers_add = -250
 		}
 	}
 
 	required_input_goods = electricity
 }
-REPLACE:pm_steam_donkey_building_logging_camp = {
-	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
-	
-	unlocking_technologies = {
-		steam_donkey
-	}
-	
+INJECT:pm_steam_donkey_building_logging_camp = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 0.5
-			goods_input_coal_add = 2
+			goods_input_coal_add = -2
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -500 #-1000
+			building_employment_laborers_add = 500
 		}
 	}
 }
-REPLACE:pm_chainsaws = {
-	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
-	unlocking_technologies = {
-		combustion_engine
-	}
-	
+INJECT:pm_chainsaws = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
-			goods_input_oil_add = 2.5
+			goods_input_oil_add = -2
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -750
-			building_employment_machinists_add = 100
-			building_employment_engineers_add = 100
+			building_employment_laborers_add = 750
+			building_employment_engineers_add = -125
 		}
 	}
 }
-REPLACE:pm_rail_transport_building_logging_camp = {
-	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
-
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-
-	unlocking_technologies = {
-		railways
-	}
+INJECT:pm_rail_transport_building_logging_camp = {
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 2.5
+			goods_input_transportation_add = -2.5
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -500
+			building_employment_laborers_add = 500
 		}
 	}
-
-	required_input_goods = transportation
 }
-REPLACE:pm_log_carts = {
-	texture = "gfx/interface/icons/production_method_icons/log_carts.dds"
-
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-
-	unlocking_technologies = {
-		electric_railway
-	}
+INJECT:pm_log_carts = {
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 4
+			goods_input_transportation_add = -4
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -750
+			building_employment_laborers_add = 750
 		}
 	}
-
-	required_input_goods = transportation
 }
 
 # New Hardwood PMs
@@ -223,60 +171,19 @@ pm_hardwood_electric_saw_mills = {
 }
 
 # Better oil output
-REPLACE:pm_steam_derricks = {
-	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	
+INJECT:pm_steam_derricks = {
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods
-			goods_input_engines_add = 5
-			goods_input_coal_add = 10
-			
 			# output goods
-			goods_output_oil_add = 75
-		}
-
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			goods_output_oil_add = 15
 		}
 	}
 }
-REPLACE:pm_combustion_derricks = {
-	texture = "gfx/interface/icons/production_method_icons/combustion_derricks.dds"
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
-	
-	unlocking_technologies = {
-		combustion_engine
-	}
-	
+INJECT:pm_combustion_derricks = {
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods
-			goods_input_engines_add = 15
-			
 			# output goods
-			goods_output_oil_add = 150
-		}
-
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			goods_output_oil_add = 50
 		}
 	}
 }
