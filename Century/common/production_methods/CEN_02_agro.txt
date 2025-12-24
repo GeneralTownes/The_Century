@@ -1,138 +1,90 @@
 ﻿# Adjustements for rice change of 10k to 5k per arable land
-REPLACE:pm_simple_farming_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	building_modifiers = {
-		workforce_scaled = {
-			# output goods
-			goods_output_grain_add = 20
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 1000
-		}
-		unscaled = {
-			building_slaves_mortality_mult = 0.2
-		}
-	}
-}
-
-REPLACE:pm_soil_enriching_farming_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
-
+INJECT:pm_soil_enriching_farming_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 5
-			
-			# output goods													
-			goods_output_grain_add = 30
-		}
+			goods_input_fertilizer_add = -5
 
+			# output goods
+			goods_output_grain_add = -20
+		}
+		
 		level_scaled = {
 			# earnings												
-			building_employment_laborers_add = 3500
-			building_employment_farmers_add = 1500
-		}
-		unscaled = {
-			building_slaves_mortality_mult = 0.1
+			building_employment_laborers_add = -3500
+			building_employment_farmers_add = -1500
 		}
 	}
 }
-REPLACE:pm_fertilization_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/fertilization.dds"
-	
-	unlocking_technologies = {
-		improved_fertilizer
-	}
-	
+INJECT:pm_fertilization_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods													
-			goods_input_fertilizer_add = 10
+			goods_input_fertilizer_add = -10
 			
 			# output goods												   
-			goods_output_grain_add = 45
+			goods_output_grain_add = -30
 		}
 
 		level_scaled = {
 			# earnings																									
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 2000
+			building_employment_laborers_add = -3000
+			building_employment_farmers_add = -2000
 		}
 	}
 }
-REPLACE:pm_chemical_fertilizer_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/chemical_fertilizers.dds"
-	unlocking_technologies = {
-		nitrogen_fixation
-	}
+INJECT:pm_chemical_fertilizer_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods												   
-			goods_input_fertilizer_add = 15
+			goods_input_fertilizer_add = -15
 			
 			# output goods												   
-			goods_output_grain_add = 70
+			goods_output_grain_add = -40
 		}
 
 		level_scaled = {
 			# earnings														
-			building_employment_laborers_add = 2500
-			building_employment_farmers_add = 2500
+			building_employment_laborers_add = -2500
+			building_employment_farmers_add = -2500
 		}
 	}
 }
-REPLACE:pm_fig_orchards_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
-	
+INJECT:pm_fig_orchards_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_grain_add = -15
-			goods_output_fruit_add = 6
-			goods_output_sugar_add = 9
+			goods_output_grain_add = 10
+			goods_output_fruit_add = -7
+			goods_output_sugar_add = -1
 		}
 	}
 }
-REPLACE:pm_tools_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
-	
+INJECT:pm_tools_building_rice_farm = {	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 2
+			goods_input_tools_add = -2
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = 1000
 		}
 	}
 }
-REPLACE:pm_steam_threshers_building_rice_farm = {
-	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
-
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-
-	unlocking_technologies = {
-		threshing_machine
-	}
+INJECT:pm_steam_threshers_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods													
-			goods_input_tools_add = 2
-			goods_input_coal_add = 1
+			goods_input_tools_add = -2
+			goods_input_coal_add = -1
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = 1500
 		}
 	}
 }
-REPLACE:pm_rice_wine = {
+pm_rice_wine = {
 	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
 	
 	building_modifiers = {
@@ -149,101 +101,43 @@ REPLACE:pm_rice_wine = {
 }
 
 # Halfed livestock employment & added electricity for mechanisation
-REPLACE:pm_open_air_stockyards = {
-	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"		
-	building_modifiers = {	
-		workforce_scaled = {
-			goods_output_meat_add = 8
-		}
-
+INJECT:pm_open_air_stockyards = {			
+	building_modifiers = {
 		level_scaled = {
-			building_employment_laborers_add = 1500
-			building_employment_farmers_add = 500
+			building_employment_laborers_add = -2000
+			building_employment_farmers_add = -500
 		}
 	}
 }		
-REPLACE:pm_butchering_tools = {
+INJECT:pm_butchering_tools = {
 	texture = "gfx/interface/icons/production_method_icons/butchering_tools.dds"			
-	building_modifiers = {				
-		workforce_scaled = {
-			goods_input_tools_add = 5
-			goods_output_meat_add = 16
-		}
-
-		level_scaled = {
-			building_employment_laborers_add = 1300
-			building_employment_farmers_add = 600
-			building_employment_machinists_add = 200
-		}
-	}							
-}
-REPLACE:pm_slaughterhouses = {
-	texture = "gfx/interface/icons/production_method_icons/slaughterhouses.dds"	
-
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-
-	unlocking_technologies = {
-		mechanical_tools
-	}	
 	building_modifiers = {
-		workforce_scaled = {
-			goods_input_tools_add = 10
-			goods_output_meat_add = 24
-		}
-
 		level_scaled = {
-			building_employment_laborers_add = 1200
-			building_employment_farmers_add = 700
-			building_employment_machinists_add = 400
+			building_employment_laborers_add = -2000
+			building_employment_farmers_add = -500
 		}
 	}
 }
-REPLACE:pm_mechanized_slaughtering = {
-	texture = "gfx/interface/icons/production_method_icons/mechanized_slaughtering.dds"	
-
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
+INJECT:pm_slaughterhouses = {
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = -1875
+			building_employment_farmers_add = -500
+			building_employment_machinists_add = -125
 		}
 	}
-
-	unlocking_technologies = {
-		mechanized_farming
-	}
+}
+INJECT:pm_mechanized_slaughtering = {
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 10
+			goods_input_coal_add = -5
 			goods_input_electricity_add = 5
-			goods_output_meat_add = 36
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000
-			building_employment_farmers_add = 1200
-			building_employment_machinists_add = 800
+			building_employment_laborers_add = -1750
+			building_employment_farmers_add = -500
+			building_employment_machinists_add = -250
 		}
-	}
-}
-
-
-# Less workers for homesteading subsistence
-REPLACE:pm_homesteading_building_subsistence = {
-	texture = "gfx/interface/icons/production_method_icons/homesteading.dds"
-	unlocking_laws = {
-		law_homesteading
-	}
-	
-	building_modifiers = {
-		unscaled = {
-			building_subsistence_output_add = 4
-		}
-		
-		level_scaled = {
-			building_employment_peasants_add = -2000
-		}		
 	}
 }
