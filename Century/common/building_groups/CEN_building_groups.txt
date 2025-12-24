@@ -1,31 +1,8 @@
 ﻿# Logging
-bg_logging = {
-	parent_group = bg_extraction
-
+INJECT:bg_logging = {
 	land_usage = rural
 	
-	economy_of_scale = yes
-	
-	lens = forestry
-	
-	can_use_slaves = yes
-	
-	urbanization = 5
-	infrastructure_usage_per_level = 1
-	
-	should_auto_expand = {
-		default_auto_expand_rule = yes
-	}
-	
-	economy_of_scale_ai_factor = 1.5
-	foreign_investment_ai_factor = 1.0
-	
-	default_building = building_logging_camp
-	
-	cash_reserves_max = 25000
-	
 	always_possible = yes
-
 }
 bg_hardwood = {
 	parent_group = bg_logging
@@ -34,7 +11,7 @@ bg_hardwood = {
 }
 
 # Rubber Plantation
-bg_rubber = {
+REPLACE:bg_rubber = {
 	parent_group = bg_logging
 	
 	always_possible = no
@@ -67,8 +44,6 @@ bg_minor_canals = {
 	stateregion_max_level = yes
 }
 
-bg_technology = {
-	parent_group = bg_government
-	
+INJECT:bg_technology = {
 	economy_of_scale = no
 }
