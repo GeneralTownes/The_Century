@@ -1,4 +1,4 @@
-﻿# NOTE: Only change is to add pmg_power_alternator & needs incorp state as INJECT doesn't work on possible = {}
+﻿# NOTE: Only change is to add pmg_power_alternator & needs incorp state as INJECT doesn't work on possible = {} if it already exists
 
 #INJECT:building_power_plant = {
 #	production_method_groups = {
