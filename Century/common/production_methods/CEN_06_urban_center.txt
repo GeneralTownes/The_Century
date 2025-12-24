@@ -1,19 +1,12 @@
-﻿REPLACE:pm_principle_freedom_of_movement_3 = {
-	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
-
-	is_hidden_when_unavailable = yes
-	
-	unlocking_principles = {
-		principle_freedom_of_movement_1 
-	}
-	
+﻿INJECT:pm_principle_freedom_of_movement_3 = {
 	state_modifiers = {
 		unscaled = {
-			state_migration_pull_mult = 0.05
+			state_migration_pull_mult = -0.15
 		}
 	}
 }
 
+# New CEN Powerplant PMs
 pm_dc_plant = {
 	texture = "gfx/interface/icons/production_method_icons/direct_current.dds"
 	
@@ -30,7 +23,6 @@ pm_dc_plant = {
 		}
 	}
 }
-
 pm_ac_plant = {
 	texture = "gfx/interface/icons/production_method_icons/alternating_current.dds"
 	
