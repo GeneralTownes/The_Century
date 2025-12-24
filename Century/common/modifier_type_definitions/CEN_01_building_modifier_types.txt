@@ -129,7 +129,7 @@ REPLACE:building_group_bg_subsistence_agriculture_employee_mult={
 	}
 }
 
-REPLACE:state_building_university_max_level_add={
+state_building_university_max_level_add={
 	color=good
 	percent=no
 	decimals=0

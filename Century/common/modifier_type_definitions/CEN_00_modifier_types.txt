@@ -90,7 +90,7 @@ REPLACE:state_working_adult_ratio_add = {
 	decimals = 1
 }
 
-REPLACE:country_institution_army_model_max_investment_add={
+country_institution_army_model_max_investment_add={
 	decimals=0
 	color=good
 	game_data={
@@ -98,7 +98,7 @@ REPLACE:country_institution_army_model_max_investment_add={
 	}
 }
 
-REPLACE:country_institution_environmental_regulations_max_investment_add={
+country_institution_environmental_regulations_max_investment_add={
 	decimals=0
 	color=good
 	game_data={
@@ -141,7 +141,7 @@ REPLACE:regime_change_allowed = {
 	decimals=0
 }
 
-REPLACE:country_institution_cost_institution_health_system_mult={
+country_institution_cost_institution_health_system_mult={
 	decimals=0
 	color=bad
 	percent=yes
@@ -150,7 +150,7 @@ REPLACE:country_institution_cost_institution_health_system_mult={
 	}
 }
 
-REPLACE:country_institution_cost_institution_army_model_mult={
+country_institution_cost_institution_army_model_mult={
 	decimals=0
 	color=bad
 	percent=yes
@@ -159,7 +159,7 @@ REPLACE:country_institution_cost_institution_army_model_mult={
 	}
 }
 
-REPLACE:country_institution_size_change_speed_institution_army_model_mult={
+country_institution_size_change_speed_institution_army_model_mult={
 	decimals=0
 	color=good
 	percent=yes
@@ -168,7 +168,7 @@ REPLACE:country_institution_size_change_speed_institution_army_model_mult={
 	}
 }
 
-REPLACE:country_institution_size_change_speed_institution_environmental_regulations_mult={
+country_institution_size_change_speed_institution_environmental_regulations_mult={
 	decimals=0
 	color=good
 	percent=yes

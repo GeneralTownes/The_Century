@@ -6,7 +6,9 @@ INJECT:building_government_administration = {
 	}
 }
 
-building_university = {
+INJECT:building_university = {
+	has_max_level = yes
+
 	possible = {
 		is_incorporated = yes
 	}
