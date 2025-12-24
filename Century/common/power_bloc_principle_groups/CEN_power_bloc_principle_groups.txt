@@ -116,6 +116,9 @@ REPLACE:principle_group_creative_legislature = {
 }
 
 REPLACE:principle_group_freedom_of_movement = {
+	unlocking_identity = identity_cultural
+	primary_for_identity = identity_cultural
+	
 	levels = {
 		principle_freedom_of_movement_1
 	}
@@ -153,5 +156,12 @@ REPLACE:principle_group_ideological_truth = {
 
 	levels = {
 		principle_ideological_truth_1
+	}
+}
+
+REPLACE:principle_group_companies = {
+
+	levels = {
+		principle_companies_1
 	}
 }

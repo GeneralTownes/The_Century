@@ -817,6 +817,37 @@ REPLACE:principle_ideological_truth_1 = {
 	}
 }
 
+### Companies
+
+REPLACE:principle_companies_1 = {
+	icon = "gfx/interface/icons/principles_icons/companies.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+	visible = {
+		has_dlc_feature = mp1_charter_companies
+	}
+
+	member_modifier = {
+		country_company_throughput_bonus_add = 0.05
+	}
+
+	ai_weight = {
+		value = 100
+
+		if = {
+			limit = {
+				ig:ig_industrialists ?= { is_in_government = yes }
+			}
+			add = 100
+		}
+
+		if = {
+			limit = { has_strategy = ai_strategy_economic_imperialism }
+			multiply = 1.5
+		}
+	}
+}
+
 ### Shared Canon
 
 principle_shared_canon_1 = {
