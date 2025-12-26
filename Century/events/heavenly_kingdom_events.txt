@@ -1,7 +1,7 @@
 ﻿namespace = heavenly
 
 # Missionary activity in the south of China
-REPLACE:heavenly.1 = {
+heavenly.1 = {
 	type = country_event
 	placement = scope:missionary_state
 
@@ -89,7 +89,7 @@ REPLACE:heavenly.1 = {
 }
 
 # The God Worshipping Society
-REPLACE:heavenly.2 = {
+heavenly.2 = {
 	type = country_event
 	placement = scope:cult_state
 
@@ -190,7 +190,7 @@ REPLACE:heavenly.2 = {
 
 # Cult Grows
 # Repeatable
-REPLACE:heavenly.3 = {
+heavenly.3 = {
 	type = country_event
 	placement = scope:cult_growth_state
 
@@ -301,7 +301,7 @@ REPLACE:heavenly.3 = {
 }
 
 # Heavenly Kingdom spawn
-REPLACE:heavenly.4 = {
+heavenly.4 = {
 	type = country_event
 	placement = ROOT
 
@@ -686,7 +686,7 @@ REPLACE:heavenly.4 = {
 }
 
 # Aftermath event
-REPLACE:heavenly.5 = {
+heavenly.5 = {
 	type = country_event
 	placement = ROOT
 
@@ -767,7 +767,7 @@ REPLACE:heavenly.5 = {
 }
 
 # Aftermath event - TPG
-REPLACE:heavenly.6 = {
+heavenly.6 = {
 	type = country_event
 	placement = ROOT
 
@@ -943,7 +943,7 @@ REPLACE:heavenly.6 = {
 namespace = CHI_missionaries
 
 # Evangelisation in a state
-REPLACE:CHI_missionaries.1 = {
+CHI_missionaries.1 = {
 	type = country_event
 	placement = scope:evangelisation_state
 
@@ -1012,7 +1012,7 @@ REPLACE:CHI_missionaries.1 = {
 }
 
 # Missionaries attempted to go where they shouldn't
-REPLACE:CHI_missionaries.2 = {
+CHI_missionaries.2 = {
 	type = country_event
 	placement = scope:forbidden_state
 
@@ -1135,7 +1135,7 @@ REPLACE:CHI_missionaries.2 = {
 }
 
 # Missionary schools
-REPLACE:CHI_missionaries.3 = {
+CHI_missionaries.3 = {
 	type = country_event
 	placement = scope:missionary_schools_state
 
@@ -1201,7 +1201,7 @@ REPLACE:CHI_missionaries.3 = {
 }
 
 # Missionary hospitals
-REPLACE:CHI_missionaries.4 = {
+CHI_missionaries.4 = {
 	type = country_event
 	placement = scope:missionary_hospitals_state
 
@@ -1267,7 +1267,7 @@ REPLACE:CHI_missionaries.4 = {
 }
 
 # Missionaries stir social conflict
-REPLACE:CHI_missionaries.5 = {
+CHI_missionaries.5 = {
 	type = country_event
 	placement = scope:missionary_strife_state
 
