@@ -126,7 +126,7 @@
  
  bpm_law_sway_negotiate: "#v Negotiate#!"
  bpm_law_sway_negotiate_effect: "#green;v 0#!"
- bpm_law_sway_negotiate_cost: "@warning! This will only ease passage of the proposal prior to enactment."
+ bpm_law_sway_negotiate_cost: "@warning! This will ease passage of the proposal prior to, and may indirectly affect, the final vote."
 
  bpm_law_sway_entrench_privileges: "#v Entrench Interests#!"
  bpm_law_sway_entrench_privileges_used: "Entrenched Interests"
