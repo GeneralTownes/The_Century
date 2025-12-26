@@ -117,11 +117,6 @@
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation
 				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 			}
-			else = {
-				set_ig_trait = ig_trait:ig_trait_materiel_waste
-				set_ig_trait = ig_trait:ig_trait_veteran_consultation
-				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
-			}
 		}
 		# Caudillo Ideology
 		if = {
