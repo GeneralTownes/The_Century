@@ -1,4 +1,4 @@
-﻿GBR = { # Great Britain of United Kingdom
+﻿REPLACE:GBR = { # Great Britain of United Kingdom
 	dynamic_country_name = {
 		name = dyn_c_british_united_kingdom
 		adjective = GBR_ADJ
@@ -111,7 +111,7 @@
 	}
 }
 
-GER = { # Germany
+REPLACE:GER = { # Germany
 	dynamic_country_name = {
 		name = dyn_c_german_empire
 		adjective = GER_ADJ
@@ -170,7 +170,7 @@ BRZ = { # Brazil
 	}
 }
 
-FRA = { # France
+REPLACE:FRA = { # France
 	dynamic_country_name = {
 		name = dyn_c_french_state
 		adjective = FRA_ADJ
@@ -252,7 +252,7 @@ FRA = { # France
 	}
 }
 
-RUS = { # Russia
+REPLACE:RUS = { # Russia
 	dynamic_country_name = {
 		name = dyn_c_russian_empire
 		adjective = RUS_ADJ
@@ -296,7 +296,7 @@ RUS = { # Russia
 	}	
 }
 
-AUS = { # Austria
+REPLACE:AUS = { # Austria
 	dynamic_country_name = {
 		name = dyn_c_austria-hungary
 		adjective = dyn_c_austria-hungary_adj
@@ -329,7 +329,7 @@ AUS = { # Austria
 	}
 }
 
-SPA = {
+REPLACE:SPA = {
 	dynamic_country_name = {
 		name = dyn_c_spanish_kingdom
 		adjective = SPA_ADJ
@@ -379,7 +379,7 @@ SPA = {
 	}
 }
 
-TUR = { # Turkey
+REPLACE:TUR = { # Turkey
 	dynamic_country_name = {
 		name = dyn_c_ottoman_empire
 		adjective = dyn_c_ottoman_empire_adj
@@ -450,7 +450,7 @@ TUR = { # Turkey
 	}
 }
 
-USA = { # United States of America
+REPLACE:USA = { # United States of America
 	dynamic_country_name = {
 		name = dyn_c_united_states
 		adjective = USA_ADJ
@@ -547,7 +547,7 @@ USA = { # United States of America
 	}
 }
 
-UCA = {
+REPLACE:UCA = {
 	dynamic_country_name = {
 		name = dyn_c_frca
 		adjective = UCA_ADJ
@@ -562,7 +562,7 @@ UCA = {
 	}
 }
 
-TPG = {
+REPLACE:TPG = {
 	dynamic_country_name = {
 		name = dyn_c_heavenly_republic
 		adjective = TPG_ADJ
@@ -788,7 +788,7 @@ BEI = {
 	}
 }
 
-CHI = { # China
+REPLACE:CHI = { # China
 	dynamic_country_name = {
 		name = dyn_c_great_qing
 		adjective = dyn_c_great_qing_adj

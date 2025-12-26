@@ -1,4 +1,4 @@
-﻿FRA = { # France
+﻿REPLACE:FRA = { # France
 	flag_definition = {
 		coa = FRA
 		subject_canton = FRA
@@ -94,7 +94,7 @@
 	}		
 }
 
-AUS = { # Austria
+REPLACE:AUS = { # Austria
 	flag_definition = {
 		coa = AUS
 		subject_canton = AUS		
@@ -169,7 +169,7 @@ AUS = { # Austria
 	}			
 }
 
-GBR = {
+REPLACE:GBR = {
 	flag_definition = {
 		coa = GBR
 		subject_canton = GBR
@@ -319,7 +319,7 @@ GBR = {
 	}
 }
 
-CHI = { # China
+REPLACE:CHI = { # China
 	flag_definition = {
 		coa = CHI_han_empire
 		coa_with_overlord_canton = CHI_han_empire
@@ -395,7 +395,7 @@ CHI = { # China
 	}		
 }
 
-SPA = { # Spain
+REPLACE:SPA = { # Spain
 	flag_definition = {
 		coa = SPA
 		subject_canton = SPA
@@ -444,7 +444,7 @@ SPA = { # Spain
 	}		
 }
 
-GER = { # Germany
+REPLACE:GER = { # Germany
 	flag_definition = {
 		coa = GER_modern
 		priority = 1
@@ -570,7 +570,7 @@ GER = { # Germany
 }
 ### end of country-specific Germany variants ###
 
-RUS = { # Russia
+REPLACE:RUS = { # Russia
 	flag_definition = {
 		coa = RUS_imperial
 		allow_overlord_canton = yes		
@@ -632,4 +632,92 @@ RUS = { # Russia
 			coa_def_theocracy_flag_trigger = yes
 		}
 	}
-}	
+}
+
+REPLACE:BRZ = { # Brazil
+	flag_definition = {
+		coa = BRZ
+		subject_canton = BRZ
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = BRZ_subject
+		priority = 1
+	}
+	flag_definition = { # United Kingdom
+		coa = BRZ
+		subject_canton = BRZ
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+				OR = {
+					AND = {
+						exists = c:POR
+						is_subject_of = c:POR
+					}
+					AND = {
+						exists = c:IBE
+						is_subject_of = c:IBE
+					}
+				}
+				is_subject_type = subject_type_personal_union
+			}
+		}
+	}
+	flag_definition = {
+		coa = BRZ_republic
+		subject_canton = BRZ_republic
+		priority = 10
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_oligarchic_republic
+		subject_canton = BRZ_oligarchic_republic
+		priority = 20
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_republic
+				has_law_or_variant = law_type:law_independent_executive
+				has_law_or_variant = law_type:law_landed_voting
+				OR = {
+					has_law_or_variant = law_type:law_tenant_farmers
+					has_law_or_variant = law_type:law_serfdom
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = BRZ_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_fascist
+		subject_canton = BRZ_fascist
+		priority = 1500
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_subject_USA
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 0.54 }
+		priority = 50
+		trigger = {
+			coa_def_american_ensign_trigger = yes
+		}
+	}
+}
