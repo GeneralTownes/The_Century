@@ -3,6 +3,10 @@ je_the_matter_of_ireland = {
 	icon = "gfx/interface/icons/event_icons/ireland.dds"
 
 	group = je_group_internal_affairs
+	
+	is_shown_in_lobby = {
+        c:GBR ?= THIS
+    }
 
 	scripted_progress_bar = the_matter_of_ireland_progress_bar
 	
