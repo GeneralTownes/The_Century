@@ -454,7 +454,7 @@ REPLACE:je_taiping_revolution = {
 	transferable = no
 }
 
-REPLACE:je_taiping_reconstruction = {
+je_taiping_reconstruction = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_historical_content
