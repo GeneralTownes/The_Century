@@ -1,4 +1,8 @@
 ﻿INJECT:pm_principle_freedom_of_movement_3 = {
+	unlocking_principles = {
+		principle_freedom_of_movement_1
+	}
+	
 	state_modifiers = {
 		unscaled = {
 			state_migration_pull_mult = -0.15

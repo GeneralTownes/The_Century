@@ -283,7 +283,7 @@ REPLACE:principle_external_trade_1 = {
 	
 	member_modifier = {
 		# Allows members to set up trade routes without diplomatic interests there
-		country_allow_trade_routes_without_interest_bool = yes
+		country_no_advantage_loss_from_lack_of_interest_bool = yes
 	}
 	
 	ai_weight = {
