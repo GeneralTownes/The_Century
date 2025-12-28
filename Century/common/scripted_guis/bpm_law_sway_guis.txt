@@ -348,7 +348,7 @@ bpm_tax_break_poor_sway_gui = {
 	scope = interest_group
 	is_shown = {
 		is_interest_group_type = ig_trade_unions
-		owner = { has_law_or_variant = law_type:law_per_capita_based_taxation }
+		owner = { has_law_or_variant = law_type:law_per_capita_based_poll_tax }
 		NOT = { has_variable = bpm_tax_break_poor_sway_used }
 	}
 	is_valid = {
@@ -373,8 +373,8 @@ bpm_tax_break_peasant_sway_gui = {
 		is_interest_group_type = ig_rural_folk
 		owner = {
 			OR = {
-				has_law_or_variant = law_type:law_per_capita_based_taxation
-				has_law_or_variant = law_type:law_land_based_taxation
+				has_law_or_variant = law_type:law_per_capita_based_poll_tax
+				has_law_or_variant = law_type:law_land_based_poll_tax
 			}
 		}
 		NOT = { has_variable = bpm_tax_break_peasant_sway_used }

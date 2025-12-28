@@ -1,4 +1,17 @@
-﻿# Root = Country
+﻿on_game_started = {
+	on_actions = {
+		CEN_Arable_Land_Fix
+	}
+	effect = {
+		# Setting after the fact
+		set_global_variable = {
+			name = china_warlord_explosion
+			value = 100
+		}
+	}
+}
+
+# Root = Country
 on_monthly_pulse_country = {
 	on_actions = {
 		CEN_coastal_capital

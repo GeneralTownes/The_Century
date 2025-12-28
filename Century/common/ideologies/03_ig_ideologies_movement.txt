@@ -159,10 +159,10 @@ ideology_proletarian_movement = {
 		law_public_health_insurance = approve
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -737,10 +737,10 @@ ideology_positivist_movement = {
 ideology_land_reformer_movement = {
 	icon = "gfx/interface/icons/ideology_icons/land_reformer.dds"
 
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 
 	lawgroup_land_reform = {
@@ -815,10 +815,10 @@ ideology_modernizer_movement = {
 		law_no_schools = disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -1085,10 +1085,10 @@ ideology_utilitarian_movement = {
 		law_colonial_slavery = disapprove
 	}
 
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {

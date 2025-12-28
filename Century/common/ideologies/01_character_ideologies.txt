@@ -1079,10 +1079,10 @@ ideology_radical = {
 		law_peonage = strongly_disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -1523,10 +1523,10 @@ ideology_reformer = {
 		law_religious_schools = neutral		
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -5425,10 +5425,10 @@ ideology_market_liberal = {
 		law_limited_liability = strongly_approve
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_corporation_tax = {
@@ -7239,10 +7239,10 @@ ideology_land_reformer = {
 		law_collectivized_agriculture = approve
 	}
 
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 
 	lawgroup_debt = {
@@ -7263,7 +7263,7 @@ ideology_land_reformer = {
 			has_role = agitator
 			owner = {
 				NOT = {
-					has_law_or_variant = law_type:law_land_based_taxation
+					has_law_or_variant = law_type:law_land_based_poll_tax
 				}
 				OR = {
 					has_law_or_variant = law_type:law_homesteading
@@ -7285,7 +7285,7 @@ ideology_land_reformer = {
 					OR = {
 						has_law_or_variant = law_type:law_serfdom
 						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 				}
 			}
@@ -7300,7 +7300,7 @@ ideology_land_reformer = {
 					OR = {
 						has_law_or_variant = law_type:law_serfdom
 						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 				}
 			}
@@ -7351,7 +7351,7 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 					OR = {
 						has_law_or_variant = law_type:law_homesteading
@@ -7388,7 +7388,7 @@ ideology_land_reformer = {
 					OR = {
 						has_law_or_variant = law_type:law_serfdom
 						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 				}
 			}
@@ -7403,7 +7403,7 @@ ideology_land_reformer = {
 					OR = {
 						has_law_or_variant = law_type:law_serfdom
 						has_law_or_variant = law_type:law_tenant_farmers
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 				}
 			}
@@ -7444,7 +7444,7 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law_or_variant = law_type:law_land_based_taxation
+						has_law_or_variant = law_type:law_land_based_poll_tax
 					}
 					OR = {
 						has_law_or_variant = law_type:law_homesteading
@@ -8988,10 +8988,10 @@ ideology_utilitarian_leader = {
 		law_affirmative_action = neutral
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -9350,10 +9350,10 @@ ideology_modernizer_leader = {
 		law_no_schools = disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = neutral
-		law_per_capita_based_taxation = approve
+		law_land_based_poll_tax = neutral
+		law_per_capita_based_poll_tax = approve
 	}
 	
 	lawgroup_income_tax = {

@@ -215,10 +215,10 @@ ideology_hierarchic = {
 		law_compulsory_primary_school = disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = disapprove
-		law_land_based_taxation = approve
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = approve
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -274,8 +274,8 @@ ideology_oligarchic = {
 
 	#lawgroup_taxation = {
 	#	law_consumption_based_taxation = approve
-	#	law_land_based_taxation = approve
-	#	law_per_capita_based_taxation = neutral
+	#	law_land_based_poll_tax = approve
+	#	law_per_capita_based_poll_tax = neutral
 	#	law_proportional_taxation = disapprove
 	#	law_graduated_taxation = strongly_disapprove
 	#}
@@ -332,10 +332,10 @@ ideology_agrarian = {
 		law_cooperative_ownership = neutral
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_environment = {
@@ -506,10 +506,10 @@ ideology_meritocratic = {
 		law_hereditary_bureaucrats = disapprove
 	}	
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = strongly_approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = approve
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = approve
 	}
 	
 	lawgroup_income_tax = {
@@ -572,10 +572,10 @@ ideology_patriotic = {
 ideology_loyalist = {
 	icon = "gfx/interface/icons/ideology_icons/loyalist.dds"
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -795,10 +795,10 @@ ideology_proletarian = {
 		law_no_social_security = disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -1050,10 +1050,10 @@ ideology_plutocratic = {
 		law_pure_proportional = disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = neutral
-		law_per_capita_based_taxation = strongly_approve
+		law_land_based_poll_tax = neutral
+		law_per_capita_based_poll_tax = strongly_approve
 	}
 	
 	lawgroup_income_tax = {

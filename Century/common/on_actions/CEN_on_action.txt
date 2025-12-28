@@ -490,12 +490,26 @@ CEN_warlord_release_penalty = {
 	}
 }
 
-on_game_started = {
+CEN_Arable_Land_Fix = {
 	effect = {
-		# Setting after the fact
-		set_global_variable = {
-			name = china_warlord_explosion
-			value = 100
+		## For Auto-Fixing vanilla law compatability
+		every_country = {
+			limit = {
+				has_law_or_variant = law_type:law_land_based_taxation
+			}
+			activate_law = law_type:law_low_income_tax
+			activate_law = law_type:law_moderate_consumption_tax
+			activate_law = law_type:law_no_corporation_taxes
+			activate_law = law_type:law_land_based_poll_tax
+		}
+		every_country = {
+			limit = {
+				has_law_or_variant = law_type:law_per_capita_based_taxation
+			}
+			activate_law = law_type:law_low_income_tax
+			activate_law = law_type:law_moderate_consumption_tax
+			activate_law = law_type:law_no_corporation_taxes
+			activate_law = law_type:law_per_capita_based_poll_tax
 		}
 	
 		# Adding arable land to areas outside of 11_east_asia (due to rice 10k -> 5k change)

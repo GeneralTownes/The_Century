@@ -5,8 +5,6 @@
 		add_technology_researched = sericulture
 		add_technology_researched = academia
 		
-		effect_starting_land_tax = yes
-		
 		set_market_capital = STATE_GUANGDONG	
 		
 		activate_law = law_type:law_monarchy
@@ -24,6 +22,7 @@
 		activate_law = law_type:law_low_consumption_tax
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_land_based_poll_tax
 
 		add_modifier = {
 			name = chinese_economic_stagnation
@@ -58,6 +57,7 @@
 			name = chinese_rail_expansion
 			value = 0
 		}
+		
 		add_journal_entry = { type = je_warlord_china }
 		add_journal_entry = { type = je_army_reform_china }
 		add_journal_entry = { type = je_chinese_industry }

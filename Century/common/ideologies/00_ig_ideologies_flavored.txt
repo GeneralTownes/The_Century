@@ -1115,10 +1115,10 @@ ideology_american_meritocracy = {
 		law_hereditary_bureaucrats = disapprove
 	}	
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = strongly_approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = approve
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = approve
 	}
 	
 	lawgroup_income_tax = {
@@ -1342,10 +1342,10 @@ ideology_agrarian_jeffersonian = {
 		law_command_economy = strongly_disapprove
 	}	
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_consumption_tax = {
@@ -1498,10 +1498,10 @@ ideology_utilitarian_millian = { # Replaces Malthusian, for the Industrialists
 		law_affirmative_action = neutral
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = approve
-		law_land_based_taxation = disapprove
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = disapprove
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -1640,10 +1640,10 @@ ideology_malthusian = {
 		law_closed_borders = strongly_disapprove
 	}
 	
-	lawgroup_poll_tax = {
+	lawgroup_taxation = {
 		law_no_poll_taxes = disapprove
-		law_land_based_taxation = approve
-		law_per_capita_based_taxation = neutral
+		law_land_based_poll_tax = approve
+		law_per_capita_based_poll_tax = neutral
 	}
 	
 	lawgroup_income_tax = {
@@ -1963,11 +1963,11 @@ ideology_cartist = {
 	}
 
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = approve
+		law_per_capita_based_poll_tax = approve
 		law_proportional_taxation = approve
 		law_consumption_based_taxation = neutral
 		law_graduated_taxation = disapprove
-		law_land_based_taxation = disapprove
+		law_land_based_poll_tax = disapprove
 	}
 
 	lawgroup_caste_hegemony = {

@@ -25,7 +25,7 @@ law_traditionalism = {
 			limit = {
 				has_law_or_variant = law_type:law_no_poll_taxes
 			}
-			activate_law = law_type:law_land_based_taxation
+			activate_law = law_type:law_land_based_poll_tax
 		}
 	}
 	
