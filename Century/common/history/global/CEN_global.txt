@@ -32,16 +32,16 @@
 		activate_law = law_type:law_national_supremacy
 	}
 	
-	c:USA = {
+	c:USA ?= {
 		ig:ig_landowners = { remove_ideology = ideology_pro_slavery }
 		activate_law = law_type:law_symmetric_bicameralism
 	}
-	c:GBR = {
+	c:GBR ?= {
 		activate_law = law_type:law_parliamentary_system
 		activate_law = law_type:law_symmetric_bicameralism
 		add_journal_entry = { type = je_the_matter_of_ireland }
 	}
-	c:SPA = {
+	c:SPA ?= {
 		ig:ig_landowners = { remove_ideology = ideology_pro_slavery }
 	}
 

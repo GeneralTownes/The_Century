@@ -187,6 +187,8 @@ law_isolationism = {
 		country_max_declared_interests_mult = -0.5
 
 		country_disallow_trade_bool = yes
+		
+		country_rigidity_baseline_add = 20
 	}
 
 	ai_will_do = {
@@ -260,6 +262,8 @@ law_canton_system = {
 		country_max_declared_interests_mult = -0.33
 
 		country_disallow_trade_outside_canton_bool = yes
+		
+		country_rigidity_baseline_add = 10
 	}
 
 	ai_will_do = {

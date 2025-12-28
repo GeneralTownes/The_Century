@@ -15,7 +15,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
     [*]Forestries now employ 2.5k and Rice 5k (like all other grain producers)
     [*]Canal building added to represent Grand Canal
     [*]Synthetic rubber and oil plants
-    [*]China flavour (JEs, events, modifiers, unique IGs)
+    [*]China flavour (JEs, events, amendments, modifiers, unique IGs)
 [/list]
 
 [h2] Balance & Realism [/h2]

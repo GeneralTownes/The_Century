@@ -298,6 +298,14 @@
  
  EFFECTS_ON_ACCEPTANCE_law_language_discrimination: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Moderate consequences for Pops with low Acceptance values#!#!"
  
+ # Amendments
+ amendment_imperial_exams: "Imperial Exams"
+ amendment_imperial_exams_desc: "The imperial examination are a civil service examination system administered for the purpose of selecting candidates for our bureaucracy, tempering the power of hereditary aristocracy and military authority leading to the rise of a gentry class of scholar-bureaucrats."
+ amendment_imperial_eunuchs: "Eunuch Court"
+ amendment_imperial_eunuchs_desc: "It is said the eunuchs represent the personal will of the Emperor, while the officials represent the alternative political will of the bureaucracy. Eunuchs are infamous for their corruption even while their numbers decrease significantly under the Qing."
+ amendment_queue_order: "Queue Order"
+ amendment_queue_order_desc: ""Lose your hair, keep your head; or lose your head, keep your hair, pigtail or death." Determined to enforce this hairstyle and to evidence Han Chinese submission to Qing rule and the Manchu people, Han Chinese men were given an ultimatum; adopt the hairstyle or face execution."
+ 
  # Institutions
  institution_army_model:0 "Army Organisation"
  institution_army_model_desc:0 "Organisational and logistical management of the military."
