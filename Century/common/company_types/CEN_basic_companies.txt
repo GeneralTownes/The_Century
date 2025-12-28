@@ -1,0 +1,12 @@
+﻿INJECT:company_basic_food = {
+	prosperity_modifier = {
+		state_birth_rate_mult = -0.05 # Cancel vanilla
+		state_standard_of_living_add = 1
+	}
+}
+
+INJECT:company_basic_forestry = {
+	building_types = {
+		building_hardwood_forestry
+	}
+}
