@@ -21,7 +21,7 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
 [h2] Balance & Realism [/h2]
 [list]
     [*]No base capacities (bureaucracy, influence, authority, tax capacity, infrastructure, minting)
-    [*]Power Block mandate effects greatly reduced & food company birth rate removed
+    [*]Power Block mandate effects greatly reduced & food company effect now only +1 SoL
     [*]IGs happy at +8 and loyal at +15
     [*]Education level alone provides innovation
     [*]Universities are capped via tech and give tech spread & qualifications
