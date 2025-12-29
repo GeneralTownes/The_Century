@@ -356,7 +356,7 @@ WCR_can_start_westernizing_trigger = {
             }
         }
         
-        # Option B: Be a subject of a westernized nation
+        # Option B: Be a subject of a westernized nation or be recognised
         AND = {
             is_subject = yes
             trigger_if = {
@@ -377,6 +377,7 @@ WCR_can_start_westernizing_trigger = {
                 }
             }
         }
+		is_country_type = recognized
         
         # Option C: Progressives have sufficient clout
         AND = {
