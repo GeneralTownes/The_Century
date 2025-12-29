@@ -44,6 +44,7 @@
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_trade_policy = {
@@ -317,6 +318,7 @@ ideology_legitimist = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	country_trigger = {
@@ -574,6 +576,7 @@ ideology_bonapartist = {
 		law_anti_strike_laws = approve
 		law_corporatized_unions = approve
 		law_right_to_associate = neutral
+		law_factory_councils = strongly_disapprove
 	}
 
 	country_trigger = {

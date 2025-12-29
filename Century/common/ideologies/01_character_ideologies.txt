@@ -127,6 +127,7 @@ ideology_traditionalist = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_caste_hegemony = {
@@ -311,6 +312,7 @@ ideology_traditionalist_minoritarian = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_caste_hegemony = {
@@ -1068,6 +1070,7 @@ ideology_radical = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = disapprove
 		law_right_to_associate = approve
+		law_factory_councils = neutral
 	}
 
 	lawgroup_land_reform = {
@@ -1514,6 +1517,7 @@ ideology_reformer = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = approve
+		law_factory_councils = strongly_disapprove
 	}
 	
 	lawgroup_education_system = {
@@ -2844,6 +2848,7 @@ ideology_social_democrat = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = neutral
 		law_right_to_associate = approve
+		law_factory_councils = disapprove
 	}
 	
 	lawgroup_education_system = {
@@ -3159,7 +3164,8 @@ ideology_communist = {
 		law_guild_system = strongly_disapprove
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = strongly_disapprove
-		law_right_to_associate = strongly_approve
+		law_right_to_associate = approve
+		law_factory_councils = strongly_approve
 	}
 	
 	lawgroup_education_system = {
@@ -3618,6 +3624,7 @@ ideology_vanguardist = {
 		law_anti_strike_laws = approve
 		law_corporatized_unions = strongly_approve
 		law_right_to_associate = neutral
+		law_factory_councils = approve
 	}
 	
 	lawgroup_trade_policy = {		
@@ -4149,6 +4156,7 @@ ideology_fascist = {
 		law_anti_strike_laws = approve
 		law_corporatized_unions = strongly_approve
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_policing = {
@@ -4663,6 +4671,15 @@ ideology_anarchist = {
 		law_laissez_faire = strongly_disapprove
 		law_command_economy = strongly_disapprove
 		law_extraction_economy = strongly_disapprove
+	}
+
+	lawgroup_labour_associations = {
+		law_combination_acts = disapprove
+		law_guild_system = strongly_disapprove
+		law_anti_strike_laws = neutral
+		law_corporatized_unions = strongly_disapprove
+		law_right_to_associate = neutral
+		law_factory_councils = approve
 	}
 
 	lawgroup_army_model = {
@@ -5416,6 +5433,7 @@ ideology_market_liberal = {
 		law_anti_strike_laws = neutral
 		law_corporatized_unions = strongly_disapprove
 		law_right_to_associate = strongly_disapprove
+		law_factory_councils = strongly_disapprove
 	}
 	
 	lawgroup_debt = {
@@ -7528,6 +7546,7 @@ ideology_integralist = {
 		law_anti_strike_laws = approve
 		law_corporatized_unions = strongly_approve
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 	
 	lawgroup_policing = {
@@ -8198,6 +8217,7 @@ ideology_corporatist_leader = {
 		law_anti_strike_laws = approve
 		law_corporatized_unions = strongly_approve
 		law_right_to_associate = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_education_system = {
@@ -9341,6 +9361,11 @@ ideology_modernizer_leader = {
 		law_agrarianism = disapprove
 		law_traditionalism = strongly_disapprove
 		law_laissez_faire = neutral
+	}
+
+	lawgroup_labour_associations = { # Just really hates the Guild System
+		law_guild_system = disapprove
+		law_factory_councils = strongly_disapprove
 	}
 
 	lawgroup_education_system = {
