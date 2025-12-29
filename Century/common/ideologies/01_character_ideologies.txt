@@ -9340,6 +9340,16 @@ ideology_modernizer_leader = {
 
 	character_ideology = yes
 
+	lawgroup_economic_system = {
+		law_extraction_economy = strongly_disapprove
+		law_cooperative_ownership = disapprove
+		law_command_economy = neutral
+		law_interventionism = approve
+		law_agrarianism = disapprove
+		law_traditionalism = strongly_disapprove
+		law_laissez_faire = neutral
+	}
+
 	lawgroup_trade_policy = {
 		law_protectionism = approve
 		law_isolationism = strongly_disapprove
@@ -9353,16 +9363,6 @@ ideology_modernizer_leader = {
 		law_compulsory_primary_school = approve
 	}
 
-	lawgroup_economic_system = {
-		law_extraction_economy = strongly_disapprove
-		law_cooperative_ownership = disapprove
-		law_command_economy = neutral
-		law_interventionism = approve
-		law_agrarianism = disapprove
-		law_traditionalism = strongly_disapprove
-		law_laissez_faire = neutral
-	}
-
 	lawgroup_labour_associations = { # Just really hates the Guild System
 		law_guild_system = disapprove
 		law_factory_councils = strongly_disapprove
@@ -9373,6 +9373,13 @@ ideology_modernizer_leader = {
 		law_private_schools = neutral
 		law_religious_schools = neutral
 		law_no_schools = disapprove
+	}
+
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
 	}
 	
 	lawgroup_taxation = {
