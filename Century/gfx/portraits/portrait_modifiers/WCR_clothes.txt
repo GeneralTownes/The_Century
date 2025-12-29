@@ -2837,7 +2837,7 @@
         weight = {
             base = 0
             modifier = {
-                add = 1000
+                add = 100000
                 WCR_late_army_uniform_trigger = no
                 md_chinese_uniform_pack_active_trigger   = no # CUP compatibility/deconflict
                 WCR_has_completed_westernization_trigger = yes

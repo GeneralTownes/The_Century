@@ -483,84 +483,66 @@ WCR_is_scope_owner_qing_dynasty_trigger = {
 
 # Checks if late era uniform should be used based on vanilla logic
 WCR_late_army_uniform_trigger = {
-    trigger_if = {
-        limit = {
-            has_dlc_feature = ep1_cosmetics # Vanilla paywalls it; we'll respect it too
+    # 1. GATEKEEPER: Must have DLC and Tech. 
+    # If these fail, the whole trigger returns NO immediately.
+    has_dlc_feature = ep1_cosmetics
+    OR = {
+        scope:pop ?= {
+            owner ?= { has_technology_researched = bolt_action_rifles }
         }
-        OR = {
-            scope:pop ?= {
-                owner ?= {
-                    has_technology_researched = bolt_action_rifles
-                }
-            }
-            scope:character ?= {
-                owner ?= {
-                    has_technology_researched = bolt_action_rifles
-                }
-            }
-        }
-        
-        # Game rule check for countries with fictional late uniforms
-        # BLOCK uniforms when not enabled
-        trigger_if = {
-            limit = {
-                has_game_rule = WCR_fake_late_uniforms_no
-                OR = {
-                    scope:pop ?= {
-                        owner ?= {
-                            WCR_has_domestic_influence_available_trigger = yes
-                        }
-                    }
-                    scope:character ?= {
-                        owner ?= {
-                            WCR_has_domestic_influence_available_trigger = yes
-                        }
-                    }
-                }
-            }
-            
-            # Exclusions - has actual late game uniform provided by base game
-            trigger_if = {
-                limit = {
-                    OR = {
-                        scope:pop ?= {
-                            owner ?= {
-                                WCR_st_is_country_tag = { TAG = PER }
-                            }
-                        }
-                        scope:character ?= {
-                            owner ?= {
-                                WCR_st_is_country_tag = { TAG = PER }
-                            }
-                        }
-                    }
-                }
-                always = yes
-            }
-            
-            trigger_else_if = {
-                limit = {
-                    monarchy_clothes_trigger = yes
-                }
-                WCR_ruler_has_domestic_influence_trigger = no
-            }
-            trigger_else_if = {
-                limit = {
-                    WCR_army_clothes_trigger = yes
-                }
-                WCR_army_has_domestic_influence_trigger = no
-            }
-            trigger_else_if = {
-                limit = {
-                    WCR_navy_clothes_trigger = yes
-                }
-                WCR_navy_has_domestic_influence_trigger = no
-            }
-            trigger_else = {
-                always = yes
-            }
+        scope:character ?= {
+            owner ?= { has_technology_researched = bolt_action_rifles }
         }
     }
+
+    # 2. RULE & INFLUENCE CHECK
+    # We use trigger_if to handle the "Fake Uniforms" logic.
+    trigger_if = {
+        limit = {
+            has_game_rule = WCR_fake_late_uniforms_no
+            OR = {
+                scope:pop ?= { owner ?= { WCR_has_domestic_influence_available_trigger = yes } }
+                scope:character ?= { owner ?= { WCR_has_domestic_influence_available_trigger = yes } }
+            }
+        }
+
+        # If we are in this block, the rule is active. 
+        # Now we decide if we ALLOW (yes) or BLOCK (no).
+        
+        # PERSIA EXCEPTION: Always allow if Persia
+        trigger_if = {
+            limit = {
+                OR = {
+                    scope:pop ?= { owner ?= { WCR_st_is_country_tag = { TAG = PER } } }
+                    scope:character ?= { owner ?= { WCR_st_is_country_tag = { TAG = PER } } }
+                }
+            }
+            always = yes
+        }
+        
+        # BLOCKING PATHS: If the clothing type matches and influence exists, return NO
+        trigger_else_if = {
+            limit = { monarchy_clothes_trigger = yes }
+            WCR_ruler_has_domestic_influence_trigger = no
+        }
+        trigger_else_if = {
+            limit = { WCR_army_clothes_trigger = yes }
+            WCR_army_has_domestic_influence_trigger = no
+        }
+        trigger_else_if = {
+            limit = { WCR_navy_clothes_trigger = yes }
+            WCR_navy_has_domestic_influence_trigger = no
+        }
+        
+        # If the rule is on, but it's not one of the blocked types above:
+        trigger_else = {
+            always = yes
+        }
+    }
+    
+    # 3. FINAL FALLBACK
+    # If the game rule "WCR_fake_late_uniforms_no" is NOT active, 
+    # or the conditions above weren't met, return NO.
     trigger_else = {
         always = no
     }
