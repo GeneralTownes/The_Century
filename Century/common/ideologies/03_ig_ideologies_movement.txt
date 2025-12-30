@@ -638,6 +638,13 @@ ideology_liberal_movement = {
 		law_cultural_exclusion = approve
 		law_subjecthood = strongly_disapprove
 	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = disapprove
+	}
 
 	lawgroup_land_reform = {
 		law_serfdom = disapprove
@@ -674,6 +681,13 @@ ideology_radical_movement = {
 		law_right_of_assembly = approve
 		law_censorship = disapprove
 		law_outlawed_dissent = strongly_disapprove
+	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = strongly_approve
+		law_state_atheism = approve
 	}
 
 	lawgroup_internal_security = {
@@ -1070,6 +1084,13 @@ ideology_liberal_republican_movement = {
 		law_cultural_exclusion = approve
 		law_subjecthood = strongly_disapprove
 	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = disapprove
+	}
 }
 
 ideology_pluralist_movement_1 = { # National Supremacy
@@ -1449,6 +1470,13 @@ ideology_national_liberal_movement = {
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove
 		law_subjecthood = strongly_disapprove
+	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = approve
+		law_state_atheism = disapprove
 	}
 }
 
