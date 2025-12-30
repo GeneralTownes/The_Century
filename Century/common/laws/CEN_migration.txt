@@ -1,0 +1,14 @@
+﻿INJECT:law_migration_controls = {
+	modifier = {
+		country_authority_add = 100
+		country_tech_spread_mult = -0.10
+	}
+}
+
+INJECT:law_closed_borders = {
+	modifier = {
+		country_migration_restrictiveness_add = 899
+		country_authority_add = 200
+		country_tech_spread_mult = -0.20
+	}
+}

@@ -1,0 +1,73 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+INJECT:law_state_religion = {
+	modifier = {
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
+	}
+}
+
+INJECT:law_millet_system = {
+	modifier = {
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
+	}
+}
+
+INJECT:law_people_of_the_book = {
+	modifier = {
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
+	}
+}
+
+INJECT:law_freedom_of_conscience = {
+	modifier = {
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_second_rate_citizen_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.1
+		
+		state_migration_pull_mult = 0.05
+	}
+}
+
+INJECT:law_total_separation = {
+	modifier = {
+		state_migration_pull_mult = 0.1
+	}
+}
+
+INJECT:law_state_atheism = {
+	modifier = {
+		country_acceptance_state_religion_add = 10
+		
+		country_radicalism_increases_violent_hostility_mult = 0.2
+		country_radicalism_increases_cultural_erasure_mult = 0.1
+		country_loyalism_increases_full_acceptance_mult = 0.2
+		country_radicalism_increases_full_acceptance_mult = -0.1
+	}
+	
+	institution = institution_schools
+	institution_modifier = {
+		state_conversion_mult = 0.2
+		interest_group_ig_devout_pol_str_mult = -0.2
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_religious_schools
+			}
+			activate_law = law_type:law_public_schools
+		}
+	}
+}

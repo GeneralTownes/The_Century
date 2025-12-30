@@ -1,0 +1,74 @@
+﻿INJECT:law_local_police = {
+	modifier = {
+		country_authority_mult = 0.05
+		country_institution_cost_institution_police_mult = -0.30
+	}
+	
+	disallowing_laws = {
+		law_anarchy
+	}
+
+	institution_modifier = {
+		state_turmoil_effects_mult = -0.05
+		country_rigidity_baseline_add = 2
+		country_rigidity_rate_add = 0.05
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_modifier = modifier_green_standard_army
+			}
+			remove_modifier = modifier_green_standard_army
+		}
+	}
+}
+
+INJECT:law_dedicated_police = {
+	disallowing_laws = {
+		law_anarchy
+	}
+	
+	modifier = {
+		country_authority_mult = 0.1
+	}
+	
+	institution_modifier = {
+		country_rigidity_baseline_add = 2
+		country_rigidity_rate_add = 0.1
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				has_modifier = modifier_green_standard_army
+			}
+			remove_modifier = modifier_green_standard_army
+		}
+	}
+}
+
+INJECT:law_militarized_police = {
+	disallowing_laws = {
+		law_anarchy
+	}
+	
+	modifier = {
+		country_authority_mult = 0.15
+	}
+	
+	institution_modifier = {
+		state_turmoil_effects_mult = -0.05
+		country_rigidity_baseline_add = 4
+		country_rigidity_rate_add = 0.2
+	}
+	
+	on_activate = {
+		if = {
+			limit = {
+				has_modifier = modifier_green_standard_army
+			}
+			remove_modifier = modifier_green_standard_army
+		}
+	}
+}

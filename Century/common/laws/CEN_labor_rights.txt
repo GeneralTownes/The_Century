@@ -1,0 +1,11 @@
+﻿INJECT:law_worker_protections = {
+	institution_modifier = {
+		building_group_bg_manufacturing_standard_of_living_add = 0.4
+		building_group_bg_mining_standard_of_living_add = 0.4
+		building_group_bg_manufacturing_throughput_add = -0.02
+		building_group_bg_mining_throughput_add = -0.02
+		
+		# Vanilla neutralisation
+		building_minimum_wage_mult = -0.1
+	}
+}

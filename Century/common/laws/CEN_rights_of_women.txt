@@ -1,0 +1,32 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+INJECT:law_no_womens_rights = {
+	modifier = {
+		state_birth_rate_mult = 0.05
+	}
+}
+
+INJECT:law_women_own_property = {
+	modifier = {
+		state_birth_rate_mult = 0.05
+	}
+}
+
+INJECT:law_women_in_the_workplace = {
+	modifier = {
+		state_birth_rate_mult = 0.05
+		state_migration_pull_mult = 0.05
+	}
+}
+
+INJECT:law_womens_suffrage = {
+	unlocking_laws = {
+		law_vanguardism
+	}
+
+	modifier = {
+		state_migration_pull_mult = 0.1
+	}
+}
