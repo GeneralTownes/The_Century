@@ -9,16 +9,14 @@
 		ideology_meritocratic
 		ideology_patriotic
 	}
-	
+
 	character_ideologies = {
 		ideology_moderate
 		ideology_traditionalist
 		ideology_jingoist_leader
 		ideology_protectionist
-		ideology_orleanist
-		ideology_bonapartist
-		ideology_legitimist
 		ideology_sovereignist_leader
+		ideology_despotic_utopian
 	}
 
 	enable = {
@@ -31,9 +29,9 @@
 		ig_trait_middle_managers
 		ig_trait_xenophobia
 	}
-	
+
 	on_enable = {
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_petty_bourgeoisie ?= {
 			if = {
 				limit = {
 					owner = { c:SWE ?= this}
@@ -77,7 +75,18 @@
 			}
 			else_if = {
 				limit = {
-					owner = { 
+					c:POR ?= owner
+				}
+				remove_ideology = ideology_meritocratic
+				add_ideology = ideology_cartist
+
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_middle_managers
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			else_if = {
+				limit = {
+					owner = {
 						OR = {
 							c:BIC ?= this
 							any_primary_culture = {
@@ -100,7 +109,7 @@
 					# Ideologies
 					remove_ideology = ideology_patriotic
 					add_ideology = ideology_sovereignist
-					
+
 					# Traits
 					set_ig_trait = ig_trait:ig_trait_swadesh
 					set_ig_trait = ig_trait:ig_trait_lines_of_credit
@@ -112,6 +121,21 @@
 					set_ig_trait = ig_trait:ig_trait_treasury_bonds
 				}
 			}
+			# Kleinbürger
+			else_if = {
+				limit = {
+					has_dlc_feature = ip3_content
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = language_germanophone
+						}
+					}
+				}
+				set_interest_group_name = ig_kleinburger
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_middle_managers
+				set_ig_trait = ig_trait:ig_trait_biedermanner
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_xenophobia
 				set_ig_trait = ig_trait:ig_trait_middle_managers
@@ -119,7 +143,7 @@
 			}
 		}
 		
-		# Century Additions
+		# CEN Additions
 		if = {
 			limit = {
 				OR = {
@@ -161,7 +185,7 @@
 		rule = {
 			trigger = {
 				c:BIC ?= this
-				any_primary_culture = { 
+				any_primary_culture = {
 					cu:british = this
 				}
 			}
@@ -169,8 +193,58 @@
 				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
 			}
 		}
+		rule = {
+			trigger = {
+				c:ZAN ?= this
+				any_primary_culture = {
+					cu:bedouin = this
+				}
+			}
+			cultures = {
+				swahili gujarati
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				NOT = { has_variable = je_philippines_main_reliance_happened }
+				NOT = { any_primary_culture = { cu:filipino = this } }
+				NOT = { any_primary_culture = { cu:filipino_hispanophone = this } }
+				any_primary_culture = { cu:spanish = this }
+			}
+			cultures = {
+				spanish filipino_mestizo
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				any_primary_culture = {
+					AND = {
+						cu:spanish = this
+						cu:filipino_hispanophone = this
+					}
+				}
+			}
+			cultures = {
+				spanish filipino_hispanophone
+			}
+		}
 	}
-	on_character_ig_membership = {}
+	on_character_ig_membership = {
+		if = {
+			limit = {
+				culture = cu:gujarati
+				owner = {
+					c:ZAN ?= this
+					any_primary_culture = {
+						cu:bedouin = this
+					}
+				}
+			}
+			change_character_religion = rel:shiite
+		}
+	}
 
 	pop_potential = {
 		custom_tooltip = {
@@ -178,12 +252,22 @@
 			this.culture = {
 				OR = {
 					AND = {
-						shares_heritage_trait_with_any_primary_culture = prev.owner
-						shares_non_heritage_trait_with_any_primary_culture = prev.owner
+						shares_heritage_trait_group_with_any_primary_culture = prev.owner
+						shares_language_trait_group_with_any_primary_culture = prev.owner
 					}
 					AND = {
 						c:BIC ?= prev.owner
 						has_discrimination_trait_group = heritage_group_south_asian
+					}
+					AND = {
+						c:ZAN ?= prev.owner
+						c:ZAN ?= {
+							any_primary_culture = { cu:bedouin = this }
+						}
+						OR = {
+							cu:swahili = this
+							cu:gujarati = this
+						}
 					}
 				}
 			}
@@ -203,6 +287,8 @@
 			pop_employment_building_group = bg_manufacturing
 			pop_employment_building_group = bg_service
 			pop_employment_building_group = bg_urban_facilities
+			pop_employment_building_group = bg_private_infrastructure
+			pop_employment_building_group = bg_financial_districts
 			pop_employment_building_group = bg_government
 			pop_employment_building_group = bg_logging
 			pop_employment_building_group = bg_mining
@@ -233,10 +319,12 @@
 		if = {
 			limit = {
 				strata = lower
+				standard_of_living > 10
 			}
 			add = {
 				desc = "POP_BASE_ATTRACTION"
-				value = 25
+				value = standard_of_living
+				multiply = 2
 			}
 		}
 		else_if = {
@@ -245,7 +333,8 @@
 			}
 			add = {
 				desc = "POP_BASE_ATTRACTION"
-				value = 50
+				value = standard_of_living
+				multiply = 3
 			}
 		}
 
@@ -255,7 +344,7 @@
 				limit = {
 					is_pop_type = shopkeepers
 				}
-				value = 250
+				value = 150
 			}
 		}
 
@@ -265,7 +354,8 @@
 				limit = {
 					is_pop_type = clerks
 				}
-				value = 100
+				value = 75
+				add = standard_of_living
 			}
 		}
 
@@ -318,18 +408,19 @@
 			}
 		}
 
-		add = {
-			desc = "URBAN_POP"
-			if = {
-				limit = {
-					NOR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations
-					}
+		if = {
+			limit = {
+				standard_of_living >= 10
+				NOR = {
+					pop_employment_building_group = bg_agriculture
+					pop_employment_building_group = bg_ranching
+					pop_employment_building_group = bg_plantations
 				}
-				value = 25
-				add = this.standard_of_living
+			}
+			add = {
+				desc = "URBAN_POP"
+				value = standard_of_living
+				multiply = 2
 			}
 		}
 
@@ -345,7 +436,7 @@
 				value = 0.1
 			}
 		}
-		
+
 		if = {
 			limit = {
 				c:BIC ?= owner
@@ -402,7 +493,7 @@
 				min = 0
 			}
 		}
-		
+
 		if = {
 			limit = {
 				scope:interest_group = {
@@ -436,7 +527,7 @@
 		# Monarch is not likely to adopt a marginal IG
 		if = {
 			limit = {
-				is_marginal = yes
+				ig_counts_as_marginal = yes
 			}
 			multiply = {
 				value = 0.1
@@ -481,8 +572,8 @@
 		# Agitators will never be part of a marginalized IG
 		if = {
 			limit = {
-				owner.ig:ig_petty_bourgeoisie = {
-					is_marginal = yes
+				owner.ig:ig_petty_bourgeoisie ?= {
+					ig_counts_as_marginal = yes
 				}
 			}
 			multiply = {
@@ -495,6 +586,25 @@
 		value = 1.0
 	}
 
+	executive_weight = {
+		value = 1.5
+		
+		# The company owning BIC should not get non-industrialist executives
+		if = {
+			limit = {
+				exists = scope:company
+				exists = c:BIC
+				c:BIC ?= {
+					exists = owning_company
+					owning_company = scope:company
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
 	noble_chance = {
 		value = 0.1
 	}
@@ -503,15 +613,23 @@
 		value = 0.0
 	}
 
+	female_executive_chance = {
+		value = 0.0
+	}
+
 	female_politician_chance = {
 		value = 0.0
+
 
 		if = {
 			limit = {
 				owner = {
 					has_law_or_variant = law_type:law_womens_suffrage
 				}
-
+				law_stance = {
+					law = law_type:law_womens_suffrage
+					value >= approve
+				}
 			}
 			add = {
 				value = 0.025
@@ -521,7 +639,7 @@
 
 	female_agitator_chance = {
 		value = 0.025
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -532,8 +650,8 @@
 			add = {
 				value = 0.025
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -556,7 +674,7 @@
 			add = {
 				value = 0.025
 			}
-		}		
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
@@ -564,5 +682,11 @@
 	commander_leader_chance = {
 		value = 0.25
 		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.5
 	}
 }

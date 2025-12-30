@@ -11,10 +11,9 @@
 		ideology_cultural_chauvinism
 	}
 	
+
 	character_ideologies = {
 		ideology_moderate
-		ideology_orleanist
-		ideology_bonapartist
 	}
 
 	enable = {
@@ -29,12 +28,15 @@
 	}
 
 	on_enable = {
-		ig:ig_armed_forces = {
+		ig:ig_armed_forces ?= {
 			if = {
 				limit = {
 					owner = {
-						any_primary_culture = {
-							has_discrimination_trait = heritage_han
+						OR = {
+							c:CHI ?= this
+							any_primary_culture = {
+								has_discrimination_trait = heritage_han
+							}
 						}
 					}
 				}
@@ -129,7 +131,7 @@
 					country_has_primary_culture = cu:mexican
 				}
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				add_ideology = ideology_caudillismo
 			}
 		}
@@ -139,19 +141,38 @@
 				country_has_primary_culture = cu:japanese
 				NOT = { has_global_variable = fall_of_the_samurai_global_var }
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				add_ideology = ideology_bakufu
 				set_interest_group_name = ig_samurai
 			}
 		}
+		# India
+		else_if = {
+			limit = {
+				c:BIC ?= this
+			}
+			ig:ig_armed_forces ?= {
+				set_interest_group_name = ig_presidency_armies
+			}
+		}
+		# Sikh Empire
+		else_if = {
+			limit = {
+				c:PAN ?= this
+			}
+			ig:ig_armed_forces ?= {
+				set_interest_group_name = ig_khalsaji
+				remove_ideology = ideology_jingoist
+				add_ideology = ideology_sikh_militancy
+			}
+		}
 
 		# HMPS Eight Banners
-
 		if = {
 			limit = {
 				c:CHI ?= this
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				set_interest_group_name = ig_eight_banners
 			}
 		}
@@ -164,7 +185,7 @@
 					NOT = { has_ideology = ideology:ideology_bakufu }
 				}
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				add_ideology = ideology_monarchist
 			}
 		}
@@ -174,7 +195,7 @@
 			limit = {
 				c:SWI ?= this
 			}
-			ig:ig_armed_forces = { 
+			ig:ig_armed_forces ?= { 
 				add_ideology = ideology_republican
 			}
 		}
@@ -185,7 +206,7 @@
 					c:CSA ?= this
 				}
 			}
-			ig:ig_armed_forces = { 
+			ig:ig_armed_forces ?= { 
 				add_ideology = ideology_american_republicanism
 			}
 		}
@@ -195,7 +216,7 @@
 			limit = {
 				c:TPG ?= this
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				remove_ideology = ideology_monarchist
 				remove_ideology = ideology_cultural_chauvinism
 				add_ideology = ideology_heavenly_kingdom_theocratic
@@ -207,7 +228,7 @@
 			limit = {
 				c:AUS ?= this
 			}
-			ig:ig_armed_forces = {
+			ig:ig_armed_forces ?= {
 				add_ideology = ideology_austrian_hegemony
 				remove_ideology = ideology_cultural_chauvinism
 			}
@@ -219,7 +240,7 @@
 		rule = {
 			trigger = {
 				c:BIC ?= this
-				any_primary_culture = { 
+				any_primary_culture = {
 					cu:british = this
 				}
 			}
@@ -227,10 +248,47 @@
 				british scottish irish
 			}
 		}
+		rule = {
+			trigger = {
+				c:ZAN ?= this
+				any_primary_culture = {
+					cu:bedouin = this
+				}
+			}
+			cultures = {
+				bedouin swahili baluchi
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				NOT = { has_variable = je_philippines_main_reliance_happened }
+				NOT = { any_primary_culture = { cu:filipino = this } }
+				NOT = { any_primary_culture = { cu:filipino_hispanophone = this } }
+				any_primary_culture = { cu:spanish = this }
+			}
+			cultures = {
+				spanish filipino_mestizo
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				any_primary_culture = {
+					AND = {
+						cu:spanish = this
+						cu:filipino_hispanophone = this
+					}
+				}
+			}
+			cultures = {
+				spanish filipino_hispanophone
+			}
+		}
 	}
 
 	on_character_ig_membership = {}
-	
+
 	pop_potential = {
 		OR = {
 			is_pop_type = soldiers
@@ -253,7 +311,10 @@
 				if = { # Militarisation of colonial settlers
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_colonial_resettlement
+							OR = {
+								has_law_or_variant = law_type:law_colonial_resettlement
+								has_law_or_variant = law_type:law_frontier_colonization
+							}
 						}
 						state = {
 							is_incorporated = no
@@ -340,7 +401,7 @@
 				limit = {
 					is_pop_type = aristocrats
 				}
-				value = 10
+				value = 5
 				if = {
 					limit = {
 						owner = {
@@ -359,7 +420,7 @@
 				}
 			}
 		}
-		
+
 		add = {
 			desc = "SIKH_MILITANCY"
 			if = {
@@ -385,12 +446,7 @@
 			desc = "MILITARY_INDUSTRIES"
 			if = {
 				limit = {
-					OR = {
-						pop_employment_building_group = bg_munition_plants
-						pop_employment_building_group = bg_arms_industries
-						pop_employment_building_group = bg_artillery_foundaries
-						pop_employment_building_group = bg_military_shipyards
-					}
+					pop_employment_building_group = bg_military_industry
 				}
 				if = {
 					limit = {
@@ -406,7 +462,7 @@
 				}
 			}
 		}
-		
+
 		add = {
 			desc = "POP_MILITARY_BUREAUCRACY"
 			if = {
@@ -479,7 +535,7 @@
 		# Monarch is not likely to adopt a marginal IG
 		if = {
 			limit = {
-				is_marginal = yes
+				ig_counts_as_marginal = yes
 			}
 			multiply = {
 				value = 0.1
@@ -545,8 +601,8 @@
 		# Agitators will never be part of a marginalized IG
 		if = {
 			limit = {
-				owner.ig:ig_armed_forces = {
-					is_marginal = yes
+				owner.ig:ig_armed_forces ?= {
+					ig_counts_as_marginal = yes
 				}
 			}
 			multiply = {
@@ -559,6 +615,25 @@
 		value = 5.0
 	}
 
+	executive_weight = {
+		value = 0.2
+
+		# The company owning BIC should not get non-industrialist executives
+		if = {
+			limit = {
+				exists = scope:company
+				exists = c:BIC
+				c:BIC ?= {
+					exists = owning_company
+					owning_company = scope:company
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
 	noble_chance = {
 		value = 0.5
 	}
@@ -567,13 +642,32 @@
 		value = 0.0
 	}
 
+	female_executive_chance = {
+		value = 0.0
+	}
+
 	female_politician_chance = {
 		value = 0.0
+
+		if = {
+			limit = {
+				owner = {
+					has_law_or_variant = law_type:law_womens_suffrage
+				}
+				law_stance = {
+					law = law_type:law_womens_suffrage
+					value >= approve
+				}
+			}
+			add = {
+				value = 0.025
+			}
+		}
 	}
 
 	female_agitator_chance = {
 		value = 0.01
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -584,8 +678,8 @@
 			add = {
 				value = 0.01
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -608,7 +702,7 @@
 			add = {
 				value = 0.01
 			}
-		}		
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
@@ -616,5 +710,11 @@
 	commander_leader_chance = {
 		value = 0.75
 		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.1
 	}
 }
