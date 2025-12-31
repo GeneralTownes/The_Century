@@ -70,19 +70,6 @@ gov_governorate = {
 			is_subject_type = subject_type_dominion
 			is_subject_type = subject_type_puppet
 		}
-		NOT = {
-			AND = {
-				top_overlord = {
-					any_primary_culture = {
-						has_discrimination_trait_group = heritage_group_european
-					}
-				}
-				any_primary_culture = {
-					has_discrimination_trait_group = heritage_group_european
-				}
-				country_is_in_europe = no
-			}
-		}
 	}
 	
 	on_government_type_change = {
