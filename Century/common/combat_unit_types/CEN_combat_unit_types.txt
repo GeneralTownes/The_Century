@@ -1,0 +1,5 @@
+﻿INJECT:combat_unit_type_siege_artillery = {
+	upgrades = {
+        combat_unit_type_heavy_tank
+    }
+}
