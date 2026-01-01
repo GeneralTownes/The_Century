@@ -743,6 +743,14 @@ ideology_republican_leader = {
 		law_monarchy = disapprove
 		law_theocracy = disapprove
 	}
+	
+	lawgroup_executive_structure = {
+		law_independent_executive = strongly_approve
+		law_dual_executive = approve
+		law_parliamentary_system = neutral
+		law_council_republic = neutral
+		law_single_party_state = strongly_disapprove
+	}
 
 	lawgroup_bureaucracy = {
 		law_elected_bureaucrats = approve
