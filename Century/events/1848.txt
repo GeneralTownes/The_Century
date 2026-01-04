@@ -110,10 +110,12 @@
 		default_option = yes
 		ig:ig_landowners = {
 			remove_ideology = ideology_paternalistic
+			remove_ideology = ideology_magnatial
+			remove_ideology = ideology_carlist_ig
+			remove_ideology = ideology_moderantist
 			remove_ideology = ideology_scholar_paternalistic
 			remove_ideology = ideology_junker_paternalistic
 			remove_ideology = ideology_papal_paternalistic
-			remove_ideology = ideology_pol_parlamentarism
 			add_ideology = ideology_republican_paternalistic
 		}
 		ig:ig_rural_folk = {
