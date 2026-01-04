@@ -1,0 +1,13 @@
+﻿# Removing building_minimum_wage_mult as in minimum wage law now
+
+INJECT:law_wage_subsidies = {
+	institution_modifier = {
+		building_minimum_wage_mult = -0.1
+	}
+}
+
+INJECT:law_old_age_pension = {
+	institution_modifier = {
+		building_minimum_wage_mult = -0.15
+	}
+}
