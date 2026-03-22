@@ -23,7 +23,7 @@ pm_synth_oil_production = {
 	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds" 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 25
+			state_pollution_generation_add = 10
 		}
 	}
 
@@ -57,7 +57,7 @@ pm_improved_synth_oil_production = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 50
+			goods_input_coal_add = 30
 			goods_input_tools_add = 5
 			goods_input_electricity_add = 10
 
