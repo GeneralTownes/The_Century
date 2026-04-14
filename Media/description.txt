@@ -67,6 +67,7 @@ Country flavour events/JEs outside of China dependent on laws may break although
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3517537783] Faster Mouse Scroll Speed[/url]
 [/list]
 Anyone welcome to use part/all of this mod in their own, and if so credit with a reference appreciated.
+[url=https://github.com/GeneralTownes/The_Century] Github link[/url] to mod repository.
 
 [img] https://collectionapi.metmuseum.org/api/collection/v1/iiif/49156/198919/main-image [/img]
 [i] [url=https://www.metmuseum.org/essays/the-qing-dynasty-1644-1911-the-traditionalists] The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai[/url], datable to 1698 [/i]
