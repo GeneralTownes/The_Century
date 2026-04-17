@@ -50,6 +50,9 @@ This mod is [u] not intended[/u] for less experienced players. You may end up co
 Winning (cheesing) the Opium War will result in a trivially easy campaign. It is not intended to be won. Setting AI aggression to "High" is strongly recommended.
 Country flavour events/JEs outside of China dependent on laws may break although a workaround has been implemented.
 
+[h3] Recommended Mod [/h3]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3704408897] East Asian Clothes: Redux[/url]
+
 [h3] With great thanks to: [/h3]
 [list]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3325961657] HMPS[/url]
@@ -59,7 +62,6 @@ Country flavour events/JEs outside of China dependent on laws may break although
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2888391145] Extra Topbar Info[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3274883468] China Power Bloc[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3573982645] Historical Debts[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2981574864] WCR[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3290552216] GDP Ownership Display[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3312478537] Global Stats[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3288407594] EOH: Map Mod[/url]
