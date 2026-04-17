@@ -605,11 +605,3 @@ GraphTooltip_PoliticalMovementRadicalism = {
 TableTooltip_StateTaxationRevenue = {
 	name = "StateTaxationRevenueTooltip"
 }
-
-WCR_conservative_IG_list_tooltip = {
-    name = "WCR_conservative_IGs_tooltip"
-}
-
-WCR_progressive_IG_list_tooltip = {
-    name = "WCR_progressive_IGs_tooltip"
-}
