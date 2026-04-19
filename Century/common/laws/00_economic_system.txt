@@ -373,7 +373,7 @@ law_cooperative_ownership = {
 	}
 	
 	unlocking_laws = {
-		law_council_republic			
+		law_workers_councils			
 	}
 	
 	on_activate = {		
@@ -402,7 +402,7 @@ law_cooperative_ownership = {
 
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 			}
 			add = 400
 		}
@@ -502,7 +502,7 @@ law_command_economy = {
 		OR = {
 			has_law_or_variant = law_type:law_technocracy
 			AND = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 				ruler ?= {
 					has_ideology = ideology:ideology_vanguardist
 					has_ideology = ideology:ideology_communist
@@ -521,7 +521,7 @@ law_command_economy = {
 
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 			}
 			add = 250
 		}

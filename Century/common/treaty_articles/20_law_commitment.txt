@@ -444,8 +444,8 @@
 
                 if = {
                     limit = {
-                        scope:article.input_law = law_type:law_council_republic
-                        has_law = law_type:law_council_republic
+                        scope:article.input_law = law_type:law_workers_councils
+                        has_law = law_type:law_workers_councils
                     }
                     add = {
                         desc = "communist_solidarity"
@@ -521,8 +521,8 @@
 
                 if = {
                     limit = {
-                        scope:article.input_law = law_type:law_council_republic
-                        has_law = law_type:law_council_republic
+                        scope:article.input_law = law_type:law_workers_councils
+                        has_law = law_type:law_workers_councils
                     }
                     add = {
                         desc = "communist_solidarity"

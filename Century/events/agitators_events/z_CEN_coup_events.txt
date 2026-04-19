@@ -43,12 +43,12 @@ coup.1 = {
 				}
 			}
 			AND = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_workers_councils
 						value < neutral
 					}
 					ig_approval < 0
@@ -129,12 +129,12 @@ coup.1 = {
 		### Anti-Communist Coup
 		else_if = {
 			limit = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_workers_councils
 						value < approve
 					}
 					ig_approval < 0
@@ -145,7 +145,7 @@ coup.1 = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_workers_councils
 						value < approve
 					}
 					ig_approval < 0
@@ -938,7 +938,7 @@ coup.2 = {
 		name = coup.2.g
 		trigger = {
 			scope:coup_desired_law = {
-				type = law_type:law_council_republic
+				type = law_type:law_workers_councils
 			}
 		}
 		default_option = yes

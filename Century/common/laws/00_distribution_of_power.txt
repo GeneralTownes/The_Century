@@ -1056,7 +1056,7 @@ law_anarchy = {
 	}
 	
 	unlocking_laws = {
-		law_council_republic
+		law_workers_councils
 	}
 	
 	on_activate = {

@@ -63,7 +63,7 @@ bpm_ig_is_moderate_socialist = {
 		text = "tooltip_bpm_ig_is_moderate_socialist"
 		bpm_ig_is_socialist = yes
 		law_stance = {
-			law = law_type:law_council_republic
+			law = law_type:law_workers_councils
 			value <= neutral
 		}
 	}
@@ -73,7 +73,7 @@ bpm_ig_is_actually_desiring_socialism = {
 	custom_tooltip = {
 		text = "tooltip_bpm_ig_is_actually_desiring_socialism"
 		law_stance = {
-			law = law_type:law_council_republic
+			law = law_type:law_workers_councils
 			value > neutral
 		}
 	}
@@ -150,7 +150,7 @@ bpm_ig_is_republican = {
 				value > neutral
 			}
 			law_stance = {
-				law = law_type:law_council_republic
+				law = law_type:law_workers_councils
 				value > neutral
 			}
 		}
@@ -430,7 +430,7 @@ bpm_ig_is_institutional = {
 		trigger_if = {
 			limit = { is_interest_group_type = ig_landowners }
 			owner = {
-				NOT = { has_law_or_variant = law_type:law_council_republic }
+				NOT = { has_law_or_variant = law_type:law_workers_councils }
 			}
 		}
 		trigger_else_if = {
@@ -446,7 +446,7 @@ bpm_ig_is_institutional = {
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_trade_unions }
 			owner = {
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 			}
 		}
 		trigger_else_if = {
@@ -586,7 +586,7 @@ bpm_ig_is_strongly_anti_electoralist_socialist = {
 		# No anti-electoralism in a socialist state by socialists
 		NOR = {
 			bpm_ig_is_socialist = no
-			owner = { has_law_or_variant = law_type:law_council_republic }
+			owner = { has_law_or_variant = law_type:law_workers_councils }
 		}
 
 		OR = {
@@ -616,7 +616,7 @@ bpm_ig_is_anti_electoralist_socialist = {
 		
 		NOR = {
 			bpm_ig_is_socialist = no # Can't be anti-electoralist socialist if you aren't a socialist
-			owner = { has_law_or_variant = law_type:law_council_republic } # No anti-electoralism in a socialist state by socialists
+			owner = { has_law_or_variant = law_type:law_workers_councils } # No anti-electoralism in a socialist state by socialists
 			bpm_ig_is_strongly_anti_electoralist_socialist = yes # We are strongly anti-electoralist instead
 		}
 

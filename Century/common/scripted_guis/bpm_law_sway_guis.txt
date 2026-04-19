@@ -187,7 +187,7 @@ bpm_decrease_police_sway_gui = {
 		OR = {
 			is_interest_group_type = ig_anarchists
 			AND = {
-				NOT = { owner = { has_law_or_variant = law_type:law_council_republic } }
+				NOT = { owner = { has_law_or_variant = law_type:law_workers_councils } }
 				OR = {
 					bpm_ig_is_radical_left = yes
 					is_interest_group_type = ig_trade_unions
@@ -224,7 +224,7 @@ bpm_decrease_home_affairs_sway_gui = {
 		OR = {
 			is_interest_group_type = ig_anarchists
 			trigger_if = {
-				limit = { owner = { has_law_or_variant = law_type:law_council_republic } }
+				limit = { owner = { has_law_or_variant = law_type:law_workers_councils } }
 				bpm_ig_is_labor = no
 				leader = { bpm_leader_is_socialist = no }
 			}

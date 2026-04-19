@@ -81,7 +81,7 @@ debug.8 = {
 	orphan = yes
 	immediate = {
 		activate_law = law_type:law_republic
-		activate_law = law_type:law_council_republic
+		activate_law = law_type:law_workers_councils
 		activate_law = law_type:law_anarchy
 		activate_law = law_type:law_cooperative_ownership
 	}

@@ -77,7 +77,7 @@ ideology_absolutist_movement = {
 		law_independent_executive = strongly_approve
 		law_dual_executive = approve
 		law_parliamentary_system = neutral
-		law_council_republic = strongly_disapprove
+		law_workers_councils = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
 
@@ -209,7 +209,7 @@ ideology_socialist_movement = {
 		law_independent_executive = neutral
 		law_dual_executive = neutral
 		law_parliamentary_system = approve
-		law_council_republic = strongly_approve
+		law_workers_councils = strongly_approve
 		law_single_party_state = strongly_disapprove
 	}
 
@@ -297,7 +297,7 @@ ideology_communist_movement = {
 	}
 	
 	lawgroup_executive_structure = {
-		law_council_republic = strongly_approve
+		law_workers_councils = strongly_approve
 		law_single_party_state = approve
 	}
 
@@ -402,7 +402,7 @@ ideology_anarchist_movement = {
 		law_independent_executive = strongly_disapprove
 		law_dual_executive = disapprove
 		law_parliamentary_system = neutral
-		law_council_republic = strongly_approve
+		law_workers_councils = strongly_approve
 		law_single_party_state = strongly_disapprove
 	}
 
@@ -443,7 +443,7 @@ ideology_vanguardist_movement = {
 		law_independent_executive = disapprove
 		law_dual_executive = disapprove
 		law_parliamentary_system = disapprove
-		law_council_republic = neutral
+		law_workers_councils = neutral
 		law_single_party_state = strongly_approve
 	}
 
@@ -501,7 +501,7 @@ ideology_fascist_movement = {
 		law_independent_executive = approve
 		law_dual_executive = neutral	
 		law_parliamentary_system = disapprove
-		law_council_republic = strongly_disapprove
+		law_workers_councils = strongly_disapprove
 		law_single_party_state = strongly_approve
 	}
 
@@ -1264,7 +1264,7 @@ ideology_orleanist_movement = {
 		law_independent_executive = strongly_approve
 		law_dual_executive = neutral
 		law_parliamentary_system = disapprove
-		law_council_republic = strongly_disapprove
+		law_workers_councils = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
 
@@ -1321,7 +1321,7 @@ ideology_bonapartist_movement = {
 		law_independent_executive = strongly_approve
 		law_dual_executive = neutral
 		law_parliamentary_system = disapprove
-		law_council_republic = strongly_disapprove
+		law_workers_councils = strongly_disapprove
 		law_single_party_state = neutral
 	}
 
@@ -1379,7 +1379,7 @@ ideology_legitimist_movement = {
 		law_independent_executive = strongly_approve
 		law_dual_executive = neutral
 		law_parliamentary_system = disapprove
-		law_council_republic = strongly_disapprove
+		law_workers_councils = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
 

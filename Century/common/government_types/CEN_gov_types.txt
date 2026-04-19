@@ -83,7 +83,7 @@ gov_vanguard_communist = {
 					country_has_voting_franchise = no
 					has_law_or_variant = law_type:law_vanguardism
 				}
-				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_workers_councils
 			}
 			AND = {
 				has_law_or_variant = law_type:law_vanguardism
