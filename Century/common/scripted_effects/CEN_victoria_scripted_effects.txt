@@ -327,20 +327,20 @@ REPLACE:create_taiping_characters = {
 	}
 }
 
-chi_add_1_fragile_unity = { # Subtracts from the bar
+REPLACE:chi_add_1_fragile_unity = { # Subtracts from the bar
 	custom_tooltip = chi_add_1_fragile_unity_tt
 	post_notification = warlord_china_explosion_point_add
 	change_global_variable = {
 		name = china_warlord_explosion
-		add = 20 # as now the bar represetns stability
+		add = 20 # as now the bar represents stability
 	}
 }
 
-chi_remove_1_fragile_unity = { # Adds to the bar
+REPLACE:chi_remove_1_fragile_unity = { # Adds to the bar
 	custom_tooltip = chi_remove_1_fragile_unity_tt
 	post_notification = warlord_china_explosion_point_remove
 	change_global_variable = {
 		name = china_warlord_explosion
-		subtract = 20 # as now the bar represetns stability
+		subtract = 20 # as now the bar represents stability
 	}
 }

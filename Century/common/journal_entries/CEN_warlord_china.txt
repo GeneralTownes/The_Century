@@ -306,9 +306,7 @@
 			if = {
 				limit = {
 					NOT = { has_global_variable = china_warlord_explosion_recognized }
-					country_rank != rank_value:unrecognized_power
-					country_rank != rank_value:unrecognized_major_power
-					country_rank != rank_value:unrecognized_regional_power
+					is_country_type = recognized
 				}
 				set_global_variable = china_warlord_explosion_recognized
 				chi_add_1_fragile_unity = yes
