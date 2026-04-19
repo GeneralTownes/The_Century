@@ -10,6 +10,26 @@
 	}
 }
 
+CEN_colonial_gov_cleanup = {
+	effect = {
+		if = {
+			limit = {
+				is_subject = no
+				is_active_in_diplomatic_play = no
+				has_law = law_type:law_colonial_administration
+				NOT = {
+					has_variable = post_independence_government
+				}
+			}
+			trigger_event = { id = independence.2 days = 1 }
+			set_variable = {
+				name = post_independence_government
+				years = 1
+			}
+		}
+	}
+}
+
 CEN_coastal_capital = {
 	effect = {
 		if = {

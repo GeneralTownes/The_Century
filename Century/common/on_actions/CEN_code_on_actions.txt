@@ -17,6 +17,7 @@ on_monthly_pulse_country = {
 		CEN_coastal_capital
 		CEN_colonial_institution_fix
 		CEN_China
+		CEN_colonial_gov_cleanup
 	}
 }
 
