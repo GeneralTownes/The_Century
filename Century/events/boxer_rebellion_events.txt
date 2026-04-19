@@ -208,7 +208,7 @@ boxer_rebellion_events.3 = {
 		name = boxer_rebellion_events.3.a
 		default_option = yes
 
-		chi_add_1_fracture = yes
+		chi_remove_1_fragile_unity = yes
 		set_global_variable = boxers_happened
 		
 		add_radicals = {
@@ -341,7 +341,7 @@ boxer_rebellion_events.3 = {
 	#			}
 	#		}
 	#	}
-	#	chi_add_1_fracture = yes
+	#	chi_remove_1_fragile_unity = yes
 	#	if = {
 	#		limit = {
 	#			has_law_or_variant = law_type:law_national_supremacy

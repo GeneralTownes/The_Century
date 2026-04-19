@@ -204,7 +204,7 @@
 					NOT = { has_global_variable = china_warlord_explosion_subject }
 					is_subject = yes
 				}
-				chi_add_1_fracture = yes
+				chi_remove_1_fragile_unity = yes
 				set_global_variable = china_warlord_explosion_subject
 			}
 			if = {
@@ -213,7 +213,7 @@
 					in_default = yes
 					is_player = yes
 				}
-				chi_add_1_fracture = yes
+				chi_remove_1_fragile_unity = yes
 				set_global_variable = china_warlord_explosion_default
 			}
 			if = {
@@ -222,7 +222,7 @@
 					has_modifier = declared_bankruptcy
 					is_player = yes
 				}
-				chi_add_1_fracture = yes
+				chi_remove_1_fragile_unity = yes
 				set_global_variable = china_warlord_explosion_bankrupted
 			}
 			if = {
@@ -256,7 +256,7 @@
 					}
 				}
 				set_global_variable = china_abolished_monarchy
-				chi_add_1_fracture = yes
+				chi_remove_1_fragile_unity = yes
 				if = {
 					limit = {
 						NOT = { has_variable = china_han_empire }
@@ -275,7 +275,7 @@
 					NOT = { has_global_variable = china_warlord_explosion_revolution_progress }
 				}
 				set_global_variable = china_warlord_explosion_revolution_progress
-				chi_add_1_fracture = yes
+				chi_remove_1_fragile_unity = yes
 			}
 			
 			### Remove Fracture
@@ -285,7 +285,7 @@
 					GDP >= 500000000
 				}
 				set_global_variable = china_warlord_explosion_economic_growth
-				chi_remove_1_fracture = yes
+				chi_add_1_fragile_unity = yes
 			}
 			if = {
 				limit = {
@@ -293,7 +293,7 @@
 					literacy_rate >= 0.50
 				}
 				set_global_variable = china_warlord_explosion_education_advancement
-				chi_remove_1_fracture = yes
+				chi_add_1_fragile_unity = yes
 			}
 			if = {
 				limit = {
@@ -301,7 +301,7 @@
 					average_sol >= 12
 				}
 				set_global_variable = china_warlord_explosion_sol
-				chi_remove_1_fracture = yes
+				chi_add_1_fragile_unity = yes
 			}
 			if = {
 				limit = {
@@ -311,7 +311,7 @@
 					country_rank != rank_value:unrecognized_regional_power
 				}
 				set_global_variable = china_warlord_explosion_recognized
-				chi_remove_1_fracture = yes
+				chi_add_1_fragile_unity = yes
 			}
 		}
 	}

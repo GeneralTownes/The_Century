@@ -27,7 +27,7 @@ qing_accept_han = {
             }
 			remove_modifier = eight_banners
 		}
-		chi_add_1_fracture = yes
+		chi_remove_1_fragile_unity = yes
 		set_global_variable = qing_accepted_han
 	}
 }

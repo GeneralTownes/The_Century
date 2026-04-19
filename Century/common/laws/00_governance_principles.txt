@@ -331,7 +331,7 @@ law_republic = {
 				exists = c:CHI
 				c:CHI = ROOT
 			}
-			chi_add_1_fracture = yes
+			chi_remove_1_fragile_unity = yes
 			set_global_variable = china_abolished_monarchy
 			if = {
 				limit = {

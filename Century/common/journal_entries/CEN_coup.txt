@@ -212,7 +212,7 @@
 				c:CHI = ROOT
 			}
 			set_global_variable = china_suffered_coup
-			chi_add_1_fracture = yes
+			chi_remove_1_fragile_unity = yes
 		}
 	}
 

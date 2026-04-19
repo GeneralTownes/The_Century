@@ -465,7 +465,7 @@ CEN_china_release_penalty = {
 					assign_opium_addiction_penalty = yes
 				}
 			}
-			chi_add_1_fracture = yes
+			chi_remove_1_fragile_unity = yes
 			set_global_variable = qing_released_homelands
 			remove_diplomatic_pact = {
 				country = scope:target 

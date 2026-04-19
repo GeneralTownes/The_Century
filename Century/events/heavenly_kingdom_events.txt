@@ -616,7 +616,7 @@ heavenly.4 = {
 		}
 		if = {
 			limit = { has_journal_entry = je_warlord_china }
-			chi_add_1_fracture = yes
+			chi_remove_1_fragile_unity = yes
 			set_global_variable = tpg_rebellion_happened
 		}
 		c:TPG = {
@@ -651,7 +651,7 @@ heavenly.4 = {
 		}
 		if = {
 			limit = { has_journal_entry = je_warlord_china }
-			chi_add_1_fracture = yes
+			chi_remove_1_fragile_unity = yes
 			set_global_variable = tpg_rebellion_happened
 		}
 		c:TPG = {
