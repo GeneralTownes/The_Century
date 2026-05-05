@@ -57,16 +57,9 @@ Country flavour events/JEs outside of China dependent on laws may break although
 [list]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3325961657] HMPS[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2932134122] BPM[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3316251100] BPM Lite[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3300629321] IGTE[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2888391145] Extra Topbar Info[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3274883468] China Power Bloc[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3573982645] Historical Debts[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3290552216] GDP Ownership Display[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3312478537] Global Stats[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3288407594] EOH: Map Mod[/url]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383] Map Font: Paradox Victorian[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3517537783] Faster Mouse Scroll Speed[/url]
 [/list]
 Anyone welcome to use part/all of this mod in their own, and if so credit with a reference appreciated.
 [url=https://github.com/GeneralTownes/The_Century] Github link[/url] to mod repository.
