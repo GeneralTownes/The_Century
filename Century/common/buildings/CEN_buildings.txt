@@ -1,7 +1,7 @@
 ﻿# Industry
 building_synthetic_oil_plants = {
 	building_group = bg_heavy_industry
-	icon = "gfx/interface/icons/building_icons/1.dds"
+	icon = "gfx/interface/icons/building_icons/synth_oil_plants.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -35,7 +35,7 @@ building_synthetic_oil_plants = {
 }
 building_synthetic_rubber_plants = {
 	building_group = bg_heavy_industry
-	icon = "gfx/interface/icons/building_icons/2.dds"
+	icon = "gfx/interface/icons/building_icons/synth_rubber_plants.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
