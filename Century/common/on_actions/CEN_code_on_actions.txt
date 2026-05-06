@@ -3,10 +3,11 @@
 		CEN_Arable_Land_Fix
 	}
 	effect = {
-		# Setting after the fact
-		set_global_variable = {
-			name = china_warlord_explosion
-			value = 100
+		c:GBR = {
+			add_journal_entry = { type = je_the_matter_of_ireland }
+		}
+		c:CHI = {
+			activate_law = law_type:law_no_social_security  # Override BPM
 		}
 	}
 }
@@ -14,10 +15,7 @@
 # Root = Country
 on_monthly_pulse_country = {
 	on_actions = {
-		CEN_coastal_capital
-		CEN_colonial_institution_fix
 		CEN_China
-		CEN_colonial_gov_cleanup
 	}
 }
 
@@ -25,54 +23,6 @@ on_monthly_pulse_country = {
 on_monthly_pulse_state = {
 	on_actions = {
 		CEN_uni_removal
-	}
-}
-
-# Root = Country
-# scope:target = Uprising country
-on_revolution_start = {
-	effect = {
-		if = {
-			limit = {
-				has_journal_entry = je_warlord_china
-				NOT = { has_global_variable = china_warlord_explosion_revolution }
-			}
-			chi_remove_1_fragile_unity = yes
-			set_global_variable = china_warlord_explosion_revolution
-		}
-	}
-}
-
-# Root = Country
-# scope:target = Uprising country
-on_secession_start = {
-	effect = {
-		if = {
-			limit = {
-				has_journal_entry = je_warlord_china
-				NOT = { has_global_variable = china_warlord_explosion_secession }
-			}
-			chi_remove_1_fragile_unity = yes
-			set_global_variable = china_warlord_explosion_secession
-		}
-	}
-}
-
-# Root = Releasing Country
-# scope:target = Released Country
-on_country_released_as_independent = {
-	on_actions = {
-		CEN_china_release_penalty
-		CEN_warlord_release_penalty
-	}
-}
-
-# Root = Releasing Country
-# scope:target = Released Country
-on_country_released_as_own_subject = {
-	on_actions = {
-		CEN_china_release_penalty
-		CEN_warlord_release_penalty
 	}
 }
 

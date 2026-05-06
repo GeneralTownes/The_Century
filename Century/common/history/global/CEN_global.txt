@@ -1,27 +1,4 @@
 ﻿GLOBAL = {
-	every_country = {
-		limit = {
-			has_law_or_variant = law_type:law_professional_army
-		}
-		activate_law = law_type:law_mass_conscription
-	}
-	c:GBR ?= {
-		activate_law = law_type:law_parliamentary_system
-		activate_law = law_type:law_symmetric_bicameralism
-		add_journal_entry = { type = je_the_matter_of_ireland }
-	}
-
-	every_country = {
-		limit = {
-			OR = {
-				has_law_or_variant = law_type:law_monarchy
-				has_law_or_variant = law_type:law_theocracy
-			}
-		}
-		ig:ig_rural_folk = { add_ideology = ideology_monarchist }
-		ig:ig_armed_forces = { add_ideology = ideology_monarchist }
-	}
-	
 	c:CHI ?= {
 		every_scope_state = {
 			limit = {
@@ -36,41 +13,6 @@
 				name = eight_banners
 				days = -1
 			}
-		}
-	}
-	
-	c:CHI ?= {
-		remove_primary_culture = cu:han
-		random_scope_state = {
-			limit = {	
-				state_region = s:STATE_SICHUAN
-			}
-			add_radicals_in_state = {
-                value = 0.1
-                culture = cu:han
-            }
-		}
-		random_scope_state = {
-			limit = {	
-				state_region = s:STATE_YUNNAN
-			}
-			add_radicals_in_state = {
-                value = 0.025
-                culture = cu:han
-            }
-		}
-		random_scope_state = {
-			limit = {	
-				state_region = s:STATE_CHONGQING
-			}
-			add_radicals_in_state = {
-                value = 0.05
-                culture = cu:han
-            }
-		}
-		add_radicals = {
-			value = 0.025
-			culture = cu:han
 		}
 	}
 }

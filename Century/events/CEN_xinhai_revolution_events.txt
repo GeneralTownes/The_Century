@@ -27,6 +27,7 @@ xinhai_revolution_events.1 = {
 		every_interest_group = {
 			limit = {
 				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie  # Scholar-Officials
 					is_interest_group_type = ig_landowners
 					is_interest_group_type = ig_devout
 				}
@@ -37,22 +38,13 @@ xinhai_revolution_events.1 = {
 		}
 		every_interest_group = {
 			limit = {
+				NOT = { is_interest_group_type = ig_petty_bourgeoisie }
 				NOT = { is_interest_group_type = ig_landowners }
 				NOT = { is_interest_group_type = ig_devout }
 			}
     		leader = {
-    			set_ideology = ideology:ideology_republican_leader
+    			set_ideology = ideology:ideology_gov_radical_republican
     		}
-		}
-		every_interest_group = {
-			limit = {
-				OR = {
-					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_rural_folk
-				}
-				has_ideology = ideology:ideology_monarchist
-			}
-			remove_ideology = ideology_monarchist
 		}
 		add_radicals = {
 			value = large_radicals
@@ -100,16 +92,10 @@ xinhai_revolution_events.2 = {
 			}
 			add_journal_entry = { type = je_abolish_monarchy }
 		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_theocracy
-				NOT = { has_journal_entry = je_abolish_theocracy }
-			}
-			add_journal_entry = { type = je_abolish_theocracy }
-		}
 		activate_law = law_type:law_republic
-		activate_law = law_type:law_independent_executive
-		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_advisory_body
+		activate_law = law_type:law_no_separate_hog
+		activate_law = law_type:law_oligarchy  # Despotism
 		if = {
 			limit = {
 				OR = {
@@ -127,14 +113,11 @@ xinhai_revolution_events.2 = {
 			}
 			activate_law = law_type:law_national_supremacy
 		}
-		chi_remove_1_fragile_unity = yes
-		set_global_variable = xinhai_happened
 		if = {
 			limit = {
 				NOT = { has_global_variable = china_abolished_monarchy }
 				NOT = { has_law_or_variant = law_type:law_monarchy }
 			}
-			set_global_variable = china_abolished_monarchy
 			if = {
 				limit = {
 					NOT = { has_variable = china_han_empire }
@@ -145,17 +128,6 @@ xinhai_revolution_events.2 = {
 	}
 	option = {	#Kuomintang Republic
 		name = xinhai_revolution_events.2.b
-		#ig:ig_landowners = {
-		#	remove_ideology = ideology_paternalistic
-		#	remove_ideology = ideology_scholar_paternalistic
-		#	remove_ideology = ideology_junker_paternalistic
-		#	remove_ideology = ideology_papal_paternalistic
-		#	remove_ideology = ideology_pol_parlamentarism
-		#	add_ideology = ideology_republican_paternalistic
-		#} # Allow Stamp out Monarchism JE
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_monarchist
-		}
 		every_interest_group = {
 			limit = {
 				leader = {
@@ -173,21 +145,12 @@ xinhai_revolution_events.2 = {
 			}
 			add_journal_entry = { type = je_abolish_monarchy }
 		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_theocracy
-				NOT = { has_journal_entry = je_abolish_theocracy }
-			}
-			add_journal_entry = { type = je_abolish_theocracy }
-		}
 		activate_law = law_type:law_republic
 		if = {
 			limit = {
 				OR = {
-					has_law_or_variant = law_type:law_autocracy
 					has_law_or_variant = law_type:law_oligarchy
 					has_law_or_variant = law_type:law_landed_voting
-					has_law_or_variant = law_type:law_clerical_voting
 					has_law_or_variant = law_type:law_wealth_voting
 				}
 			}
@@ -210,14 +173,11 @@ xinhai_revolution_events.2 = {
 			}
 			activate_law = law_type:law_national_supremacy
 		}
-		chi_remove_1_fragile_unity = yes
-		set_global_variable = xinhai_happened
 		if = {
 			limit = {
 				NOT = { has_global_variable = china_abolished_monarchy }
 				NOT = { has_law_or_variant = law_type:law_monarchy }
 			}
-			set_global_variable = china_abolished_monarchy
 			if = {
 				limit = {
 					NOT = { has_variable = china_han_empire }

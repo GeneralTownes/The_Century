@@ -61,13 +61,6 @@
 				is_decaying = yes
 			}
 		}
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_republican
-			}
-			remove_ideology = ideology_republican
-			add_ideology = ideology_constitutionalist
-		}
     }
 	fail = {
 		custom_tooltip = {
@@ -80,9 +73,9 @@
 	on_fail = {
 		if = {
 			limit = {
-				NOT = { has_law_or_variant = law_type:law_autocracy }
+				NOT = { has_law_or_variant = law_type:law_oligarchy }  # Despotism
 			}
-			activate_law = law_type:law_autocracy
+			activate_law = law_type:law_oligarchy
 		}
 		if = {
 			limit = {
@@ -111,19 +104,10 @@
 			}
 			activate_law = law_type:law_subjecthood
 		}
-		
-		every_interest_group = {
-			limit = {
-				is_interest_group_type = ig_armed_forces
-				has_ideology = ideology:ideology_monarchist
-			}
-			remove_ideology = ideology_monarchist
-			add_ideology = ideology_republican
-		}
 	}
 	invalid = {
 		NOT = { has_journal_entry = je_warlord_china }
 	}
     weight = 1000
-    should_be_pinned_by_default = yes
+    should_be_pinned_by_default_uninvolved_or_context = yes
 }

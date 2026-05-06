@@ -1,64 +1,4 @@
-﻿REPLACE:coa_republic_trigger = {
-	has_law_or_variant = law_type:law_republic
-}
-coa_federal_republic_trigger = {
-	coa_republic_trigger = yes
-	has_law_or_variant = law_type:law_elected_bureaucrats
-}
-
-REPLACE:coa_oligarchy_trigger = {
-	coa_republic_trigger = yes
-	OR = {
-		has_law_or_variant = law_type:law_oligarchy
-		has_law_or_variant = law_type:law_technocracy
-	}
-}
-
-REPLACE:coa_autocracy_trigger = {
-	OR = {
-		has_law_or_variant = law_type:law_autocracy
-		has_law_or_variant = law_type:law_single_party_state
-	}
-}
-
-REPLACE:coa_communist_trigger = {
-	has_law_or_variant = law_type:law_republic
-	has_law_or_variant = law_type:law_single_party_state
-	has_law_or_variant = law_type:law_vanguardism
-	has_law_or_variant = law_type:law_command_economy
-}
-
-REPLACE:coa_fascist_trigger = {
-	# A fascist can lead a monarchy or a theocracy without the government changing form. The Papal State should retain the same flag even if the Pope's a fascist, for example.
-	# A fascist can also lead a democracy without the democracy immediately becoming fascist. If the fascist successfully implements his wildest dreams and becomes a dictatorship, then sure the government will become Fascist, but while there's still voting the government shouldn't count as (fully) fascist yet.
-	OR = {
-		AND = {
-			has_technology_researched = political_agitation
-			has_law_or_variant = law_type:law_ethnostate
-			OR = {
-				has_law_or_variant = law_type:law_autocracy
-				has_law_or_variant = law_type:law_single_party_state
-			}
-			has_law_or_variant = law_type:law_militarized_police
-			has_law_or_variant = law_type:law_outlawed_dissent
-			has_law_or_variant = law_type:law_secret_police
-			has_law_or_variant = law_type:law_mass_conscription
-		}
-		AND = {
-			coa_dictatorship_trigger = yes
-			ruler ?= {
-				OR = {
-					has_ideology = ideology:ideology_fascist
-					has_ideology = ideology:ideology_integralist
-				}
-			}
-		}
-	}
-}
-
-### UFB LARP ###
-
-coa_UFB_trigger = {
+﻿coa_UFB_trigger = {
 	has_law_or_variant = law_type:law_republic
 	has_law_or_variant = law_type:law_elected_bureaucrats
 	has_law_or_variant = law_type:law_universal_suffrage
@@ -98,6 +38,11 @@ coa_UFB_trigger = {
 }
 
 # Government
+
+coa_federal_republic_trigger = {
+	coa_republic_trigger = yes
+	has_law_or_variant = law_type:law_federated
+}
 
 coa_def_UFB_trigger = {
 	exists = scope:actor

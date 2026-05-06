@@ -154,8 +154,6 @@
  chi_add_1_fragile_unity_tt: "The stability of [ROOT.GetCountry.GetName] will #Bold increase#! #variable 20%!"
  chi_remove_1_fragile_unity_tt: "The stability of [ROOT.GetCountry.GetName] will #Bold decrease#! #variable 20%!"
  
- je_opium_obsession_goal:0 "The following conditions must be true for a total of 10 years (can be interrupted):"
- 
  fracture_val_100_tt: "Stability is #variable 100%#%"
  fracture_val_50_tt: "Stability is 50% or lower"
  fracture_val_35_tt: "Stability is 35% or lower"

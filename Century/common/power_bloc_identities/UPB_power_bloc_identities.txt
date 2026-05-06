@@ -26,33 +26,6 @@
     }
     
     possible = {
-        # Doesn't already exist
-        trigger_if = {
-            limit = {
-                any_power_bloc = {
-                    has_identity = identity:UPB_identity_china_tributary
-                }
-            }
-            NOT = {
-                any_power_bloc = {
-                    has_identity = identity:UPB_identity_china_tributary
-                }
-            }
-        }
-        
-        # Is monarchy
-        trigger_if = {
-            limit = { # RRK compat
-                RRK_is_active_trigger = yes
-            }
-            coa_monarchy_trigger = yes
-        }
-        trigger_else = {
-            has_law_or_variant = law_type:law_monarchy
-        }
-        
-        # Is certifiably The Legitimate China:tm:
-        UPB_st_controls_china = yes
     }
 
     can_leave = {
@@ -71,7 +44,6 @@
     background = "gfx/interface/power_blocs/backgrounds/pb_background_generic.dds"
 
     visible = {
-        #UPB_st_is_china = yes
 		always = no
     }
 
