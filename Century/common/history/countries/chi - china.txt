@@ -45,11 +45,6 @@
 			years = -1
 		}
 		add_modifier = {
-			name = chinese_opium_addiction
-			years = 60
-			is_decaying = yes
-		}
-		add_modifier = {
 			name = modifier_banner_system
 			is_decaying = no
 			years = -1

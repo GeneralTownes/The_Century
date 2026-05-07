@@ -104,10 +104,10 @@ amendment_queue_order = {
 	}
 
 	modifier = {
-		country_han_cultural_acceptance_add = -40
-		country_yue_cultural_acceptance_add = -40
-		country_min_cultural_acceptance_add = -40
-		country_hakka_cultural_acceptance_add = -40
+		country_han_cultural_acceptance_add = -120
+		country_yue_cultural_acceptance_add = -80
+		country_min_cultural_acceptance_add = -80
+		country_hakka_cultural_acceptance_add = -80
 		state_assimilation_mult = -0.9
 		
 		country_authority_add = 100

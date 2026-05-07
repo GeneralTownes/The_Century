@@ -9,6 +9,37 @@
 		c:CHI = {
 			activate_law = law_type:law_no_social_security  # Override BPM
 		}
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:han
+				}
+			}
+			add_culture_standard_of_living_modifier = {
+				culture = cu:han
+				days = stupidly_long_modifier_time
+				multiplier = -4
+				is_decaying = yes
+			}
+			add_culture_standard_of_living_modifier = {
+				culture = cu:hakka
+				days = stupidly_long_modifier_time
+				multiplier = -3
+				is_decaying = yes
+			}
+			add_culture_standard_of_living_modifier = {
+				culture = cu:min
+				days = stupidly_long_modifier_time
+				multiplier = -3
+				is_decaying = yes
+			}
+			add_culture_standard_of_living_modifier = {
+				culture = cu:yue
+				days = stupidly_long_modifier_time
+				multiplier = -3
+				is_decaying = yes
+			}
+		}
 	}
 }
 
