@@ -59,17 +59,7 @@ je_the_matter_of_ireland = {
 				origin = this
 				state = s:STATE_LEINSTER.region_state:GBR
 				on_created = {
-					activate_law = law_type:law_republic
-					ig:ig_landowners = {
-						remove_ideology = ideology_paternalistic
-						add_ideology = ideology_republican_paternalistic
-					}
-					ig:ig_rural_folk = {
-						remove_ideology = ideology_monarchist
-					}
-					ig:ig_armed_forces = {
-						remove_ideology = ideology_monarchist
-					}
+					activate_law = law_type:law_presidential_republic
 					add_modifier = {
 						name = modifier_irish_independence
 						months = -1

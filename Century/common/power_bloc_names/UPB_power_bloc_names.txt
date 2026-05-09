@@ -1,5 +1,0 @@
-﻿CEFENG_SYSTEM = {
-    trigger = {
-        scope:selected_identity = identity:UPB_identity_china_tributary
-    }
-}

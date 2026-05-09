@@ -1,59 +1,11 @@
 ﻿on_game_started = {
 	on_actions = {
-		CEN_Arable_Land_Fix
+		CHI_setup
 	}
 	effect = {
 		c:GBR = {
 			add_journal_entry = { type = je_the_matter_of_ireland }
 		}
-		c:CHI = {
-			activate_law = law_type:law_no_social_security  # Override BPM
-		}
-		every_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:han
-				}
-			}
-			add_culture_standard_of_living_modifier = {
-				culture = cu:han
-				days = stupidly_long_modifier_time
-				multiplier = -4
-				is_decaying = yes
-			}
-			add_culture_standard_of_living_modifier = {
-				culture = cu:hakka
-				days = stupidly_long_modifier_time
-				multiplier = -3
-				is_decaying = yes
-			}
-			add_culture_standard_of_living_modifier = {
-				culture = cu:min
-				days = stupidly_long_modifier_time
-				multiplier = -3
-				is_decaying = yes
-			}
-			add_culture_standard_of_living_modifier = {
-				culture = cu:yue
-				days = stupidly_long_modifier_time
-				multiplier = -3
-				is_decaying = yes
-			}
-		}
-	}
-}
-
-# Root = Country
-on_monthly_pulse_country = {
-	on_actions = {
-		CEN_China
-	}
-}
-
-# Root = State
-on_monthly_pulse_state = {
-	on_actions = {
-		CEN_uni_removal
 	}
 }
 

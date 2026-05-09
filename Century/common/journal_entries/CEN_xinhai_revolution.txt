@@ -21,24 +21,13 @@
 		hidden_trigger = {
 			NOT = { has_global_variable = xinhai_je_happened }
 		}
-		NOT = { country_has_primary_culture = cu:han }
+		NOT = { has_law = law_type:law_presidential_republic }
     }
     possible = {
 		OR = {
-			AND = {
-				custom_tooltip = {
-					text = je_the_hundred_started_tt
-					has_global_variable = 100_days_attempted
-				}
-				custom_tooltip = {
-					text = fracture_val_25_tt
-					global_var:china_warlord_explosion <= 25
-				}
-			}
 			cu:han.culture_current_fervor >= 40
 			has_technology_researched = pan-nationalism
 		}
-        NOT = { country_has_primary_culture = cu:han }
 		hidden_trigger = {
 			NOT = { has_global_variable = xinhai_je_happened }
 		}
@@ -48,7 +37,7 @@
         trigger_event = { id = xinhai_revolution_events.1 } # Anti-Manchu Sentiment
     }
     complete = {
-		country_has_primary_culture = cu:han
+		has_law = law_type:law_presidential_republic
     }
     on_complete = {
     }

@@ -1,7 +1,19 @@
-﻿coa_UFB_trigger = {
-	has_law_or_variant = law_type:law_republic
-	has_law_or_variant = law_type:law_elected_bureaucrats
+﻿# Government
+coa_federal_republic_trigger = {
+	coa_republic_trigger = yes
+	has_law_or_variant = law_type:law_federated
+}
+
+coa_def_federal_republic_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_federal_republic_trigger = yes }
+}
+
+# Flag Trigger
+coa_UFB_trigger = {
+	coa_federal_republic_trigger = yes
 	has_law_or_variant = law_type:law_universal_suffrage
+	has_law_or_variant = law_type:law_elected_bureaucrats
 	OR = {
 		has_law_or_variant = law_type:law_total_separation
 		has_law_or_variant = law_type:law_state_atheism
@@ -37,19 +49,7 @@
 	}
 }
 
-# Government
-
-coa_federal_republic_trigger = {
-	coa_republic_trigger = yes
-	has_law_or_variant = law_type:law_federated
-}
-
 coa_def_UFB_trigger = {
 	exists = scope:actor
 	scope:actor ?= { coa_UFB_trigger = yes }
-}
-
-coa_def_federal_republic_trigger = {
-	exists = scope:actor
-	scope:actor ?= { coa_federal_republic_trigger = yes }
 }

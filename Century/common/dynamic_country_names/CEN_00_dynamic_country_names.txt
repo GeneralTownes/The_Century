@@ -1,275 +1,50 @@
-﻿#INSERT:GBR = { # Great Britain of United Kingdom
-#	dynamic_country_name = {
-#		name = dyn_c_UFB
-#		adjective = GBR_ADJ
-#		
-#		is_main_tag_only = yes
-#		priority = 10
-#		
-#		trigger = {
-#			exists = scope:actor
-#			scope:actor ?= {
-#				has_law_or_variant = law_type:law_republic
-#				has_law_or_variant = law_type:law_elected_bureaucrats
-#				has_law_or_variant = law_type:law_universal_suffrage
-#				OR = {
-#					has_law_or_variant = law_type:law_total_separation
-#					has_law_or_variant = law_type:law_state_atheism
-#				}
-#				has_law_or_variant = law_type:law_protected_speech
-#				has_law_or_variant = law_type:law_guaranteed_liberties
-#				has_law_or_variant = law_type:law_no_colonial_affairs
-#				
-#				NOT = {
-#					any_scope_state = {
-#						NOT = {
-#							OR = {
-#								state_region = s:STATE_HOME_COUNTIES
-#								state_region = s:STATE_LANCASHIRE
-#								state_region = s:STATE_WALES
-#								state_region = s:STATE_YORKSHIRE
-#								state_region = s:STATE_HIGHLANDS
-#								state_region = s:STATE_MIDLANDS
-#								state_region = s:STATE_EAST_ANGLIA
-#								state_region = s:STATE_WEST_COUNTRY
-#								state_region = s:STATE_LOWLANDS
-#								state_region = s:STATE_ULSTER
-#								state_region = s:STATE_MUNSTER
-#								state_region = s:STATE_LEINSTER
-#								state_region = s:STATE_CONNAUGHT
-#							}
-#						}
-#					}
-#				}
-#			}
-#		}
-#	}	
-#}
-
-REPLACE:TPG = {
+﻿INSERT:GBR = { # Great Britain of United Kingdom
 	dynamic_country_name = {
-		name = dyn_c_heavenly_republic
-		adjective = TPG_ADJ
+		name = dyn_c_UFB
+		adjective = GBR_ADJ
 		
 		is_main_tag_only = yes
-		priority = 100
+		priority = 10
 		
 		trigger = {
-			coa_def_republic_flag_trigger = yes
-			NOT = { coa_def_communist_flag_trigger = yes }
-		}
-	}
-}
-
-# Chinese Warlords
-HNA = {
-	dynamic_country_name = {
-		name = dyn_c_hunan_clique
-		adjective = HNA_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-GNG = {
-	dynamic_country_name = {
-		name = dyn_c_guangxi_clique
-		adjective = GNG_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-AHU = {
-	dynamic_country_name = {
-		name = dyn_c_anhui_clique
-		adjective = AHU_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-ZHI = {
-	dynamic_country_name = {
-		name = dyn_c_zhili_clique
-		adjective = ZHI_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-MCH = {
-	dynamic_country_name = {
-		name = dyn_c_fengtian_clique
-		adjective = dyn_c_fengtian_adj
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
+			exists = scope:actor
 			scope:actor ?= {
-				any_scope_state = {
-					state_region = s:STATE_SHENGJING
+				has_law_or_variant = law_type:law_presidential_republic
+				has_law_or_variant = law_type:law_federated
+				has_law_or_variant = law_type:law_elected_bureaucrats
+				has_law_or_variant = law_type:law_universal_suffrage
+				OR = {
+					has_law_or_variant = law_type:law_total_separation
+					has_law_or_variant = law_type:law_state_atheism
 				}
-			}
-		}
-	}
-}
-SHN = {
-	dynamic_country_name = {
-		name = dyn_c_shanxi_clique
-		adjective = SHN_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-GUI = {
-	dynamic_country_name = {
-		name = dyn_c_guizhou_clique
-		adjective = GUI_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-YUE = {
-	dynamic_country_name = {
-		name = dyn_c_guangdong_clique
-		adjective = dyn_c_guangdong_adj
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-SIH = {
-	dynamic_country_name = {
-		name = dyn_c_sichuan_clique
-		adjective = SIH_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-SHA = {
-	dynamic_country_name = {
-		name = dyn_c_shandong_clique
-		adjective = SHA_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-YUN = {
-	dynamic_country_name = {
-		name = dyn_c_yunnan_clique
-		adjective = YUN_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-FRS = {
-	dynamic_country_name = {
-		name = dyn_c_fujian_clique
-		adjective = FRS_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-MCH = {
-	dynamic_country_name = {
-		name = dyn_c_manchuria_clique
-		adjective = MCH_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-XIB = {
-	dynamic_country_name = {
-		name = dyn_c_xibei_clique
-		adjective = XIB_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			has_global_variable = china_shatters
-		}
-	}
-}
-
-BEI = {
-	dynamic_country_name = {
-		name = dyn_c_beiyang_government
-		adjective = CHI_ADJ
-		
-		is_main_tag_only = yes
-		priority = 15
-		
-		trigger = {
-			scope:actor = {
-				has_global_variable = china_shatters
-				capital = {
-					OR = {
-						state_region = s:STATE_BEIJING
-						state_region = s:STATE_HEBEI
+				has_law_or_variant = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_guaranteed_liberties
+				has_law_or_variant = law_type:law_no_colonial_affairs
+				
+				NOT = {
+					any_scope_state = {
+						NOT = {
+							OR = {
+								state_region = s:STATE_HOME_COUNTIES
+								state_region = s:STATE_LANCASHIRE
+								state_region = s:STATE_WALES
+								state_region = s:STATE_YORKSHIRE
+								state_region = s:STATE_HIGHLANDS
+								state_region = s:STATE_MIDLANDS
+								state_region = s:STATE_EAST_ANGLIA
+								state_region = s:STATE_WEST_COUNTRY
+								state_region = s:STATE_LOWLANDS
+								state_region = s:STATE_ULSTER
+								state_region = s:STATE_MUNSTER
+								state_region = s:STATE_LEINSTER
+								state_region = s:STATE_CONNAUGHT
+							}
+						}
 					}
 				}
 			}
 		}
-	}
+	}	
 }
 
 REPLACE:CHI = { # China

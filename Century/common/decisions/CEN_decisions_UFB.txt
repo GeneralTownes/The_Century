@@ -6,10 +6,7 @@
 	}
 
 	possible = {
-		OR = {
-			has_technology_researched = civil_rights
-			has_technology_researched = multiculturalism
-		}
+		has_technology_researched = mass_propaganda
 		country_has_primary_culture = cu:irish
 	}
 

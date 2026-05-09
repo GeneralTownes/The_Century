@@ -43,7 +43,3 @@ bg_minor_canals = {
 	
 	stateregion_max_level = yes
 }
-
-INJECT:bg_technology = {
-	economy_of_scale = no
-}

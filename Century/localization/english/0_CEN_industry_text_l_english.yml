@@ -2,14 +2,6 @@
     #Rice secondary
  pm_rice_wine:0 "Rice Wine"
  
-    #Power
- alternators:0 "Alternators"
- alternators_desc:0 "Using a stationary armature in a rotating magnetic field, alternating current can be generated."
- pmg_power_alternator:0 "Alternator"
- pm_dc_plant:0 "DC Generation"
- pm_ac_plant:0 "AC Generation"
- bg_power:0 "Power"
- 
     #Regular & Hardwood Wood
  building_logging_camp:0 "Logging Camps"
  building_logging_camp_lens_option:0 "Expand $building_logging_camp$"

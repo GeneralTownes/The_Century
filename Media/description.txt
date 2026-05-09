@@ -1,31 +1,24 @@
-[h1] The Century [/h1]
+[h1] The Century (BPM Submod) [/h1]
 The Great Qing initially oversaw significant territorial expansion, economic development and population growth. Since these heady the dynasty has struggled to under the increasing outside influence of rising European empires, and social strife at home. Will the coming century be one of humiliation or one of triumph?
 
 [hr][/hr]
 [h2] Starting Position [/h2]
-Great Qing starts with a decaying tributary power block, territory-hungry northern neighbour, and dominant scholar-officials. The resources that China needs for industrialisation are all under heaven, with the exception of oil for which domestic production is unlikely to be sufficient. The burgeoning British Empire seeks to stem the flow of silver our of their treasury by creating an opium-addled mass of customers in China, and must be dealt with. The army whilst large, is outdated by European standards, and the navy lacking compared to the British and French navies.
+Great Qing starts with a rigid imperial court, territory-hungry northern neighbour, and dominant scholar-officials. The resources that China needs for industrialisation are all under heaven, with the exception of oil for which domestic production is unlikely to be sufficient. The burgeoning British Empire seeks to stem the flow of silver our of their treasury by creating an opium-addled mass of customers in China, and must be dealt with. The army whilst large, is outdated by European standards, and the navy lacking compared to the British and French navies.
 
 [h2] New Mechanics [/h2]
 [list]
-    [*]Anti-radicalism decree & greater taxation decree added
     [*]Wood split into regular and hardwood forestries
     [*]Lumber and rubber use arable land
     [*]Forestries now employ 2.5k and Rice 5k (like all other grain producers)
     [*]Canal building added to represent Grand Canal
-    [*]Synthetic rubber and oil plants
+    [*]Electricity used in industry instead of oil
     [*]China flavour (JEs, events, amendments, modifiers)
 [/list]
 
 [h2] Balance & Realism [/h2]
 [list]
-    [*]No base capacities (bureaucracy, influence, authority, tax capacity, infrastructure, minting)
-    [*]Power Block mandate effects greatly reduced & food company effect now only +1 SoL
-    [*]Education level alone provides innovation
-    [*]Universities are capped via tech and give tech spread & qualifications
-    [*]Early era tech slightly cheaper, late era tech significantly more expensive
     [*]Only primary cultures reach 100 acceptance from culture, so all others can assimilate
     [*]Oil output increased ~50%
-    [*]Take state infamy costs scale up to a base of 100
     [*]Greater historical resources in Chinese states & new state traits
     [*]Secession and Revolution diplo plays now allow both sides to add war goals
 [/list]
@@ -34,25 +27,16 @@ Great Qing starts with a decaying tributary power block, territory-hungry northe
 [list]
     [*]In general, don't build bureaucracy unless you have a deficit
     [*]Your army is largely a paper tiger until reformed
-    [*]State religion can provide extra needed authority
-    [*]Sign extensive treaties with non-subject power block members you wish to keep
     [*]Initially tax hard for construction, mindful of radicals from below expected SoL
     [*]No need to expand for resources (bar oil), the Middle Kingdom has all under Heaven
 [/list]
-
-[h3] To Note [/h3]
-This mod is [u] not intended[/u] for less experienced players. You may end up collapsing into The Warlord Era, however whilst this will be challenging, it is recoverable.
-Winning (cheesing) the Opium War will result in a trivially easy campaign. It is not intended to be won. Setting AI aggression to "High" is strongly recommended.
-Country flavour events/JEs outside of China dependent on laws may break although a workaround has been implemented.
 
 [h3] Recommended Mod [/h3]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3704408897] East Asian Clothes: Redux[/url]
 
 [h3] With great thanks to: [/h3]
-[list]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3274883468] China Power Bloc[/url]
-    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383] Map Font: Paradox Victorian[/url]
-[/list]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2955876383] Map Font: Paradox Victorian[/url]
+
 Anyone welcome to use part/all of this mod in their own, and if so credit with a reference appreciated.
 [url=https://github.com/GeneralTownes/The_Century] Github link[/url] to mod repository.
 
