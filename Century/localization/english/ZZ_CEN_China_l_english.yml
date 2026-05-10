@@ -32,6 +32,7 @@
  
  # Modifiers
  eight_banners:0 "The Eight Banners"
+ chinese_economic_stagnation:0 "Ineffectual Mining"
  modifier_china_subsistence_agri:0 "Unprofitable Investment"
  modifier_agricultural_econ_agri_debuff:0 "Local Subsistence Economy"
  modifier_bannermen_decadence:0 "Bannermen Decadence"
