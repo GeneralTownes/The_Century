@@ -17,7 +17,6 @@ Great Qing starts with a rigid imperial court, territory-hungry northern neighbo
 
 [h2] Balance & Realism [/h2]
 [list]
-    [*]Only primary cultures reach 100 acceptance from culture, so all others can assimilate
     [*]Oil output increased ~50%
     [*]Greater historical resources in Chinese states & new state traits
     [*]Secession and Revolution diplo plays now allow both sides to add war goals
