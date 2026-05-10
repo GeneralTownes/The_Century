@@ -25,7 +25,7 @@
     }
     possible = {
 		OR = {
-			cu:han.culture_current_fervor >= 40
+			cu:han.culture_current_fervor >= 60
 			has_technology_researched = pan-nationalism
 		}
 		hidden_trigger = {
